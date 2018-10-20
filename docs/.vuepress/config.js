@@ -6,7 +6,12 @@ module.exports = {
     base: '/Easy-Hexo',
     themeConfig: {
         sidebar: {
-            
+            nav: [
+                {
+                    text: '1.Hexo安装与配置',
+                    link: '/1-Hexo install and config/'
+                }
+            ]
         }
     }
 }
