@@ -1,7 +1,7 @@
 <div align="center"><img src="https://i.loli.net/2018/10/18/5bc852dfd5270.jpg" alt="Icon Badge" width="40%" /></div>
 
 <h1 align="center">
-<img height="24" width="24" src="https://i.loli.net/2018/10/20/5bcad7e4bf535.png" /> 
+<img height="32" width="32" src="https://i.loli.net/2018/10/20/5bcad7e4bf535.png" /> 
 Easy Hexo</h1>
 
 <br />
