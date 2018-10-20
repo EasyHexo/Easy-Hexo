@@ -10,7 +10,7 @@
 - [moshiyeap](https://liujunzhou.cn/)
 - [SpencerWoo](https://spencerwoo.com/) 提醒注意版权问题
 - [StaunchKai](https://staunchkai.com/)
-- [yi-yun](https://yiyun.run)
+- [yi-yun](https://yi-yun.github.io)
 - [yixiaomie](https://daiwen.me/)
 
 
