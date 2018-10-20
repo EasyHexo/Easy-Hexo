@@ -6,7 +6,6 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/spencerwoo98/Dev-on-Windows-with-WSL)
 ![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)
-![Windows](https://img.shields.io/badge/Windows-♥-FFE411.svg?logo=windows&style=flat-square)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-03A9F4.svg?style=flat-square)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 
