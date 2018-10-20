@@ -2,7 +2,7 @@
 
 > In alphabetical order.
 
-## 项目
+## 项目大佬
 
 - [ChungZH](https://chungzh.cn/) 队长(???)
 
