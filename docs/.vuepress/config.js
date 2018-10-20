@@ -5,9 +5,13 @@ module.exports = {
     description: '轻松入门 Hexo',
     base: '/Easy-Hexo',
     themeConfig: {
+        nav: [{
+            text: 'Hexo 安装与配置',
+            link: '/1-Hexo-install-and-config/'
+          }
+        ],
         sidebar: {
-            '/1.Hexo安装与配置/': ['']
-        
+          '/1-Hexo-install-and-config/': ['']
         }
     }
 }

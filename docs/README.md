@@ -2,7 +2,7 @@
 home: true
 heroImage: https://i.loli.net/2018/10/18/5bc852dfd5270.jpg
 actionText: 进入深坑 →
-actionLink: /1-Hexo install and config/
+actionLink: /1-Hexo-install-and-config/
 features:
 - title: ❤️
   details: 这是一个用爱编写的教程。
