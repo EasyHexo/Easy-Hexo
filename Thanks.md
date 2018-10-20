@@ -1,9 +1,14 @@
 # Thanks
 
-按照 ABCDEFG 排序。
+> In alphabetical order.
+
+## 项目
+
+- [ChungZH](https://chungzh.cn/) 队长(???)
+
+## 项目共同维护者
 
 - [Anoyer](https://anoyer.cn/)
-- [ChungZH](https://chungzh.cn/) 队长(???)
 - Hun Dean
 - [Markjuruo](https://markjuruo.ooo/) 
 - [MonoLogueChi](https://www.xxwhite.com/)

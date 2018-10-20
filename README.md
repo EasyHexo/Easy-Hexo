@@ -1,6 +1,6 @@
 <div align="center"><img src="https://i.loli.net/2018/10/18/5bc852dfd5270.jpg" alt="Icon Badge" width="40%" /></div>
 
-<h1 align="center">👨‍💻 Easy Hexo</h1>
+<h1 align="center"><img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/hexo.svg" /> Easy Hexo</h1>
 
 <br />
 
@@ -10,7 +10,7 @@
 
 > 轻松使用 Hexo 建站
 
-## 前言
+# 前言
 
 Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建立一个博客网站。但是由于 Hexo 官方网站的教程并没有涉及到主题配置及自定义，甚至有一些 Hexo 主题连官方文档都没有，导致使用者需要阅读那些网上良莠不齐的教程。而本文档将提供一站式的 Hexo 教程。
 
@@ -34,13 +34,13 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 
 
-## 相关信息
+# 相关信息
 
 本项目使用 [Vuepress](https://vuepress.vuejs.org) 生成。
 
 目前仍有很多地方没有写完，欢迎各位大佬加入我们 Easy Hexo 团队！🎉🎉🎉
 
-请联系 ChungZH（qq：124694738），加好友时请注明 Easy Hexo 。或者你也可以加入 Easy Hexo 团队的 qq 群：935778924 。Thanks~ 
+请联系 ChungZH (QQ:124694738)，加好友时请注明 Easy Hexo。或者你也可以加入 Easy Hexo 团队的 QQ 群：935778924。Thanks~ 
 
 
 
@@ -52,12 +52,16 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 ![mind](https://i.loli.net/2018/10/20/5bcac0767a2d6.png)
 
+# 许可
+
+⚖ 本作品采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
+
 ------
 
 
 
 **👨‍💻 Easy Hexo** © Easy Hexo. 
 
-Authored and maintained by Easy Hexo.
+Authored by Easy Hexo, [@ChungZH](https://chungzh.cn/). Maintained by [contributers](https://github.com/EasyHexo/Easy-Hexo/graphs/contributors). ♥
 
 [@ChungZH's Blog](https://chungzh.cn/) · [@GitHub](https://github.com/EasyHexo)
