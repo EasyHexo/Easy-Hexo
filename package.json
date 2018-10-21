@@ -1,0 +1,15 @@
+{
+  "name": "Easy-Hexo",
+  "version": "2.0.0",
+  "description": "????? Easy Hexo",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": "https://github.com/EasyHexo/Easy-Hexo",
+  "author": "EasyHexo <124694738@qq.com>",
+  "license": "CC-BY-NC-ND-4.0",
+  "dependencies": {
+    "vuepress": "^0.14.4"
+  }
+}
