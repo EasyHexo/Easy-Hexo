@@ -45,11 +45,22 @@ module.exports = {
                     link: '/2-Theme-use-and-config/2-4-hexo-theme-apollo/'
                 }
             ]
+        }, {
+            text: '插件使用与配置',
+            link: '/3-Plugins-use-and-config/'
+        }, {
+            text: '高级 Hexo 玩家',
+            link: '/4-High-order-hexo-gamer/'
+        }, {
+            text: '补充内容',
+            link: '/5-Add/'
         }],
         sidebar: {
             '/1-Hexo-install-and-config/': [
                 '',
-                '1-1-meet-hexo'],
+                '1-1-meet-hexo',
+                '1-2-install-hexo'
+            ],
             '/2-Theme-use-and-config/': [
                 //'/',
                 '',
@@ -57,6 +68,15 @@ module.exports = {
                 '2-2-hexo-theme-next-6.x.x/',
                 '2-3-hexo-theme-yilia/',
                 '2-4-hexo-theme-apollo/'
+            ],
+            '/3-Plugins-use-and-config/': [
+                ''
+            ],
+            '/4-High-order-hexo-gamer/': [
+                ''
+            ],
+            '/5-Add/': [
+                ''
             ]
         }
     }

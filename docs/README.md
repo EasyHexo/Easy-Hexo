@@ -45,7 +45,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 ## 十分感谢你能：
 
-- 如有疑问，请先百度，再联系我们
+- 如有疑问，请先百度，再联系我们 
 - 如果对我们有建议，可以联系我们
 - 如果想对本文档做出贡献，可以加入我们
 
@@ -59,7 +59,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 目前仍有很多地方没有写完，欢迎各位大佬加入我们 Easy Hexo 团队！🎉🎉🎉
 
-请联系 ChungZH (QQ:124694738)，加好友时请注明 Easy Hexo。或者你也可以加入 Easy Hexo 团队的 QQ 群：935778924。Thanks~
+请联系 ChungZH (QQ:124694738)，加好友时请注明 Easy Hexo。或者你也可以加入 Easy Hexo 团队的 QQ 群：935778924。Thanks~ 
 
 
 
@@ -79,7 +79,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 
 
-**👨‍💻 Easy Hexo** © Easy Hexo.
+**👨‍💻 Easy Hexo** © Easy Hexo. 
 
 Authored by Easy Hexo, [@ChungZH](https://chungzh.cn/). Maintained by [contributers](https://github.com/EasyHexo/Easy-Hexo/graphs/contributors). :heart:
 
