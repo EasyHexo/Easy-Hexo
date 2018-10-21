@@ -1,4 +1,4 @@
 ---
 title: 部署Hexo
 ---
-# 将Hexo 发布到GithubPage, CodingPage,个人服务器上。
+# 将 Hexo 发布到 GithubPage, CodingPage, 个人服务器上。
