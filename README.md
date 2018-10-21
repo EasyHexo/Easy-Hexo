@@ -3,8 +3,8 @@
 
 
 <h1 align="center">
-<img height="28" width="28" src="https://i.loli.net/2018/10/20/5bcad7e4bf535.png" /> 
-Easy Hexo</h1>
+Easy Hexo <img height="30" width="30" src="https://i.loli.net/2018/10/20/5bcad7e4bf535.png" /> 
+</h1>
 
 <br />
 
