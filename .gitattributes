@@ -1,2 +1,2 @@
-*.bat linguist-language=markdown
-*.html linguist-language=markdown
+*.bat linguist-language=md
+*.html linguist-language=md
