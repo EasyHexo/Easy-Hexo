@@ -1,4 +1,5 @@
-<div align="center"><img src="https://i.loli.net/2018/10/18/5bc852dfd5270.jpg" alt="Icon Badge" width="40%" /></div>
+<div align="center"><img src="https://i.loli.net/2018/10/21/5bcbcb5e32011.jpg" alt="Icon Badge" width="40%" /></div>
+<!-- the old image URL is https://i.loli.net/2018/10/18/5bc852dfd5270.jpg -->
 
 <h1 align="center">
 <img height="28" width="28" src="https://i.loli.net/2018/10/20/5bcad7e4bf535.png" /> 
