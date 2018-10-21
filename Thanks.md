@@ -12,7 +12,7 @@
 - Hun Dean
 - [Markjuruo](https://markjuruo.ooo/) 
 - [MonoLogueChi](https://www.xxwhite.com/)
-- [moshiyeap](https://liujunzhou.cn/)
+- [MoshiYeap](https://MoshiYeap.github.io/)
 - [SpencerWoo](https://spencerwoo.com/) 提醒注意版权问题
 - [StaunchKai](https://staunchkai.com/)
 - [yi-yun](https://yi-yun.github.io)
