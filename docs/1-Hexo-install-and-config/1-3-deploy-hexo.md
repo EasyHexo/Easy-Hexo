@@ -297,9 +297,9 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 待补充，如果有问题，请给我[发邮件](mailto:liu.junzhou@hotmail.com)
 
 本文由[MoshiYeap撰写](https://liujunzhou.cn),采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
+
 ## 引用列表
 
-- [Git Documentation](https://git-scm.com/doc)
 - [Hexo 快速、简洁且高效的博客框架](https://hexo.io/zh-cn/)
 - [hexo部署到centos服务器上](https://www.jianshu.com/p/59eeb1493a45)
 - [Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
