@@ -9,4 +9,4 @@ title: Hexo 安装与配置
 
 [1-2 安装 Hexo](/1-Hexo-install-and-config/1-2-install-hexo.html)
 
-[1-3 Hexo 提交网站](/1-Hexo-install-and-config/1-2-install-hexo.html)
+[1-3 部署 Hexo](/1-Hexo-install-and-config/1-3-deploy-hexo.html)

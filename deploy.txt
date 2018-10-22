@@ -1,6 +1,7 @@
 npm run docs:build
 cd docs\.vuepress\dist
 git init
+git remote add origin git@github.com:EasyHexo/Easy-Hexo.git
 git add .
 git commit -m ":clap: Deploy site"
 git push -f git@github.com:EasyHexo/Easy-Hexo.git master:gh-pages
