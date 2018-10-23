@@ -14,11 +14,11 @@ title: 部署 Hexo
 ## 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
 
 ```shell 文件位置 你的 Hexo 站点目录
-npm install hexo-deployer-git --save
-npm install hexo-server --save
+$ npm install hexo-deployer-git --save
+$ npm install hexo-server --save
 ```
 
-## 配置站点 _config.yml 文件
+## 配置站点 `_config.yml` 文件
 
 ```yml
 deploy:
@@ -28,16 +28,16 @@ deploy:
   message: [message] # 提交信息可以自定义，不填的话默认为提交时间
 ```
 
-## 发布到 Github、
+## 发布到 Github
 
 在你的Hexo站点根目录下，执行如下命令即可发布到GithubPage上。
->`hexo clean && hexo d -g`
+>`$ hexo clean && hexo d -g`
 
 ## 自定义域名
 
 Step1. 如果你拥有域名，请将你的域名解析指向以下IP地址中的任意一个
 
-```shell
+```yml
 185.199.108.153
 185.199.109.153
 185.199.110.153
@@ -60,7 +60,7 @@ Step3. 勾选 Custom domain 选项下的 Enforce HTTPS选项，开启 Https 服�
 
 # 部署到 CentOS Servers
 
-## 准备工作
+## 预先准备
 
 - 确保你的 PC 已经安装好 Hexo 主程序的并且生成站点文件夹。安装 Hexo，请参阅[Hexo文档](https://hexo.io/zh-cn/docs/)
 - 一台搭载CenOS 7.4 64bit的ECS服务器实例，其他Linux系统也可以
@@ -68,12 +68,12 @@ Step3. 勾选 Custom domain 选项下的 Enforce HTTPS选项，开启 Https 服�
 
 ## 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
 
-```shell 文件位置 你的 Hexo 站点目录
-npm install hexo-deployer-git --save
-npm install hexo-server --save
+```npm
+$ npm install hexo-deployer-git --save
+$ npm install hexo-server --save
 ```
 
-*更多内容请阅读[Hexo文档](https://hexo.io/zh-cn/docs/)*
+>*更多内容请阅读[Hexo文档](https://hexo.io/zh-cn/docs/)*
 
 ## 服务器环境配置
 
@@ -96,14 +96,13 @@ npm install hexo-server --save
 
 我们在使用SSH访问服务器时每一次连接都需要验证相应用户的密码，十分繁琐，所以我们通过一组密匙来进行授权访问。
 在`Git Bash`中使用`ssh-keygen`命令在你的电脑上生成一组密匙，这个过程中`ssh-keygen`会确认密钥的存储位置（Windows下默认是 `c:users/username/.ssh/id_rsa`），然后它会要求你输入两次密钥口令。如果你不想在使用密钥时输入口令，将其留空。
->`ssh-keygen`
+>`$ ssh-keygen`
 
 使用`ssh-copy-id -i`命令将公钥也就是`id_rsa.pub`添加到服务器上。这个过程中需要验证你所添加的用户的密码，如果你的服务器上存在多个用户，你需要逐一添加。添加完成后可以通过`ssh your_user_name@HostIP`命令来验证是否添加成功。
 
-```shell
-ssh-copy-id -i ~/.ssh/id_rsa.pub your_user_name@HostIP  //添加公钥
-ssh your_user_name@HostIP //验证是否添加成功
-```
+>`$ ssh-copy-id -i ~/.ssh/id_rsa.pub your_user_name@HostIP`  //添加公钥
+
+>`$ ssh your_user_name@HostIP` //验证是否添加成功
 
 ### 禁止git用户Shell登陆权限
 
@@ -118,7 +117,7 @@ ssh your_user_name@HostIP //验证是否添加成功
 
 检查`/etc/ssh/sshd_config`文件，确认以下关键选项是否正常
 
-```conf 文件位置 ~/etc/ssh/sshd_config
+```yml 文件位置 ~/etc/ssh/sshd_config
 RSAAuthentication yes
 PubkeyAuthentication yes
 AuthorizedKeysFile      .ssh/authorized_keys
@@ -226,8 +225,8 @@ server {
         ssl_certificate_key "/etc/pki/tls/certs/CA.key";
         ssl_session_cache shared:SSL:1m;
         ssl_session_timeout  10m;
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #按照这个协议配置
-        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;#按照这个套件配置
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #按照此协议配置
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;#按照此套件配置
         ssl_prefer_server_ciphers on;
 
         # Load configuration files for the default server block.
@@ -263,7 +262,7 @@ deploy:
 ### 发布站点
 
 在你的Hexo站点根目录下，执行如下命令即可发布你的站点到服务器上。
->`$hexo clean && hexo d -g`
+>`$ hexo clean && hexo d -g`
 
 ## 其他问题
 ### Hooks失效
@@ -293,14 +292,3 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 	remote = ueser_name@HostIP:/var/repo/blog.git
 	merge = refs/heads/master
 ```
-
-待补充，如果有问题，请给我[发邮件](mailto:liu.junzhou@hotmail.com)
-
-本文由[MoshiYeap撰写](https://liujunzhou.cn),采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
-
-## 引用列表
-
-- [Hexo 快速、简洁且高效的博客框架](https://hexo.io/zh-cn/)
-- [hexo部署到centos服务器上](https://www.jianshu.com/p/59eeb1493a45)
-- [Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
-- [Markdown 语法说明 (简体中文版)](https://www.appinn.com/markdown/)
