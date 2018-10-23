@@ -17,7 +17,7 @@ title: 安装 Hexo
 - Linux (Ubuntu, Debian)：`sudo apt-get install git-core`
 - Linux (Fedora, Red Hat, CentOS)：`sudo yum install git-core`
 
-::: tip
+:::tip
 由于众所周知的原因，从上面的链接下载git for windows最好挂上一个代理，否则下载速度十分缓慢。也可以参考[这个页面](https://github.com/waylau/git-for-win)，收录了存储于百度云的下载地址。
 :::
 
