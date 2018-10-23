@@ -27,15 +27,21 @@ title: 安装 Hexo
 
 cURL:
 
->`$ curl https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh`
+```
+$ curl https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh
+```
 
 Wget:
 
->`$ wget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh`
+```
+$ wget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh
+```
 
 安装完成后，重启终端并执行下列命令即可安装 Node.js。
 
->`$ nvm install stable`
+```
+$ nvm install stable
+```
 
 或者您也可以下载 [安装程序](http://nodejs.org/) 来安装。
 
@@ -47,4 +53,6 @@ Wget:
 ## 安装 Hexo
 
 安装好后，即可使用 npm 完成 Hexo 的安装。
->`$ npm install -g hexo-cli`
+```
+$ npm install -g hexo-cli`
+```
