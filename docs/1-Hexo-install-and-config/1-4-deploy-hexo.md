@@ -85,28 +85,24 @@ $ npm install hexo-server --save
 
 #### 更新服务器的软件包
 
+```bash
+yum -y update
 ```
-> yum -y update
-```
-
 #### 安装 Git
 
+```bash
+yum install git -y
 ```
-> yum install git -y
-```
-
 #### 新建 Git 用户
 
+```bash
+useradd -m git
 ```
-> useradd -m git
-```
-
 #### 设置 gituser 的密码
 
+```bash
+passwd git
 ```
-> passwd git
-```
-
 #### 配置 SSH 免密登陆
 
 我们在使用 SSH 访问服务器时每一次连接都需要验证相应用户的密码，十分繁琐，所以我们通过一组密匙来进行授权访问。
@@ -171,8 +167,8 @@ chown -R git:git blog.git
 
 使用 vim 命令在 `/var/repo/blog.git/hooks` 目录下创建 `post-receive` 文件
 
-```
-> vim /var/repo/blog.git/hooks/post-receive
+```bash
+vim /var/repo/blog.git/hooks/post-receive
 ```
 
 并且在 `post-receive` 文件中写入以下内容
@@ -184,8 +180,8 @@ git --work-tree=/home/www/hexo --git-dir=/var/repo/blog.git checkout -f
 
 提升 `post-receive` 的可执行权限
 
-```
-> chmod +x /var/repo/blog.git/hooks/post-receive
+```bash
+chmod +x /var/repo/blog.git/hooks/post-receive
 ```
 
 #### 安装 Nginx
