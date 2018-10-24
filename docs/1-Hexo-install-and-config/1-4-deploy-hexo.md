@@ -278,7 +278,6 @@ deploy:
   branch: master
   message:
 ```
-
 #### 发布站点
 
 在你的 Hexo 站点根目录下，执行如下命令即可发布你的站点到服务器上。
