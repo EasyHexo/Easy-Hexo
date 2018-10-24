@@ -33,6 +33,10 @@ module.exports = {
             {
                 text: '部署 Hexo',
                 link: '/1-Hexo-install-and-config/1-4-deploy-hexo.html'
+            },
+            {
+                text: '持续集成 CI',
+                link: '/1-Hexo-install-and-config/1-5-continuous-integration.html'
             }
         ]
 
@@ -75,7 +79,8 @@ module.exports = {
             '1-1-meet-hexo.html',
             '1-2-install-hexo.html',
             '1-3-config-hexo.html',
-            '1-4-deploy-hexo.html'
+            '1-4-deploy-hexo.html',
+            '1-5-continuous-integration.html'
         ],
         '/2-Theme-use-and-config/': [
             //'/',

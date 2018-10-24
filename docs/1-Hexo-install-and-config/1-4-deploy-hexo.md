@@ -32,7 +32,7 @@ deploy:
 
 ### 发布到 Github
 
-在你的 Hexo 站点根目录下，执行如下命令即可发布到 GithubPage 上。
+在你的 Hexo 站点根目录下，执行如下命令即可发布到 Github Pages 上。
 
 ```
 $ hexo clean && hexo d -g
