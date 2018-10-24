@@ -8,5 +8,5 @@ git push -f git@github.com:EasyHexo/Easy-Hexo.git master:gh-pages
 git push -f git@git.dev.tencent.com:ChungZH/Easy-Hexo.git master
 cd ../../../ 
 git add .
-git commit -m ":memo: Add TODO"
+git commit -m ":memo: Add new posts"
 git push origin master
