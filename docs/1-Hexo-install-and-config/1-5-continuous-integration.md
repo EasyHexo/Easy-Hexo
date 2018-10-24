@@ -180,9 +180,4 @@ git push
 
 这样，在每次我们将博客的源文件通过 `git` 推送到 GitHub 的 `hexo` 分支上后，Travis CI 就会自动检测并主动开始构建我们的博客静态文件，并自动部署到 GitHub Pages 中。
 
-除了方便部署，我们同时还在 GitHub 上面成功开启了我们博客源代码的备份，一箭双雕。
-
-## 参考资料
-
-- [持续集成 - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/%E6%8C%81%E7%BA%8C%E6%95%B4%E5%90%88)
-- [itfanr - 使用 Travis CI 自动部署 Hexo 博客](https://www.itfanr.cc/2017/08/09/using-travis-ci-automatic-deploy-hexo-blogs/)
+除了方便部署，我们同时还在 GitHub 上面成功开启了我们博客源代码的备份，一箭双雕。👷
