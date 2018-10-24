@@ -6,10 +6,10 @@ title: 部署 Hexo
 
 ## 准备工作
 
-1.如果没有账号，请点此前往[Github](github.com)注册一个Github账号。
+1. 如果没有账号，请点此前往 [Github](github.com) 注册一个Github账号。
 
-2.新建一个公开仓库仓库名格式为 `your_username.github.io`例如你的 Github 用户名是`easyhexo`，那么你的仓库地址名称就应该是`easyhexo.github.io`
-3.创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为`https://github.com/your_username/your_reponame.git` 在下一步会用到。
+2. 新建一个公开仓库仓库名格式为 `your_username.github.io` 例如你的 Github 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
+3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
 
 ## 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
 
@@ -46,16 +46,23 @@ $ hexo clean && hexo d -g
 185.199.111.153
 ```
 
-|选项|记录类型|主机记录|解析路线|记录值|MAX优先|时间|
-|:-:| :-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|DNS|A|@|默认|185.199.111.153|--|600|
-|URL|CNAME|@|默认|your_githubpage_repo_name|--|600|
+以下为参考表格：
+
+| 选项 | 记录类型 | 主机记录 | 解析路线 | 记录值                    | MAX优先 | 时间 |
+| ---- | -------- | -------- | -------- | ------------------------- | ------- | ---- |
+| DNS  | A        | @        | 默认     | 185.199.111.153           |         | 600  |
+| URL  | CMAME    | @        | 默认     | your_githubpage_repo_name |         | 600  | 
+
+
+
 2. 打开仓库设置,找到 GitHub Pages 项目，修改 Custom domain 选项的值为你的自定义域名（不带 http 等前缀）
 3. 勾选 Custom domain 选项下的 Enforce HTTPS 选项，开启 Https 服务。
 
 # 部署到 Coding（dev.tencent.com）
 
-部署到 Coding 的方法和部署到 Github 的方法类似，只不过域名解析指向你的 coding page 地址而已。同时 Coding 在国内的访问速度会比较快。
+部署到 Coding 的方法和部署到 Github 的方法类似，只不过域名解析指向你的 Coding page 地址而已。同时 Coding 在国内的访问速度会比较快。
+
+可以看看 Coding 官方文档，有绑定域名教程。
 
 # 部署到 CentOS Servers
 
