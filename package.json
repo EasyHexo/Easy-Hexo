@@ -1,7 +1,7 @@
 {
-  "name": "Easy-Hexo",
+  "name": "easy-hexo",
   "version": "2.0.0",
-  "description": "????? Easy Hexo",
+  "description": "🤘 Build your own website with Hexo, the easy way.",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
