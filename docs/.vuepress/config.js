@@ -71,7 +71,14 @@ module.exports = {
         link: '/4-High-order-hexo-gamer/'
     }, {
         text: '补充内容',
-        link: '/5-Add/'
+        items: [{
+            text: '概要',
+            link: '/5-Add/'        
+        },
+        {
+            text: '参考资料',
+            link: '/5-Add/5-1-quote.html'
+        }]
     }],
     sidebar: {
         '/1-Hexo-install-and-config/': [
@@ -97,7 +104,8 @@ module.exports = {
             ''
         ],
         '/5-Add/': [
-            ''
+            '',
+            '5-1-quote.html'
         ]
     }
 }
