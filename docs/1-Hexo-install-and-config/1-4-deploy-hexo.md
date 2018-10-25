@@ -172,7 +172,7 @@ vim /var/repo/blog.git/hooks/post-receive
 
 并且在 `post-receive` 文件中写入以下内容
 
-```sh
+```bash
 #!/bin/sh
 git --work-tree=/home/www/hexo --git-dir=/var/repo/blog.git checkout -f
 ```
