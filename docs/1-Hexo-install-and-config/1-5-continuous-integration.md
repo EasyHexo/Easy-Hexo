@@ -3,7 +3,7 @@ title: 持续集成
 sidebarDepth: 4
 ---
 
-# 持续集成 Continous Integration
+# 持续集成 Continuous Integration
 
 :::tip
 利用 Travis CI 将 Hexo 持续集成部署到 GitHub Pages. 👷
