@@ -13,7 +13,7 @@ features:
 footer: © Easy Hexo. Released under the CC BY-NC-ND 4.0 International License.
 ---
 
-[![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/spencerwoo98/Dev-on-Windows-with-WSL)
+[![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/EasyHexo/Easy-Hexo)
 ![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)
 
 
