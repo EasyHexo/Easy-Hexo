@@ -1,0 +1,45 @@
+language: node_js
+
+# VuePress v0.x need node.js version 10 and above. - @SpencerWoo
+node_js: 
+  - "10"
+
+env:
+  - CXX=g++-4.8
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+
+# Cache node_modules for faster build. - @SpencerWoo
+cache: 
+  directories: 
+    - "node_modules"
+
+before_install: 
+  - export TZ='Asia/Shanghai'
+
+install: 
+  - npm install -g vuepress
+
+script:
+  - npm run docs:build
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: docs/.vuepress/dist
+  name: $GIT_NAME
+  email: $GIT_EMAIL
+  keep-history: true
+  target-branch: gh-pages
+  on:
+    branch: master
