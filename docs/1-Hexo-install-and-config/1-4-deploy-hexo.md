@@ -63,7 +63,7 @@ $ hexo clean && hexo d -g
 
 部署到 Coding 的方法和部署到 Github 的方法类似，只不过域名解析指向你的 Coding page 地址而已。同时 Coding 在国内的访问速度会比较快。
 
-可以看看 Coding 官方文档，有绑定域名教程。
+可以看看 [Coding 官方文档](https://dev.tencent.com/help/) ，有绑定域名教程。
 
 ## 部署到 CentOS Servers
 
