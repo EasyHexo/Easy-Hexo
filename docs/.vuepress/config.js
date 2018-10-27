@@ -61,6 +61,10 @@ module.exports = {
                 {
                     text: 'Hexo-theme-apollo',
                     link: '/2-Theme-use-and-config/2-4-hexo-theme-apollo/'
+                },
+                {
+                    text: 'Hexo-theme-material',
+                    link: '/2-Theme-use-and-config/2-5-hexo-theme-material/'
                 }
             ]
         }, {
@@ -96,7 +100,8 @@ module.exports = {
                 '2-1-hexo-theme-next-5.x.x/',
                 '2-2-hexo-theme-next-6.x.x/',
                 '2-3-hexo-theme-yilia/',
-                '2-4-hexo-theme-apollo/'
+                '2-4-hexo-theme-apollo/',
+                '2-5-hexo-theme-material/'
             ],
             '/3-Plugins-use-and-config/': [
                 ''

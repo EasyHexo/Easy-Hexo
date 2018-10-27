@@ -4,6 +4,9 @@ title: 部署 Hexo
 
 # 部署 Hexo
 
+[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
+[![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](mailto:liu.junzhou@hotmail.com)
+
 ## 部署到 Github
 
 ### 准备工作
@@ -24,9 +27,9 @@ $ npm install hexo-server --save
 
 ```yaml
 deploy:
-  type: git   #类型填git
-  repo: <repository url> #你的Github仓库地址
-  branch: [branch]  #分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。
+  type: git   # 类型填git
+  repo: <repository url> # 你的Github仓库地址
+  branch: [branch]  # 分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。
   message: [message] # 提交信息可以自定义，不填的话默认为提交时间
 ```
 
@@ -69,9 +72,9 @@ $ hexo clean && hexo d -g
 
 ### 预先准备
 
-- 确保你的 PC 已经安装好 Hexo 主程序的并且生成站点文件夹。安装 Hexo，请参阅[Hexo文档](https://hexo.io/zh-cn/docs/)
-- 一台搭载CenOS 7.4 64bit的ECS服务器实例，其他Linux系统也可以
-- 你至少应该掌握一丢丢的Linux命令
+- 确保你的 PC 已经安装好 Hexo 主程序的并且生成站点文件夹。安装 Hexo，请参阅[安装 Hexo](/1-Hexo-install-and-config/1-2-install-hexo.html)
+- 一台搭载 CenOS 7.4 64bit 的 ECS 服务器实例，其他Linux系统也可以
+- 你至少应该掌握一丢丢的 Linux 命令
 
 ### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
 
