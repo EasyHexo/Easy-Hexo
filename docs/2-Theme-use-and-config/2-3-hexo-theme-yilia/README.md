@@ -1,10 +1,9 @@
 ---
 title: Hexo-theme-yilia
 ---
-
-2018-10-27日更新，未完成
-
 # Hexo-theme-yilia
+
+State: writing.
 
 Hexo-theme-yilia 是一个优秀的Hexo主题，由[ @Litten ](https://litten.me/)开发，受到了广大 Hexo 使用者的欢迎。  
 
