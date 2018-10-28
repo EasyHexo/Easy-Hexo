@@ -12,7 +12,6 @@ title: 部署 Hexo
 ### 准备工作
 
 1. 如果没有账号，请点此前往 [Github](github.com) 注册一个Github账号。
-
 2. 新建一个公开仓库仓库名格式为 `your_username.github.io` 例如你的 Github 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
 3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
 
@@ -29,9 +28,22 @@ $ npm install hexo-server --save
 deploy:
   type: git   # 类型填git
   repo: <repository url> # 你的Github仓库地址
-  branch: [branch]  # 分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。
-  message: [message] # 提交信息可以自定义，不填的话默认为提交时间
+  branch: master  # 分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。
+  message:  # 提交信息可以自定义，不填的话默认为提交时间
 ```
+
+### 配置 Git
+
+为了避免不必要的问题，这里设置一下 Git 。
+
+下面 `<Your Name>` 填你自己的 Github 用户名。`<youremail@example.com>` 填你注册 Github 的邮箱。
+
+```bash
+git config --global user.name "<Your Name>"  
+git config --global user.email "<youremail@example.com>"
+```
+
+
 
 ### 发布到 Github
 
@@ -40,6 +52,10 @@ deploy:
 ```
 $ hexo clean && hexo d -g
 ```
+
+:::tip
+如果是第一次使用，会弹出一个登录框，需要登陆你的 Github 账号。
+:::
 
 ### 自定义域名
 1. 如果你拥有域名，请将你的域名解析指向以下 IP 地址中的任意一个
