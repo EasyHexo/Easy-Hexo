@@ -10,11 +10,13 @@
 
 - [Anoyer](https://anoyer.cn/)
 - Hun Dean
+- [ffdy](https://ffdy.github.io/)
 - [Markjuruo](https://markjuruo.ooo/) 
 - [MonoLogueChi](https://www.xxwhite.com/)
 - [MoshiYeap](https://MoshiYeap.github.io/)
 - [SpencerWoo](https://spencerwoo.com/)
 - [StaunchKai](https://staunchkai.com/)
+- [weijunzi](https://weijunzii.github.io/)
 - [yi-yun](https://yi-yun.github.io/)
 - [yixiaomie](https://daiwen.me/)
 
