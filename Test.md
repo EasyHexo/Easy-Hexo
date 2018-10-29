@@ -8,7 +8,7 @@
 [yi-yun](https://yi-yun.github.io/)
 你们可以在这个文档里瞎搞
 
-测试
+测试 sp是不是 owner
 
 助记命令
 - ```yarn docs:dev``` 或者：```npm run docs:dev```
