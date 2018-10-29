@@ -7,12 +7,12 @@ title: 部署 Hexo
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](mailto:liu.junzhou@hotmail.com)
 
-## 部署到 Github
+## 部署到 GitHub
 
 ### 准备工作
 
-1. 如果没有账号，请点此前往 [Github](github.com) 注册一个 Github 账号。
-2. 新建一个公开仓库仓库名格式为 `your_username.github.io` 例如你的 Github 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
+1. 如果没有账号，请点此前往 [GitHub](gitHub.com) 注册一个 GitHub 账号。
+2. 新建一个公开仓库仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
 3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
 
 ### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
@@ -36,7 +36,7 @@ deploy:
 
 为了避免不必要的问题，这里设置一下 Git 。
 
-下面 `<Your Name>` 填你自己的 Github 用户名。`<youremail@example.com>` 填你注册 Github 的邮箱。
+下面 `<Your Name>` 填你自己的 GitHub 用户名。`<youremail@example.com>` 填你注册 GitHub 的邮箱。
 
 ```bash
 git config --global user.name "<Your Name>"  
@@ -45,16 +45,16 @@ git config --global user.email "<youremail@example.com>"
 
 
 
-### 发布到 Github
+### 发布到 GitHub
 
-在你的 Hexo 站点根目录下，执行如下命令即可发布到 Github Pages 上。
+在你的 Hexo 站点根目录下，执行如下命令即可发布到 GitHub Pages 上。
 
 ```
 $ hexo clean && hexo d -g
 ```
 
 :::tip
-如果是第一次使用，会弹出一个登录框，需要登陆你的 Github 账号。
+如果是第一次使用，会弹出一个登录框，需要登陆你的 GitHub 账号。
 :::
 
 ### 自定义域名
@@ -80,7 +80,7 @@ $ hexo clean && hexo d -g
 
 ## 部署到 Coding（dev.tencent.com）
 
-部署到 Coding 的方法和部署到 Github 的方法类似，只不过域名解析指向你的 Coding page 地址而已。同时 Coding 在国内的访问速度会比较快。
+部署到 Coding 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 Coding page 地址而已。同时 Coding 在国内的访问速度会比较快。
 
 可以看看 [Coding 官方文档](https://dev.tencent.com/help/) ，有绑定域名教程。
 

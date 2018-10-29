@@ -22,11 +22,15 @@ mkdir <your_blog_name>  # 建立你的网站根目录，名字可以自己修改
 hexo init <your_blog_name>
 ```
 
-这样就建立好了！
+这样就建立好网站了！
 
 ## 配置 Hexo
 
 没错，就是在 Hexo 根目录 `_config.yml` 这个文件里配置！
+
+:::warning
+在 YAML 语法中，冒号后面必须要有一个空格才能继续写下去。
+:::
 
 ### 网站
 

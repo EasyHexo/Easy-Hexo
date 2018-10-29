@@ -11,7 +11,7 @@ Hexo 使用 Node.js 编写。得益于 Node.js，使得 Hexo 生成上百个页�
 
 ## 支持 Markdown
 
-Hexo 支持 GFM (GitHub Flavored Markdown ) 的大部分功能。如果你不喜欢 Markdown ，你还可以换一个 Hexo 渲染插件。
+Hexo 支持 GFM (GitHub Flavored Markdown) 的大部分功能。如果你不喜欢 Markdown ，你还可以换一个 Hexo 渲染插件。
 
 ## 部署方便
 

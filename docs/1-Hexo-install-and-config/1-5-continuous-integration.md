@@ -10,6 +10,8 @@ sidebarDepth: 4
 
 :::tip
 利用 Travis CI 将 Hexo 持续集成部署到 GitHub Pages. 👷
+
+（当你觉得有必要提高部署效率时，才使用 CI。萌新可略过。）
 :::
 
 ## 什么是持续集成？
