@@ -22,6 +22,18 @@ $ npm install hexo-deployer-git --save
 $ npm install hexo-server --save
 ```
 
+### 配置 Git
+
+如果你只是安装好了 Git 但没有配置过你的 Git ，那么现在需要做的第一件事情就是设置你的 Git 用户名和邮箱。
+在GitBash中执行以下两条命令配置你的用户名和邮箱，这里建议用户名和邮箱与你的 GitHub 用户名和邮箱保持一致。
+
+```bash
+$ git config --global user.name "Your_name"
+$ git config --global user.email Your_email@example.com
+```
+::: Git 小知识
+每次 Git 提交时都会附带这两条信息，用于记录是谁提交的更新，并且会随更新内容一起被记录到历史记录中。简单说，是用来标记的你的身份的~
+:::
 ### 配置站点 `_config.yml` 文件
 
 ```yaml
@@ -31,19 +43,6 @@ deploy:
   branch: master  # 分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。
   message:  # 提交信息可以自定义，不填的话默认为提交时间
 ```
-
-### 配置 Git
-
-为了避免不必要的问题，这里设置一下 Git 。
-
-下面 `<Your Name>` 填你自己的 Github 用户名。`<youremail@example.com>` 填你注册 Github 的邮箱。
-
-```bash
-git config --global user.name "<Your Name>"  
-git config --global user.email "<youremail@example.com>"
-```
-
-
 
 ### 发布到 Github
 
