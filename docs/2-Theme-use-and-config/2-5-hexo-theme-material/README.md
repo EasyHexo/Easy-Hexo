@@ -9,7 +9,7 @@ State: writing.
 [![](https://img.shields.io/badge/Author-ffy-800080.svg?longCache=true&style=flat-square)](https://github.com/ffdy)
 
 :::tip
-注意，这里介绍的 Material 主题是 1.5.2 的版本，新手不建议使用最新的版本，因为好像有很多 Bug（作者最近失联了）
+注意，这里介绍的 Material 主题是 1.5.2 的版本，不建议新手使用最新的版本，因为好像有很多 Bug（作者最近失联了）
 :::
 
 [Material 主题地址](https://github.com/viosey/hexo-theme-material)
@@ -113,13 +113,13 @@ $ hexo s
 ![icPW9A.png](https://s1.ax1x.com/2018/10/27/icPW9A.png)
 ![icP2hd.png](https://s1.ax1x.com/2018/10/27/icP2hd.png)
 
-点片文章试试，如果没问题，那么恭喜你！
+点篇文章试试，如果没问题，那么恭喜你！
 :tada: :tada: :tada: :tada:
 
 ## Material 主题配置
 
-附录有原版`主题_config.yml`代码，防止出现问题。
-回到主题文件夹，打开`主题_config.yml`文件<br>
+附录有原版`主题 _config.yml `代码，防止出现问题。
+回到主题文件夹，打开`主题 _config.yml `文件<br>
 看起来是不是又臭又长？不过别担心，下面会详细的讲解他们应该怎样配置
 
 **请多一点耐心和细心**
@@ -138,7 +138,7 @@ head:
 
 ![ic5c6I.png](https://s1.ax1x.com/2018/10/28/ic5c6I.png)
 
-进入主题文件下的`source/img`文件夹，将`favicon.png`替换成你的网站图标，名字可以自定义，但必须和主题配置文件中的保持一致，比如我的图标名为`F.png`：
+进入主题文件下的 `source/img` 文件夹，将 `favicon.png` 替换成你的网站图标，名字可以自定义，但必须和主题配置文件中的保持一致，比如我的图标名为 `F.png`：
 
 ![ic5bXq.png](https://s1.ax1x.com/2018/10/28/ic5bXq.png)
 
@@ -150,7 +150,7 @@ head:
 ----
 #### 2、优化 SEO
 这个设置启用后会在页面的 Head 中生成结构化数据，有助于改善 Google 等搜索引擎的 SEO <br>
-如果你在`hexo g`时出现问题，不妨尝试将其设为`false`
+如果你在 `hexo g `时出现问题，不妨尝试将其设为 `false`
 
 ```brash
     # Enable generate structured-data as JSON+LD for SEO or not.
