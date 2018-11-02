@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://i.loli.net/2018/10/18/5bc852dfd5270.jpg
+heroImage: https://i.loli.net/2018/11/02/5bdc640e5c5de.jpg
 actionText: 进入深坑 →
 actionLink: /1-Hexo-install-and-config/
 features:
@@ -70,7 +70,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 附上一个思维导图：
 
-![mind](https://i.loli.net/2018/10/20/5bcac0767a2d6.png)
+![mind](@img/1.png)
 
 # 许可
 

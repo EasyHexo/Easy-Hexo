@@ -30,7 +30,7 @@ sidebarDepth: 4
 
 然后我们到 [Travis CI 账户页面](https://travis-ci.org/account/repositories) 开启我们的博客仓库。如图。
 
-![](https://i.loli.net/2018/10/24/5bd00b108798c.png)
+![](@img/1/1-5/1.png)
 
 ## 配置文件
 
@@ -151,7 +151,7 @@ git config --global user.email
 
 如下图所示：
 
-![](https://i.loli.net/2018/10/24/5bd013ad92130.png)
+![](@img/1/1-5/2.png)
 
 最后一项 GitHub 通行证 (token) 我们在 GitHub 中进行申请：
 
@@ -159,13 +159,13 @@ git config --global user.email
 - 生成新 Token: Generate new token
 - 填入 Token 描述，并给予 Token 第一项 `repo` 的全部权限
 
-![](https://i.loli.net/2018/10/24/5bd014fd243f0.png)
+![](@img/1/1-5/3.png)
 
 - 将生成的 Token 复制，保存（生成 Token 的页面只有一次机会看见，请保存妥当。）
 
 在 Travis CI 仓库配置中，将三个变量填入设置（位于 `Settings > Environment Variables` 处并保存：
 
-![](https://i.loli.net/2018/10/24/5bd016366df7f.png)
+![](@img/1/1-5/4.png)
 
 ## 自动部署
 
