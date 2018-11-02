@@ -120,5 +120,12 @@ module.exports = {
         docsBranch: 'master',
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页'
+    },
+    configureWebpack: {
+    resolve: {
+      alias: {
+        '@img': __dirname + '/\img'
+      }
     }
+  }
 }
