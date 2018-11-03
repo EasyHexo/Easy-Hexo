@@ -5,18 +5,18 @@ title: Hexo-theme-yilia
 
 State: writing.
 
-Hexo-Yilia 是一个优秀的 Hexo 主题，由 [@Litten][1] 开发,受到了广大 Hexo 使用者的欢迎。  
-说它优秀有以下几个原因：  
-- [x] 优秀的加载速度
-- [x] 优秀的双栏设计
-- [x] 优秀的智能菜单
-- [x] 优秀的简约画面   
+Hexo-Yilia 是一个优秀的 Hexo 主题，由 [@Litten](https://litten.me) 开发,受到了广大 Hexo 使用者的欢迎。  
+
+1. 优秀的加载速度
+2. 优秀的双栏设计
+3. 优秀的智能菜单
+4. 优秀的简约画面   
 
 这样一款简约优雅的主题，能让人更加专注于文章内容。  
-所以事实上本人是不大建议魔改的，但是有一些小小的细节可以根据个人喜好进行调整。  
+所以事实上本人是不大建议魔改的，但是有一些小小的细节可以根据个人喜好进行调整。
 当然，如果您要使用这款主题，您就必须明确您是以文章为中心  
 而不是以背景和格式为中心的。
-<!--more-->
+
 
 ## 效果图  
 
@@ -35,21 +35,22 @@ markjuruo's blog (<https://markjuruo.ooo/>) >>
 ## 安装
 
 请在命令行中打开博客根目录，然后输入：
+
 ```bash
 git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 ```
 
 ## 基础配置
 
-Yilia 是一个优秀的双栏结构的主题，于是我们可以先来研究其左栏（ Left-Col ）。  
+Yilia 是一个优秀的双栏结构的主题，于是我们可以先来研究其左栏（Left-Col）。  
 让我们来了解一下 Yilia 主题 Left-Col 中有哪些可显示并且方便个人修改的组件：  
-- [x] 作者名称，Author
-- [x] 签名，Subtitle
-- [x] 头像，Avatar
-- [x] 菜单，Menu（所有文章/友链/关于我）
-- [x] 智能菜单，SmartMenu
-- [x] 联系方式，CallMe（Github/Rss/Mail/...）
-- [x] 头像后部背景，Header
+1. 作者名称，Author
+2. 签名，Subtitle
+3. 头像，Avatar
+4. 菜单，Menu（所有文章/友链/关于我）
+5. 智能菜单，SmartMenu
+6. 联系方式，CallMe（Github/Rss/Mail/...）
+7. 头像后部背景，Header
 
 极大的定制范畴使得同一款主题可以衍生出很多不同的风格。   
 
@@ -271,7 +272,7 @@ subnav:
 左侧菜单栏的下方可以添加联系方式。  
 如果前面加了`#`，就代表注释掉了，将不会显示。  
 否则，请在后面写上您相对应的联系方式的网站地址。
-比如：如果您只需要显示 GitHub 上的联系方式，并且您的 GitHub 个人主界面网址是 <https://github.com/xiaoming> ，那么您可以这样修改：
+比如：如果您只需要显示 GitHub 上的联系方式，并且您的 GitHub 个人主界面网址是 `https://github.com/xiaoming` ，那么您可以这样修改：
 ```yaml
 subnav:
   github: "https://github.com/xiaoming"
@@ -312,7 +313,7 @@ open_in_new: false
 
 `show_all_link` 即为首页每个文章右下角的展开全文的按钮，您可以按照个人喜好改变其中的内容，如改成： `show_all_link: '瞅一瞅'`  
 
-`mathjax` ，强大的数学公式渲染器。如果您经常需要用到数学公式的，请将这一段改为 `mathjax: true` 。具体的 mathjax 教程详见：<https://www.cnblogs.com/linxd/p/4955530.html>
+`mathjax` ，强大的数学公式渲染器。如果您经常需要用到数学公式的，请将这一段改为 `mathjax: true` 。具体的 mathjax 教程详见：[这里](https://www.cnblogs.com/linxd/p/4955530.html)
 
 ### 文章打赏功能
 
@@ -328,7 +329,7 @@ alipay:
 weixin: 
 ```
 这里配置文章打赏功能。
-```yml
+```yaml
 alipay: 
 weixin: 
 ```
@@ -345,7 +346,7 @@ toc_hide_index: true
 # 目录为空时的提示
 toc_empty_wording: '目录，不存在的…'
 ```
-Hexo 中的目录是根据您在 markdown 中书写的以 `#` 开头的标题来生成的。并且会根据 `#` 的个数来确定级数。
+Hexo 中的目录是根据您在 Markdown 中书写的以 `#` 开头的标题来生成的。并且会根据 `#` 的个数来确定级数。
 比如：
 ```markdown
 # title
@@ -386,5 +387,3 @@ avatar:
 share_jia: true
 ```
 应当注意的是， `avatar` 和 `favicon` 两项，都可以先把您需要的图片放到主题根目录下的 `/source/img` 文件夹中，然后再在其后填写 `/img/您保存的图片名称` 。
-
-[1]: https://litten.me
