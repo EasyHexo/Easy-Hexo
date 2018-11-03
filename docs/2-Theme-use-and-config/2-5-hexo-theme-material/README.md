@@ -16,7 +16,7 @@ State: writing.
 
 ## Material 主题演示
 
-![演示](https://camo.githubusercontent.com/1e9260f301fe915fb3e4826831fde943229523cb/68747470733a2f2f692e6c6f6c692e6e65742f323031372f30392f30372f353962313336376637366664622e706e67)
+![演示](@img/2/2-5/1.png)
 
 ## 下载 Material 主题
 
@@ -26,7 +26,7 @@ State: writing.
 
 3. 将这个文件夹放到你的博客根目录下的 themes 文件夹下。
 
-![i6XOpT.png](https://s1.ax1x.com/2018/10/27/i6XOpT.png)
+![i6XOpT.png](@img/2/2-5/2.png)
 
 ## 启用 Material 主题
 
@@ -41,12 +41,12 @@ State: writing.
 建议你将 `_config.template.yml` 文件备份，防止一些不可描述的的问题。
 :::
 
-![i6x8mQ.png](https://s1.ax1x.com/2018/10/27/i6x8mQ.png)
+![i6x8mQ.png](@img/2/2-5/3.png)
 
 回到主题根目录，用文本编辑器打开`根_config.yml`文件<br>
 找到`language`属性（我用的简体中文）
 
-![icIGE8.png](https://s1.ax1x.com/2018/10/28/icIGE8.png)
+![icIGE8.png](@img/2/2-5/4.png)
 
 有以下几项可选：
 - العَرَبِيََّّة （ar）
@@ -62,12 +62,12 @@ State: writing.
 
 分别对应 language 文件下的文件
 
-![icI0uq.png](https://s1.ax1x.com/2018/10/28/icI0uq.png)
+![icI0uq.png](@img/2/2-5/5.png)
 
 在最下面找到`theme`属性
 
-![i6zA3V.png](https://s1.ax1x.com/2018/10/27/i6zA3V.png)
-![i6Lih8.md.png](https://s1.ax1x.com/2018/10/27/i6Lih8.md.png)
+![i6zA3V.png](@img/2/2-5/6.png)
+![i6Lih8.md.png](@img/2/2-5/7.png)
 
 将后面的字段改为你刚刚改的主题文件夹的名字，比如我的`Material`。
 
@@ -86,7 +86,7 @@ $ hexo clean
 ```
 回车
 
-![icPF6P.png](https://s1.ax1x.com/2018/10/27/icPF6P.png)
+![icPF6P.png](@img/2/2-5/8.png)
 
 完美！！！:tada:
 
@@ -96,7 +96,7 @@ $ hexo g
 ```
 回车
 
-![icPQlq.png](https://s1.ax1x.com/2018/10/27/icPQlq.png)
+![icPQlq.png](@img/2/2-5/9.png)
 
 完全OK！！！:tada:
 
@@ -106,12 +106,12 @@ $ hexo s
 ```
 回车
 
-![icPqhj.png](https://s1.ax1x.com/2018/10/27/icPqhj.png)
+![icPqhj.png](@img/2/2-5/10.png)
 
 打开浏览器输入`http://localhost:4000`，即可看见你博客的样子。
 
-![icPW9A.png](https://s1.ax1x.com/2018/10/27/icPW9A.png)
-![icP2hd.png](https://s1.ax1x.com/2018/10/27/icP2hd.png)
+![icPW9A.png](@img/2/2-5/11.png)
+![icP2hd.png](@img/2/2-5/12.png)
 
 点篇文章试试，如果没问题，那么恭喜你！
 :tada: :tada: :tada: :tada:
@@ -136,11 +136,11 @@ head:
     apple_touch_icon: "/img/favicon.png" #IOS主屏按钮图标
 ```
 
-![ic5c6I.png](https://s1.ax1x.com/2018/10/28/ic5c6I.png)
+![ic5c6I.png](@img/2/2-5/13.png)
 
 进入主题文件下的 `source/img` 文件夹，将 `favicon.png` 替换成你的网站图标，名字可以自定义，但必须和主题配置文件中的保持一致，比如我的图标名为 `F.png`：
 
-![ic5bXq.png](https://s1.ax1x.com/2018/10/28/ic5bXq.png)
+![ic5bXq.png](@img/2/2-5/14.png)
 
 ```brash
     favicon: "/img/F.png" #正常网站图标
@@ -177,7 +177,7 @@ scheme: Paradox #默认样式
 默认样式就像上面的演示<br>
 极简样式像这样的：
 
-![ico9IS.png](https://s1.ax1x.com/2018/10/28/ico9IS.png)
+![](@img/2/2-5/15.png)
 
 去除了隐藏侧边栏和文章的随机图片等功能，十分简洁
 
@@ -223,17 +223,17 @@ Material 主题提供了 19 张简约图，如果你的文章没有定义缩略�
 
 进入`themes/Material/layout/_partial`文件夹，找到`Paradox-post_entry-thumbnail.ejs`和`Paradox-post-thumbnail.ejs`两个文件，用文本编辑器打开
 
-![igRfOK.png](https://s1.ax1x.com/2018/10/29/igRfOK.png)
+![](@img/2/2-5/16.png)
 
 如果你想用其他格式的图片，你可以`Ctrl+f`搜索`.png`， 把如图位置的字段改为你想使用的格式：
 
 `Paradox-post_entry-thumbnail.ejs`文件
 
-![igWipn.png](https://s1.ax1x.com/2018/10/29/igWipn.png)
+![](@img/2/2-5/17.png)
 
 `Paradox-post-thumbnail.ejs`文件
 
-![igWVmT.png](https://s1.ax1x.com/2018/10/29/igWVmT.png)
+![](@img/2/2-5/18.png)
 
 这种方法只能同时使用同种格式的图片，如果你想用不同格式的图，请自行尝试`if-else`语法，也有很多软件可以批量改格式，比如`格式工厂`
 
