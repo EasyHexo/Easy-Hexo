@@ -10,6 +10,13 @@ module.exports = {
             href: 'https://i.loli.net/2018/10/18/5bc852dfd5270.jpg'
         }]
     ],
+    configureWebpack: {
+        resolve: {
+          alias: {
+            '@alias': '/public/'
+          }
+        }
+    },
     themeConfig: {
 
         nav: [{
