@@ -8,7 +8,7 @@ State: writing.
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-ffy-800080.svg?longCache=true&style=flat-square)](https://github.com/ffdy)
 
-:::tip
+::: tip 注意
 注意，这里介绍的 Material 主题是 1.5.2 的版本，不建议新手使用最新的版本，因为好像有很多 Bug（作者最近失联了）
 :::
 
@@ -30,14 +30,14 @@ State: writing.
 
 ## 启用 Material 主题
 
-:::tip
+::: tip 注意
 这里有两个 `_config.yml` 文件，一个位于博客根目录，另一个位于主题文件夹下，下面分别叫他们`根 _config.yml `文件和`主题 _config.yml `文件。
 :::
 
 进入 Material 文件夹，将`_config.template.yml` 重命名为 `_config.yml`
 （这个 `_config.yml` 文件是 `主题_config.yml` 文件）
 
-:::tip
+::: tip 注意
 建议你将 `_config.template.yml` 文件备份，防止一些不可描述的的问题。
 :::
 
@@ -71,7 +71,7 @@ State: writing.
 
 将后面的字段改为你刚刚改的主题文件夹的名字，比如我的`Material`。
 
-:::tip
+::: tip 注意
 
 在 yml 中，冒号后面必须加一个空格，否则会报错。
 
@@ -196,6 +196,9 @@ uiux:
     nprogress_color: "#29d" #顶部加载进度条颜色
     nprogress_buffer: "800" #精度条的缓冲时间
 ```
+
+----
+
 #### 3、页面的 Js 效果
 ```brash
 # JS Effect Switches
@@ -203,12 +206,16 @@ js_effect:
     fade: true #页面加载时部分模块的渐显效果
     smoothscroll: false #页面平滑滚动特效
 ```
+----
+
 #### 4、文章摘要字数
 ```brash
 # Reading experience
 reading:
     entry_excerpt: 80 #首页文章摘要字数
 ```
+----
+
 #### 5、文章缩略图
 ```brash
 # Thumbnail Settings
@@ -225,7 +232,7 @@ Material 主题提供了 19 张简约图，如果你的文章没有定义缩略�
 
 ![igRfOK.png](https://s1.ax1x.com/2018/10/29/igRfOK.png)
 
-如果你想用其他格式的图片，你可以`Ctrl+f`搜索`.png`， 把如图位置的字段改为你想使用的格式：
+如果你想用其他格式的图片，你可以`Ctrl+f`搜索`.png`， 把如图位置的字段改为你想使用的格式（推荐使用`.jpg`格式，比较小，加载较快）：
 
 `Paradox-post_entry-thumbnail.ejs`文件
 
@@ -245,4 +252,392 @@ Material 主题提供了 19 张简约图，如果你的文章没有定义缩略�
 > 选中你想用的 n 张图
 > 选择一个重命名，假设你输入了 Material，回车
 
-你会发现这 n 张图的名字变成了`Material (x).png`，x 是 1~n，并且括号前多了一个空格
+你会发现这 n 张图的名字变成了`Material (x).jpg`，x 是 1~n，并且括号前多了一个空格
+
+这时我们还要修改一下相关配置，上面的两个文件相同的的位置改为：
+
+`Paradox-post-thumbnail.ejs`文件
+
+![ihH1eg.png](https://s1.ax1x.com/2018/11/02/ihH1eg.png)
+
+`Paradox-post_entry-thumbnail.ejs`文件
+
+![ihH3wQ.png](https://s1.ax1x.com/2018/11/02/ihH3wQ.png)
+
+另外`主题_config.yml`文件`img`字段中改为：
+
+![ihbe74.png](https://s1.ax1x.com/2018/11/02/ihbe74.png)
+
+::: tip 注意
+如果你按如上方法命名，箭头所指的空格一定要有。其他的命名方式大体一致。
+:::
+
+----
+
+#### 6、各种图片位置
+```brash
+# Images Settings
+img:
+    logo: "/img/logo.png" #标志
+    avatar: "/img/avatar.png" #头像
+    daily_pic: "/img/daily_pic.png" #标语背景
+    sidebar_header: "/img/sidebar_header.png" #侧边栏头像背景
+    #random_thumbnail: "/img/random/material-" #这里是原来的
+    random_thumbnail: "/img/random/material (" #文章随机缩略图
+    footer_image: #侧边栏底部图片
+        upyun_logo: #以又拍云为例
+            link: "https://www.upyun.com/" #点击链接
+            src: "/img/upyun_logo.svg" #图标
+```
+这里所有的图片均放在`themes/Material/source/img``，你可以替换它们，并将如上配置相应改变。
+
+文章随机缩略图按上一栏配置
+
+![ihj7tg.png](https://s1.ax1x.com/2018/11/02/ihj7tg.png)
+
+----
+
+#### 7、字体
+```brash
+# Custom Fonts
+#    family: the font-family which will be used in the theme
+#    use: uri of fonts host.
+#        Available value: google | baomitu | ustc | custom | catnet
+#        - When you set as 'custom', you should fill in the value of 'custom_font_host', which should be a mirror of google fonts.
+#        - If you have setup your custom font-family, don't forget to add style tag with @font-face or link.tag with font css
+#          to /source/data/head.yml as custom code, to load custom font files.
+fonts:
+    family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+    use: google
+    custom_font_host:
+```
+----
+#### 8、文章卡片阴影
+```brash
+# Card Elevation Level
+card_elevation: 2 #请自行改变数值
+```
+----
+
+### 三、自定义设置
+#### 1、站点成立时间
+```brash
+# Copyright
+# Specify the date when the site was setup.
+#    For example, if you set it as 2015, then footer will show '© 2015 - 2018'
+copyright_since: 2015
+```
+如果设为 2015，他会显示`© 2015 - 2018`，如果不设，只会显示当前`2018`年
+
+```brash
+# Footer Text
+# You can specify the text you want to show in footer, HTML tag is supported.
+#   For example, you can setup ICP license number as:
+#       '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>'
+footer_text: <a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>
+```
+页底显示的信息格式应与上面的例子一样
+
+![ihv6bV.png](https://s1.ax1x.com/2018/11/02/ihv6bV.png)
+
+----
+#### 2、二维码
+```brash
+# Qrcode for redirect at other device
+#    use: choose which method to generate the qrcode for each posts.
+#        Available value: plugin | online
+#            - When use "plugin", you need to install the hexo-helper-qrcode.
+#            - When use "online", the qrcode will be generated by 'pan.baidu.com' in China.
+qrcode:
+    enable: false #是否启用
+    use: plugin #生成方式，可选的有：plugin | online
+```
+
+用于在文章页中显示二维码，扫描二维码即可直接打开文章。
+
+当 use 设置为 plugin 时，你需要安装`hexo-helper-qrcode`插件，在博客根目录下打开 Git
+```brash
+$ npm install hexo-helper-qrcode --save 
+```
+
+当 use 设置为 online 时，二维码将会由`pan.baidu.com`的 API 生成。
+
+----
+
+#### 3、代码高亮
+
+Material 主题提供了两种代码高亮：prettify | hanabi <br>
+启用前你需要吧`根_config.yml`文件中的代码高亮关闭，否则会产生冲突
+```brash
+highlight:
+  enable: false #这里改为false
+  line_number: false
+  auto_detect: false
+  tab_replace:
+```
+`主题_config.yml`文件如下：
+```brash
+# Code highlight
+# You can only enable one of them to avoid issues.
+# Also you need to disable highlight option in hexo's _config.yml.
+#
+#    Prettify
+#        theme: # Available value in /source/css/prettify/[theme].min.css
+prettify:
+    enable: false #是否启用
+    theme: "github-v2" #高亮主题，各种样式见附录
+
+#    Hanabi (https://github.com/egoist/hanabi)
+#        line_number: [true/false] # Show line number for code block
+#        includeDefaultColors: [true/false] # Use default hanabi colors
+#        customColors: This value accept a string or am array to setting for hanabi colors.
+#                    - If `includeDefaultColors` is true, this will append colors to the color pool
+#                    - If `includeDefaultColors` is false, this will instead default color pool
+hanabi:
+    enable: true 
+    line_number: true #是否显示行数
+    includeDefaultColors: true
+    customColors: #可添加多种自定义颜色作为代码高亮主题，但请遵循 Yaml 的规范填写配置。
+```
+hanabi 默认效果（C++为例）：
+
+![ihxjoT.png](https://s1.ax1x.com/2018/11/02/ihxjoT.png)
+
+:::tip 注意
+两种高亮只能开启一个，prettify 样式见附录
+:::
+
+----
+
+#### 4、版权声明
+你可以在每篇文章的结尾添加你的版权说明，支持 HTML 标签。License 以粗体显示，默认为空。 比如，你可这样设定 CC License。
+
+```brash
+# Post License
+# You can specify the text you want to show in the end of your posts and pages, HTML tag is supported.
+#   For example, you can setup a CC license as:
+#       'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
+# You can also use Front-Matter `license` to override this setting.
+license: 'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
+```
+你也可以在页面的 Front-Matter 中为不同文章添加不同的 License。
+
+![ihzeYD.png](https://s1.ax1x.com/2018/11/02/ihzeYD.png)
+
+----
+
+### 四、菜单设置
+#### 1、行号，SNS 
+行号
+```brash
+# TOC Button
+
+toc:
+#   use: choose whether the line_number of toc will show or not.
+#       Available value of "linenumber": true | false
+    linenumber: true
+```
+SNS
+
+填上你的个人链接，如果不想显示，留空或前面加`#`号
+```brash
+# SNS Menu
+sns:
+    email: youremail@email.com #这个将显示在侧边栏头像下面
+    facebook: "https://www.facebook.com/facebook"
+    twitter: "https://twitter.com/twitter"
+    googleplus: "https://www.google.com/"
+    weibo:
+    instagram:
+    tumblr:
+    github:
+    linkedin:
+    zhihu:
+    bilibili:
+    telegram:
+    v2ex:
+```
+
+![ihz7tO.png](https://s1.ax1x.com/2018/11/02/ihz7tO.png)
+
+----
+#### 2、分享菜单
+如果为`false`将不显示在分享菜单
+```brash
+# SNS Share Switch
+sns_share:
+    twitter: true
+    facebook: true
+    googleplus: true
+    weibo: true
+    linkedin: false
+    qq: false
+    telegram: false
+```
+
+![ihzHhD.png](https://s1.ax1x.com/2018/11/02/ihzHhD.png)
+
+----
+
+#### 3、侧边栏设置
+```brash
+# Sidebar Customize
+sidebar:
+    dropdown:
+        Email Me:
+            link: "mailto: scaryffy@gmail.com" #个人邮箱地址
+            icon: email
+    homepage: #主页
+        use: true #是否启用
+        icon: home #图标
+        divider: false #下方是否添加分割线
+    archives: #归档
+        use: true
+        icon: inbox
+        divider: false
+    categories: #分类
+        use: false
+        icon: chrome_reader_mode
+        divider: false
+    pages: #其他独立页面
+        #About: #关于
+            #link: "/about"
+            #icon: person
+            #divider: false
+    article_num: #是否显示文章总数
+        use: false
+        divider: false
+    footer: #侧边栏页脚显示作者及主题信息
+        divider: true
+        theme: true
+        support: false
+        feedback: false
+        material: false
+```
+图标可以到[这里](https://material.io/icons/)选择你喜欢的替换
+
+### 五、独立界面
+#### 1、友情链接
+侧边栏添加`友链`：
+```brash
+    pages: #其他独立页面
+        #####
+        友链:
+            link: "/links"
+            icon: face
+            divider: false
+        #####
+        About: #关于
+            link: "/about"
+            icon: person
+            divider: false
+```
+回到博客根目录，打开终端，输入：
+```brash
+$ hexo new page "links"
+```
+进入博客根目录`source/links`文件夹，打开`index.md`文件，改为：
+```brash
+---
+title: links
+date: 2018-10-23 08:52:56
+layout: links
+---
+```
+同样在根目录下`source`文件下创建`_data`文件夹（不可使用其他名字），在`_data`下创建`links.yml`文件，打开修改，格式为：
+```brash
+Name: # Name 替换为名字
+    link: http://example.com #链接
+    avatar: http://example.com/avatar.png #头像
+    descr: "这是一个描述" #描述
+```
+例子：
+```brash
+Condor2048:
+    link: https://skylayer.pro/
+    avatar: http://qlogo3.store.qq.com/qzone/1262500438/1262500438/50?1538278027
+    descr: "大大大大大大佬"
+```
+添加多个友情链接，只需要根据上面的格式重复填写即可。
+
+![i4pFIK.png](https://s1.ax1x.com/2018/11/02/i4pFIK.png)
+
+----
+
+#### 2、标签云
+侧边栏添加`标签云`：
+```brash
+    pages: #其他独立页面
+        友链:
+            link: "/links"
+            icon: face
+            divider: false
+        #####
+        标签云:
+            link: "/tags"
+            icon: cloud_circle
+            divider: false
+        #####
+        About: #关于
+            link: "/about"
+            icon: person
+            divider: false
+```
+回到博客根目录，打开终端，输入：
+```brash
+$ hexo new page "tags"
+```
+进入博客根目录`source/tags`文件夹，打开`index.md`文件，改为：
+```brash
+---
+title: tags
+date: 2018-10-23 08:52:56
+layout: tags
+---
+```
+
+![i4pZxH.png](https://s1.ax1x.com/2018/11/02/i4pZxH.png)
+
+#### 3、图库
+侧边栏添加`图库`：
+```brash
+    pages: #其他独立页面
+        友链:
+            link: "/links"
+            icon: face
+            divider: false
+        标签云:
+            link: "/tags"
+            icon: cloud_circle
+            divider: false
+        #####
+        图库:
+            link: "/gallery"
+            icon: cloud_circle
+            divider: false
+        #####
+        About: #关于
+            link: "/about"
+            icon: person
+            divider: false
+```
+回到博客根目录，打开终端，输入：
+```brash
+$ hexo new page "gallery"
+```
+进入博客根目录`source/gallery`文件夹，打开`index.md`文件，改为：
+```brash
+---
+title: gallery
+date: 2018-10-23 08:52:56
+layout: gallery
+---
+```
+同样在根目录下`source/_data`文件下创建`gallery.yml`文件，打开修改，格式为：
+```brash
+Name: #名字
+    full_link: http://example.com/full-image.png #链接
+    thumb_link: http://example.com/thumb-image.png #链接
+    descr: "这是一个描述" #描述
+```
+添加多张图片，只需要根据上面的格式重复填写即可。
