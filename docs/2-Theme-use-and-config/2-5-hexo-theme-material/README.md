@@ -258,15 +258,15 @@ Material 主题提供了 19 张简约图，如果你的文章没有定义缩略�
 
 `Paradox-post-thumbnail.ejs`文件
 
-![ihH1eg.png](https://s1.ax1x.com/2018/11/02/ihH1eg.png)
+![](@img/2/2-5/19.png)
 
 `Paradox-post_entry-thumbnail.ejs`文件
 
-![ihH3wQ.png](https://s1.ax1x.com/2018/11/02/ihH3wQ.png)
+![](@img/2/2-5/20.png)
 
 另外`主题_config.yml`文件`img`字段中改为：
 
-![ihbe74.png](https://s1.ax1x.com/2018/11/02/ihbe74.png)
+![](@img/2/2-5/21.png)
 
 ::: tip 注意
 如果你按如上方法命名，箭头所指的空格一定要有。其他的命名方式大体一致。
@@ -293,7 +293,7 @@ img:
 
 文章随机缩略图按上一栏配置
 
-![ihj7tg.png](https://s1.ax1x.com/2018/11/02/ihj7tg.png)
+![](@img/2/2-5/22.png)
 
 ----
 
@@ -338,7 +338,7 @@ footer_text: <a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxx
 ```
 页底显示的信息格式应与上面的例子一样
 
-![ihv6bV.png](https://s1.ax1x.com/2018/11/02/ihv6bV.png)
+![](@img/2/2-5/23.png)
 
 ----
 #### 2、二维码
@@ -401,7 +401,7 @@ hanabi:
 ```
 hanabi 默认效果（C++为例）：
 
-![ihxjoT.png](https://s1.ax1x.com/2018/11/02/ihxjoT.png)
+![](@img/2/2-5/24.png)
 
 :::tip 注意
 两种高亮只能开启一个，prettify 样式见附录
@@ -422,7 +422,7 @@ license: 'This blog is under a <a href="/creativecommons.html" target="_blank">C
 ```
 你也可以在页面的 Front-Matter 中为不同文章添加不同的 License。
 
-![ihzeYD.png](https://s1.ax1x.com/2018/11/02/ihzeYD.png)
+![](@img/2/2-5/25.png)
 
 ----
 
@@ -458,7 +458,7 @@ sns:
     v2ex:
 ```
 
-![ihz7tO.png](https://s1.ax1x.com/2018/11/02/ihz7tO.png)
+![](@img/2/2-5/26.png)
 
 ----
 #### 2、分享菜单
@@ -475,7 +475,7 @@ sns_share:
     telegram: false
 ```
 
-![ihzHhD.png](https://s1.ax1x.com/2018/11/02/ihzHhD.png)
+![](@img/2/2-5/27.png)
 
 ----
 
@@ -560,7 +560,7 @@ Condor2048:
 ```
 添加多个友情链接，只需要根据上面的格式重复填写即可。
 
-![i4pFIK.png](https://s1.ax1x.com/2018/11/02/i4pFIK.png)
+![](@img/2/2-5/28.png)
 
 ----
 
@@ -596,7 +596,7 @@ layout: tags
 ---
 ```
 
-![i4pZxH.png](https://s1.ax1x.com/2018/11/02/i4pZxH.png)
+![](@img/2/2-5/29.png)
 
 #### 3、图库
 侧边栏添加`图库`：
