@@ -17,8 +17,8 @@ title: Hexo-theme-material-x
 - 支持 3 种评论系统：Disqus、来必力和 Valine。
 - 增加了推荐文章列表，增加博客流量。
 - 增加了阅读统计。
-- 支持渲染MathJax数学公式。
-- 修复了目录有时无法定位的BUG。
+- 支持渲染 MathJax 数学公式。
+- 修复了目录有时无法定位的 BUG。
 
 
 ## Demo Blogs
@@ -40,21 +40,7 @@ title: Hexo-theme-material-x
 | Digcore | https://www.digcore.cn/ |
 
 
-## 下载安装
-
-提供两种安装方式：脚本和手动，脚本不仅可以安装主题，还可以方便你发布博客，详见[@hexo.sh](../hexo.sh/)。
-
-### A. 使用脚本全自动安装（目前仅支持 mac OS）
-
-首先到博客的根目录打开终端 ，如果你想省事，复制下面这行脚本到终端中执行，全程自动化操作。
-
-```bash
-curl -O 'https://raw.githubusercontent.com/xaoxuu/hexo.sh/master/hexo.sh' -# && chmod 777 hexo.sh && . hexo.sh -i i x
-```
-
-如果你选择了脚本安装，现在可以直接往下看配置项啦~
-
-### B. 手动安装
+## 下载主题
 
 到博客的根目录打开终端 ，下载主题到 `themes/` 文件夹：
 
@@ -67,6 +53,8 @@ git clone https://github.com/xaoxuu/hexo-theme-material-x themes/material-x
 ```bash
 npm i -S hexo-generator-search hexo-generator-feed hexo-renderer-less hexo-autoprefixer hexo-generator-json-content hexo-recommended-posts
 ```
+
+然后将 Hexo 的 `_config.yml` 的 `theme` 项改为 `material-x` 即可。
 
 ## 站点配置
 
@@ -170,9 +158,6 @@ widgets:
   categories: true
 ```
 
-:::tip
-值得注意的是：不同层级的同名分类不是同一个分类，不会自动合并。例如文章A的分类是“分类1，分类2”，文章B的分类是“分类2”，那么会有两个名为“分类2”的分类，一个路径是`分类1/分类2`，一个路径是`分类2`。
-:::
 
 #### 标签
 
