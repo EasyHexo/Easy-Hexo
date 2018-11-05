@@ -10,15 +10,7 @@ module.exports = {
             href: 'https://i.loli.net/2018/10/18/5bc852dfd5270.jpg'
         }]
     ],
-    configureWebpack: {
-        resolve: {
-          alias: {
-            '@alias': '/public/'
-          }
-        }
-    },
     themeConfig: {
-
         nav: [{
             text: 'Hexo 安装与配置',
             items: [{
@@ -72,6 +64,10 @@ module.exports = {
                 {
                     text: 'Hexo-theme-material',
                     link: '/2-Theme-use-and-config/2-5-hexo-theme-material/'
+                },
+                {
+                    text: 'Hexo-theme-material-x',
+                    link: '/2-Theme-use-and-config/2-6-hexo-theme-material-x/'
                 }
             ]
         }, {
@@ -108,7 +104,8 @@ module.exports = {
                 '2-2-hexo-theme-next-6.x.x/',
                 '2-3-hexo-theme-yilia/',
                 '2-4-hexo-theme-apollo/',
-                '2-5-hexo-theme-material/'
+                '2-5-hexo-theme-material/',
+                '2-6-hexo-theme-material-x/'
             ],
             '/3-Plugins-use-and-config/': [
                 ''
