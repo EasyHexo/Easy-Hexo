@@ -6,6 +6,12 @@ title: Hexo-theme-material-x
 
 [Material X 主题地址](https://github.com/xaoxuu/hexo-theme-material-x)
 
+## Material-x 主题演示
+
+![演示](@img/2/2-6/1.png)
+
+## 简介
+
 **Material X** 是 xaoxuu 基于 Material Flow（已停止维护）改编的一个 Hexo 主题，相对作者原主题主要有以下方面改动：
 
 - 调整卡片阴影细节以及增加卡片的动画效果。
@@ -543,7 +549,7 @@ mathjax: true
 
 对应的效果如图所示：
 
-![](https://img.vim-cn.com/70/5620af391b12439452a1e03413574fb3a1208c.png )
+![](@img/2/2-6/2.png)
 
 
 
@@ -557,18 +563,6 @@ mathjax: true
 ```
 
 
-
-## 故障排查
-
-如果你发现 **无法使用** 或者效果与[示例](https://blog.xaoxuu.com)有较大区别，可以使用hexo官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比`_config.yml`文件排查问题。
-
-### 下载单元测试
-
-Hexo官方的单元测试博客： [https://github.com/hexojs/hexo-theme-unit-test.git](https://github.com/hexojs/hexo-theme-unit-test.git)。
-
-如果你的系统是macOS，则可以使用[hexo.sh](../hexo.sh/)脚本一键完成测试。
-
-
 ## 主题源码
 
-<div class="readmore">[<i class="fa fa-github"></i>源码](https://github.com/xaoxuu/hexo-theme-material-x/)</div>
+[源码地址](https://github.com/xaoxuu/hexo-theme-material-x/)
