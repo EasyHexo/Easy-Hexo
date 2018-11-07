@@ -1,8 +1,11 @@
 ---
 title: Hexo-theme-material-x
 ---
-
 # Hexo-theme-material-x
+
+:::tip
+特别鸣谢本文作者：[xaoxuu](https://xaoxuu.com/)
+:::
 
 [Material X 主题地址](https://github.com/xaoxuu/hexo-theme-material-x)
 

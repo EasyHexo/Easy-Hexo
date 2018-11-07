@@ -10,3 +10,6 @@ State: writing.
 
 [Apollo 主题地址](https://github.com/pinggod/hexo-theme-apollo)
 
+## 主题预览
+
+![预览](@img/2/2-4/1.png)
