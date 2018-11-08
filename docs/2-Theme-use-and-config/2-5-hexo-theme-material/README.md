@@ -20,11 +20,13 @@ State: writing.
 
 ## 下载 Material 主题
 
-1. 进入 Github，下载 [Material](https://github.com/viosey/hexo-theme-material/releases) 主题 1.5.2 的版本。
+在博客根目录打开终端，输入以下命令：
 
-2. 将下载下来的主题解压，将解压的文件夹重命名为 `Material`。
-
-3. 将这个文件夹放到你的博客根目录下的 themes 文件夹下。
+```bash
+cd themes
+git clone https://github.com/viosey/hexo-theme-material.git material
+cd material
+```
 
 ![i6XOpT.png](@img/2/2-5/2.png)
 
