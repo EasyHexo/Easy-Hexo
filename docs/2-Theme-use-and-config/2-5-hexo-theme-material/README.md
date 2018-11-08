@@ -34,8 +34,8 @@ State: writing.
 这里有两个 `_config.yml` 文件，一个位于博客根目录，另一个位于主题文件夹下，下面分别叫他们`根 _config.yml `文件和`主题 _config.yml `文件。
 :::
 
-进入 Material 文件夹，将`_config.template.yml` 重命名为 `_config.yml`
-（这个 `_config.yml` 文件是 `主题_config.yml` 文件）
+进入 Material 文件夹，将 `_config.template.yml` 重命名为 `_config.yml`
+（这个 `_config.yml` 文件是 `主题 _config.yml` 文件）
 
 ::: tip 注意
 建议你将 `_config.template.yml` 文件备份，防止一些不可描述的的问题。
@@ -43,8 +43,8 @@ State: writing.
 
 ![i6x8mQ.png](@img/2/2-5/3.png)
 
-回到主题根目录，用文本编辑器打开`根_config.yml`文件<br>
-找到`language`属性（我用的简体中文）
+回到主题根目录，用文本编辑器打开`根 _config.yml` 文件<br>
+找到 `language` 属性（我用的简体中文）
 
 ![icIGE8.png](@img/2/2-5/4.png)
 
@@ -64,12 +64,12 @@ State: writing.
 
 ![icI0uq.png](@img/2/2-5/5.png)
 
-在最下面找到`theme`属性
+在最下面找到 `theme` 属性
 
 ![i6zA3V.png](@img/2/2-5/6.png)
 ![i6Lih8.md.png](@img/2/2-5/7.png)
 
-将后面的字段改为你刚刚改的主题文件夹的名字，比如我的`Material`。
+将后面的字段改为你刚刚改的主题文件夹的名字，比如我的 `Material`。
 
 ::: tip 注意
 
@@ -81,7 +81,7 @@ OK，Material 主题就正式启用了下面，就是见证奇迹的时候了，
 
 回到博客根目录，打开终端，输入：
 
-```brash
+```bash
 $ hexo clean
 ```
 回车
@@ -91,7 +91,7 @@ $ hexo clean
 完美！！！:tada:
 
 好，再输入：
-```brash
+```bash
 $ hexo g
 ```
 回车
@@ -101,14 +101,14 @@ $ hexo g
 完全OK！！！:tada:
 
 输入：
-```brash
+```bash
 $ hexo s
 ```
 回车
 
 ![icPqhj.png](@img/2/2-5/10.png)
 
-打开浏览器输入`http://localhost:4000`，即可看见你博客的样子。
+打开浏览器输入 `http://localhost:4000`，即可看见你博客的样子。
 
 ![icPW9A.png](@img/2/2-5/11.png)
 ![icP2hd.png](@img/2/2-5/12.png)
@@ -128,7 +128,7 @@ $ hexo s
 
 #### 1、博客的网站图标
 
-```brash
+```bash
 # Head info
 head:
     favicon: "/img/favicon.png" #正常网站图标
@@ -142,7 +142,7 @@ head:
 
 ![ic5bXq.png](@img/2/2-5/14.png)
 
-```brash
+```bash
     favicon: "/img/F.png" #正常网站图标
     high_res_favicon: "/img/F.png" #高清图标
     apple_touch_icon: "/img/F.png" #IOS主屏按钮图标
@@ -150,16 +150,16 @@ head:
 ----
 #### 2、优化 SEO
 这个设置启用后会在页面的 Head 中生成结构化数据，有助于改善 Google 等搜索引擎的 SEO <br>
-如果你在 `hexo g `时出现问题，不妨尝试将其设为 `false`
+如果你在 `hexo g` 时出现问题，不妨尝试将其设为 `false`
 
-```brash
+```bash
     # Enable generate structured-data as JSON+LD for SEO or not.
     #    Set as 'false' if it cause some wrong when `hexo g`.
     structured_data: true #就是这个
 ```
 ----
 #### 3、跳转链接
-```brash
+```bash
 # Jump Links Settings
 url:
     rss: #设置生成的 rss 或 atom 链接
@@ -169,7 +169,7 @@ url:
 ----
 ### 二、样式和主题
 #### 1、主体的样式
-```brash
+```bash
 # Schemes
 scheme: Paradox #默认样式
 #scheme: Isolation #极简样式
@@ -184,7 +184,7 @@ scheme: Paradox #默认样式
 ----
 
 #### 2、标语和板块背景色
-```brash
+```bash
 # UI & UX: slogan, color, effect
 uiux:
     slogan: "Hi, nice to meet you" #标语
@@ -200,7 +200,7 @@ uiux:
 ----
 
 #### 3、页面的 Js 效果
-```brash
+```bash
 # JS Effect Switches
 js_effect:
     fade: true #页面加载时部分模块的渐显效果
@@ -209,7 +209,7 @@ js_effect:
 ----
 
 #### 4、文章摘要字数
-```brash
+```bash
 # Reading experience
 reading:
     entry_excerpt: 80 #首页文章摘要字数
@@ -217,7 +217,7 @@ reading:
 ----
 
 #### 5、文章缩略图
-```brash
+```bash
 # Thumbnail Settings
 thumbnail:
     purecolor: #这里填入颜色代码,如果文章无缩略图,缩略图区域显示该颜色
@@ -225,26 +225,26 @@ thumbnail:
 ```
 Material 主题提供了 19 张简约图，如果你的文章没有定义缩略图，主题就会从随机图库中随机取一张图<br>如果随机图库中没有图片，那么该区域会显示你设置的颜色<br>如果你也没有设置颜色，则会显示你的主题色
 
-主题默认支持`.png`格式的缩略图，并且只支持`.png`的缩略图，命名格式还必须是`Material-XX.png`<br>
+主题默认支持 `.png` 格式的缩略图，并且只支持 `.png` 的缩略图，命名格式还必须是 `Material-XX.png`<br>
 好吧，这看起来好像很坑，但它好在是开源的，可以自己动手修改
 
-进入`themes/Material/layout/_partial`文件夹，找到`Paradox-post_entry-thumbnail.ejs`和`Paradox-post-thumbnail.ejs`两个文件，用文本编辑器打开
+进入 `themes/Material/layout/_partial` 文件夹，找到 `Paradox-post_entry-thumbnail.ejs` 和 `Paradox-post-thumbnail.ejs` 两个文件，用文本编辑器打开
 
 ![](@img/2/2-5/16.png)
 
-如果你想用其他格式的图片，你可以`Ctrl+f`搜索`.png`， 把如图位置的字段改为你想使用的格式（推荐使用`.jpg`格式，比较小，加载较快）：
+如果你想用其他格式的图片，你可以 `Ctrl+f` 搜索 `.png`， 把如图位置的字段改为你想使用的格式（推荐使用 `.jpg` 格式，比较小，加载较快）：
 
-`Paradox-post_entry-thumbnail.ejs`文件
+`Paradox-post_entry-thumbnail.ejs` 文件
 
 ![](@img/2/2-5/17.png)
 
-`Paradox-post-thumbnail.ejs`文件
+`Paradox-post-thumbnail.ejs` 文件
 
 ![](@img/2/2-5/18.png)
 
-这种方法只能同时使用同种格式的图片，如果你想用不同格式的图，请自行尝试`if-else`语法，也有很多软件可以批量改格式，比如`格式工厂`
+这种方法只能同时使用同种格式的图片，如果你想用不同格式的图，请自行尝试 `if-else` 语法，也有很多软件可以批量改格式，比如`格式工厂`
 
-那么现在又有一个问题，我现在有 192 张图,每一张图都要命名成`Material-xx.png`的格式，如果一张一张的重命名，岂不是要累趴下，有没有什么好的方法呢
+那么现在又有一个问题，我现在有 192 张图,每一张图都要命名成 `Material-xx.png` 的格式，如果一张一张的重命名，岂不是要累趴下，有没有什么好的方法呢
 
 答案是肯定的，你可以用相关软件，或者写一个批处理
 
@@ -252,19 +252,19 @@ Material 主题提供了 19 张简约图，如果你的文章没有定义缩略�
 > 选中你想用的 n 张图
 > 选择一个重命名，假设你输入了 Material，回车
 
-你会发现这 n 张图的名字变成了`Material (x).jpg`，x 是 1~n，并且括号前多了一个空格
+你会发现这 n 张图的名字变成了 `Material (x).jpg`，x 为 1~n，并且括号前多了一个空格
 
 这时我们还要修改一下相关配置，上面的两个文件相同的的位置改为：
 
-`Paradox-post-thumbnail.ejs`文件
+`Paradox-post-thumbnail.ejs` 文件
 
 ![](@img/2/2-5/19.png)
 
-`Paradox-post_entry-thumbnail.ejs`文件
+`Paradox-post_entry-thumbnail.ejs` 文件
 
 ![](@img/2/2-5/20.png)
 
-另外`主题_config.yml`文件`img`字段中改为：
+另外`主题 _config.yml` 文件 `img` 字段中改为：
 
 ![](@img/2/2-5/21.png)
 
@@ -275,7 +275,7 @@ Material 主题提供了 19 张简约图，如果你的文章没有定义缩略�
 ----
 
 #### 6、各种图片位置
-```brash
+```bash
 # Images Settings
 img:
     logo: "/img/logo.png" #标志
@@ -289,7 +289,7 @@ img:
             link: "https://www.upyun.com/" #点击链接
             src: "/img/upyun_logo.svg" #图标
 ```
-这里所有的图片均放在`themes/Material/source/img``，你可以替换它们，并将如上配置相应改变。
+这里所有的图片均放在 `themes/Material/source/img` ，你可以替换它们，并将如上配置相应改变。
 
 文章随机缩略图按上一栏配置
 
@@ -298,7 +298,7 @@ img:
 ----
 
 #### 7、字体
-```brash
+```bash
 # Custom Fonts
 #    family: the font-family which will be used in the theme
 #    use: uri of fonts host.
@@ -313,7 +313,7 @@ fonts:
 ```
 ----
 #### 8、文章卡片阴影
-```brash
+```bash
 # Card Elevation Level
 card_elevation: 2 #请自行改变数值
 ```
@@ -321,15 +321,15 @@ card_elevation: 2 #请自行改变数值
 
 ### 三、自定义设置
 #### 1、站点成立时间
-```brash
+```bash
 # Copyright
 # Specify the date when the site was setup.
 #    For example, if you set it as 2015, then footer will show '© 2015 - 2018'
 copyright_since: 2015
 ```
-如果设为 2015，他会显示`© 2015 - 2018`，如果不设，只会显示当前`2018`年
+如果设为 2015，他会显示 `© 2015 - 2018`，如果不设，只会显示当前 `2018` 年
 
-```brash
+```bash
 # Footer Text
 # You can specify the text you want to show in footer, HTML tag is supported.
 #   For example, you can setup ICP license number as:
@@ -342,7 +342,7 @@ footer_text: <a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxx
 
 ----
 #### 2、二维码
-```brash
+```bash
 # Qrcode for redirect at other device
 #    use: choose which method to generate the qrcode for each posts.
 #        Available value: plugin | online
@@ -355,28 +355,28 @@ qrcode:
 
 用于在文章页中显示二维码，扫描二维码即可直接打开文章。
 
-当 use 设置为 plugin 时，你需要安装`hexo-helper-qrcode`插件，在博客根目录下打开 Git
-```brash
+当 use 设置为 plugin 时，你需要安装 `hexo-helper-qrcode` 插件，在博客根目录下打开 Git
+```bash
 $ npm install hexo-helper-qrcode --save 
 ```
 
-当 use 设置为 online 时，二维码将会由`pan.baidu.com`的 API 生成。
+当 use 设置为 online 时，二维码将会由 `pan.baidu.com` 的 API 生成。
 
 ----
 
 #### 3、代码高亮
 
 Material 主题提供了两种代码高亮：prettify | hanabi <br>
-启用前你需要吧`根_config.yml`文件中的代码高亮关闭，否则会产生冲突
-```brash
+启用前你需要吧`根 _config.yml` 文件中的代码高亮关闭，否则会产生冲突
+```bash
 highlight:
   enable: false #这里改为false
   line_number: false
   auto_detect: false
   tab_replace:
 ```
-`主题_config.yml`文件如下：
-```brash
+`主题 _config.yml` 文件如下：
+```bash
 # Code highlight
 # You can only enable one of them to avoid issues.
 # Also you need to disable highlight option in hexo's _config.yml.
@@ -399,7 +399,7 @@ hanabi:
     includeDefaultColors: true
     customColors: #可添加多种自定义颜色作为代码高亮主题，但请遵循 Yaml 的规范填写配置。
 ```
-hanabi 默认效果（C++为例）：
+hanabi 默认效果（ C++ 为例）：
 
 ![](@img/2/2-5/24.png)
 
@@ -410,9 +410,9 @@ hanabi 默认效果（C++为例）：
 ----
 
 #### 4、版权声明
-你可以在每篇文章的结尾添加你的版权说明，支持 HTML 标签。License 以粗体显示，默认为空。 比如，你可这样设定 CC License。
+你可以在每篇文章的结尾添加你的版权说明，支持 Html 标签。License 以粗体显示，默认为空。 比如，你可这样设定 CC License。
 
-```brash
+```bash
 # Post License
 # You can specify the text you want to show in the end of your posts and pages, HTML tag is supported.
 #   For example, you can setup a CC license as:
@@ -429,7 +429,7 @@ license: 'This blog is under a <a href="/creativecommons.html" target="_blank">C
 ### 四、菜单设置
 #### 1、行号，SNS 
 行号
-```brash
+```bash
 # TOC Button
 
 toc:
@@ -439,8 +439,8 @@ toc:
 ```
 SNS
 
-填上你的个人链接，如果不想显示，留空或前面加`#`号
-```brash
+填上你的个人链接，如果不想显示，留空或前面加 `#` 号
+```bash
 # SNS Menu
 sns:
     email: youremail@email.com #这个将显示在侧边栏头像下面
@@ -462,8 +462,8 @@ sns:
 
 ----
 #### 2、分享菜单
-如果为`false`将不显示在分享菜单
-```brash
+如果为 `false` 将不显示在分享菜单
+```bash
 # SNS Share Switch
 sns_share:
     twitter: true
@@ -480,7 +480,7 @@ sns_share:
 ----
 
 #### 3、侧边栏设置
-```brash
+```bash
 # Sidebar Customize
 sidebar:
     dropdown:
@@ -519,7 +519,7 @@ sidebar:
 ### 五、独立界面
 #### 1、友情链接
 侧边栏添加`友链`：
-```brash
+```bash
     pages: #其他独立页面
         #####
         友链:
@@ -533,26 +533,26 @@ sidebar:
             divider: false
 ```
 回到博客根目录，打开终端，输入：
-```brash
+```bash
 $ hexo new page "links"
 ```
-进入博客根目录`source/links`文件夹，打开`index.md`文件，改为：
-```brash
+进入博客根目录 `source/links` 文件夹，打开 `index.md` 文件，改为：
+```bash
 ---
 title: links
 date: 2018-10-23 08:52:56
 layout: links
 ---
 ```
-同样在根目录下`source`文件下创建`_data`文件夹（不可使用其他名字），在`_data`下创建`links.yml`文件，打开修改，格式为：
-```brash
+同样在根目录下 `source` 文件下创建 `_data` 文件夹（不可使用其他名字），在 `_data` 下创建 `links.yml` 文件，打开修改，格式为：
+```bash
 Name: # Name 替换为名字
     link: http://example.com #链接
     avatar: http://example.com/avatar.png #头像
     descr: "这是一个描述" #描述
 ```
 例子：
-```brash
+```bash
 Condor2048:
     link: https://skylayer.pro/
     avatar: http://qlogo3.store.qq.com/qzone/1262500438/1262500438/50?1538278027
@@ -566,7 +566,7 @@ Condor2048:
 
 #### 2、标签云
 侧边栏添加`标签云`：
-```brash
+```bash
     pages: #其他独立页面
         友链:
             link: "/links"
@@ -584,11 +584,11 @@ Condor2048:
             divider: false
 ```
 回到博客根目录，打开终端，输入：
-```brash
+```bash
 $ hexo new page "tags"
 ```
-进入博客根目录`source/tags`文件夹，打开`index.md`文件，改为：
-```brash
+进入博客根目录 `source/tags` 文件夹，打开 `index.md` 文件，改为：
+```bash
 ---
 title: tags
 date: 2018-10-23 08:52:56
@@ -600,7 +600,7 @@ layout: tags
 
 #### 3、图库
 侧边栏添加`图库`：
-```brash
+```bash
     pages: #其他独立页面
         友链:
             link: "/links"
@@ -622,19 +622,19 @@ layout: tags
             divider: false
 ```
 回到博客根目录，打开终端，输入：
-```brash
+```bash
 $ hexo new page "gallery"
 ```
-进入博客根目录`source/gallery`文件夹，打开`index.md`文件，改为：
-```brash
+进入博客根目录 `source/gallery` 文件夹，打开 `index.md` 文件，改为：
+```bash
 ---
 title: gallery
 date: 2018-10-23 08:52:56
 layout: gallery
 ---
 ```
-同样在根目录下`source/_data`文件下创建`gallery.yml`文件，打开修改，格式为：
-```brash
+同样在根目录下 `source/_data` 文件下创建 `gallery.yml` 文件，打开修改，格式为：
+```bash
 Name: #名字
     full_link: http://example.com/full-image.png #链接
     thumb_link: http://example.com/thumb-image.png #链接
