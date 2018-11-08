@@ -20,4 +20,6 @@
 - [yi-yun](https://yi-yun.github.io/)
 - [yixiaomie](https://daiwen.me/)
 
+## Hexo 主题开发者
 
+- [xaoxuu - Material X 开发者](https://xaoxuu.com/wiki/material-x/)
