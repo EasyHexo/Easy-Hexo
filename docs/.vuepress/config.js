@@ -73,7 +73,20 @@ module.exports = {
             ]
         }, {
             text: '插件使用与配置',
-            link: '/3-Plugins-use-and-config/'
+            items: [{
+                    text: '概要',
+                    link: '/3-Plugins-use-and-config/'
+                },
+                {
+                    text: '3-1-hexo-tag-aplayer',
+                    link: '/3-Plugins-use-and-config/3-1-hexo-tag-aplayer/'
+                },
+                {
+                    text: '3-2-hexo-tag-dplayer',
+                    link: '/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/'
+                }
+            ]
+
         }, {
             text: '高级 Hexo 玩家',
             link: '/4-High-order-hexo-gamer/'
@@ -109,7 +122,10 @@ module.exports = {
                 '2-6-hexo-theme-material-x/'
             ],
             '/3-Plugins-use-and-config/': [
-                ''
+                '',
+                '3-1-hexo-tag-aplayer/',
+                '3-2-hexo-tag-dplayer/'
+
             ],
             '/4-High-order-hexo-gamer/': [
                 ''
@@ -127,10 +143,10 @@ module.exports = {
         editLinkText: '在 GitHub 上编辑此页'
     },
     configureWebpack: {
-    resolve: {
-      alias: {
-        '@img': __dirname + '/\img'
-      }
+        resolve: {
+            alias: {
+                '@img': __dirname + '/\img'
+            }
+        }
     }
-  }
 }
