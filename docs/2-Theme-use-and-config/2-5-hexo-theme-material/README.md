@@ -130,7 +130,7 @@ $ hexo s
 
 #### 1、博客的网站图标
 
-```bash
+```yaml
 # Head info
 head:
     favicon: "/img/favicon.png" #正常网站图标
@@ -144,7 +144,7 @@ head:
 
 ![ic5bXq.png](@img/2/2-5/14.png)
 
-```bash
+```yaml
     favicon: "/img/F.png" #正常网站图标
     high_res_favicon: "/img/F.png" #高清图标
     apple_touch_icon: "/img/F.png" #IOS主屏按钮图标
@@ -154,14 +154,14 @@ head:
 这个设置启用后会在页面的 Head 中生成结构化数据，有助于改善 Google 等搜索引擎的 SEO <br>
 如果你在 `hexo g `时出现问题，不妨尝试将其设为 `false`
 
-```bash
+```yaml
     # Enable generate structured-data as JSON+LD for SEO or not.
     #    Set as 'false' if it cause some wrong when `hexo g`.
     structured_data: true #就是这个
 ```
 ----
 #### 3、跳转链接
-```bash
+```yaml
 # Jump Links Settings
 url:
     rss: #设置生成的 rss 或 atom 链接
@@ -171,7 +171,7 @@ url:
 ----
 ### 二、样式和主题
 #### 1、主体的样式
-```bash
+```yaml
 # Schemes
 scheme: Paradox #默认样式
 #scheme: Isolation #极简样式
@@ -186,7 +186,7 @@ scheme: Paradox #默认样式
 ----
 
 #### 2、标语和板块背景色
-```bash
+```yaml
 # UI & UX: slogan, color, effect
 uiux:
     slogan: "Hi, nice to meet you" #标语
@@ -199,20 +199,20 @@ uiux:
     nprogress_buffer: "800" #精度条的缓冲时间
 ```
 #### 3、页面的 Js 效果
-```bash
+```yaml
 # JS Effect Switches
 js_effect:
     fade: true #页面加载时部分模块的渐显效果
     smoothscroll: false #页面平滑滚动特效
 ```
 #### 4、文章摘要字数
-```bash
+```yaml
 # Reading experience
 reading:
     entry_excerpt: 80 #首页文章摘要字数
 ```
 #### 5、文章缩略图
-```bash
+```yaml
 # Thumbnail Settings
 thumbnail:
     purecolor: #这里填入颜色代码,如果文章无缩略图,缩略图区域显示该颜色
