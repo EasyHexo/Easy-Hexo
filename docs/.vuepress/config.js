@@ -97,6 +97,10 @@ module.exports = {
                 {
                     text: '参考资料',
                     link: '/5-Add/5-1-quote.html'
+                },
+                {
+                    text: 'yaml语法',
+                    link: '/5-Add/5-2-yaml.html'
                 }
             ]
         }],
@@ -123,14 +127,14 @@ module.exports = {
                 '',
                 '3-1-hexo-tag-aplayer/',
                 '3-2-hexo-tag-dplayer/'
-
             ],
             '/4-High-order-hexo-gamer/': [
                 ''
             ],
             '/5-Add/': [
                 '',
-                '5-1-quote.html'
+                '5-1-quote.html',
+                '5-2-yaml.html'
             ]
         },
         repo: 'EasyHexo/Easy-Hexo',
