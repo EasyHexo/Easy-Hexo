@@ -32,21 +32,7 @@ title: Hexo-theme-material-x
 
 ## Demo Blogs
 
-本主题将持续更新和维护，你可以在这里查看主题最新的实际效果：[👉https://blog.xaoxuu.com 👈](https://blog.xaoxuu.com)
-
-**以及其他使用 Material X 主题的博客：**
-
-| 博客         | 链接                 |
-| ------------ | -------------------- |
-| MicDZ's blog | https://www.micdz.cn |
-| 小吴博客 | https://www.wushile.top |
-| Heiyiren | http://blog.heiyiren.top |
-| MainGuo | https://blog.mainguo.top |
-| Mark's blog | https://mark-thinkpad.gitee.io/blog/ |
-| gltjk | https://blog.gltjk.com |
-| BFDZ | https://www.bfdz.ink |
-| Amblizer's Mainframe | https://amblizer.xyz |
-| Digcore | https://www.digcore.cn/ |
+本主题将持续更新和维护，你可以在这里查看主题最新的实际效果：[👉 https://blog.xaoxuu.com 👈](https://blog.xaoxuu.com)
 
 
 ## 下载主题
@@ -410,7 +396,7 @@ mathjax: true
 @fontfamily_logo: @fontfamily_base;
 ```
 
-默认的字体 `Ubuntu` 使用的是GoogleFontsAPI：
+默认的字体 `Ubuntu` 使用的是 Google Fonts API：
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -494,7 +480,7 @@ mathjax: true
 
 ### 配色
 
-为了方便个性化配色，这里的字段有点多，不要着急，左边的`key`是主题文件中需要用到的，右边的`value`，你可以使用宏定义（例如`@theme_base_main: #EFEFEF;`），也可以直接写具体的颜色值。
+为了方便个性化配色，这里的字段有点多，不要着急，左边的 `key` 是主题文件中需要用到的，右边的 `value`，你可以使用宏定义（例如         `@theme_base_main: #EFEFEF;`），也可以直接写具体的颜色值。
 
 #### 背景颜色
 
