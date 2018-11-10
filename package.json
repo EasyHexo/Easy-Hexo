@@ -10,7 +10,6 @@
   "author": "EasyHexo <124694738@qq.com>",
   "license": "CC-BY-NC-ND-4.0",
   "dependencies": {
-    "dplayer": "^1.25.0",
     "vuepress": "^0.14.4"
   }
 }

@@ -11,7 +11,6 @@ module.exports = {
         }]
     ],
     themeConfig: {
-
         nav: [{
             text: 'Hexo 安装与配置',
             items: [{
@@ -39,7 +38,6 @@ module.exports = {
                     link: '/1-Hexo-install-and-config/1-5-continuous-integration.html'
                 }
             ]
-
         }, {
             text: '主题安装与配置',
             items: [{
