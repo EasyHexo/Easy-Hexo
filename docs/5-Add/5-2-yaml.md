@@ -1,15 +1,18 @@
 ---
-title: yaml语法简介
+title: YAML语法简介
 ---
-# yaml语法简介
+# YAML语法简介
 
-使用 Hexo 并不需要掌握过多的 Yaml 语法知识，只需要简单的了解一下就可以。
+[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
+[![](https://img.shields.io/badge/Author-MonoLogueChi-FE326D.svg?longCache=true&style=flat-square)](mailto:xxwhite@foxmail.com)
 
-## Hexo中使用Yaml
+使用 Hexo 并不需要掌握过多的 YAML 语法知识，只需要简单的了解一下就可以。
 
-### MarkDown文件内使用Yaml
+## Hexo中使用YAML
 
-在 Hexo 中写文档，通常需要在头部写一些关于文章的信息，这些都是需要使用 yaml 语言来写的，例如
+### MarkDown文件内使用YAML
+
+在 Hexo 中写文档，通常需要在头部写一些关于文章的信息，这些都是需要使用 YAML 语言来写的，例如
 
 ```yaml
 ---
@@ -22,16 +25,16 @@ comments: true
 ---
 ```
 
-文章内部的 yaml 配置都是以`---`开始和结束的，而且，结束之后通常还要再有一行的空行，用以区分 MarkDown 语法。
+文章内部的  配置都是以`---`开始和结束的，而且，结束之后通常还要再有一行的空行，用以区分 MarkDown 语法。
 
-### _config.yml中使用Yaml
+### _config.yml中使用YAML
 
-这个就太常见了，Hexo 的配置文件和主题的配置文件都需要使用Yaml语言来写。
+这个就太常见了，Hexo 的配置文件和主题的配置文件都需要使用YAML语言来写。
 
 
 ## 基本语法
 
-Yaml使用键值对的形式记录信息，标准格式是
+YAML使用键值对的形式记录信息，标准格式是
 
 ```yaml
 key: value
