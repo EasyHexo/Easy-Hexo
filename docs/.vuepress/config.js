@@ -99,7 +99,7 @@ module.exports = {
                     link: '/5-Add/5-1-quote.html'
                 },
                 {
-                    text: 'YAML语法简介',
+                    text: 'YAML 语法简介',
                     link: '/5-Add/5-2-yaml.html'
                 }
             ]
