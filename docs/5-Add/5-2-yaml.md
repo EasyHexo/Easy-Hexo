@@ -1,16 +1,16 @@
 ---
-title: YAML语法简介
+title: YAML 语法简介
 ---
-# YAML语法简介
+# YAML 语法简介
 
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-MonoLogueChi-FE326D.svg?longCache=true&style=flat-square)](mailto:xxwhite@foxmail.com)
 
 使用 Hexo 并不需要掌握过多的 YAML 语法知识，只需要简单的了解一下就可以。
 
-## Hexo中使用YAML
+## Hexo 中使用 YAML
 
-### MarkDown文件内使用YAML
+### MarkDown 文件内使用 YAML
 
 在 Hexo 中写文档，通常需要在头部写一些关于文章的信息，这些都是需要使用 YAML 语言来写的，例如
 
@@ -27,9 +27,9 @@ comments: true
 
 文章内部的  配置都是以`---`开始和结束的，而且，结束之后通常还要再有一行的空行，用以区分 MarkDown 语法。
 
-### _config.yml中使用YAML
+### _config.yml 中使用 YAML
 
-这个就太常见了，Hexo 的配置文件和主题的配置文件都需要使用YAML语言来写。
+这个就太常见了，Hexo 的配置文件和主题的配置文件都需要使用 YAML 语言来写。
 
 
 ## 基本语法
@@ -45,7 +45,7 @@ key: value
 
 1. 大小写敏感
 2. **使用缩进表示层级关系**
-3. 禁止使用tab缩进，只能使用空格键
+3. 禁止使用 tab 缩进，只能使用空格键
 4. 缩进长度没有限制，只要元素对齐就表示这些元素属于一个层级
 5. 使用#表示注释
 6. 字符串可以不用引号标注（但是建议你最好还是加上引号）
@@ -106,7 +106,7 @@ hexo-tag-dplayer: {cdn: value, default: value}
 
 **划重点**，这是本篇文章最有用的一节
 
-list的表示形式同样有两种
+list 的表示形式同样有两种
 
 ```yaml
 key:
