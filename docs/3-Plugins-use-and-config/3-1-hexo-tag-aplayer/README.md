@@ -50,7 +50,7 @@ aplayer:
 
 ## 使用
 
-使用 hexo-tag-aplayer 非常简单，只需要在 MarkDown 文件中插入正确的标记就可以了。
+使用 hexo-tag-aplayer 非常简单，只需要在 Markdown 文件中插入正确的标记就可以了。
 
 
 ::: v-pre
