@@ -30,7 +30,7 @@ $ npm install hexo-server --save
 $ git config --global user.name "Your_name"
 $ git config --global user.email Your_email@example.com
 ```
-::: Git 小知识
+:::tip
 每次 Git 提交时都会附带这两条信息，用于记录是谁提交的更新，并且会随更新内容一起被记录到历史记录中。简单说，是用来标记的你的身份的~
 :::
 
@@ -330,7 +330,7 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 	logallrefupdates = false
 	symlinks = false
 -	ignorecase = true
-+       ignorecase = false
++   ignorecase = false
 [branch "master"]
 	remote = ueser_name@HostIP:/var/repo/blog.git
 	merge = refs/heads/master
