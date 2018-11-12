@@ -330,7 +330,7 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 	logallrefupdates = false
 	symlinks = false
 -	ignorecase = true
-+   ignorecase = false
++     ignorecase = false
 [branch "master"]
 	remote = ueser_name@HostIP:/var/repo/blog.git
 	merge = refs/heads/master
