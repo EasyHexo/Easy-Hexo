@@ -11,7 +11,6 @@ module.exports = {
         }]
     ],
     themeConfig: {
-
         nav: [{
             text: 'Hexo 安装与配置',
             items: [{
@@ -39,7 +38,6 @@ module.exports = {
                     link: '/1-Hexo-install-and-config/1-5-continuous-integration.html'
                 }
             ]
-
         }, {
             text: '主题安装与配置',
             items: [{
@@ -99,6 +97,10 @@ module.exports = {
                 {
                     text: '参考资料',
                     link: '/5-Add/5-1-quote.html'
+                },
+                {
+                    text: 'YAML 语法简介',
+                    link: '/5-Add/5-2-yaml.html'
                 }
             ]
         }],
@@ -125,14 +127,14 @@ module.exports = {
                 '',
                 '3-1-hexo-tag-aplayer/',
                 '3-2-hexo-tag-dplayer/'
-
             ],
             '/4-High-order-hexo-gamer/': [
                 ''
             ],
             '/5-Add/': [
                 '',
-                '5-1-quote.html'
+                '5-1-quote.html',
+                '5-2-yaml.html'
             ]
         },
         repo: 'EasyHexo/Easy-Hexo',

@@ -2,7 +2,7 @@
 title: hexo-tag-aplayer
 ---
 
-# Aplayer
+# Aplayer插件使用
 
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-MonoLogueChi-FE326D.svg?longCache=true&style=flat-square)](mailto:xxwhite@foxmail.com)
@@ -22,6 +22,8 @@ npm install hexo-tag-aplayer -s
 ```
 
 ## 配置
+
+配置项需要一些 Yaml 语法的基础知识，可以参见 [YAML语法简介](/5-Add/5-2-yaml.html)
 
 修改 hexo 的配置文件 `_config.yml` ，增加
 
@@ -50,7 +52,7 @@ aplayer:
 
 ## 使用
 
-使用 hexo-tag-aplayer 非常简单，只需要在 Markdown 文件中插入正确的标记就可以了。
+使用 hexo-tag-aplayer 非常简单，只需要在 MarkDown 文件中插入正确的标记就可以了。
 
 
 ::: v-pre
@@ -71,7 +73,7 @@ aplayer:
 
 好吧，对于新手来说，前面的你可能已经听懵逼了，忘记前面的使用方法，来看看下面的吧。
 
-使用 MetingJs ，首先要在配置里开启，还记得前面我说直接复制我的配置吗？
+使用 MetingJS ，首先要在配置里开启，还记得前面我说直接复制我的配置吗？
 
 ```yaml
 aplayer:
