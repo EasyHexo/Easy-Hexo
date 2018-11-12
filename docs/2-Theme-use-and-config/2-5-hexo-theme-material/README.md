@@ -26,14 +26,6 @@ State: writing.
 
 3. 将这个文件夹放到你的博客根目录下的 themes 文件夹下。
 
-在博客根目录打开终端，输入以下命令：
-
-```bash
-cd themes
-git clone https://github.com/viosey/hexo-theme-material.git material
-cd material
-```
-
 ![i6XOpT.png](@img/2/2-5/2.png)
 
 ## 启用 Material 主题
