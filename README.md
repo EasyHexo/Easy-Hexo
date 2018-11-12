@@ -65,7 +65,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 附上一个思维导图：
 
-![mind](https://i.loli.net/2018/10/20/5bcac0767a2d6.png)
+![mind](https://i.loli.net/2018/11/11/5be7d47aa0a0d.jpg)
 
 # 许可
 
