@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "name": "easy-hexo",
   "version": "2.0.0",
@@ -14,21 +13,3 @@
     "vuepress": "^0.14.4"
   }
 }
-=======
-{
-  "name": "easy-hexo",
-  "version": "2.0.0",
-  "description": "🤘 Build your own website with Hexo, the easy way.",
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  },
-  "repository": "https://github.com/EasyHexo/Easy-Hexo",
-  "author": "EasyHexo <124694738@qq.com>",
-  "license": "CC-BY-NC-ND-4.0",
-  "dependencies": {
-    "dplayer": "^1.25.0",
-    "vuepress": "^0.14.4"
-  }
-}
->>>>>>> master
