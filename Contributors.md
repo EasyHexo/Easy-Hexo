@@ -10,6 +10,7 @@
 
 - [Anoyer](https://anoyer.cn/)
 - Hun Dean
+- [leonGravel](https://leongravel.com/)
 - [ffdy](https://ffdy.github.io/)
 - [Markjuruo](https://markjuruo.ooo/) 
 - [MonoLogueChi](https://www.xxwhite.com/)
