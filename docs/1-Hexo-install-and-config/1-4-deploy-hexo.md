@@ -30,7 +30,7 @@ $ npm install hexo-server --save
 $ git config --global user.name "Your_name"
 $ git config --global user.email Your_email@example.com
 ```
-::: Git 小知识
+:::tip
 每次 Git 提交时都会附带这两条信息，用于记录是谁提交的更新，并且会随更新内容一起被记录到历史记录中。简单说，是用来标记的你的身份的~
 :::
 
@@ -58,7 +58,7 @@ $ hexo clean && hexo d -g
 :::
 
 ### 自定义域名
-1. 如果你拥有域名，请将你的域名解析指向以下 IP 地址中的任意一个
+1. 如果你拥有个人域名，请将你的域名解析指向以下 IP 地址中的任意一个
 
 ```yaml
 185.199.108.153
@@ -67,7 +67,7 @@ $ hexo clean && hexo d -g
 185.199.111.153
 ```
 
-以下为参考表格：
+域名解析记录参考：
 
 | 选项 | 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX优先 | 时间 |
 | :----: | :------: | :-------: | :------: | :------:| :-----: | :----: |
@@ -80,7 +80,7 @@ $ hexo clean && hexo d -g
 
 ## 部署到 Coding（dev.tencent.com）
 
-部署到 Coding 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 Coding page 地址而已。同时 Coding 在国内的访问速度会比较快。
+部署到 Coding 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 Coding Page 地址而已。同时 Coding 在国内的访问速度会比较快。
 
 可以看看 [Coding 官方文档](https://dev.tencent.com/help/) ，有绑定域名教程。
 
@@ -330,7 +330,7 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 	logallrefupdates = false
 	symlinks = false
 -	ignorecase = true
-+       ignorecase = false
++     ignorecase = false
 [branch "master"]
 	remote = ueser_name@HostIP:/var/repo/blog.git
 	merge = refs/heads/master
