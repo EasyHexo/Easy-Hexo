@@ -26,7 +26,7 @@ State: writing.
 
 3. 将这个文件夹放到你的博客根目录下的 themes 文件夹下。
 
-![i6XOpT.png](@img/2/2-5/2.png)
+![2.png](@img/2/2-5/2.png)
 
 ## 启用 Material 主题
 
@@ -41,12 +41,11 @@ State: writing.
 建议你将 `_config.template.yml` 文件备份，防止一些不可描述的的问题。
 :::
 
-![i6x8mQ.png](@img/2/2-5/3.png)
+![3.png](@img/2/2-5/3.png)
 
-回到主题根目录，用文本编辑器打开`根_config.yml`文件<br>
-找到`language`属性（我用的简体中文）
+回到主题根目录，用文本编辑器打开`根_config.yml`文件，找到`language`属性。（我用的简体中文）
 
-![icIGE8.png](@img/2/2-5/4.png)
+![4.png](@img/2/2-5/4.png)
 
 有以下几项可选：
 - العَرَبِيََّّة （ar）
@@ -62,12 +61,12 @@ State: writing.
 
 分别对应 language 文件下的文件
 
-![icI0uq.png](@img/2/2-5/5.png)
+![5.png](@img/2/2-5/5.png)
 
 在最下面找到 `theme` 属性
 
-![i6zA3V.png](@img/2/2-5/6.png)
-![i6Lih8.md.png](@img/2/2-5/7.png)
+![6.png](@img/2/2-5/6.png)
+![7.png](@img/2/2-5/7.png)
 
 将后面的字段改为你刚刚改的主题文件夹的名字，比如我的 `Material`。
 
@@ -86,7 +85,7 @@ $ hexo clean
 ```
 回车
 
-![icPF6P.png](@img/2/2-5/8.png)
+![8.png](@img/2/2-5/8.png)
 
 完美！！！:tada:
 
@@ -96,7 +95,7 @@ $ hexo g
 ```
 回车
 
-![icPQlq.png](@img/2/2-5/9.png)
+![9.png](@img/2/2-5/9.png)
 
 完全OK！！！:tada:
 
@@ -106,12 +105,12 @@ $ hexo s
 ```
 回车
 
-![icPqhj.png](@img/2/2-5/10.png)
+![10.png](@img/2/2-5/10.png)
 
 打开浏览器输入 `http://localhost:4000`，即可看见你博客的样子。
 
-![icPW9A.png](@img/2/2-5/11.png)
-![icP2hd.png](@img/2/2-5/12.png)
+![11.png](@img/2/2-5/11.png)
+![12.png](@img/2/2-5/12.png)
 
 点篇文章试试，如果没问题，那么恭喜你！
 :tada: :tada: :tada: :tada:
@@ -136,11 +135,11 @@ head:
     apple_touch_icon: "/img/favicon.png" #IOS主屏按钮图标
 ```
 
-![ic5c6I.png](@img/2/2-5/13.png)
+![13.png](@img/2/2-5/13.png)
 
 进入主题文件下的 `source/img` 文件夹，将 `favicon.png` 替换成你的网站图标，名字可以自定义，但必须和主题配置文件中的保持一致，比如我的图标名为 `F.png`：
 
-![ic5bXq.png](@img/2/2-5/14.png)
+![14.png](@img/2/2-5/14.png)
 
 ```yaml
     favicon: "/img/F.png" #正常网站图标
@@ -149,7 +148,7 @@ head:
 ```
 ----
 #### 2、优化 SEO
-这个设置启用后会在页面的 Head 中生成结构化数据，有助于改善 Google 等搜索引擎的 SEO <br>
+这个设置启用后会在页面的 Head 中生成结构化数据，有助于改善 Google 等搜索引擎的 SEO 。
 如果你在 `hexo g `时出现问题，不妨尝试将其设为 `false`
 
 ```yaml
@@ -179,7 +178,7 @@ scheme: Paradox #默认样式
 默认样式就像上面的演示<br>
 极简样式像这样的：
 
-![](@img/2/2-5/15.png)
+![15.png](@img/2/2-5/15.png)
 
 去除了隐藏侧边栏和文章的随机图片等功能，十分简洁
 
@@ -228,24 +227,26 @@ thumbnail:
     purecolor: #这里填入颜色代码,如果文章无缩略图,缩略图区域显示该颜色
     random_amount: 19 #缩略图的数量,如果你要自定义,请改为你的图片数
 ```
-Material 主题提供了 19 张简约图，如果你的文章没有定义缩略图，主题就会从随机图库中随机取一张图<br>如果随机图库中没有图片，那么该区域会显示你设置的颜色<br>如果你也没有设置颜色，则会显示你的主题色
+Material 主题提供了 19 张简约图，如果你的文章没有定义缩略图，主题就会从随机图库中随机取一张图。
+如果随机图库中没有图片，那么该区域会显示你设置的颜色。
+如果你也没有设置颜色，则会显示你的主题色。
 
-主题默认支持 `.png` 格式的缩略图，并且只支持 `.png` 的缩略图，命名格式还必须是 `Material-XX.png`<br>
+主题默认支持 `.png` 格式的缩略图，并且只支持 `.png` 的缩略图，命名格式还必须是 `Material-XX.png`。
 好吧，这看起来好像很坑，但它好在是开源的，可以自己动手修改
 
 进入 `themes/Material/layout/_partial` 文件夹，找到 `Paradox-post_entry-thumbnail.ejs` 和 `Paradox-post-thumbnail.ejs` 两个文件，用文本编辑器打开
 
-![](@img/2/2-5/16.png)
+![16.png](@img/2/2-5/16.png)
 
 如果你想用其他格式的图片，你可以 `Ctrl+f` 搜索 `.png`， 把如图位置的字段改为你想使用的格式（推荐使用 `.jpg` 格式，比较小，加载较快）：
 
 `Paradox-post_entry-thumbnail.ejs` 文件
 
-![](@img/2/2-5/17.png)
+![17.png](@img/2/2-5/17.png)
 
 `Paradox-post-thumbnail.ejs` 文件
 
-![](@img/2/2-5/18.png)
+![18.png](@img/2/2-5/18.png)
 
 这种方法只能同时使用同种格式的图片，如果你想用不同格式的图，请自行尝试 `if-else` 语法，也有很多软件可以批量改格式，比如`格式工厂`
 
@@ -263,15 +264,15 @@ Material 主题提供了 19 张简约图，如果你的文章没有定义缩略�
 
 `Paradox-post-thumbnail.ejs` 文件
 
-![](@img/2/2-5/19.png)
+![19.png](@img/2/2-5/19.png)
 
 `Paradox-post_entry-thumbnail.ejs` 文件
 
-![](@img/2/2-5/20.png)
+![20.png](@img/2/2-5/20.png)
 
 另外`主题 _config.yml` 文件 `img` 字段中改为：
 
-![](@img/2/2-5/21.png)
+![21.png](@img/2/2-5/21.png)
 
 ::: tip 注意
 如果你按如上方法命名，箭头所指的空格一定要有。其他的命名方式大体一致。
@@ -298,7 +299,7 @@ img:
 
 文章随机缩略图按上一栏配置
 
-![](@img/2/2-5/22.png)
+![22.png](@img/2/2-5/22.png)
 
 ----
 
@@ -343,7 +344,7 @@ footer_text: <a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxx
 ```
 页底显示的信息格式应与上面的例子一样
 
-![](@img/2/2-5/23.png)
+![23.png](@img/2/2-5/23.png)
 
 ----
 #### 2、二维码
@@ -406,7 +407,7 @@ hanabi:
 ```
 hanabi 默认效果（ C++ 为例）：
 
-![](@img/2/2-5/24.png)
+![24.png](@img/2/2-5/24.png)
 
 :::tip 注意
 两种高亮只能开启一个，prettify 样式见附录
@@ -427,7 +428,7 @@ license: 'This blog is under a <a href="/creativecommons.html" target="_blank">C
 ```
 你也可以在页面的 Front-Matter 中为不同文章添加不同的 License。
 
-![](@img/2/2-5/25.png)
+![25.png](@img/2/2-5/25.png)
 
 ----
 
@@ -463,7 +464,7 @@ sns:
     v2ex:
 ```
 
-![](@img/2/2-5/26.png)
+![26.png](@img/2/2-5/26.png)
 
 ----
 #### 2、分享菜单
@@ -480,7 +481,7 @@ sns_share:
     telegram: false
 ```
 
-![](@img/2/2-5/27.png)
+![27.png](@img/2/2-5/27.png)
 
 ----
 
@@ -565,7 +566,7 @@ Condor2048:
 ```
 添加多个友情链接，只需要根据上面的格式重复填写即可。
 
-![](@img/2/2-5/28.png)
+![28.png](@img/2/2-5/28.png)
 
 ----
 
@@ -601,7 +602,7 @@ layout: tags
 ---
 ```
 
-![](@img/2/2-5/29.png)
+![29.png](@img/2/2-5/29.png)
 
 #### 3、图库
 侧边栏添加`图库`：
