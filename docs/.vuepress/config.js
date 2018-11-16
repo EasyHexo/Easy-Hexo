@@ -76,11 +76,11 @@ module.exports = {
                     link: '/3-Plugins-use-and-config/'
                 },
                 {
-                    text: '3-1-hexo-tag-aplayer',
+                    text: 'hexo-tag-aplayer',
                     link: '/3-Plugins-use-and-config/3-1-hexo-tag-aplayer/'
                 },
                 {
-                    text: '3-2-hexo-tag-dplayer',
+                    text: 'hexo-tag-dplayer',
                     link: '/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/'
                 }
             ]
