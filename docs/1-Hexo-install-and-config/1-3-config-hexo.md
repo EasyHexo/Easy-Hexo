@@ -224,6 +224,19 @@ deploy:
 
 :::
 
+## Hexo 命令详解
+
+为了让大家更方便地使用 Hexo ，这里让大家学习一下 Hexo 的一些在终端中使用的命令。
+
+## `hexo init [folder]`
+
+这个命令是 Hexo 初始化命令。`[folder]` 表示你要初始化的文件夹。如果你要初始化本地，直接 `hexo init .` 。
+
+## `hexo new [layout] <title>`
+
+
+
+
 ## 视频
 
 <write/>
