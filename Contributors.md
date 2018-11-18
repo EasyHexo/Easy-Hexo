@@ -23,4 +23,5 @@
 
 ## Hexo 主题开发者
 
-- [xaoxuu - Material X 开发者](https://xaoxuu.com/wiki/material-x/)
+- [xaoxuu - Material X 主题开发者](https://xaoxuu.com/wiki/material-x/)
+- [GodBMW - BMW 主题开发者](https://godbmw.com/)
