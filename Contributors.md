@@ -25,3 +25,7 @@
 
 - [xaoxuu - Material X 主题开发者](https://xaoxuu.com/wiki/material-x/)
 - [GodBMW - BMW 主题开发者](https://godbmw.com/)
+
+## 其他贡献
+
+- [Passer+] (http://www.wrpotter.com)

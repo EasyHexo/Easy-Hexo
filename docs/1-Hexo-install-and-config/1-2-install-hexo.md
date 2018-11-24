@@ -1,6 +1,7 @@
 ---
 title: 安装 Hexo
 ---
+
 # 安装 Hexo
 
 在安装 Hexo 之前，你需要安装以下两个工具：
@@ -20,6 +21,10 @@ title: 安装 Hexo
 
 :::tip
 由于墙的原因，从上面的链接下载 git for windows 最好挂上一个代理，否则下载速度十分缓慢。也可以参考[这个页面](https://github.com/waylau/git-for-win)，收录了存储于百度云的下载地址。
+:::
+
+:::tip
+如果你是 CentOS 服务器上的，可以直接使用 [HexoOneClickInstallation](https://github.com/PasserByJia/HexoOneClickInstallation) 这个脚本快速安装 Hexo。
 :::
 
 ## 安装 Node.js
