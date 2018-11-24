@@ -281,7 +281,7 @@ Material 主题提供了 19 张简约图，如果你的文章没有定义缩略�
 ----
 
 #### 6、各种图片位置
-```bash
+```yaml
 # Images Settings
 img:
     logo: "/img/logo.png" #标志
@@ -304,7 +304,7 @@ img:
 ----
 
 #### 7、字体
-```bash
+```yaml
 # Custom Fonts
 #    family: the font-family which will be used in the theme
 #    use: uri of fonts host.
@@ -319,7 +319,7 @@ fonts:
 ```
 ----
 #### 8、文章卡片阴影
-```bash
+```yaml
 # Card Elevation Level
 card_elevation: 2 #请自行改变数值
 ```
@@ -327,7 +327,7 @@ card_elevation: 2 #请自行改变数值
 
 ### 三、自定义设置
 #### 1、站点成立时间
-```bash
+```yaml
 # Copyright
 # Specify the date when the site was setup.
 #    For example, if you set it as 2015, then footer will show '© 2015 - 2018'
@@ -335,7 +335,7 @@ copyright_since: 2015
 ```
 如果设为 2015，他会显示 `© 2015 - 2018`，如果不设，只会显示当前 `2018` 年
 
-```bash
+```yaml
 # Footer Text
 # You can specify the text you want to show in footer, HTML tag is supported.
 #   For example, you can setup ICP license number as:
@@ -348,7 +348,7 @@ footer_text: <a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxx
 
 ----
 #### 2、二维码
-```bash
+```yaml
 # Qrcode for redirect at other device
 #    use: choose which method to generate the qrcode for each posts.
 #        Available value: plugin | online
@@ -374,7 +374,7 @@ $ npm install hexo-helper-qrcode --save
 
 Material 主题提供了两种代码高亮：prettify | hanabi <br>
 启用前你需要吧`根 _config.yml` 文件中的代码高亮关闭，否则会产生冲突
-```bash
+```yaml
 highlight:
   enable: false #这里改为false
   line_number: false
@@ -382,7 +382,7 @@ highlight:
   tab_replace:
 ```
 `主题 _config.yml` 文件如下：
-```bash
+```yaml
 # Code highlight
 # You can only enable one of them to avoid issues.
 # Also you need to disable highlight option in hexo's _config.yml.
@@ -418,7 +418,7 @@ hanabi 默认效果（ C++ 为例）：
 #### 4、版权声明
 你可以在每篇文章的结尾添加你的版权说明，支持 Html 标签。License 以粗体显示，默认为空。 比如，你可这样设定 CC License。
 
-```bash
+```yaml
 # Post License
 # You can specify the text you want to show in the end of your posts and pages, HTML tag is supported.
 #   For example, you can setup a CC license as:
@@ -435,7 +435,7 @@ license: 'This blog is under a <a href="/creativecommons.html" target="_blank">C
 ### 四、菜单设置
 #### 1、行号，SNS 
 行号
-```bash
+```yaml
 # TOC Button
 
 toc:
@@ -446,7 +446,7 @@ toc:
 SNS
 
 填上你的个人链接，如果不想显示，留空或前面加 `#` 号
-```bash
+```yaml
 # SNS Menu
 sns:
     email: youremail@email.com #这个将显示在侧边栏头像下面
@@ -469,7 +469,7 @@ sns:
 ----
 #### 2、分享菜单
 如果为 `false` 将不显示在分享菜单
-```bash
+```yaml
 # SNS Share Switch
 sns_share:
     twitter: true
@@ -486,7 +486,7 @@ sns_share:
 ----
 
 #### 3、侧边栏设置
-```bash
+```yaml
 # Sidebar Customize
 sidebar:
     dropdown:
@@ -522,10 +522,12 @@ sidebar:
 ```
 图标可以到[这里](https://material.io/icons/)选择你喜欢的替换
 
+----
+
 ### 五、独立界面
 #### 1、友情链接
 侧边栏添加`友链`：
-```bash
+```yaml
     pages: #其他独立页面
         #####
         友链:
@@ -551,14 +553,14 @@ layout: links
 ---
 ```
 同样在根目录下 `source` 文件下创建 `_data` 文件夹（不可使用其他名字），在 `_data` 下创建 `links.yml` 文件，打开修改，格式为：
-```bash
+```yaml
 Name: # Name 替换为名字
     link: http://example.com #链接
     avatar: http://example.com/avatar.png #头像
     descr: "这是一个描述" #描述
 ```
 例子：
-```bash
+```yaml
 Condor2048:
     link: https://skylayer.pro/
     avatar: http://qlogo3.store.qq.com/qzone/1262500438/1262500438/50?1538278027
@@ -572,7 +574,7 @@ Condor2048:
 
 #### 2、标签云
 侧边栏添加`标签云`：
-```bash
+```yaml
     pages: #其他独立页面
         友链:
             link: "/links"
@@ -604,9 +606,11 @@ layout: tags
 
 ![29.png](@img/2/2-5/29.png)
 
+---
+
 #### 3、图库
 侧边栏添加`图库`：
-```bash
+```yaml
     pages: #其他独立页面
         友链:
             link: "/links"
@@ -640,10 +644,46 @@ layout: gallery
 ---
 ```
 同样在根目录下 `source/_data` 文件下创建 `gallery.yml` 文件，打开修改，格式为：
-```bash
+```yaml
 Name: #名字
     full_link: http://example.com/full-image.png #链接
     thumb_link: http://example.com/thumb-image.png #链接
     descr: "这是一个描述" #描述
 ```
 添加多张图片，只需要根据上面的格式重复填写即可。
+
+----
+
+### 六、第三方插件
+#### 1、评论系统
+```yaml
+# Comment Systems
+# Available value of "use":
+#     disqus | disqus_click | changyan | livere | gitment | gitalk | valine
+# If you want to use gitment or gitalk,you should get the client_id and client_secret form https://github.com/settings/applications/new
+# If you want to use valine,you should get the app_id and app_key form https://leancloud.cn ,more setting please see https://valine.js.org
+comment:
+    use: valine
+    shortname: # duoshuo or disqus shortname
+    changyan_appid:
+    changyan_conf:
+    changyan_thread_key_type: path
+    livere_data_uid:
+    gitment_repo:   # git repo of the hexo
+    gitment_owner:  # git repo's owner
+    gitment_client_id:  # github app client id 
+    gitment_client_secret :  # github app client secret 
+    valine_leancloud_appId:  JeUMqk7xExPauc7exoq8bze1-gzGzoHsz # leancloud application app id
+    valine_leancloud_appKey:  QNNm00LOvhxol7SfAChAR9s5 # leancloud application app key
+    valine_notify: true # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+    valine_verify: false # valine verify code (true/false)
+    valine_pageSize: 10 # comment list page size
+    valine_avatar: 大佬 # gravatar style https://valine.js.org/#/avatar
+    valine_lang: zh-cn # i18n
+    valine_placeholder: ヾﾉ≧∀≦)o来啊，快活啊! # valine comment input placeholder(like: Please leave your footprints )
+    valine_guest_info: nick,mail,link #valine comment header info
+    gitalk_repo: # git repo of the hexo
+    gitalk_owner: # git repo's owner
+    gitalk_client_id: # github app client id 
+    gitalk_client_secret: # github app client secret
+```
