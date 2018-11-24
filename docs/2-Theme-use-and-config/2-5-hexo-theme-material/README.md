@@ -866,6 +866,10 @@ Material 主题引用了下述第三方库，你可以使用公共 CDN 库加载
 
 ----
 
+更多功能请参考[插件使用与配置](https://easyhexo.github.io/Easy-Hexo/3-Plugins-use-and-config/)
+
+参考文章 [Material Theme](https://neko-dev.github.io/material-theme-docs/#/start)
+
 ### 附录
 主题 _config.yml 1.5.2 版文件：
 ```yaml
@@ -1178,6 +1182,3 @@ vendors:
     material_icons:
 
 ```
-更多功能请参考[插件使用与配置](https://easyhexo.github.io/Easy-Hexo/3-Plugins-use-and-config/)
-
-参考文章 [Material Theme](https://neko-dev.github.io/material-theme-docs/#/start)
