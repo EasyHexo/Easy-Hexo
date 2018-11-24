@@ -5,7 +5,7 @@ title: Hexo-theme-yilia
 
 State: writing.
 
-Hexo-Yilia 是一个优秀的 Hexo 主题，由 [@Litten](https://litten.me) 开发,受到了广大 Hexo 使用者的欢迎。  
+Hexo-Yilia 是一个优秀的 Hexo 主题，由 [Litten](https://litten.me) 开发,受到了广大 Hexo 使用者的欢迎。  
 
 1. 优秀的加载速度
 2. 优秀的双栏设计
@@ -84,7 +84,7 @@ Yilia 有着层次分明的渲染结构，十分适合二次编写。但本文�
 
 每款 Hexo 主题都有它的 `_config.yml` 文件，里面放有可以直接修改的个性化设置。  
 
-作者 [@Litten](https://litten.me) 已经对其中内容进行了十分详细的解释，应当说是十分易懂的，因此一下将对其中一些细节进行再讲解。  
+作者 [Litten](https://litten.me) 已经对其中内容进行了十分详细的解释，应当说是十分易懂的，因此一下将对其中一些细节进行再讲解。  
 
 ### 左侧菜单
 

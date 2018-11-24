@@ -78,11 +78,11 @@ $ hexo clean && hexo d -g
 2. 打开仓库设置,找到 GitHub Pages 项目，修改 Custom domain 选项的值为你的自定义域名（不带 http 等前缀）
 3. 勾选 Custom domain 选项下的 Enforce HTTPS 选项，开启 Https 服务。
 
-## 部署到 Coding（dev.tencent.com）
+## 部署到 CODING（dev.tencent.com）
 
-部署到 Coding 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 Coding Page 地址而已。同时 Coding 在国内的访问速度会比较快。
+部署到 CODING 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 CODING Pages 地址而已。同时 CODING 在国内的访问速度会比较快。
 
-可以看看 [Coding 官方文档](https://dev.tencent.com/help/) ，有绑定域名教程。
+可以看看 [CODING 官方文档](https://dev.tencent.com/help/) ，有绑定域名教程。
 
 ## 部署到 CentOS Servers
 
