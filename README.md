@@ -55,17 +55,18 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 目前仍有很多地方没有写完，欢迎各位大佬加入我们 Easy Hexo 团队！🎉🎉🎉
 
-请联系 ChungZH (QQ:124694738)，加好友时请注明 Easy Hexo。或者你也可以加入 Easy Hexo 团队的 QQ 群：935778924。Thanks~ 
+请联系 ChungZH `QQ:124694738`，加好友时请注明 `Easy Hexo`。或者你也可以加入 `Easy Hexo` 团队的 `QQ 群：935778924`。
 
 
 
 # 状态
 
-正在写 `Hexo安装与配置` 与 `Hexo主题安装与配置`。
+欢迎查阅 [项目进度板](https://www.notion.so/easyhexo/78df269559cb49fcb1630c84d50f2c84?v=15671812e313406ea99a02d5b2cb1e30)。
 
 附上一个思维导图：
 
 ![mind](https://i.loli.net/2018/11/11/5be7d47aa0a0d.jpg)
+
 
 # 许可
 
