@@ -97,7 +97,7 @@ $ hexo g
 
 ![9.png](@img/2/2-5/9.png)
 
-完全OK！！！:tada:
+完全 OK！！！:tada:
 
 输入：
 ```bash

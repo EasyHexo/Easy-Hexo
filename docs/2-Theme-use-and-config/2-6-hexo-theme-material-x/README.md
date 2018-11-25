@@ -361,10 +361,10 @@ comments: false
 ```
 
 
-### 是否开启渲染MathJax
+### 是否开启渲染 MathJax
 
 默认值：`false`
-如果某一篇文章含有MathJax数学公式，可以在这篇文章中设置为 `true`。
+如果某一篇文章含有 MathJax 数学公式，可以在这篇文章中设置为 `true`。
 
 ```yaml
 ---
@@ -484,7 +484,7 @@ mathjax: true
 
 #### 背景颜色
 
-| key                  | value的作用                                |
+| key                  | value 的作用                                |
 | -------------------- | ------------------------------------------ |
 | @theme_bg_main       | 网页背景色                                 |
 | @theme_bg_navbar     | 导航栏背景色                               |
@@ -495,7 +495,7 @@ mathjax: true
 
 #### 文字颜色
 
-| key                   | value的作用                            |
+| key                   | value 的作用                            |
 | --------------------- | -------------------------------------- |
 | @theme_text_header    | 标题文字颜色（h1/h2）                  |
 | @theme_text_link      | 链接颜色                               |

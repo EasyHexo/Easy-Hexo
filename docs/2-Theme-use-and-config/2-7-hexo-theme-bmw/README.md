@@ -20,7 +20,7 @@ $ cd your-blog/
 $ git clone git@github.com:dongyuanxin/theme-bmw.git themes/bmw
 ```
 
-### 修改HEXO配置文件
+### 修改 Hexo 配置文件
 
 修改 Hexo 的配置文件：`your-blog/_config.yml`:
 
@@ -208,14 +208,14 @@ friends: # 这是一个数组, 每个元素是一个obj对象
 
 ![3.png](@img/2/2-7/3.png)
 
-进入刚刚创建的应用，在左上方屏幕，点击创建新 `Class`。接下来，我们就要为**评论系统**和**文章统计插件**分别创建2个应用。
+进入刚刚创建的应用，在左上方屏幕，点击创建新 `Class`。接下来，我们就要为**评论系统**和**文章统计插件**分别创建 2 个应用。
 
 ![4.png](@img/2/2-7/4.png)
 
 1. 为评论系统开通 `Class` : 名称必须是 `Comment`, `ACL` 权限选择“限制写入”，如下图
-  ![5.png](@img/2/2-7/5.png)
+    ![5.png](@img/2/2-7/5.png)
 2. 为文章统计插件开通 `Class` : 名称必须是 `Timer`, `ACL` 权限选择“无限制”，如下图
-  ![6.png](@img/2/2-7/6.png)
+    ![6.png](@img/2/2-7/6.png)
 
 
 ### 3.2 配置密钥

@@ -23,9 +23,9 @@ npm install hexo-tag-aplayer -s
 
 ## 配置
 
-配置项需要一些 Yaml 语法的基础知识，可以参见 [YAML语法简介](/5-Add/5-2-yaml.html)
+配置项需要一些 Yaml 语法的基础知识，可以参见 [YAML 语法简介](/5-Add/5-2-yaml.html)
 
-修改 hexo 的配置文件 `_config.yml` ，增加
+修改 Hexo 的配置文件 `_config.yml` ，增加
 
 ```yaml
 aplayer:
@@ -121,9 +121,9 @@ WTF？这是什么？？？是不是还是一脸懵逼呢，不急，听我慢�
 ```
 :::
 
-其中 `{% meting %}` 是meting的标签， `002j785c33YQHT` 是 id ， `tencent` 是平台， `song` 是类型，下面就怎么获得 id 展开讨论。
+其中 `{% meting %}` 是 meting 的标签， `002j785c33YQHT` 是 id ， `tencent` 是平台， `song` 是类型，下面就怎么获得 id 展开讨论。
 
-### QQ音乐
+### QQ 音乐
 
 推荐使用
 

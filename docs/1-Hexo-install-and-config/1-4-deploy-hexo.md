@@ -24,7 +24,7 @@ $ npm install hexo-server --save
 ### 配置 Git
 
 如果你只是安装好了 Git 但没有配置过你的 Git ，那么现在需要做的第一件事情就是设置你的 Git 用户名和邮箱。
-在GitBash中执行以下两条命令配置你的用户名和邮箱，这里建议用户名和邮箱与你的 GitHub 用户名和邮箱保持一致。
+在 Git Bash 中执行以下两条命令配置你的用户名和邮箱，这里建议用户名和邮箱与你的 GitHub 用户名和邮箱保持一致。
 
 ```bash
 $ git config --global user.name "Your_name"
@@ -49,7 +49,7 @@ deploy:
 
 在你的 Hexo 站点根目录下，执行如下命令即可发布到 GitHub Pages 上。
 
-```
+```bash
 $ hexo clean && hexo d -g
 ```
 
@@ -69,7 +69,7 @@ $ hexo clean && hexo d -g
 
 域名解析记录参考：
 
-| 选项 | 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX优先 | 时间 |
+| 选项 | 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先 | 时间 |
 | :----: | :------: | :-------: | :------: | :------:| :-----: | :----: |
 | DNS | A    | @   | 默认  | 185.199.111.153           |  --  | 600  |
 | URL | CMAME | @  | 默认  | your_githubpage_repo_name |  --   | 600  |
@@ -89,7 +89,7 @@ $ hexo clean && hexo d -g
 ### 预先准备
 
 - 确保你的 PC 已经安装好 Hexo 主程序的并且生成站点文件夹。安装 Hexo，请参阅[安装 Hexo](/1-Hexo-install-and-config/1-2-install-hexo.html)
-- 一台搭载 CenOS 7.4 64bit 的 ECS 服务器实例，其他Linux系统也可以
+- 一台搭载 CenOS 7.4 64bit 的 ECS 服务器实例，其他 Linux 系统也可以
 - 你至少应该掌握一丢丢的 Linux 命令
 
 ### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
@@ -139,7 +139,7 @@ $ ssh your_user_name@HostIP   //验证是否添加成功
 
 #### 禁止 Git 用户 Shell 登陆权限
 
-出于安全考虑，禁用 Git 用户的 shell 权限(必须先验证是否可以免密码登陆，可以后再禁用 shell 权限，否则无法通过 `ssh-copy-id -i` 添加SSH公钥)，使用 `vim /etc/passwd` 命令修改 `~/etc/` 下的 passwa 文件
+出于安全考虑，禁用 Git 用户的 shell 权限(必须先验证是否可以免密码登陆，可以后再禁用 shell 权限，否则无法通过 `ssh-copy-id -i` 添加 SSH 公钥)，使用 `vim /etc/passwd` 命令修改 `~/etc/` 下的 passwa 文件
 
 ```diff
 -  git:x:1001:1001:,,,:/home/git:/bin/bash
@@ -204,7 +204,7 @@ chmod +x /var/repo/blog.git/hooks/post-receive
 
 #### 安装 Nginx
 
-> Nginx 是一个高性能的 HTTP 和反向代理服务，也是一个IMAP/POP3/SMTP服务。外网用户访问服务器的 Web 服务由 Nginx 提供，Nginx 需要配置  静态资源的路径信息才能通过 url 正确访问到服务器上的静态资源。
+> Nginx 是一个高性能的 HTTP 和反向代理服务，也是一个 IMAP/POP3/SMTP 服务。外网用户访问服务器的 Web 服务由 Nginx 提供，Nginx 需要配置静态资源的路径信息才能通过 url 正确访问到服务器上的静态资源。
 
 在安装之前我们先创建用于存放静态资源的目录 `/home/www/hexo` ，并更改其所有者，稍后将其设置为 Nginx 的默认静态资源目录。
 
@@ -309,7 +309,7 @@ $ hexo clean && hexo d -g
 
 ### Hooks 失效
 
-如果部署成功，但是 `/home/www/hexo` 目录的资源文件并未更新，请检查 `post-receive` 是否有执行权限，以及 `/home/www/hexo` 文件所有者是否为git用户，以及是否具有读写权限。
+如果部署成功，但是 `/home/www/hexo` 目录的资源文件并未更新，请检查 `post-receive` 是否有执行权限，以及 `/home/www/hexo` 文件所有者是否为 Git 用户，以及是否具有读写权限。
 
 ```bash
 chown -R git:git /var/repo/blog.git  //更改blog.git目录的所有者
@@ -317,9 +317,9 @@ chmod +x /var/repo/blog.git/hooks/post-receive   //提升post-receive执行权
 chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文件夹为空
 ```
 
-### 部署后，部分页面404
+### 部署后，部分页面 404
 
-部分情况下，在初次部署之后，部分文章或者页面路径大小如果更改了，会导致新部署上去的页面出现404错误。
+部分情况下，在初次部署之后，部分文章或者页面路径大小如果更改了，会导致新部署上去的页面出现 404 错误。
 这是由于 Git 没有区分大小写导致的文件路径错误。修改 `hexo根目录/.deploy_git/.git/` 下的 `config` 文件
 
 ```diff 
