@@ -16,3 +16,8 @@ State: writing.
 
 ## 下载 Apollo 主题
 
+首先，在博客根目录打开终端，输入以下命令：
+```bash
+npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
+git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
+```
