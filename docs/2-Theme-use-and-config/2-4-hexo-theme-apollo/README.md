@@ -3,10 +3,9 @@ title: Hexo-theme-apollo
 ---
 # Hexo-theme-apollo
 
-State: writing.
-
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-ChungZH-43CD80.svg?longCache=true&style=flat-square)](https://github.com/chungzh)
+![State: writing](https://img.shields.io/badge/State-writing-8E64B0.svg?style=flat-square)
 
 [Apollo 主题地址](https://github.com/pinggod/hexo-theme-apollo)
 
@@ -27,3 +26,4 @@ git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
 ```
 
 就把 Apollo 主题下载好了。
+

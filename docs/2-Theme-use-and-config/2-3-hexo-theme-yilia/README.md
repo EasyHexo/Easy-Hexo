@@ -3,7 +3,7 @@ title: Hexo-theme-yilia
 ---
 # Hexo-theme-yilia
 
-State: writing.
+![State: writing](https://img.shields.io/badge/State-writing-8E64B0.svg?style=flat-square)
 
 Hexo-Yilia 是一个优秀的 Hexo 主题，由 [Litten](https://litten.me) 开发,受到了广大 Hexo 使用者的欢迎。  
 
