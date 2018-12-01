@@ -25,3 +25,5 @@ State: writing.
 npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
 git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
 ```
+
+就把 Apollo 主题下载好了。

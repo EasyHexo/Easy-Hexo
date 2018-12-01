@@ -71,6 +71,10 @@ module.exports = {
                 {
                     text: 'Hexo-theme-bmw',
                     link: '/2-Theme-use-and-config/2-7-hexo-theme-bmw/'
+                },
+                {
+                    text: 'Hexo-theme-aero-dual',
+                    link: '/2-Theme-use-and-config/2-8-hexo-theme-aero-dual/'
                 }
             ]
         }, {
@@ -126,7 +130,8 @@ module.exports = {
                 '2-4-hexo-theme-apollo/',
                 '2-5-hexo-theme-material/',
                 '2-6-hexo-theme-material-x/',
-                '2-7-hexo-theme-bmw/'
+                '2-7-hexo-theme-bmw/',
+                '2-8-hexo-theme-aero-dual/'
             ],
             '/3-Plugins-use-and-config/': [
                 '',
