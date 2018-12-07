@@ -14,5 +14,6 @@ title: 特别致谢
 
 ## GitHub 项目
 
-<!-- [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) -->
+[HelloGitHub](https://github.com/521xueweihan/HelloGitHub) 
+
 [HexoEditor](https://github.com/zhuzhuyule/HexoEditor)
