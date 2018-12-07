@@ -12,6 +12,19 @@ module.exports = {
     ],
     themeConfig: {
         nav: [{
+            text: '序',
+            items: [{
+                    text: '序',
+                    link: '/0-Intro/'  
+            }, {
+                    text: '项目成员',
+                    link: '/0-Intro/0-1-member.html'
+            },{
+                    text: '特别致谢',
+                    link: '/0-Intro/0-2-thanks.html'
+            }
+            ]
+        },{
             text: 'Hexo 安装与配置',
             items: [{
                     text: '概要',
@@ -113,6 +126,11 @@ module.exports = {
             ]
         }],
         sidebar: {
+            '/0-Intro/': [
+                '',
+                '0-1-member.html',
+                '0-2-thanks.html'
+            ],
             '/1-Hexo-install-and-config/': [
                 '',
                 '1-1-meet-hexo.html',
