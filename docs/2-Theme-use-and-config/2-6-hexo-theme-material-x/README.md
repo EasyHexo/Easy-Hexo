@@ -3,7 +3,7 @@ title: Hexo-theme-material-x
 ---
 # Hexo-theme-material-x
 
-:::tip
+::: tip 提示
 特别鸣谢本文作者：[xaoxuu](https://xaoxuu.com/)
 :::
 
@@ -67,7 +67,7 @@ favicon: "https://xaoxuu.com/assets/img/favicon.ico"
 
 把 `themes/material-x/_config.yml` 中的 **所有** 内容复制到博客主目录的 `_config.yml` 文件中，然后根据自己的需要填写和修改。这样做的好处是：更新主题的时候你修改过的配置就不会被覆盖了。
 
-:::tip
+::: tip 提示
 以下这些配置如果没有特殊说明，都指的是博客主目录的 `_config.yml` 文件。
 :::
 
@@ -223,7 +223,7 @@ recommended_posts:
   fixedNumber: false
 ```
 
-:::tip
+::: tip 提示
 注意：`autoDisplay: false` 这一项不要修改，因为自动显示效果不佳，作者已经在主题里给它设置显示位置了。
 :::
 
@@ -378,7 +378,7 @@ mathjax: true
 
 找到 `themes/material-x/source/less/_defines.less` 这个文件。
 
-:::tip
+::: tip 提示
 由于这个文件在 `themes/material-x` 中，所以更新主题的时候先备份一下 `_defines.less` 这个文件，更新之后对比改动自行修改。
 :::
 
