@@ -1,5 +1,4 @@
 <div align="center"><img src="https://i.loli.net/2018/10/18/5bc852dfd5270.jpg" alt="Icon Badge" width="40%" /></div>
-<!-- the new image URL is https://i.loli.net/2018/10/21/5bcbcb5e32011.jpg   -- by Markjuruo -->
 
 
 <h1 align="center">
@@ -61,7 +60,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 # 状态
 
-欢迎查阅 [项目进度板](https://www.notion.so/easyhexo/78df269559cb49fcb1630c84d50f2c84?v=15671812e313406ea99a02d5b2cb1e30)。
+欢迎查阅 [项目进度板](https://github.com/orgs/EasyHexo/projects/1)。
 
 附上一个思维导图：
 
