@@ -321,11 +321,11 @@ MetingJS用法见[ meto 的文章](https://i-meto.com/ghost-aplayer/)
 > Disqus 替代方案 - 使用 Disqus API 渲染评论列表
 ### 修改文件
 * 在`themes\indigo\layout\_partial\post\comment.ejs`中结尾插入：
-```ejs
+```javascript
 <%- partial('../plugins/disqusjs') %>
 ```
 * 在`themes\indigo\layout\_partial\plugins`中创建`disqusjs.ejs`,内容如下：
-```ejs
+```javascript
 <% if (theme.disqusjs) { %>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.0/dist/disqusjs.css">
 <script src="https://cdn.jsdelivr.net/npm/disqusjs@1.0/dist/disqus.js"></script>
