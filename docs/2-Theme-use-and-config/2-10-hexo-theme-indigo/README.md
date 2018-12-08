@@ -1,7 +1,7 @@
 ------
 title: Hexo-theme-material-indigo
 ------
-
+# Hexo-theme-material-indigo
 ## 简介
 
 这是一个 Material Design 风格的 Hexo 主题，基于 Hexo 3.0+ 制作。 [Preview](http://imys.net/)  
