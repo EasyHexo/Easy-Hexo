@@ -304,11 +304,13 @@ ICP_license: 京ICP备你妈的案
 ```javascript
 <script src="//cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
 ```
-然后就可以在任何地方随时插入音乐了。
+然后就可以在任何地方随时插入音乐了，例如：
+```markdown
+文章内容1
+<div class="aplayer" data-id="60198" data-server="netease" data-type="playlist" data-mode="random"></div>
+文章内容2
+```
 MetingJS用法见[meto的文章](https://i-meto.com/ghost-aplayer/)
-## 为主题安装disqusJS
-> 注：以下部分根据[DisqusJS](https://github.com/SukkaW/DisqusJS)README.md配置，可同理应用于其他主题。  
-> Disqus 替代方案 - 使用 Disqus API 渲染评论列表    
 
 
 
