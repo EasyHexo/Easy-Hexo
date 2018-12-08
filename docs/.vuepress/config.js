@@ -11,6 +11,15 @@ module.exports = {
         }]
     ],
     themeConfig: {
+        gitalk: {
+            owner: 'EasyHexo',
+            repo: 'EasyHexo',
+            admin: [ process.env.GIT_NAME ],
+            clientID: process.env.GH_OAUTH_ID,
+            clientSecret: process.env.GH_OAUTH_SECRET,
+            labels: [ 'EasyHexo' ],
+            distractionFreeMode: false,
+        },
         nav: [{
             text: '序',
             items: [{
@@ -88,7 +97,11 @@ module.exports = {
                 {
                     text: 'Hexo-theme-aero-dual',
                     link: '/2-Theme-use-and-config/2-8-hexo-theme-aero-dual/'
-                }
+                },
+                {
+                  text: 'Hexo-theme-amber',
+                  link: '/2-Theme-use-and-config/2-9-hexo-theme-amber/'
+                },
             ]
         }, {
             text: '插件使用与配置',
@@ -149,7 +162,8 @@ module.exports = {
                 '2-5-hexo-theme-material/',
                 '2-6-hexo-theme-material-x/',
                 '2-7-hexo-theme-bmw/',
-                '2-8-hexo-theme-aero-dual/'
+                '2-8-hexo-theme-aero-dual/',
+                '2-9-hexo-theme-amber/',
             ],
             '/3-Plugins-use-and-config/': [
                 '',
