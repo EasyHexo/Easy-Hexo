@@ -49,8 +49,12 @@ const renderGitalk = (fullPath, options) => {
 }
 
 export default ({ Vue, options, router, siteData }) => {
-  if (!document) {
-    return
+  try {
+    if (!document) {
+      return
+    }
+    integrateGitalk(router, { ...siteData.themeConfig.gitalk })
+  } catch (e) {
+    console.error(e.message)
   }
-  integrateGitalk(router, { ...siteData.themeConfig.gitalk })
 }
