@@ -13,4 +13,4 @@ State: writing.
 
 :::
 
-[2-1 Hexo-theme-next 5.x.x](/2-Theme-use-and-config/2-1-hexo-theme-next-5.x.x.html)
+[2-1 Hexo-theme-next 5.x.x](2-1-hexo-theme-next-5.x.x/)
