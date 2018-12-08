@@ -14,7 +14,7 @@ title: Hexo-theme-bmw
 
 ### 下载主题代码
 
-```sh
+```bash
 $ hexo init your-blog
 $ cd your-blog/
 $ git clone git@github.com:dongyuanxin/theme-bmw.git themes/bmw
@@ -55,7 +55,7 @@ theme-bmw 的配置文件：`your-blog/themes/bmw/_config.yml`
 
 ### 启动博客
 
-```sh
+```bash
 $ hexo s
 ```
 
@@ -69,7 +69,7 @@ Hexo 默认监听 4000 端口, 此时, 请使用 Chrome 等主流浏览器打开
 
 生成标签页面：
 
-```sh
+```bash
 $ hexo new page tags
 ```
 
@@ -91,7 +91,7 @@ tags:
 
 生成分类页面：
 
-```sh
+```bash
 $ hexo new page categories
 ```
 
@@ -113,7 +113,7 @@ tags:
 
 生成分类页面：
 
-```sh
+```bash
 $ hexo new page about
 ```
 
@@ -141,7 +141,7 @@ BMW 主题会自动渲染此篇 Markdown，并且在 `http://localhost:4000/abou
 
 #### 生成友链界面
 
-```sh
+```bash
 $ hexo new page friends
 ```
 
