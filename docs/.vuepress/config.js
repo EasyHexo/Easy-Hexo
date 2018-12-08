@@ -13,10 +13,10 @@ module.exports = {
     themeConfig: {
         gitalk: {
             owner: 'EasyHexo',
-            repo: 'EasyHexo',
-            admin: [ process.env.GIT_NAME ],
-            clientID: process.env.GH_OAUTH_ID,
-            clientSecret: process.env.GH_OAUTH_SECRET,
+            repo: 'Easy-Hexo',
+            admin: [ ChungZH ],
+            clientID: 811aae4a01c8a8b1f19d,
+            clientSecret: 3a5a87ead6e2aa0aa6353b8d4bf88eff25170944,
             labels: [ 'EasyHexo' ],
             distractionFreeMode: false,
         },
