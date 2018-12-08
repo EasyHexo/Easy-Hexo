@@ -2,7 +2,6 @@
 title: Hexo-theme-material-indigo
 ------
 # Hexo-theme-material-indigo
-
 ## 简介
 
 这是一个 Material Design 风格的 Hexo 主题，基于 Hexo 3.0+ 制作。 [Preview](http://imys.net/)  
@@ -298,7 +297,7 @@ ICP_license: 京ICP备你妈的案
 ```
 以上是官方文档中所有配置，为说明配置在配置文件中都有中文说明。  
 ## 为主题安装MetingJS
-> 注：以下部分根据[MetingJS](https://github.com/metowolf/MetingJS)README.md配置，可同理应用于其他主题。 
+> 注：以下部分根据[MetingJS](https://github.com/metowolf/MetingJS)中README.md配置，可同理应用于其他主题。 
 ### 修改文件
 * 在`themes\indigo\layout\_partial\head.ejs`中插入在`</head>`前：
 ```javascript
@@ -317,6 +316,41 @@ ICP_license: 京ICP备你妈的案
 文章内容2
 ```
 MetingJS用法见[ meto 的文章](https://i-meto.com/ghost-aplayer/)
-
-
-
+## 为主题安装DisqusJS
+> 注：以下部分根据[DisqusJS](https://suka.js.org/DisqusJS/)中README.md配置，可同理应用于其他主题。 
+> Disqus 替代方案 - 使用 Disqus API 渲染评论列表
+### 修改文件
+* 在`themes\indigo\layout\_partial\post\comment.ejs`中结尾插入：
+```ejs
+<%- partial('../plugins/disqusjs') %>
+```
+* 在`themes\indigo\layout\_partial\plugins`中创建`disqusjs.ejs`,内容如下：
+```ejs
+<% if (theme.disqusjs) { %>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.0/dist/disqusjs.css">
+<script src="https://cdn.jsdelivr.net/npm/disqusjs@1.0/dist/disqus.js"></script>
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+        var dsqjs = new DisqusJS({
+            shortname: '<%- theme.disqusjs.shortname %>',
+            apikey: '<%- theme.disqusjs.apikey %>',
+        });
+    </script>
+</section>
+<% } %>
+```
+* 配置Disqus Application  
+在 [Disqus API Application](https://disqus.com/api/applications/) 处注册一个 Application。  
+![disqusapi1](https://i.loli.net/2018/12/08/5c0b867d2b643.png)  
+点击新创建的 Application，获取你的 API Key（公钥）。  
+![disqusapi2](https://i.loli.net/2018/12/08/5c0b86c16d36d.png)  
+在 Application 的 Settings 页面设置你的域名，Disqus 会检查 API 请求的 Referrer。  
+![disqusapi3](https://i.loli.net/2018/12/08/5c0b86e42336d.png)  
+* 主题配置文件`themes\indigo\_config.yml`中插入:
+```yaml
+disqusjs:
+  shortname: shortname #你的 Disqus Forum 的 shortname，你可以在  https://disqus.com/admin/settings/general/ 获取你的 shortname
+  apikey: API Key #DisqusJS 向 API 发起请求时使用的 API Key，你应该在配置 Disqus Application 时获取了 API Key
+```
+请确保其他评论关闭(配置为false)。
