@@ -1,7 +1,13 @@
-hexo-theme-material-indigo
-================
-Material Design 风格的Hexo主题，基于 Hexo 3.0+ 制作。 [Preview](http://imys.net/)  
-本文使用`$`作为命令提示符, 部分内容搬运自[indigo主题官方文档](https://github.com/yscoder/hexo-theme-indigo/wiki)。
+------
+title: Hexo-theme-material-indigo
+------
+# Hexo-theme-material-indigo
+
+## 简介
+
+这是一个 Material Design 风格的 Hexo 主题，基于 Hexo 3.0+ 制作。 [Preview](http://imys.net/)  
+本文使用`$`作为命令提示符, 部分内容搬运自[ indigo 主题官方文档](https://github.com/yscoder/hexo-theme-indigo/wiki)。
+
 ## Feature
 
 1. 仅支持 IE10+ 等现代浏览器。
@@ -310,7 +316,7 @@ ICP_license: 京ICP备你妈的案
 <div class="aplayer" data-id="60198" data-server="netease" data-type="playlist" data-mode="random"></div>
 文章内容2
 ```
-MetingJS用法见[meto的文章](https://i-meto.com/ghost-aplayer/)
+MetingJS用法见[ meto 的文章](https://i-meto.com/ghost-aplayer/)
 
 
 
