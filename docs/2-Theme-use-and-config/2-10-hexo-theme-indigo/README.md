@@ -290,10 +290,25 @@ lightbox: true
 ```yaml
 ICP_license: 京ICP备你妈的案
 ```
------------------------------分割线-------------------------------
 以上是官方文档中所有配置，为说明配置在配置文件中都有中文说明。  
+## 为主题安装MetingJS
+> 注：以下部分根据[MetingJS](https://github.com/metowolf/MetingJS)README.md配置，可同理应用于其他主题。 
+### 修改文件
+* 在`themes\indigo\layout\_partial\head.ejs`中插入在`</head>`前：
+```javascript
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+</head>
+```
+* 在`themes\indigo\layout\_partial\script.ejs`中结尾插入：
+```javascript
+<script src="//cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+```
+然后就可以在任何地方随时插入音乐了。
+MetingJS用法见[meto的文章](https://i-meto.com/ghost-aplayer/)
 ## 为主题安装disqusJS
-Disqus 替代方案 - 使用 Disqus API 渲染评论列表  
+> 注：以下部分根据[DisqusJS](https://github.com/SukkaW/DisqusJS)README.md配置，可同理应用于其他主题。  
+> Disqus 替代方案 - 使用 Disqus API 渲染评论列表    
 
 
 
