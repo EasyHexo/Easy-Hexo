@@ -12,9 +12,9 @@ module.exports = {
     ],
     themeConfig: {
         gitalk: {
-            owner: 'EasyHexo',
+            owner: 'ChungZH',
             repo: 'Easy-Hexo',
-            admin: [ ChungZH ],
+            admin: [ 'ChungZH' ],
             clientID: '811aae4a01c8a8b1f19d',
             clientSecret: '3a5a87ead6e2aa0aa6353b8d4bf88eff25170944',
             labels: [ 'EasyHexo' ],
