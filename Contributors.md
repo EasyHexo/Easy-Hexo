@@ -8,11 +8,15 @@
 
 ## 项目共同维护者
 
+- Alpha1022
 - [Anoyer](https://anoyer.cn/)
 - Hun Dean
 - [leonGravel](https://leongravel.com/)
 - [ffdy](https://ffdy.github.io/)
-- [Markjuruo](https://markjuruo.ooo/) 
+- [g-zhima](https://g-zhima.github.io)
+- [Ghosin](https://www.ghosin.com/)
+- [Markjuruo](https://markjuruo.ooo/)
+- [Mitscherlich Wei](https://mitscherlich.me/) 
 - [MonoLogueChi](https://www.xxwhite.com/)
 - [MoshiYeap](https://MoshiYeap.github.io/)
 - [SpencerWoo](https://spencerwoo.com/)
