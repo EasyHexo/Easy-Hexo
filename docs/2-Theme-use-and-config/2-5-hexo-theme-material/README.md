@@ -6,7 +6,7 @@ title: Hexo-theme-material
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-ffy-800080.svg?longCache=true&style=flat-square)](https://github.com/ffdy)
 
-::: tip 注意
+::: tip 提醒
 注意，这里介绍的 Material 主题是 1.5.2 的版本，不建议新手使用最新的版本，因为好像有很多 Bug（作者最近失联了）
 :::
 
@@ -28,14 +28,14 @@ title: Hexo-theme-material
 
 ## 启用 Material 主题
 
-::: tip 注意
+::: tip 提醒
 这里有两个 `_config.yml` 文件，一个位于博客根目录，另一个位于主题文件夹下，下面分别叫他们`根 _config.yml `文件和`主题 _config.yml `文件。
 :::
 
 进入 Material 文件夹，将 `_config.template.yml` 重命名为 `_config.yml`
 （这个 `_config.yml` 文件是 `主题 _config.yml` 文件）
 
-::: tip 注意
+::: tip 提醒
 建议你将 `_config.template.yml` 文件备份，防止一些不可描述的的问题。
 :::
 
@@ -68,7 +68,7 @@ title: Hexo-theme-material
 
 将后面的字段改为你刚刚改的主题文件夹的名字，比如我的 `Material`。
 
-::: tip 注意
+::: tip 提醒
 
 在 yml 中，冒号后面必须加一个空格，否则会报错。
 
@@ -407,7 +407,7 @@ hanabi 默认效果（ C++ 为例）：
 
 ![24.png](@img/2/2-5/24.png)
 
-:::tip 注意
+:::tip 提醒
 两种高亮只能开启一个
 :::
 

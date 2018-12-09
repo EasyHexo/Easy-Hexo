@@ -11,20 +11,11 @@ module.exports = {
         }]
     ],
     themeConfig: {
-        gitalk: {
-            owner: 'EasyHexo',
-            repo: 'EasyHexo',
-            admin: [ process.env.GIT_NAME ],
-            clientID: process.env.GH_OAUTH_ID,
-            clientSecret: process.env.GH_OAUTH_SECRET,
-            labels: [ 'EasyHexo' ],
-            distractionFreeMode: false,
-        },
         nav: [{
             text: '序',
             items: [{
                     text: '序',
-                    link: '/0-Intro/'  
+                    link: '/0-Intro/'
             }, {
                     text: '项目成员',
                     link: '/0-Intro/0-1-member.html'

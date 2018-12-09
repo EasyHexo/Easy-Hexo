@@ -3,7 +3,7 @@ title: Hexo-theme-bmw
 ---
 # Hexo-theme-bmw
 
-:::tip
+::: tip 提示
 特别鸣谢 BMW 作者 [GodBMW](https://godbmw.com/) 的支持！
 :::
 
@@ -14,7 +14,7 @@ title: Hexo-theme-bmw
 
 ### 下载主题代码
 
-```sh
+```bash
 $ hexo init your-blog
 $ cd your-blog/
 $ git clone git@github.com:dongyuanxin/theme-bmw.git themes/bmw
@@ -49,13 +49,13 @@ theme: bmw # 启用 "bmw" 主题
 
 theme-bmw 的配置文件：`your-blog/themes/bmw/_config.yml`
 
-:::tip
+::: tip 提示
 请注意，初始阶段您并不需要修改本主题的配置文件，请继续往下看。
 :::
 
 ### 启动博客
 
-```sh
+```bash
 $ hexo s
 ```
 
@@ -69,7 +69,7 @@ Hexo 默认监听 4000 端口, 此时, 请使用 Chrome 等主流浏览器打开
 
 生成标签页面：
 
-```sh
+```bash
 $ hexo new page tags
 ```
 
@@ -91,7 +91,7 @@ tags:
 
 生成分类页面：
 
-```sh
+```bash
 $ hexo new page categories
 ```
 
@@ -113,7 +113,7 @@ tags:
 
 生成分类页面：
 
-```sh
+```bash
 $ hexo new page about
 ```
 
@@ -141,7 +141,7 @@ BMW 主题会自动渲染此篇 Markdown，并且在 `http://localhost:4000/abou
 
 #### 生成友链界面
 
-```sh
+```bash
 $ hexo new page friends
 ```
 
@@ -190,7 +190,7 @@ friends: # 这是一个数组, 每个元素是一个obj对象
 
 > `theme-bmw` 的评论系统采用的是 `Valine`，并且提供了基于 `Leancloud` 的文章统计插件。您只需要按照以下步骤进行简单的配置，便可以提供更好的用户体验！
 
-:::tip
+::: tip 提示
 如果您不想开启评论系统和文章统计插件，请跳过这一部分
 :::
 
@@ -248,7 +248,7 @@ Now，切回 BMW 主题的配置文件 `your-blog/source/friends/index.md`。在
 
 ### 尊重原创
 
-:::warning
+::: warning 注意
 1. 您可以根据个人需要修改页面底部的说明信息，**但请不要去除 `theme-bmw` 主题的版权声明**
 2. 评论系统采用了 `Valine`，**请不要去除 `Valine` 的版权声明**
 3. 尊重原创，也祝您在开源社区玩得开心(\*^▽^\*)
