@@ -11,14 +11,10 @@ module.exports = {
         }]
     ],
     themeConfig: {
-        gitalk: {
-            owner: 'EasyHexo',
-            repo: 'Easy-Hexo-comment',
-            admin: [ 'ChungZH' ],
-            clientID: '3e59becdef9c446c2eda',
-            clientSecret: '0e4523bdf621dccef530db7e9dafa0d1098c457b',
-            labels: [ 'EasyHexo' ],
-            distractionFreeMode: false,
+        // Valine 评论
+        valine: {
+            appId: process.env.APP_ID,
+            appKey: process.env.APP_KEY,
         },
         nav: [{
             text: '序',

@@ -5,15 +5,18 @@
     <!-- 添加 Valine -->
     <div id="vcomments"></div>
     <script>
-        new Valine({
-            el: '#vcomments' ,
-            appId: 'ESvDkjHus9gVRVp3CB6EsR1o-gzGzoHsz',
-            appKey: 'VxvYP7M4pOSCguXajHYCFWey',
-            notify:true, 
-            verify:true, 
-            avatar:'mm', 
-            placeholder: '🦜 来说话啊~' 
-        });     
-
+        export default {
+            created () {
+                this.$nextTick(() => {
+                    new Valine(Object.assign({
+                        el: '#vcomments' ,
+                        notify:true, 
+                        verify:true, 
+                        avatar:'mm', 
+                        placeholder: '🦜 来说话啊~' 
+                    }), { ...this.$themeConfig.valine });     
+                })
+            }
+        }
     </script>
 </template>
