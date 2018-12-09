@@ -62,4 +62,4 @@ $ npm install -g hexo-cli
 
 ## 视频
 
-<init/>
+<dplayer src="https://dl.sm9.top/Video/EasyHexo/安装.mp4" :cross-origin="true" />
