@@ -16,13 +16,13 @@ const integrateGitalk = (router, options) => {
   document.body.appendChild(elGitalkScript)
 
   // 添加路由规则
-  router.afterEach(to => {
-    if (to.fullPath === '/') {
+  router.afterEach(({ fullPath }) => {
+    if (fullPath === '/') {
       return
     }
     // 已被初始化则根据页面重新渲染评论区
     if (elGitalkScript.onload) {
-      renderGitalk(to.fullPath, { ...options })
+      renderGitalk(fullPath, { ...options })
     } else {
       elGitalkScript.onload = () => {
         const elGitalkContainer = document.createElement('div')
@@ -31,7 +31,7 @@ const integrateGitalk = (router, options) => {
         const elPage = document.querySelector('.page')
         if (elPage) {
           elPage.appendChild(elGitalkContainer)
-          renderGitalk(to.fullPath, { ...options })
+          renderGitalk(fullPath, { ...options })
         }
       }
     }
@@ -43,9 +43,7 @@ const integrateGitalk = (router, options) => {
  * @param {string} fullPath 当前页面的 url
  */
 const renderGitalk = (fullPath, options) => {
-  options = Object.assign({}, { id: fullPath }, { ...options })
-  console.log(options)
-  new Gitalk(options).render('gitalk-container')
+  new Gitalk(Object.assign({}, { id: fullPath }, { ...options })).render('gitalk-container')
 }
 
 export default ({ Vue, options, router, siteData }) => {
@@ -55,6 +53,10 @@ export default ({ Vue, options, router, siteData }) => {
     }
     integrateGitalk(router, { ...siteData.themeConfig.gitalk })
   } catch (e) {
+    if (e.message === 'document is not defined') {
+      // just ignore it
+      return
+    }
     console.error(e.message)
   }
 }
