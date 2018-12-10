@@ -244,4 +244,4 @@ deploy:
 
 ## 视频
 
-<write/>
+<dplayer src="https://dl.sm9.top/Video/EasyHexo/配置.mp4" :cross-origin="true" />

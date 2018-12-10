@@ -302,13 +302,13 @@ gitalk:
 
 主题提供了 `fancybox` 标签，可以在文章中使用 `fancybox` 加载幻灯图：
 
-```nunjucks
+```
 {% fancybox slug /path/to/image [/path/to/thumbnail] [class] [title] %}
 ```
 
 例如：
 
-```nunjucks
+```
 {% fancybox https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "a-class other-class" the remain content will be title %}
 ```
 
@@ -328,13 +328,13 @@ gitalk:
 
 #### 3. 视频播放器 `dplayer`
 
-```nunjucks
+```
 {% dplayer key=value ... %}
 ```
 
 例如：
 
-```nunjucks
+```
 {% dplayer src=/assets/vedio.mp4 %}
 ```
 

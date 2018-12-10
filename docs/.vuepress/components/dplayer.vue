@@ -13,16 +13,55 @@
 <script>
 export default {
   props: {
-    src: null,
-    screenshot: false,
-    subtitle: null,
-    autoplay: false,
-    theme: '#b7daff',
-    loop: false,
-    hotkey: true,
-    preload: 'auto',
-    logo: '',
-    mutex: true,
+    src: {
+      type: String,
+      default: '',
+      required: true,
+    },
+    screenshot: {
+      type: Boolean,
+      default: false,
+    },
+    subtitle: {
+      type: String,
+      default: '',
+    },
+    autoplay: {
+      type: Boolean,
+      default: false,
+    },
+    theme: {
+      type: String,
+      default: '#b7daff',
+    },
+    loop: {
+      type: Boolean,
+      default: false,
+    },
+    hotkey: {
+      type: Boolean,
+      default: true,
+    },
+    preload: {
+      type: String,
+      default: 'auto',
+    },
+    logo: {
+      type: String,
+      default: '',
+    },
+    mutex: {
+      type: Boolean,
+      default: true,
+    },
+    crossOrigin: {
+      type: Boolean,
+      default: false,
+    },
+    proxy: {
+      type: String,
+      default: 'https://cors-anywhere.herokuapp.com',
+    }
   },
   data () {
     return {
@@ -39,8 +78,6 @@ export default {
       // 加载失败时忽略这个组件
       return
     }
-    // const url = import(this.src)
-    // console.log(url)
     this.$nextTick(() => {
       new DPlayer({
         container: this.$refs.container,
@@ -52,7 +89,7 @@ export default {
         preload: this.preload,
         logo: this.logo,
         video: {
-          url: this.src,
+          url: this.crossOrigin ? `${this.proxy}/${this.src}` : this.src,
         },
         subtitle: {
           url: this.subtitle,
@@ -60,7 +97,7 @@ export default {
         mutex: this.mutex,
       })
     })
-  }
+  },
 }
 </script>
 

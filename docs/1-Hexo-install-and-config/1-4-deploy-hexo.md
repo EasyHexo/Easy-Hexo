@@ -338,5 +338,4 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 
 ## 视频
 
-<!-- <deploy/> -->
-<dplayer src='https://mitscherlich.me/assets/rpi-dashboard/preview.mp4' />
+<dplayer src="https://dl.sm9.top/Video/EasyHexo/部署.mp4" :cross-origin="true" />
