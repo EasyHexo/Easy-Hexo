@@ -244,4 +244,4 @@ deploy:
 
 ## 视频
 
-<dplayer src="https://dl.sm9.top/Video/EasyHexo/配置.mp4" :cross-origin="true" />
+<dplayer src="https://dl.sm9.top/Video/EasyHexo/配置.mp4" danmaku-id="392996DE0ABBA502BF97AED350AD3E2B" :cross-origin="true" />

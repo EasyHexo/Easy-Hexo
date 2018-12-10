@@ -338,4 +338,4 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 
 ## 视频
 
-<dplayer src="https://dl.sm9.top/Video/EasyHexo/部署.mp4" :cross-origin="true" />
+<dplayer src="https://dl.sm9.top/Video/EasyHexo/部署.mp4" danmaku-id="CDCA91E8E5FD5955BB772A08B0F43DAA" :cross-origin="true" />
