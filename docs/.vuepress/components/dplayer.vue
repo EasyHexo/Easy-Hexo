@@ -26,6 +26,14 @@ export default {
       type: String,
       default: '',
     },
+    danmakuId: {
+        type: String,
+        default: ''
+    },
+    danmakuApi: {
+      type: String,
+      default: 'https://api.prprpr.me/dplayer/'      
+    },
     autoplay: {
       type: Boolean,
       default: false,
@@ -93,6 +101,10 @@ export default {
         },
         subtitle: {
           url: this.subtitle,
+        },
+        danmaku: {
+        id: this.danmakuId,
+        api: this.danmakuApi
         },
         mutex: this.mutex,
       })
