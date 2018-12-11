@@ -100,7 +100,10 @@ export default {
           url: this.crossOrigin ? `${this.proxy}/${this.src}` : this.src,
         },
         subtitle: {
-          url: this.subtitle,
+          url: this.crossOrigin ? `${this.proxy}/${this.subtitle}` : this.subtitle,
+          color: '#000000',
+          fontSize: '25px',
+          bottom: '2%'
         },
         danmaku: {
         id: this.danmakuId,
