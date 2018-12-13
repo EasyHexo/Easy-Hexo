@@ -85,4 +85,4 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 Authored by Easy Hexo, [@ChungZH](https://chungzh.cn/). Maintained by [contributers](https://github.com/EasyHexo/Easy-Hexo/graphs/contributors). :heart:
 
-[@ChungZH's Blog](https://chungzh.cn/) · [@GitHub](
+[@ChungZH's Blog](https://chungzh.cn/) · [@GitHub](https://github.com/EasyHexo/Easy-Hexo)
