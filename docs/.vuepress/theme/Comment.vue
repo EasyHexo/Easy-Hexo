@@ -1,6 +1,8 @@
 <template>
-  <!-- 添加 Valine -->
-  <div id="vcomments"></div>
+  <div class="comment content" v-if="!this.$page.frontmatter.noComment==true?true:false">
+    <!-- 添加 Valine -->
+    <div id="vcomments"/>
+  </div>
 </template>
 
 <script>
@@ -18,13 +20,11 @@ export default {
     this.$nextTick(() => {
       new Valine(
         Object.assign({
+          av: AV,
           el: '#vcomments',
-          notify: true,
-          verify: true,
-          avatar: 'mm',
-          placeholder: '🦜 来说话啊~',
-        }),
-        { ...this.$site.themeConfig.valine }
+          path: this.$page.path
+        },
+        { ...this.$site.themeConfig.valine })
       );
     });
   }
