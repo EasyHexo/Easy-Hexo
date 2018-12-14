@@ -1,6 +1,6 @@
-------
+---
 title: Hexo-theme-material-indigo
-------
+---
 # Hexo-theme-material-indigo
 ## 简介
 
