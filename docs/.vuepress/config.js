@@ -52,6 +52,7 @@ module.exports = {
                 { text: 'Hexo-theme-bmw', link: '/2-Theme-use-and-config/2-7-hexo-theme-bmw/' },
                 { text: 'Hexo-theme-aero-dual', link: '/2-Theme-use-and-config/2-8-hexo-theme-aero-dual/' },
                 { text: 'Hexo-theme-amber', link: '/2-Theme-use-and-config/2-9-hexo-theme-amber/' },
+                { text: 'Hexo-theme-indigo', link: '/2-Theme-use-and-config/2-10-hexo-theme-indigo/' },
             ]
         }, {
             text: '插件使用与配置',
@@ -96,6 +97,7 @@ module.exports = {
                 '2-7-hexo-theme-bmw/',
                 '2-8-hexo-theme-aero-dual/',
                 '2-9-hexo-theme-amber/',
+                '2-10-hexo-theme-indigo/'
             ],
             '/3-Plugins-use-and-config/': [
                 '',
