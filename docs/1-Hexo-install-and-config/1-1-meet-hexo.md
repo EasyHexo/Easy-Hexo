@@ -1,5 +1,6 @@
 ---
 title: 认识 Hexo
+noComment: true
 ---
 # 认识 Hexo
 
