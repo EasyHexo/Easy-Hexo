@@ -2,6 +2,9 @@
 title: Hexo-theme-material-indigo
 ---
 # Hexo-theme-material-indigo
+[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
+[![](https://img.shields.io/badge/Author-Ghosin-F79F66.svg?longCache=true&style=flat-square)](https://www.ghosin.com)
+![State: writing](https://img.shields.io/badge/State-writing-8E64B0.svg?style=flat-square)
 ## 简介
 
 这是一个 Material Design 风格的 Hexo 主题，基于 Hexo 3.0+ 制作。 [Preview](http://imys.net/)  
