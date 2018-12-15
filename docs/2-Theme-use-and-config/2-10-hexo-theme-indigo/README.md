@@ -345,11 +345,11 @@ MetingJS用法见[ meto 的文章](https://i-meto.com/ghost-aplayer/)
 ```
 * 配置Disqus Application  
 在 [Disqus API Application](https://disqus.com/api/applications/) 处注册一个 Application。  
-![disqusapi1](https://i.loli.net/2018/12/08/5c0b867d2b643.png)  
+![](@img/2/2-10/0.png)  
 点击新创建的 Application，获取你的 API Key（公钥）。  
-![disqusapi2](https://i.loli.net/2018/12/08/5c0b86c16d36d.png)  
+![](@img/2/2-10/1.png)  
 在 Application 的 Settings 页面设置你的域名，Disqus 会检查 API 请求的 Referrer。  
-![disqusapi3](https://i.loli.net/2018/12/08/5c0b86e42336d.png)  
+![](@img/2/2-10/2.png)  
 * 主题配置文件`themes\indigo\_config.yml`中插入:
 ```yaml
 disqusjs:
