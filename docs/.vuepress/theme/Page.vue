@@ -56,18 +56,21 @@
         </span>
       </p>
     </div>
-    <Comment/>
+
+    <keep-alive>
+      <comment/>
+    </keep-alive>
 
     <slot name="bottom"/>
   </div>
 </template>
 
 <script>
-import Comment from './Comment.vue'
 import { resolvePage, normalize, outboundRE, endingSlashRE } from './util'
+import Comment from './Comment.vue'
 
 export default {
-  components: {Comment},
+  components: { Comment },
   props: ['sidebarItems'],
 
   computed: {
