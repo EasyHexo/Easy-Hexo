@@ -38,8 +38,6 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 - :balloon: 修改 Hexo 现有主题
 - :gem: 自制一个 Hexo 主题
 
-
-
 ## 十分感谢你能：
 
 - 如有疑问，请先百度，再联系我们 
@@ -47,6 +45,16 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 - 如果想对本文档做出贡献，可以加入我们
 
 :gift: 感谢你的支持！
+
+# 贡献者
+
+感谢这些了不起的人 ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key))：
+
+| <img src="https://avatars3.githubusercontent.com/u/42088872?s=400&u=c0eb6d0e0c3c41b26a1777a704076a4c7e7d56be&v=4" height="30" width="30" alt="ChungZH" /><br /><sub><b>[ChungZH](https://chungzh.cn)</b></sub><br />[🐛](https://github.com/EasyHexo/Easy-Hexo/issues/72)[🎨](https://i.loli.net/2018/10/18/5bc852dfd5270.jpg)[💻📖](https://github.com/EasyHexo/Easy-Hexo/commits?author=ChungZH)📢 |      |      |      |      |
+| ------------------------------------------------------------ | ---- | ---- | ---- | ---- |
+|                                                              |      |      |      |      |
+|                                                              |      |      |      |      |
+|                                                              |      |      |      |      |
 
 
 
@@ -57,8 +65,6 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 目前仍有很多地方没有写完，欢迎各位大佬加入我们 Easy Hexo 团队！🎉🎉🎉
 
 请联系 ChungZH `QQ:124694738`，加好友时请注明 `Easy Hexo`。或者你也可以加入 `Easy Hexo` 团队的 `QQ 群：935778924`。
-
-
 
 # 状态
 
