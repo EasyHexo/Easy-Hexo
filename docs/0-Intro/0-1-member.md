@@ -21,7 +21,6 @@ title: 项目成员
 - [g-zhima](https://g-zhima.github.io)
 - [Ghosin](https://www.ghosin.com/)
 - [Markjuruo](https://markjuruo.ooo/)
-- [Mitscherlich Wei](https://mitscherlich.me/) 
 - [MonoLogueChi](https://www.xxwhite.com/)
 - [MoshiYeap](https://MoshiYeap.github.io/)
 - [SpencerWoo](https://spencerwoo.com/)
@@ -34,6 +33,7 @@ title: 项目成员
 
 - [xaoxuu - Material X 主题开发者](https://xaoxuu.com/wiki/material-x/)
 - [GodBMW - BMW 主题开发者](https://godbmw.com/)
+- [Mitscherlich - Amber 主题开发者](https://mitscherlich.me/)
 
 ## 其他贡献
 
