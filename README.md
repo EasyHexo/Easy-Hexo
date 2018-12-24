@@ -46,17 +46,6 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 :gift: 感谢你的支持！
 
-# 贡献者
-
-感谢这些了不起的人 ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key))：
-
-| <img src="https://avatars3.githubusercontent.com/u/42088872?s=400&u=c0eb6d0e0c3c41b26a1777a704076a4c7e7d56be&v=4" height="30" width="30" alt="ChungZH" /><br /><sub><b>[ChungZH](https://chungzh.cn)</b></sub><br />[🐛](https://github.com/EasyHexo/Easy-Hexo/issues/72)[🎨](https://i.loli.net/2018/10/18/5bc852dfd5270.jpg)[💻📖](https://github.com/EasyHexo/Easy-Hexo/commits?author=ChungZH)📢 |      |      |      |      |
-| ------------------------------------------------------------ | ---- | ---- | ---- | ---- |
-|                                                              |      |      |      |      |
-|                                                              |      |      |      |      |
-|                                                              |      |      |      |      |
-
-
 
 # 相关信息
 
@@ -64,7 +53,12 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 目前仍有很多地方没有写完，欢迎各位大佬加入我们 Easy Hexo 团队！🎉🎉🎉
 
-请联系 ChungZH `QQ:124694738`，加好友时请注明 `Easy Hexo`。或者你也可以加入 `Easy Hexo` 团队的 `QQ 群：935778924`。
+请联系 ChungZH `QQ:124694738`，加好友时请注明 `Easy Hexo`。或者你也可以加入 `EasyHexo` 团队的 `QQ 群：935778924`。
+
+目前 EasyHexo 急需的人员有：
+
+- 专栏作者：EasyHexo专栏会写一些很基础的东西。比如：『Hexo 卜算子计算访客数为什么无法加载？』、『为什么我的 Hexo 样式丢失了？』之类的写进文档无法分类的问题。
+- 文档编写人员：写文档。有主题、插件、自制主题三个选择。
 
 # 状态
 
