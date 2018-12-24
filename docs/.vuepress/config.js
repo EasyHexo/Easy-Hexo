@@ -12,11 +12,6 @@ module.exports = {
     ['script', { src: 'https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js' }],
   ],
   themeConfig: {
-    algolia: {
-      appId: '68I96KVOND',
-      apiKey: 'a7818e3868e6af971631406642025a72',
-      indexName: 'EasyHexo',
-    },
     valine: {
       app_id: 'ESvDkjHus9gVRVp3CB6EsR1o-gzGzoHsz',
       app_key: "VxvYP7M4pOSCguXajHYCFWey",
