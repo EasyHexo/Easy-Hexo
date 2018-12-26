@@ -16,7 +16,7 @@ title: Hexo-theme-material-indigo
 2. 去 jQuery，更轻。相信现代浏览器的原生兼容性。
 3. 使用 Less 作为 css 预处理器，需要安装 `hexo-renderer-less`。
 4. 添加了英文字体支持 Roboto。
-5. 添加了一些波纹效果。By [Waves](https://github.com/fians/Waves)
+5. 添加了一些波纹效果。
 6. 无前端依赖的分享实现。
 7. 基于静态数据的站内搜索，无第三方侵入。
 8. 支持文章打赏。
@@ -65,7 +65,7 @@ $ npm install hexo-helper-qrcode --save
 ```bash
 $ hexo new page tags
 ```
-修改 `hexo根目录/source/tags/index.md` 的元数据
+修改 `Hexo根目录/source/tags/index.md` 的元数据
 ```yaml
 layout: tags
 comments: false
@@ -76,7 +76,7 @@ comments: false
 ```bash
 $ hexo new page categories
 ```
-修改 `hexo/source/categories/index.md` 的元数据
+修改 `Hexo根目录/source/categories/index.md` 的元数据
 ```yaml
 layout: categories
 comments: false
@@ -84,13 +84,13 @@ comments: false
 ```
 ## 配置
 ### 站点配置
-编辑站点配置文件，`hexo根目录/_config.yml`。
+编辑站点配置文件，`Hexo根目录/_config.yml`。
 #### 启用主题
 ```yaml
 theme: indigo
 ```
 #### 基本配置
-为了得到更好的使用体验，以下内容请务必填写完整，因为这些内容会在主题中得到展示。更多见[hexo官方文档](https://hexo.io/zh-cn/docs/configuration.html)
+为了得到更好的使用体验，以下内容请务必填写完整，因为这些内容会在主题中得到展示。更多见[Hexo官方文档](https://hexo.io/zh-cn/docs/configuration.html)
 ```yaml
 title: 站点标题
 subtitle: 站点副标题
@@ -101,8 +101,9 @@ email: 邮箱
 url: 站点域名
 ```
 #### feed配置
-参考 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)  
+参考 [Hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)  
 如果`_config.yml`中没有，直接插♂入即可。
+
 ```yaml
 feed:
   type: atom
@@ -111,7 +112,7 @@ feed:
 ```
 #### jsonContent配置
 
-为了节约资源，可以对 jsonContent 插件生成的数据字段进行配置，减少数据文件大小。参考 [hexo-generator-json-content](https://github.com/alexbruno/hexo-generator-json-content)  
+为了节约资源，可以对 jsonContent 插件生成的数据字段进行配置，减少数据文件大小。参考 [Hexo-generator-json-content](https://github.com/alexbruno/hexo-generator-json-content)  
 ```yaml
 jsonContent:
   meta: false
@@ -133,7 +134,7 @@ jsonContent:
     tags: true
 ```
 ### 主题配置
-编辑主题配置文件，`themes/indigo/_config.yml`。
+编辑主题配置文件，`Hexo根目录/themes/indigo/_config.yml`。
 #### 左侧菜单
 默认配置如下
 ```yaml
@@ -202,12 +203,12 @@ excerpt_length: 200
 excerpt_link: 阅读全文...
 ```
 #### mathjax
-开启后，使你的站点支持公式渲染，by [mathjax](https://www.mathjax.org/)。 请按需开启，因为此项需要加载额外的 js 文件。
+开启后，使你的站点支持公式渲染。请按需开启，因为此项需要加载额外的 js 文件，使你的网站打开速度变慢。
 ```yaml
 mathjax: false
 ```
 #### 分享
-文章分享开关，by [jiathis-api](http://www.jiathis.com/help/html/share-with-jiathis-api)。
+文章分享开关。
 ```yaml
 share: true
 ```
@@ -244,12 +245,12 @@ toc:
   list_number: false  # 决定导航使用的标签， true 为 ol， false 为 ul。
 ```
 #### copyright (card theme限定)
-文章页版权声明内容，hexo中所有变量及辅助函数等均可调用，具体请查阅 [hexo.io](http://hexo.io/)。
+文章页版权声明内容，Hexo中所有变量及辅助函数等均可调用，具体请查阅 [hexo.io](http://hexo.io/)。
 ```yaml
 copyright: 这里写留言或版权声明：<a href="<%- url_for(page.path) %>" target="_blank" rel="external"><%- url %></a>
 ```
 #### less
-设置 less 编译时的入口文件路径，[hexo-renderer-less](https://github.com/hexojs/hexo-renderer-less)。
+设置 less 编译时的入口文件路径，[Hexo-renderer-less](https://github.com/hexojs/hexo-renderer-less)。
 ```yaml
 less:
   compress: true    # 是否压缩css
@@ -257,7 +258,7 @@ less:
     - source/css/style.less
 ```
 #### 评论
-集成了 [disqus](https://disqus.com/)、[友言](http://www.uyan.cc/)、[gitment](https://github.com/imsun/gitment) 和 [valine](https://valine.js.org/)，开启其一即可。
+集成了 [disqus](https://disqus.com/)、[友言](http://www.uyan.cc/)、[Gitment](https://github.com/imsun/gitment) 和 [Valine](https://valine.js.org/)，开启其一即可。
 #### 数据统计
 集成的有谷歌、腾讯、百度和 CNZZ，请填写你的站点标识。
 ```yaml
@@ -300,7 +301,7 @@ ICP_license: 京ICP备你妈的案
 ```
 以上是官方文档中所有配置，为说明配置在配置文件中都有中文说明。  
 ## 为主题安装MetingJS
-> 注：以下部分根据[MetingJS](https://github.com/metowolf/MetingJS)中README.md配置，可同理应用于其他主题。 
+> 注：以下部分根据 [MetingJS](https://github.com/metowolf/MetingJS) 中README.md配置，可同理应用于其他主题。 
 ### 修改文件
 * 在`themes\indigo\layout\_partial\head.ejs`中插入在`</head>`前：
 ```javascript
