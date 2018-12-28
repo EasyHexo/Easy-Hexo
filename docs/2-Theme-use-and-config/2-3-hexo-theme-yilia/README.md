@@ -2,14 +2,19 @@
 title: Hexo-theme-yilia
 ---
 
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-markjuruo-F79F66.svg?longCache=true&style=flat-square)](https://markjuruo.coding.me)
-
 # Hexo-theme-yilia
 
-![State: writing](https://img.shields.io/badge/State-writing-8E64B0.svg?style=flat-square)
+[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)[![](https://img.shields.io/badge/Author-markjuruo-F79F66.svg?longCache=true&style=flat-square)](https://markjuruo.coding.me)![State: writing](https://img.shields.io/badge/State-writing-8E64B0.svg?style=flat-square)
 
-Hexo-Yilia 是一个优秀的 Hexo 主题，由 [Litten](https://litten.me) 开发,受到了广大 Hexo 使用者的欢迎。  
+------
+
+**目录：**
+
+[[toc]]
+
+------
+
+Hexo-theme-yilia 是一个优秀的 Hexo 主题，由 [Litten](https://litten.me) 开发,受到了广大 Hexo 使用者的欢迎。  
 
 1. 优秀的加载速度
 2. 优秀的双栏设计
