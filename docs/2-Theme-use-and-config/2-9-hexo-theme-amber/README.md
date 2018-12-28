@@ -1,8 +1,8 @@
 ---
-title: hexo-theme-amber
+title: Hexo-theme-amber
 ---
 
-# hexo-theme-amber
+# Hexo-theme-amber
 
 [![maintainer][maintainer-img]][maintainer-url]
 [![author][author-img]][author-url]
@@ -24,6 +24,15 @@ title: hexo-theme-amber
 [theme-url]: https://github.com/Mitscherlich/hexo-theme-amber
 
 :tada: 基于 Bootstrap + Vue 诞生的一款单页主题。
+
+------
+
+**目录：**
+
+[[toc]]
+
+------
+
 
 ## Amber 主题演示
 
@@ -78,7 +87,7 @@ $ serve public -p 8080
 
 ## 配置 Amber 主题
 
-:::tip TIP
+:::tip 提醒
 在这一小节，没有特殊说明的情况下，`_config.yml` 指代的是 `themes/amber` 目录下的 `_config.yml` 文件，`<root>/_config.yml` 代指的是博客根目录下的 `_config.yml` 文件。
 :::
 
@@ -190,7 +199,13 @@ comments:
   engine: gitalk|gitment|valine # 请只保留你需要启用的评论系统！
 ```
 
-然后，为你的评论系统书写配置，**注意 :warning:，请务必缩进在 `comments` 字段下**，配置将配自动加载：
+然后，为你的评论系统书写配置，配置将配自动加载。
+
+:::warning 注意
+
+**:warning: 注意，请务必缩进在 `comments` 字段下**
+
+:::
 
 例如，`gitalk` 接受以下几项配置：
 

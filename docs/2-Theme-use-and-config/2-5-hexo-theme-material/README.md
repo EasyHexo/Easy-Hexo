@@ -1,6 +1,7 @@
 ---
 title: Hexo-theme-material
 ---
+
 # Hexo-theme-material
 
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
@@ -11,6 +12,14 @@ title: Hexo-theme-material
 :::
 
 [Material 主题地址](https://github.com/viosey/hexo-theme-material)
+
+------
+
+**目录：**
+
+[[toc]]
+
+------
 
 ## Material 主题演示
 
