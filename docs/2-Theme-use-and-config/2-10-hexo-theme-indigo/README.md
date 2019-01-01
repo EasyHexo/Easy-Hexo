@@ -9,6 +9,7 @@ title: Hexo-theme-material-indigo
 ## 简介
 
 这是一个 Material Design 风格的 Hexo 主题，基于 Hexo 3.0+ 制作。  
+
 本文使用`$`作为命令提示符, 部分内容搬运自[ indigo 主题官方文档](https://github.com/yscoder/hexo-theme-indigo/wiki)。
 
 ## Indigo 演示
@@ -148,7 +149,7 @@ email: 邮箱
 url: 站点域名
 ```
 
-#### feed配置
+#### feed 配置
 
 参考 [Hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)  
 如果`_config.yml`中没有，直接插入即可。
@@ -160,7 +161,7 @@ feed:
   limit: 0
 ```
 
-#### jsonContent配置
+#### jsonContent 配置
 
 为了节约资源，可以对 jsonContent 插件生成的数据字段进行配置，减少数据文件大小。参考 [Hexo-generator-json-content](https://github.com/alexbruno/hexo-generator-json-content)。
 
@@ -256,7 +257,7 @@ email: example@example.com
 color: '#3F51B5'
 ```
 
-#### 页面标题 (card theme限定)
+#### 页面标题 (card theme 限定)
 
 自定义归档、标签、分类页的大标题。
 
@@ -344,9 +345,9 @@ toc:
   list_number: false  # 决定导航使用的标签， true 为 ol， false 为 ul。
 ```
 
-#### copyright (card theme限定)
+#### copyright (card theme 限定)
 
-文章页版权声明内容，Hexo中所有变量及辅助函数等均可调用，具体请查阅 [hexo.io](http://hexo.io/)。
+文章页版权声明内容，Hexo 中所有变量及辅助函数等均可调用，具体请查阅 [hexo.io](http://hexo.io/)。
 
 ```yaml
 copyright: 这里写留言或版权声明：<a href="<%- url_for(page.path) %>" target="_blank" rel="external"><%- url %></a>
@@ -378,13 +379,13 @@ baidu_tongji: 站点id
 cnzz: 站点id
 ```
 
-#### 谷歌站点验证 (card theme限定)
+#### 谷歌站点验证 (card theme 限定)
 
 ```yaml
 google_site_verification: false
 ```
 
-#### 规范网址 (card theme限定)
+#### 规范网址 (card theme 限定)
 
 让搜索引擎重定向你的不同域名、不同子域、同域不同目录的站点到你期望的路径。[使用规范网址](https://support.google.com/webmasters/answer/139066)。
 
@@ -430,7 +431,7 @@ ICP_license: 京ICP备巴啦啦小魔仙案
 
 以上是官方文档中所有配置，为说明配置在配置文件中都有中文说明。
 
-## 为主题安装MetingJS
+## 为主题安装 MetingJS
 
 > 注：以下部分根据 [MetingJS](https://github.com/metowolf/MetingJS) 中 README.md 配置，可同理应用于其他主题。 
 
@@ -461,9 +462,9 @@ ICP_license: 京ICP备巴啦啦小魔仙案
 文章内容2
 ```
 
-MetingJS用法见[ meto 的文章](https://i-meto.com/ghost-aplayer/)。
+MetingJS 用法见[ meto 的文章](https://i-meto.com/ghost-aplayer/)。
 
-## 为主题安装DisqusJS
+## 为主题安装 DisqusJS
 
 > 注：以下部分根据 [DisqusJS](https://suka.js.org/DisqusJS/) 中  README.md 配置，可同理应用于其他主题。 
 > Disqus 替代方案 - 使用 Disqus API 渲染评论列表
@@ -497,7 +498,7 @@ MetingJS用法见[ meto 的文章](https://i-meto.com/ghost-aplayer/)。
 <% } %>
 ```
 
-* 配置Disqus Application  
+* 配置 Disqus Application  
 在 [Disqus API Application](https://disqus.com/api/applications/) 处注册一个 Application。 
 
 ![](@img/2/2-10/0.png)  
