@@ -323,13 +323,13 @@ $ yarn install    # npm 也可以！但推荐使用 yarn！
 
 [fancybox](http://fancybox.net/) 是一个 [jquery](https://jquery.com/) 插件，你可以通过这样的形式在 `md` 文件中快速插入 `fancybox`：
 
-```
+```markdown
 {% fancybox slug /path/to/image [/path/to/thumbnail] [class] [title] %}
 ```
 
 例如：
 
-```
+```markdown
 {% fancybox esayhexo /assets/easyhexo/amber/preview.png Amber 主题示例图 %}
 ```
 
@@ -363,15 +363,15 @@ $ mv scripts/tags/fancybox.js /path/to/backup.d/
 
 #### dplayer
 
-[DPlayer](https://github.com/MoePlayer/DPlayer) 是 *b站* 前端大佬 [@DIYGod](https://github.com/DIYGod) 的开源视频播放器（现同样用于 *b站* 播放页），支持懒加载、缩略图、弹幕等功能，你可以通过这样的形式在 `md` 文件中使用它：
+[DPlayer](https://github.com/MoePlayer/DPlayer) 是 *B 站* 前端大佬 [@DIYGod](https://github.com/DIYGod) 的开源视频播放器（现同样用于 *B 站* 播放页），支持懒加载、缩略图、弹幕等功能，你可以通过这样的形式在 `md` 文件中使用它：
 
-```
+```markdown
 {% dplayer key=value ... %}
 ```
 
 示例：
 
-```
+```markdown
 {% dplayer src=/assets/easyhexo/how-to-use-amber/install.mp4 %}
 ```
 
@@ -672,4 +672,4 @@ export default class Projects extends Vue {
 
 ## 写在最后
 
-大家在使用中有什么问题可以在评论区留言，我将尽可能回复。也欢迎在 [Github](https://github.com/Mitscherlich)、[知乎](https://www.zhihu.com/people/Mitscherlich)、[掘金](https://juejin.im/user/58b50c8e8d6d81005762ba8d)、[B站](http://space.bilibili.com/17636754)、[微博](https://weibo.com/Mitscherlich) 等关注我，及时获取我的其他项目以及相关最新动态。
+大家在使用中有什么问题可以在评论区留言，我将尽可能回复。也欢迎在 [Github](https://github.com/Mitscherlich)、[知乎](https://www.zhihu.com/people/Mitscherlich)、[掘金](https://juejin.im/user/58b50c8e8d6d81005762ba8d)、[B 站](http://space.bilibili.com/17636754)、[微博](https://weibo.com/Mitscherlich) 等关注我，及时获取我的其他项目以及相关最新动态。
