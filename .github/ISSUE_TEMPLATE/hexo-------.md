@@ -8,12 +8,12 @@ assignees: ''
 ---
 
 <!-- 
-首先，欢迎大家在 Easy-Hexo 项目的 issue 区提出自己在使用过程中出现的问题！
-在提问前，我们希望大家能先阅读 《提问的智慧》https://github.com/tvvocold/How-To-Ask-Questions-The-Smart-Way
-一个好的提问能更快捷的获得你所需要的答案。
+首先，欢迎大家在 Easy-Hexo 项目的 issue 区提出自己在使用 Hexo 的过程中出现的问题！
+在提问前，我们希望大家能先阅读 《提问的智慧》https://github.com/tvvocold/How-To-Ask-Questions-The-Smart-Way 一个好的提问能更快捷的获得你所需要的答案。
 请大家填写下面的问题信息。其中带 * 的为必填项。
 谢谢大家！
--->
+--> 
+
 - 问题简介（*）
 
 - Hexo 版本（*）
