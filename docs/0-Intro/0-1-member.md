@@ -13,7 +13,7 @@ title: 项目成员
 
 ## 项目共同维护者
 
-- Alpha1022
+- [Alpha1022](https://www.alpha1022.me/)
 - [Anoyer](https://anoyer.cn/)
 - Hun Dean
 - [leonGravel](https://leongravel.com/)
