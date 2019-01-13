@@ -80,6 +80,8 @@ language: node_js
 
 sudo: required
 
+dist: xenial
+
 node_js: stable
 
 install:
@@ -92,6 +94,7 @@ branches:
 before_install: 
   - export TZ='Asia/Shanghai'
   - npm install hexo-cli -g
+  - sudo apt-get install libpng16-dev
 
 install:
   - npm install
@@ -117,8 +120,9 @@ deploy:
 
 - `language`：编译语言、环境；`node_js`：Node.js 版本；`sudo`：需要管理员权限；
 - `install`：安装环境 npm；
+- `dist` : 指定 CI 系统版本为 Ubuntu16.04 LTS
 - `branches`：工作仓库分支（hexo 分支）；
-- `before_install`：配置时区为中国时区东八区（UTC + 8），安装组件 `hexo`；
+- `before_install`：配置时区为中国时区东八区（UTC + 8），安装组件 `hexo` ， 安装 `libpng16-dev` ；
 - `install`：安装依赖 `npm install`；
 - `script`：执行脚本，清除缓存，生成静态文件并放在 `public` 文件夹下；
 - `deploy`：执行部署。
