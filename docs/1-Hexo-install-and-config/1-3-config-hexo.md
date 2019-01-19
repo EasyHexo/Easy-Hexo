@@ -28,7 +28,7 @@ hexo init <your_blog_name>
 
 没错，就是在 Hexo 根目录 `_config.yml` 这个文件里配置！
 
-:::warning
+:::warning 警告
 在 YAML 语法中，冒号后面必须要有一个空格才能继续写下去。
 :::
 
@@ -73,7 +73,7 @@ permalink_defaults:
 | `permalink`          | 文章的永久链接格式       |
 | `permalink_defaults` | 永久链接中各部分的默认值 |
 
-:::tip
+:::tip 提醒
 
 如果你的网站在子目录中，如：`https://yoursite.com/blog` ，就把你的 `url` 设为 `http://yoursite.com/blog` 并把 `root` 设为 `/blog/`。
 
@@ -104,7 +104,7 @@ skip_render: README.md
 | `i18n_dir`     | 国际化文件夹        |
 | `skip_render`  | 跳过文件的渲染      |
 
-:::tip
+:::tip 提醒
 
 一般情况下，这部分是不需要修改的。
 
@@ -175,7 +175,7 @@ time_format: HH:mm:ss
 | `date_format` | 日期格式 |
 | `time_format` | 时间格式 |
 
-:::tip
+:::tip 提醒
 
 Hexo 使用 [Moment.js](http://momentjs.com/) 。
 
@@ -218,7 +218,7 @@ deploy:
   repo: 
 ```
 
-:::tip
+:::tip 提醒
 
 关于部署，我们将在下一篇文章讲。
 
@@ -242,13 +242,27 @@ deploy:
 
 如果你不想在终端中新建文章或页面，可以直接在 `博客根目录/source/_post/` 目录下创建 Markdown 文件写**文章**。或者在 `博客根目录/source/` 目录下创建一个文件夹，然后在新文件夹里创建 `index.md` 写**页面**即可。
 
-:::tip 提示
+:::tip 提醒
 
 当你新建页面后，页面的链接就是你页面所在的文件夹的名字。
 
 例如：我在 `博客根目录/source/` 下新建了一个名为 `test` 的文件夹，然后在 `test` 文件夹下写 Markdown 文件，那么这个页面的链接就是 `网址/test`。
 
 :::
+
+### `hexo server`
+
+当你要在本地查看网站的时候，就可以用这个命令。
+
+默认在 `http://localhost:8080/` 这里，可能会不同，注意提示信息即可。
+
+### `hexo generate`
+
+这个命令是生成网站静态文件的时候用的，生成后网页将会放在 `博客根目录/public` 文件夹里。
+
+### `hexo deploy`
+
+这个命令用来部署网站。
 
 ## 视频
 
