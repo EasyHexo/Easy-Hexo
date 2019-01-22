@@ -30,7 +30,7 @@ $ npm install hexo-server --save
 $ git config --global user.name "Your_name"
 $ git config --global user.email Your_email@example.com
 ```
-:::tip
+:::tip 提醒
 每次 Git 提交时都会附带这两条信息，用于记录是谁提交的更新，并且会随更新内容一起被记录到历史记录中。简单说，是用来标记的你的身份的~
 :::
 
@@ -53,7 +53,7 @@ deploy:
 $ hexo clean && hexo d -g
 ```
 
-:::tip
+:::tip 提醒
 如果是第一次使用，会弹出一个登录框，需要登陆你的 GitHub 账号。
 :::
 
@@ -79,6 +79,12 @@ $ hexo clean && hexo d -g
 3. 勾选 Custom domain 选项下的 Enforce HTTPS 选项，开启 Https 服务。
 
 ## 部署到 CODING（dev.tencent.com）
+
+:::warning 警告
+
+由于 CODING Pages 服务最近**非常**不稳定，不推荐使用 CODING Pages。
+
+:::
 
 部署到 CODING 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 CODING Pages 地址而已。同时 CODING 在国内的访问速度会比较快。
 
