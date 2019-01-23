@@ -1,7 +1,7 @@
 ---
-title: Hexo-theme-material-x
+title: hexo-theme-material-x
 ---
-# Hexo-theme-material-x
+# hexo-theme-material-x
 
 ::: tip 提示
 特别鸣谢本文作者：[xaoxuu](https://xaoxuu.com/)

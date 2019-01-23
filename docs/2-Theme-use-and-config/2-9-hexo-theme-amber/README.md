@@ -1,8 +1,8 @@
 ---
-title: Hexo-theme-amber
+title: hexo-theme-amber
 ---
 
-# Hexo-theme-amber
+# hexo-theme-amber
 
 [![maintainer][maintainer-img]][maintainer-url]
 [![author][author-img]][author-url]
