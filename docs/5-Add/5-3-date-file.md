@@ -6,7 +6,7 @@ title: 使用数据文件平滑升级主题
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](https://junzhouliu.github.io/)
 
-# 关于「数据文件」
+## 关于「数据文件」
 
 :::tip
 「数据文件」是 Hexo 3.0 新增的「数据文件」功能。此功能会载入 source/_data 内的 YAML 或 JSON 文件。
