@@ -70,7 +70,8 @@ module.exports = {
       items: [
         { text: '概要', link: '/5-Add/' },
         { text: '参考资料', link: '/5-Add/5-1-quote.html' },
-        { text: 'YAML 语法简介', link: '/5-Add/5-2-yaml.html' }
+        { text: 'YAML 语法简介', link: '/5-Add/5-2-yaml.html' },
+        { text: '使用数据文件平滑升级主题', link: '/5-Add/5-3-date-file.html' }
       ],
     }],
     sidebar: {
