@@ -5,7 +5,7 @@ title: 部署 Hexo
 # 部署 Hexo
 
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](mailto:liu.junzhou@hotmail.com)
+[![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](https://junzhouliu.github.io/)
 
 ## 部署到 GitHub
 
@@ -336,7 +336,7 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 	logallrefupdates = false
 	symlinks = false
 -	ignorecase = true
-+ ignorecase = false
++   ignorecase = false
 [branch "master"]
 	remote = ueser_name@HostIP:/var/repo/blog.git
 	merge = refs/heads/master
