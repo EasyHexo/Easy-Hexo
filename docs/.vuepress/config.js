@@ -114,6 +114,7 @@ module.exports = {
         '',
         '5-1-quote.html',
         '5-2-yaml.html',
+        '5-3-date-file.html'
       ],
     },
     repo: 'EasyHexo/Easy-Hexo',
