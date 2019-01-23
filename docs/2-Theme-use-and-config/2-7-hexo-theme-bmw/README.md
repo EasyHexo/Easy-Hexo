@@ -1,7 +1,7 @@
 ---
-title: Hexo-theme-bmw
+title: hexo-theme-bmw
 ---
-# Hexo-theme-bmw
+# hexo-theme-bmw
 
 ::: tip 提示
 特别鸣谢 BMW 作者 [GodBMW](https://godbmw.com/) 的支持！

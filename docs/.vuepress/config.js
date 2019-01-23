@@ -43,16 +43,17 @@ module.exports = {
       text: '主题安装与配置',
       items: [
         { text: '概要', link: '/2-Theme-use-and-config/' },
-        { text: 'Hexo-theme-next 5.x.x', link: '/2-Theme-use-and-config/2-1-hexo-theme-next-5.x.x/' },
-        { text: 'Hexo-theme-next 6.x.x', link: '/2-Theme-use-and-config/2-2-hexo-theme-next-6.x.x/' },
-        { text: 'Hexo-theme-yilia', link: '/2-Theme-use-and-config/2-3-hexo-theme-yilia/' },
-        { text: 'Hexo-theme-apollo', link: '/2-Theme-use-and-config/2-4-hexo-theme-apollo/' },
-        { text: 'Hexo-theme-material', link: '/2-Theme-use-and-config/2-5-hexo-theme-material/' },
-        { text: 'Hexo-theme-material-x', link: '/2-Theme-use-and-config/2-6-hexo-theme-material-x/' },
-        { text: 'Hexo-theme-bmw', link: '/2-Theme-use-and-config/2-7-hexo-theme-bmw/' },
-        { text: 'Hexo-theme-aero-dual', link: '/2-Theme-use-and-config/2-8-hexo-theme-aero-dual/' },
-        { text: 'Hexo-theme-amber', link: '/2-Theme-use-and-config/2-9-hexo-theme-amber/' },
-        { text: 'Hexo-theme-indigo', link: '/2-Theme-use-and-config/2-10-hexo-theme-indigo/' },
+        { text: 'hexo-theme-next 5.x.x', link: '/2-Theme-use-and-config/2-1-hexo-theme-next-5.x.x/' },
+        { text: 'hexo-theme-next 6.x.x', link: '/2-Theme-use-and-config/2-2-hexo-theme-next-6.x.x/' },
+        { text: 'hexo-theme-yilia', link: '/2-Theme-use-and-config/2-3-hexo-theme-yilia/' },
+        { text: 'hexo-theme-apollo', link: '/2-Theme-use-and-config/2-4-hexo-theme-apollo/' },
+        { text: 'hexo-theme-material', link: '/2-Theme-use-and-config/2-5-hexo-theme-material/' },
+        { text: 'hexo-theme-material-x', link: '/2-Theme-use-and-config/2-6-hexo-theme-material-x/' },
+        { text: 'hexo-theme-bmw', link: '/2-Theme-use-and-config/2-7-hexo-theme-bmw/' },
+        { text: 'hexo-theme-aero-dual', link: '/2-Theme-use-and-config/2-8-hexo-theme-aero-dual/' },
+        { text: 'hexo-theme-amber', link: '/2-Theme-use-and-config/2-9-hexo-theme-amber/' },
+        { text: 'hexo-theme-indigo', link: '/2-Theme-use-and-config/2-10-hexo-theme-indigo/' },
+        { text: 'hexo-theme-melody', link: '/2-Theme-use-and-config/2-11-hexo-theme-melody/' }
       ]
     }, {
       text: '插件使用与配置',
@@ -97,7 +98,8 @@ module.exports = {
         '2-7-hexo-theme-bmw/',
         '2-8-hexo-theme-aero-dual/',
         '2-9-hexo-theme-amber/',
-        '2-10-hexo-theme-indigo/'
+        '2-10-hexo-theme-indigo/',
+        '2-11-hexo-theme-melody/'
       ],
       '/3-Plugins-use-and-config/': [
         '',

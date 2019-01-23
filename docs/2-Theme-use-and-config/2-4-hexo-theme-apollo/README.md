@@ -1,7 +1,7 @@
 ---
-title: Hexo-theme-apollo
+title: hexo-theme-apollo
 ---
-# Hexo-theme-apollo
+# hexo-theme-apollo
 
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-ChungZH-43CD80.svg?longCache=true&style=flat-square)](https://github.com/chungzh)

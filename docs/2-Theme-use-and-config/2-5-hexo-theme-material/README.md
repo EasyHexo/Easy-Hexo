@@ -1,8 +1,8 @@
 ---
-title: Hexo-theme-material
+title: hexo-theme-material
 ---
 
-# Hexo-theme-material
+# hexo-theme-material
 
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-ffy-800080.svg?longCache=true&style=flat-square)](https://github.com/ffdy)

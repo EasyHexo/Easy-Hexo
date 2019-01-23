@@ -1,7 +1,7 @@
 ---
-title: Hexo-theme-aero-dual
+title: hexo-theme-aero-dual
 ---
-# Hexo-theme-aero-dual
+# hexo-theme-aero-dual
 
 
 
