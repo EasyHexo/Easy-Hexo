@@ -1,5 +1,9 @@
 <template>
   <section class="content" v-if="this.$page.frontmatter.noComment !== true">
+    <div class="warning custom-block">
+      <p class="custom-block-title">关于评论</p>
+      <p>评论前请填好“昵称”、“邮箱”这两栏内容，否则不会收到回复，谢谢！</p>
+    </div>
     <!-- 添加 Valine -->
     <article id="vcomments"/>
   </section>
