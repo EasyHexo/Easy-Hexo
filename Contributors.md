@@ -18,7 +18,7 @@
 - [Markjuruo](https://markjuruo.ooo/)
 - [Mitscherlich Wei](https://mitscherlich.me/) 
 - [MonoLogueChi](https://www.xxwhite.com/)
-- [MoshiYeap](https://MoshiYeap.github.io/)
+- [MoshiYeap](https://junzhouliu.github.io/)
 - [SpencerWoo](https://spencerwoo.com/)
 - [StaunchKai](https://staunchkai.com/)
 - [weijunzi](https://weijunzii.github.io/)
