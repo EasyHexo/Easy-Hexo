@@ -27,7 +27,7 @@ $ npm install hexo-server --save
 在 Git Bash 中执行以下两条命令配置你的用户名和邮箱，这里建议用户名和邮箱与你的 GitHub 用户名和邮箱保持一致。
 
 ```bash
-$ git config --global user.name "Your_name"
+$ git config --global user.name "Your_user_name"
 $ git config --global user.email Your_email@example.com
 ```
 :::tip 提醒
@@ -58,23 +58,23 @@ $ hexo clean && hexo d -g
 :::
 
 ### 自定义域名
-1. 如果你拥有个人域名，请用 CNAME 解析到你 GitHub 的项目名。即 `xxx.github.io`
-
+1. 如果你拥有个人域名，请用 CNAME 解析到你 GitHub 博客仓库名称。即 `xxx.github.io`
    域名解析记录参考：
 
 | 记录类型 | 主机记录 | 解析路线 | 记录值 |
 | :------: | :-------: | :------: | :------:|
-| CMAME | @  | 默认  | GitHub 的项目名 |
+| CNAME | @  | 默认  | GitHub 博客仓库名称 |
 
 :::tip 提醒
-如果域名解析记录中还有其它选项，默认即可。
+如果域名解析记录中还有其它选项，默认即可。 
+如果需要使用A记录或者了解更多内容，请参阅[Troubleshooting custom domains](https://help.github.com/articles/troubleshooting-custom-domains/)
 :::
 
 2. 打开仓库设置,找到 GitHub Pages 项目，修改 Custom domain 选项的值为你的自定义域名（不带 http 等前缀）
 3. 勾选 Custom domain 选项下的 Enforce HTTPS 选项，开启 Https 服务。
 
 :::tip 提醒
-有时候 `Enforce HTTPS` 这个选项会暂时无法打开，可以稍等一会儿再留意。
+如果遇到 `Enforce HTTPS` 选项无法打开，可以稍等一会儿再尝试。
 :::
 
 ## 部署到 CODING（dev.tencent.com）
@@ -87,7 +87,7 @@ $ hexo clean && hexo d -g
 
 部署到 CODING 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 CODING Pages 地址而已。同时 CODING 在国内的访问速度会比较快。
 
-可以看看 [CODING 官方文档](https://dev.tencent.com/help/) ，有绑定域名教程。
+详细内容请参阅 [CODING 官方文档](https://dev.tencent.com/help/) 。
 
 ## 部署到 CentOS Servers
 
