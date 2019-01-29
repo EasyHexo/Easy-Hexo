@@ -20,8 +20,8 @@ Easy Hexo <img height="30" width="30" src="https://i.loli.net/2018/10/20/5bcad7e
 > **您想展示自己的才华吗？**  
 > 如果您确实有以上需求，并且有一定耐心，不怕困难不怕坑，我们将会给您提供尽可能完善的个人博客搭建教程。  
 
-
 # 前言
+
 > 轻松使用 Hexo 建站
 
 Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建立一个博客网站。但是由于 Hexo 官方网站的教程并没有涉及到主题配置及自定义，甚至有一些 Hexo 主题连官方文档都没有，导致使用者需要阅读那些网上良莠不齐的教程。而本文档将提供一站式的 Hexo 教程。  
@@ -54,7 +54,6 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 :gift: 感谢你的支持！
 
-
 # 相关信息
 
 本项目使用 [Vuepress](https://vuepress.vuejs.org) 生成。
@@ -69,7 +68,11 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 - 文档编写人员：写文档。有主题、插件、自制主题三个选择。
 - issue 区解答人员：目前 Easy-Hexo 的 issue 区提供了『Hexo 使用问题提出』的功能，人手不够，速度有点慢，所以急需人员补充。
 
-# 状态
+# Changelog 更新日志
+
+- 2019.1.24 > 添加了[使用数据文件平滑升级主题](https://easyhexo.sm9.top/Easy-Hexo/5-Add/5-3-data-file.html) | By MoshiYeap [#103](https://github.com/EasyHexo/Easy-Hexo/pull/103)
+
+# Status 状态
 
 欢迎查阅 [项目进度板](https://github.com/orgs/EasyHexo/projects/1)。
 
@@ -77,8 +80,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 ![mind](https://i.loli.net/2018/11/11/5be7d47aa0a0d.jpg)
 
-
-# 许可
+# License 许可
 
 ⚖ 本作品采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
 
