@@ -35,6 +35,7 @@ branches:
 deploy:
   provider: pages
   skip_cleanup: true
+  repo: EasyHexo/easyhexo.com
   github_token: $GITHUB_TOKEN
   local_dir: docs/.vuepress/dist
   name: $GIT_NAME
