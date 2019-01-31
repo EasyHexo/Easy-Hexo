@@ -35,12 +35,12 @@ branches:
 deploy:
   provider: pages
   skip_cleanup: true
-  repo: EasyHexo/easyhexo.com
   github_token: $GITHUB_TOKEN
   local_dir: docs/.vuepress/dist
   name: $GIT_NAME
   email: $GIT_EMAIL
   keep-history: true
-  target-branch: gh-pages
+  repo: EasyHexo/easyhexo.com
+  target-branch: master
   on:
     branch: master
