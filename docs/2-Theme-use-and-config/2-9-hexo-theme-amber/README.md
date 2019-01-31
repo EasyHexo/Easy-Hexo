@@ -6,12 +6,15 @@ title: hexo-theme-amber
 
 [![maintainer][maintainer-img]][maintainer-url]
 [![author][author-img]][author-url]
+[![theme][theme-img]][theme-url]
 [![juejin][juejin-img]][juejin-url]
 
 [maintainer-img]: https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square
 [maintainer-url]: https://github.com/EasyHexo/Easy-Hexo
-[author-img]: https://img.shields.io/badge/Author-Mitscherlich-blue.svg?longCache=true&style=flat-square
+[author-img]: https://img.shields.io/badge/Author-Mitscherlich-0069d9.svg?longCache=true&style=flat-square
 [author-url]: https://github.com/Mitscherlich
+[theme-img]: https://img.shields.io/badge/hexo--theme--amber-v0.1.0--rc.6-007bff.svg?longCache=true&style=flat-square
+[theme-url]: https://github.com/Mitscherlich/hexo-theme-amber
 [juejin-img]: https://badge.juejin.im/entry/5c1b515ff265da61193bcc21/likes.svg?style=flat-square
 [juejin-url]: https://juejin.im/post/5c1b4b69f265da611c26ef7c
 
@@ -20,8 +23,6 @@ title: hexo-theme-amber
 :::
 
 [Amber 主题地址][theme-url]
-
-[theme-url]: https://github.com/Mitscherlich/hexo-theme-amber
 
 :tada: 基于 Bootstrap + Vue 诞生的一款单页主题。
 
@@ -131,6 +132,37 @@ menu:
       link: /donate
     - text: Profile               # 还是自定义页面
       link: /profile
+```
+
+#### 轮播图
+
+首页的轮播图默认循环的时间间隔是 10s，如果你想要调整，可以在这里修改：
+
+```yaml
+slider: 10  # 默认是 10s
+            # `true` 同样是使用默认值
+```
+
+如果你不想使用启用轮播图，可以将它设置为 `false` 来关闭它：
+
+```yaml
+slider: false # 这将关闭轮播图
+```
+
+#### 固定文章
+
+在首页显示特定分类下的文章，可做置顶功能使用，在这里设置你想要展示的分类名称：
+
+```yaml
+topic: # 最多接受两个分类名，请使用它的 slug，如果不确定，请先通过 `hexo s` 启动 devserver，然后访问 http://<your-ip>:3000/api/categories.json 查看
+  - essay
+  - note
+```
+
+同样的，设置为 `false` 将关闭置顶功能：
+
+```yaml
+topic: false # 将不会加载置顶文章
 ```
 
 #### RSS/Atom 订阅链接
