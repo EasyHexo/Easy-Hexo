@@ -16,3 +16,7 @@ title: 特别致谢
 ## GitHub 项目
 
 [HexoEditor](https://github.com/zhuzhuyule/HexoEditor)
+
+## 大佬
+
+- [cloudpool2017](https://github.com/cloudpool2017)
