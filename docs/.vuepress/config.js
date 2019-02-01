@@ -54,7 +54,8 @@ module.exports = {
         { text: 'hexo-theme-aero-dual', link: '/2-Theme-use-and-config/2-8-hexo-theme-aero-dual/' },
         { text: 'hexo-theme-amber', link: '/2-Theme-use-and-config/2-9-hexo-theme-amber/' },
         { text: 'hexo-theme-indigo', link: '/2-Theme-use-and-config/2-10-hexo-theme-indigo/' },
-        { text: 'hexo-theme-melody', link: '/2-Theme-use-and-config/2-11-hexo-theme-melody/' }
+        { text: 'hexo-theme-melody', link: '/2-Theme-use-and-config/2-11-hexo-theme-melody/' },
+        { text: 'hexo-theme-icarus', link: '/2-Theme-use-and-config/2-12-hexo-theme-icarus/' }
       ]
     }, {
       text: '插件使用与配置',
@@ -101,7 +102,8 @@ module.exports = {
         '2-8-hexo-theme-aero-dual/',
         '2-9-hexo-theme-amber/',
         '2-10-hexo-theme-indigo/',
-        '2-11-hexo-theme-melody/'
+        '2-11-hexo-theme-melody/',
+        '2-12-hexo-theme-icarus/',
       ],
       '/3-Plugins-use-and-config/': [
         '',
