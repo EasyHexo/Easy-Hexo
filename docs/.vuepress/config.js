@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  ga: 'UA-130601883-3',
   title: 'Easy Hexo 👨‍💻',
   description: '轻松入门 Hexo',
   base: '/',
@@ -124,11 +125,6 @@ module.exports = {
     editLinks: true,
     editLinkText: '在 GitHub 上编辑此页',
   },
-  plugins: [
-    ['@vuepress/google-analytics', {
-      ga: 'UA-130601883-3'
-    }],
-  ],
   configureWebpack: {
     resolve: {
       alias: {
