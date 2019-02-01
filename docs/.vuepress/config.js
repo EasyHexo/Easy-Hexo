@@ -124,6 +124,11 @@ module.exports = {
     editLinks: true,
     editLinkText: '在 GitHub 上编辑此页',
   },
+  plugins: [
+    ['@vuepress/google-analytics', {
+      ga: 'UA-130601883-3'
+    }],
+  ],
   configureWebpack: {
     resolve: {
       alias: {
