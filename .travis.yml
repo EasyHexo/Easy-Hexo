@@ -35,10 +35,10 @@ branches:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: $GITHUB_TOKEN_J
   local_dir: docs/.vuepress/dist
-  name: $GIT_NAME
-  email: $GIT_EMAIL
+  name: $GIT_NAME_J
+  email: $GIT_EMAIL_J
   keep-history: true
   repo: EasyHexo/dev.easyhexo.com
   target-branch: master
