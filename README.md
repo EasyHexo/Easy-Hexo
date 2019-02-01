@@ -10,7 +10,6 @@ Easy Hexo <img height="30" width="30" src="https://i.loli.net/2018/10/20/5bcad7e
 [![Build Status](https://img.shields.io/travis/EasyHexo/Easy-Hexo.svg?style=flat-square)](https://travis-ci.org/EasyHexo/Easy-Hexo)
 [![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/EasyHexo/Easy-Hexo)
 ![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)
-[![HitCount](http://hits.dwyl.io/EasyHexo/Easy-Hexo.svg)](http://hits.dwyl.io/EasyHexo/Easy-Hexo)
 
 
 
