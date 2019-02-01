@@ -69,7 +69,9 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 # Changelog 更新日志
 
-- 2019.1.24 > 添加了[使用数据文件平滑升级主题](https://easyhexo.sm9.top/Easy-Hexo/5-Add/5-3-data-file.html) | By MoshiYeap [#103](https://github.com/EasyHexo/Easy-Hexo/pull/103)
+- 2019.1.31 > [@cloudpool2017](https://github.com/cloudpool2017) 赞助一年 `easyhexo.com` 域名并投入使用 | [#112](https://github.com/EasyHexo/Easy-Hexo/pull/112/)
+
+- 2019.1.24 > 添加了[使用数据文件平滑升级主题](https://easyhexo.sm9.top/Easy-Hexo/5-Add/5-3-data-file.html) | By [@MoshiYeap](https://github.com/MoshiYeap) [#103](https://github.com/EasyHexo/Easy-Hexo/pull/103)
 
 # Status 状态
 
