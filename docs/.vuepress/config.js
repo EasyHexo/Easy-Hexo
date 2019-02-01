@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  ga: 'UA-130601883-3',
   title: 'Easy Hexo 👨‍💻',
   description: '轻松入门 Hexo',
   base: '/',
