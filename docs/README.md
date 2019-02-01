@@ -33,9 +33,6 @@ footer: © Easy Hexo. Released under the CC BY-NC-ND 4.0 International License.
 
 请联系 ChungZH `QQ:124694738`，加好友时请注明 `Easy Hexo`。或者你也可以加入 `EasyHexo` 团队的 `QQ 群：935778924`。
 
-目前 EasyHexo 急需的人员有：
-
-
 # License 许可
 
 ⚖ 本作品采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
