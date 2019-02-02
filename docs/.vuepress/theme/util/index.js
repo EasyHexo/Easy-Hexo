@@ -3,6 +3,22 @@ export const extRE = /\.(md|html)$/
 export const endingSlashRE = /\/$/
 export const outboundRE = /^(https?:|mailto:|tel:)/
 
+const cnRE = /[\u4E00-\u9FA5]/g
+const enRE = /[a-zA-Z0-9_\u0392-\u03c9\u0400-\u04FF]+|[\u4E00-\u9FFF\u3400-\u4dbf\uf900-\ufaff\u3040-\u309f\uac00-\ud7af\u0400-\u04FF]+|[\u00E4\u00C4\u00E5\u00C5\u00F6\u00D6]+|\w+/g
+
+function counter (content) {
+  content = content.trim()
+  const cn = (content.match(cnRE) || []).length
+  const en = (content.replace(cnRE, '').match(enRE) || []).length
+  return [cn, en]
+}
+
+export function min2read (content, { cn = 300, en = 160 } = {}) {
+  const len = counter(content)
+  const readingTime = len[0] / cn + len[1] / en
+  return readingTime < 1 ? '1' : parseInt(readingTime, 10)
+}
+
 export function wordcount (content) {
   const len = counter(content)
   const count = len[0] + len[1]
