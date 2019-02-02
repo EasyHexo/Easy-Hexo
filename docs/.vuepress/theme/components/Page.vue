@@ -1,10 +1,10 @@
 <template>
-  <div class="page">
+  <main class="page">
     <slot name="top"/>
 
-    <Content :custom="false"/>
+    <Content/>
 
-    <div class="page-edit">
+    <footer class="page-edit">
       <div
         class="edit-link"
         v-if="editLink"
@@ -24,7 +24,7 @@
         <span class="prefix">{{ lastUpdatedText }}: </span>
         <span class="time">{{ lastUpdated }}</span>
       </div>
-    </div>
+    </footer>
 
     <div class="page-nav" v-if="prev || next">
       <p class="inner">
@@ -62,22 +62,21 @@
     </keep-alive>
 
     <slot name="bottom"/>
-  </div>
+  </main>
 </template>
 
 <script>
-import { resolvePage, normalize, outboundRE, endingSlashRE } from './util'
+import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'
 import Comment from './Comment.vue'
 
 export default {
   components: { Comment },
+
   props: ['sidebarItems'],
 
   computed: {
     lastUpdated () {
-      if (this.$page.lastUpdated) {
-        return new Date(this.$page.lastUpdated).toLocaleString(this.$lang)
-      }
+      return this.$page.lastUpdated
     },
 
     lastUpdatedText () {
@@ -153,6 +152,7 @@ export default {
           : repo
         return (
           base.replace(endingSlashRE, '') +
+           `/src` +
            `/${docsBranch}` +
            (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
            path +
@@ -193,7 +193,7 @@ function find (page, items, offset) {
   })
   for (let i = 0; i < res.length; i++) {
     const cur = res[i]
-    if (cur.type === 'page' && cur.path === page.path) {
+    if (cur.type === 'page' && cur.path === decodeURIComponent(page.path)) {
       return res[i + offset]
     }
   }
@@ -201,11 +201,11 @@ function find (page, items, offset) {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl'
-@require './styles/wrapper.styl'
+@require '../styles/wrapper.styl'
 
 .page
   padding-bottom 2rem
+  display block
 
 .page-edit
   @extend $wrapper

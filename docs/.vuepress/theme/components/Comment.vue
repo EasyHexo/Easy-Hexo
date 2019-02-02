@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  mounted() {
+  mounted () {
     if (!window) {
       // ssr 忽略
       return
@@ -25,7 +25,7 @@ export default {
     })
   },
   methods: {
-    renderComment() {
+    renderComment () {
       const Valine = window.Valine || null
       const AV = window.AV || null
       this.$nextTick(() => {
@@ -33,7 +33,9 @@ export default {
           Object.assign({
             av: AV,
             el: '#vcomments',
-            path: this.$page.path
+            path: this.$page.path,
+            visitor: true,
+            verify: false,
           },
           { ...this.$site.themeConfig.valine })
         )
@@ -41,7 +43,7 @@ export default {
     }
   },
   watch: {
-    '$page.key'(val, old) {
+    '$page.key' (val, old) {
       // 评论区防抖
       if (!val || old === val) {
         return
