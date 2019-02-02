@@ -1,7 +1,6 @@
 const path = require('path')
 
 module.exports = {
-  ga: 'UA-130601883-3',
   title: 'Easy Hexo 👨‍💻',
   description: '轻松入门 Hexo',
   base: '/',
@@ -132,4 +131,12 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-130601883-3' // UA-00000000-0
+      }
+    ]
+  ]
 }
