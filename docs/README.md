@@ -15,13 +15,14 @@ footer: © Easy Hexo. Released under the CC BY-NC-ND 4.0 International License.
 
 [![Dev branch Build Status](https://travis-ci.org/EasyHexo/Easy-Hexo.svg?branch=dev)](https://travis-ci.org/EasyHexo/Easy-Hexo)
 
-
-**警告：dev 分支仅用来开发，并不提供内容上的更新，如需看文档请看 [master 分支](https://github.com/EasyHexo/Easy-Hexo/tree/master)。或者访问[easyhexo.com](https://easyhexo.com/)** 
+**警告：dev 分支仅用来开发，并不提供内容上的更新，如需看文档请看 [master 分支](https://github.com/EasyHexo/Easy-Hexo/tree/master)，或访问 [easyhexo.com](https://easyhexo.com/)** 
 
 ## TODO
 
-- [ ] 升级 Vuepress 至 1.x
-- [ ] 自制主题
+> ⭕ 表示未完成，✅ 表示已完成
+
+⭕ 升级 Vuepress 至 1.x
+⭕ 自制主题
 
 :gift: 感谢你的支持！
 
