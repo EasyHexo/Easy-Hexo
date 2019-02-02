@@ -1,10 +1,10 @@
 <template>
-  <div class="page">
+  <main class="page">
     <slot name="top"/>
 
-    <Content :custom="false"/>
+    <Content ref="content" />
 
-    <div class="page-edit">
+    <footer class="page-edit">
       <div
         class="edit-link"
         v-if="editLink"
@@ -15,16 +15,25 @@
           rel="noopener noreferrer"
         >{{ editLinkText }}</a>
         <OutboundLink/>
+
+        <small
+          class="word-count"
+          ref="counter"
+        >
+          <span>全文字数:&nbsp;</span>
+          <span id="word"></span>
+          <span>估计阅读时间:&nbsp;</span>
+          <span id="time"></span>
+        </small>
       </div>
 
-      <div
-        class="last-updated"
-        v-if="lastUpdated"
-      >
-        <span class="prefix">{{ lastUpdatedText }}: </span>
-        <span class="time">{{ lastUpdated }}</span>
+      <div class="leancloud-visitors" :id="slug">
+        <span class="prefix">
+          <span class="octicon octicon-eye"></span>
+        </span>
+        <span class="pv leancloud-visitors-count"></span>
       </div>
-    </div>
+    </footer>
 
     <div class="page-nav" v-if="prev || next">
       <p class="inner">
@@ -62,32 +71,21 @@
     </keep-alive>
 
     <slot name="bottom"/>
-  </div>
+  </main>
 </template>
 
 <script>
-import { resolvePage, normalize, outboundRE, endingSlashRE } from './util'
+import { resolvePage, normalize, outboundRE, endingSlashRE, wordcount, min2read } from '../util'
 import Comment from './Comment.vue'
 
 export default {
   components: { Comment },
+
   props: ['sidebarItems'],
 
   computed: {
-    lastUpdated () {
-      if (this.$page.lastUpdated) {
-        return new Date(this.$page.lastUpdated).toLocaleString(this.$lang)
-      }
-    },
-
-    lastUpdatedText () {
-      if (typeof this.$themeLocaleConfig.lastUpdated === 'string') {
-        return this.$themeLocaleConfig.lastUpdated
-      }
-      if (typeof this.$site.themeConfig.lastUpdated === 'string') {
-        return this.$site.themeConfig.lastUpdated
-      }
-      return 'Last Updated'
+    slug () {
+      return this.$page.path || this.$route.path
     },
 
     prev () {
@@ -144,6 +142,16 @@ export default {
     }
   },
 
+  mounted () {
+    this.$forceUpdate()
+  },
+
+  updated () {
+    const { $el: $elContent } = this.$refs.content
+    const content = $elContent.innerText
+    this.calculateWordAndReadTime(content)
+  },
+
   methods: {
     createEditLink (repo, docsRepo, docsDir, docsBranch, path) {
       const bitbucket = /bitbucket.org/
@@ -153,6 +161,7 @@ export default {
           : repo
         return (
           base.replace(endingSlashRE, '') +
+           `/src` +
            `/${docsBranch}` +
            (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
            path +
@@ -170,6 +179,16 @@ export default {
         (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
         path
       )
+    },
+
+    calculateWordAndReadTime (content) {
+      const $elCounter = this.$refs.counter
+      const $elWord = $elCounter.querySelector('#word')
+      const $elTime = $elCounter.querySelector('#time')
+      const word = wordcount(content)
+      const time = min2read(content)
+      $elWord.innerHTML = word
+      $elTime.innerHTML = `${time}&nbsp;分钟`
     }
   }
 }
@@ -193,7 +212,7 @@ function find (page, items, offset) {
   })
   for (let i = 0; i < res.length; i++) {
     const cur = res[i]
-    if (cur.type === 'page' && cur.path === page.path) {
+    if (cur.type === 'page' && cur.path === decodeURIComponent(page.path)) {
       return res[i + offset]
     }
   }
@@ -201,11 +220,11 @@ function find (page, items, offset) {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl'
-@require './styles/wrapper.styl'
+@require '../styles/wrapper.styl'
 
 .page
   padding-bottom 2rem
+  display block
 
 .page-edit
   @extend $wrapper
@@ -214,18 +233,19 @@ function find (page, items, offset) {
   overflow auto
   .edit-link
     display inline-block
-    a
+    a, small
       color lighten($textColor, 25%)
       margin-right 0.25rem
-  .last-updated
+  .leancloud-visitors
     float right
     font-size 0.9em
     .prefix
       font-weight 500
       color lighten($textColor, 25%)
-    .time
+    .pv
       font-weight 400
       color #aaa
+      vertical-align 1px
 
 .page-nav
   @extend $wrapper

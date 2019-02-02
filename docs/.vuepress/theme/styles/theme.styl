@@ -1,4 +1,4 @@
-@require './config'
+@require './palette'
 @require './nprogress'
 @require './code'
 @require './custom-blocks'
@@ -9,6 +9,7 @@
 html, body
   padding 0
   margin 0
+  background-color #fff
 
 body
   font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
@@ -92,9 +93,11 @@ kbd
 blockquote
   font-size 1.2rem
   color #999
-  border-left .25rem solid #dfe2e5
-  margin-left 0
-  padding-left 1rem
+  border-left .5rem solid #dfe2e5
+  margin 0.5rem 0
+  padding .25rem 0 .25rem 1rem
+  & > p
+    margin 0
 
 ul, ol
   padding-left 1.2em
@@ -163,9 +166,6 @@ th, td
   border 1px solid #dfe2e5
   padding .6em 1em
 
-.custom-layout
-  padding-top $navbarHeight
-
 .theme-container
   &.sidebar-open
     .sidebar-mask
@@ -176,9 +176,6 @@ th, td
         padding-top 0
     .sidebar
       top 0
-    .custom-layout
-      padding-top 0
-
 
 @media (min-width: ($MQMobile + 1px))
   .theme-container.no-sidebar
@@ -187,4 +184,4 @@ th, td
     .page
       padding-left 0
 
-@require './mobile.styl'
+@require 'mobile.styl'
