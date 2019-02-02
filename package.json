@@ -10,6 +10,9 @@
   "author": "EasyHexo <124694738@qq.com>",
   "license": "CC-BY-NC-ND-4.0",
   "dependencies": {
-    "vuepress": "^0.14.4"
+    "vuepress": "^1.0.0-alpha.35"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0"
   }
 }
