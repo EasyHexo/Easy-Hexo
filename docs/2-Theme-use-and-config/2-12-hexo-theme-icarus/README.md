@@ -23,7 +23,7 @@ icarus 是一个三栏结构的自适应主题，预置了大量第三方插件�
 
 ## 效果图  
 
-![Icarus](https://i.loli.net/2019/02/01/5c5410e9f394f.png)
+![Icarus](@img/2/2-12/1.png)
 
 ## 安装
 
@@ -90,7 +90,7 @@ logo:
 ```
 这对于不会画 logo 的同学来说无疑是个大好消息了：
 
-![logo](https://i.loli.net/2019/02/01/5c545d8ad3094.png)
+![logo](@img/2/2-12/2.png)
 
 ### 评论系统
 
@@ -113,7 +113,7 @@ comment:
 
 效果如下：
 
-![Valine Comment](https://i.loli.net/2019/02/01/5c546c2f25862.png)
+![Valine Comment](@img/2/2-12/3.png)
 
 如果有的文章不希望别人评论，但是我们又希望把整个站点的评论关闭的话，就需要对指定文章进行评论关闭操作了。操作也很简单，只需要在文章 markdown 文件的 front-matter 区域设置 `comments` 为 `false` 即可：
 
@@ -150,13 +150,13 @@ donate:
 
 `支付宝` 和 `微信` 只需要提供二维码就可以了，可以使用本地静态资源或者图床链接。效果如下，大家懂的：
 
-[![投喂现场](https://i.loli.net/2019/02/01/5c546821e46d5.png)](https://susreal.github.io/images/alipay.JPG)
+[![投喂现场](@img/2/2-12/4.png)](https://susreal.github.io/images/alipay.JPG)
 
 ### widget
 
 我觉得这是 icarus 比较精髓的部分了，所有的 widget 都是一个卡片，可以自由摆放在任何位置：
 
-![卡片化部件](https://i.loli.net/2019/02/01/5c54696fbbcad.png)
+![卡片化部件](@img/2/2-12/5.png)
 
 包括文章在内，个人资料、链接、分类、最新文章、归档、标签和标签云都是一个卡片，可以在 `_config.yml` 中设置各个卡片的具体属性，同时也可以设置卡片出现在网站的左侧还是右侧：
 
