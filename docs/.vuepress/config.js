@@ -141,6 +141,12 @@ module.exports = {
       {
         'ga': 'UA-130601883-3' // UA-00000000-0
       }
+    ],
+    [
+      'sitemap',
+      {
+        'hostname': 'https://dev.easyhexo.com'
+      }
     ]
   ]
 }

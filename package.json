@@ -13,6 +13,7 @@
     "vuepress": "^1.0.0-alpha.35"
   },
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0"
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
+    "vuepress-plugin-sitemap": "^2.1.1"
   }
 }
