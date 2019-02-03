@@ -46,7 +46,7 @@ deploy:
 
 ### 发布到 GitHub
 
-在你的 Hexo 站点根目录下，执行如下命令即可部署到 GitHub Pages 上。
+在本地的 Hexo 站点根目录下，执行如下命令即可部署到 GitHub Pages 上。
 
 ```bash
 $ hexo clean && hexo d -g
@@ -57,7 +57,7 @@ $ hexo clean && hexo d -g
 :::
 
 ### 自定义域名
-如果你拥有个人域名，请用 A 记录解析到以下IP中的任意一个。如果使用 CNAME 请解析到你的 GitHub 仓库名称。
+1. 如果你拥有个人域名，请用 A 记录解析到以下IP中的任意一个。如果使用 CNAME 请解析到你的 GitHub 仓库名称。
 ```yaml
 185.199.108.153
 185.199.109.153
@@ -98,7 +98,7 @@ deploy:
   message:  # 提交信息可以自定义，不填的则默认为提交时间
 ```
 
-### 发布到 CODING
+### 发布到 CODING 
 
 在本地 Hexo 站点根目录下，执行如下命令即可部署到 CODING Pages 上。
 
