@@ -23,7 +23,7 @@ before_install:
   - export TZ='Asia/Shanghai'
 
 install: 
-  - npm install -g vuepress
+  - npm install
 
 script:
   - npm run docs:build
