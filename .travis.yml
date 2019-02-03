@@ -23,7 +23,7 @@ before_install:
   - export TZ='Asia/Shanghai'
 
 install: 
-  - npm install vuepress@next
+  - npm install
   - npm install webpack@4.8.1 
 
 script:
