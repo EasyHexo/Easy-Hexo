@@ -44,10 +44,9 @@ deploy:
   message:  # 提交信息可以自定义，不填的话默认为提交时间
 ```
 
-
 ### 发布到 GitHub
 
-在你的 Hexo 站点根目录下，执行如下命令即可发布到 GitHub Pages 上。
+在你的 Hexo 站点根目录下，执行如下命令即可部署到 GitHub Pages 上。
 
 ```bash
 $ hexo clean && hexo d -g
@@ -58,32 +57,27 @@ $ hexo clean && hexo d -g
 :::
 
 ### 自定义域名
-1. 如果你拥有个人域名，请用 CNAME 解析到你 GitHub 博客仓库名称。即 `xxx.github.io`
-   域名解析记录参考：
-
-| 记录类型 | 主机记录 | 解析路线 | 记录值 |
-| :------: | :-------: | :------: | :------:|
-| CNAME | @  | 默认  | GitHub 博客仓库名称 |
-
-:::tip 提醒
-如果域名解析记录中还有其它选项，默认即可。 
-如果需要使用A记录或者了解更多内容，请参阅[Troubleshooting custom domains](https://help.github.com/articles/troubleshooting-custom-domains/)
-:::
+1. 如果你拥有个人域名，请用 A 记录解析到以下IP中的任意一个。如果使用 CNAME 请解析到你的 GitHub 仓库名称。
+```yaml
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+**参考表格**
+| 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒）|
+| :-----: | :-----: | :-----: | :-----:| :-----: | :-----:|
+|    A    | @       |   默认  | 185.199.110.153| - | 600 |
+|  CNAME  | @       |   默认  | GitHub 博客仓库名称| - | 600 |
 
 2. 打开仓库设置,找到 GitHub Pages 项目，修改 Custom domain 选项的值为你的自定义域名（不带 http 等前缀）
-3. 勾选 Custom domain 选项下的 Enforce HTTPS 选项，开启 Https 服务。
+3. 勾选 Custom domain 选项下的 Enforce HTTPS 选项，强制开启 Https 。如果遇到 `Enforce HTTPS` 选项无法打开，可以稍等一会儿再尝试。
 
 :::tip 提醒
-如果遇到 `Enforce HTTPS` 选项无法打开，可以稍等一会儿再尝试。
+同时需要在本地的 `source` 目录新建一个 CNAME 文件，内容为你的自定义域名（不带 http 等前缀）。否则无法使用自定义域名功能（ hexo d 生成的文件没有 CNAME 文件，导致仓库的自定域名设置失效）
 :::
 
 ## 部署到 CODING（dev.tencent.com）
-
-:::warning 警告
-
-由于 CODING Pages 服务最近**非常**不稳定，所以不推荐使用 CODING Pages。
-
-:::
 
 部署到 CODING 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 CODING Pages 地址而已。同时 CODING 在国内的访问速度会比较快。
 
@@ -254,7 +248,7 @@ server {
         listen       80 default_server;
         listen       [::]:80 default_server;
 
-        return 301 https://liujunzhou.cn$request_uri; # 使用301重定向
+        return 301 https://liujunzhou.top$request_uri; # 使用301重定向
  }
 
 # Settings for a TLS enabled server.
@@ -262,7 +256,7 @@ server {
 server {
         listen       443 ssl http2 default_server;
         listen       [::]:443 ssl http2 default_server;
-        server_name  liujunzhou.cn; #你的域名
+        server_name  liujunzhou.top; #你的域名
         root         /home/www/hexo; # Nginx 静态资源存放路径
 
         ssl_certificate "/etc/pki/tls/certs/CA.crt";
