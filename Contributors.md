@@ -25,6 +25,7 @@
 - [yi-yun](https://yi-yun.github.io/)
 - [yixiaomie](https://daiwen.me/)
 - [Susreal](https://susreal.github.io/)
+- [Odeinjul](http://odeinjul.github.io/)
 
 ## Hexo 主题开发者
 
