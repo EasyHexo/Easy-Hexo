@@ -15,9 +15,9 @@ node_js:
 #       - g++-4.8
 
 # Cache node_modules for faster build. - @SpencerWoo
-cache: 
-  directories: 
-    - "node_modules"
+#cache: 
+#  directories: 
+#    - "node_modules"
 
 before_install: 
   - export TZ='Asia/Shanghai'
