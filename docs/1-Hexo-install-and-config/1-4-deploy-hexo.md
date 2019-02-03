@@ -6,7 +6,7 @@ title: 部署 Hexo
 
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](https://junzhouliu.github.io/)
-
+[![](https://img.shields.io/badge/Author-Odeinjul-66CCFF.svg?longCache=true&style=flat-square)](https://odeinjul.github.io/)
 ## 部署到 GitHub
 
 ### 准备工作
@@ -57,7 +57,7 @@ $ hexo clean && hexo d -g
 :::
 
 ### 自定义域名
-1. 如果你拥有个人域名，请用 A 记录解析到以下IP中的任意一个。如果使用 CNAME 请解析到你的 GitHub 仓库名称。
+1. 如果你拥有个人域名，请用 A 记录解析到以下IP中的任意一个。或者使用 CNAME 请解析到你的 GitHub 仓库名称。
 ```yaml
 185.199.108.153
 185.199.109.153
@@ -79,8 +79,60 @@ $ hexo clean && hexo d -g
 
 ## 部署到 CODING（dev.tencent.com）
 
-部署到 CODING 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 CODING Pages 地址而已。同时 CODING 在国内的访问速度会比较快。
+### 准备工作
 
+1. 如果没有账号，请点此前往 [COIDING](coding.net) 注册一个 CODING 账号。
+2. 新建一个公开仓库仓库名格式为 `your_username.coding.me` 例如你的 CODING 用户名(username)是 `easyhexo`，那么你的仓库地址名称(reponame)就应该是  `easyhexo.coding.me`
+3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://coding.net/your_username/your_reponame.git` 在下一步会用到。
+
+### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
+
+同上，略过
+
+### 配置 Git
+
+同上，略过
+
+### 配置站点 `_config.yml` 文件
+
+```yaml
+deploy:
+  type: git   # 类型填git
+  repo: 
+    <github repository url>
+    <coding repository url> # 你的coding仓库地址
+  branch: master  # 分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。
+  message:  # 提交信息可以自定义，不填的话默认为提交时间
+```
+
+### 发布到 CODING
+
+在你的 Hexo 站点根目录下，执行如下命令即可部署到 CODING Pages 上。
+
+```bash
+$ hexo clean && hexo d -g
+```
+
+:::tip 提醒
+如果是第一次使用，会弹出一个登录框，需要登陆你的 CODING 账号。
+:::
+
+### 自定义域名
+1. 如果你拥有个人域名，请添加 CNAME 记录，在项目设置中绑定域名下面有行小字 ： 绑定前请在域名 DNS 设置中添加一条 CNAME 记录指向 xxxx.coding.me。将@和www记录都解析到这个即可。 
+
+**参考表格**
+| 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒）|
+| :-----: | :-----: | :-----: | :-----:| :-----: | :-----:|
+|  CNAME  | www     |   默认  | xxxx.coding.me| - | 600 |
+|  CNAME  | @       |   默认  | xxxx.coding.me| - | 600 |
+
+2. 打开仓库设置,找到 代码-Pages服务，在绑定新域名下的文本框内输入你的自定义域名（不带 http 等前缀）。
+3. 勾选 强制HTTPS访问。
+
+:::tip 提醒
+1.为了您的网站 SEO，我们建议您绑定一个 www 域名即可，如果您使用的域名 DNS 解析服务不支持添加 CNAME 记录，建议更换 Nameservers 到其他支持该功能的域名提供商（如 腾讯云）。
+2.同时需要在本地的 `source` 目录新建一个 CNAME 文件，内容为你的自定义域名（不带 http 等前缀）。否则无法使用自定义域名功能（ hexo d 生成的文件没有 CNAME 文件，导致仓库的自定域名设置失效）
+:::
 详细内容请参阅 [CODING 官方文档](https://dev.tencent.com/help/) 。
 
 ## 部署到 CentOS Servers
