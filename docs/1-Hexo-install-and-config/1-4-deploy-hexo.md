@@ -133,6 +133,7 @@ $ hexo clean && hexo d -g
 1.为了您的网站 SEO，我们建议您绑定一个 www 域名即可，如果您使用的域名 DNS 解析服务不支持添加 CNAME 记录，建议更换 Nameservers 到其他支持该功能的域名提供商（如 腾讯云）。
 2.同时需要在本地的 `source` 目录新建一个 CNAME 文件，内容为你的自定义域名（不带 http 等前缀）。否则无法使用自定义域名功能（ hexo d 生成的文件没有 CNAME 文件，导致仓库的自定域名设置失效）
 :::
+
 详细内容请参阅 [CODING 官方文档](https://dev.tencent.com/help/) 。
 
 ## 部署到 CentOS Servers
