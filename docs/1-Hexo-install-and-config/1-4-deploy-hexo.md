@@ -12,7 +12,7 @@ title: 部署 Hexo
 ### 准备工作
 
 1. 如果没有账号，请点此前往 [GitHub](gitHub.com) 注册一个 GitHub 账号。
-2. 新建一个公开仓库仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
+2. 新建一个公开仓库，仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
 3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
 
 ### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
