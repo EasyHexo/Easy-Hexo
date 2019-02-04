@@ -120,8 +120,8 @@ $ hexo clean && hexo d -g
 |  CNAME  | www     |   默认  | xxxx.coding.me| - | 600 |
 |  CNAME  | @       |   默认  | xxxx.coding.me| - | 600 |
 
-2. 打开仓库设置,找到 代码-Pages服务，在绑定新域名下的文本框内输入你的自定义域名（不带 http 等前缀）。
-3. 勾选 强制HTTPS访问。
+2. 打开仓库设置,找到 代码-Pages 服务，在绑定新域名下的文本框内输入你的自定义域名（不带 http 等前缀）。
+3. 勾选 强制 HTTPS 访问。
 
 :::tip 提醒
 出于 SEO 的考虑，我们建议您绑定一个 www 域名即可，如果您使用的域名 DNS 解析服务不支持添加 CNAME 记录，建议更换 Nameservers 到其他支持该功能的域名提供商（如 腾讯云）。如果遇到自定义域名失效，请参照前文 GitHub 配置方案解决。
