@@ -77,31 +77,36 @@ git push origin hexo:hexo
 
 ```yaml
 language: node_js
-
+## 编译语言、环境
 sudo: required
-
+## 需要管理员权限
 dist: xenial
-
+## 指定 CI 系统版本为 Ubuntu16.04 LTS
 node_js: stable
-
+## Node.js 版本
 install:
   - npm install
-
+## 安装环境 npm
 branches:
   only:
     - hexo
-
-before_install: 
+## 工作仓库分支
+before_install:
   - export TZ='Asia/Shanghai'
+  ### 配置时区为中国时区东八区（UTC + 8）
   - npm install hexo-cli -g
+  ### 安装组件 `hexo`
   - sudo apt-get install libpng16-dev
+  ### 安装 `libpng16-dev`
 
 install:
   - npm install
+  ## 安装依赖
 
 script:
   - hexo clean
   - hexo generate
+  ## 执行脚本，清除缓存，生成静态文件并放在 `public` 文件夹下
 
 deploy:
   provider: pages
@@ -114,28 +119,9 @@ deploy:
   target-branch: master
   on:
     branch: hexo
+  ## 部署配置
 ```
 
-解释一下：
-
-- `language`：编译语言、环境；`node_js`：Node.js 版本；`sudo`：需要管理员权限；
-- `install`：安装环境 npm；
-- `dist` : 指定 CI 系统版本为 Ubuntu16.04 LTS '；
-- `branches`：工作仓库分支（hexo 分支）；
-- `before_install`：配置时区为中国时区东八区（UTC + 8），安装组件 `hexo` ， 安装 `libpng16-dev` ；
-- `install`：安装依赖 `npm install`；
-- `script`：执行脚本，清除缓存，生成静态文件并放在 `public` 文件夹下；
-- `deploy`：执行部署。
-
-:::warning 警告
-- 其他文档可能提到了利用 `hexo-deployer-git` 进行部署，但是由于 Travis CI 本身支持直接部署到 GitHub Pages 的工具，因此无需另行安装 `hexo-deployer-git` 了；
-- 其他文档也可能提到在 `.travis.yml` 中加入如下内容，来缓存 `node_modules` 下的内容，从而加快编译速度。但是经过我的尝试，`node_modules` 经常会由于没有及时更新，在添加其他组件之后出现「博客生成静态文件步骤」失败的情况，因此建议不进行缓存处理。
-
-```yaml
-cache:
-  directories:
-    - node_modules
-```
 :::
 
 #### 在 Travis CI 中配置变量
@@ -190,3 +176,16 @@ git push
 这样，在每次我们将博客的源文件通过 `git` 推送到 GitHub 的 `hexo` 分支上后，Travis CI 就会自动检测并主动开始构建我们的博客静态文件，并自动部署到 GitHub Pages 中。
 
 除了方便部署，我们同时还在 GitHub 上面成功开启了我们博客源代码的备份，一箭双雕。👷
+
+---
+
+:::warning 警告
+
+- 其他文档可能提到了利用 `hexo-deployer-git` 进行部署，但是由于 Travis CI 本身支持直接部署到 GitHub Pages 的工具，因此无需另行安装 `hexo-deployer-git` 了；
+- 其他文档也可能提到在 `.travis.yml` 中加入如下内容，来缓存 `node_modules` 下的内容，从而加快编译速度。但是经过我的尝试，`node_modules` 经常会由于没有及时更新，在添加其他组件之后出现「博客生成静态文件步骤」失败的情况，因此建议不进行缓存处理。
+
+```yaml
+cache:
+  directories:
+    - node_modules
+```
