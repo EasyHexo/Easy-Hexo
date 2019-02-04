@@ -10,21 +10,23 @@
 
 - Alpha1022
 - [Anoyer](https://anoyer.cn/)
+- [ffdy](https://ffdy.github.io/)
+- [Ghosin](https://www.ghosin.com/)
+- [g-zhima](https://g-zhima.github.io)
 - Hun Dean
 - [leonGravel](https://leongravel.com/)
-- [ffdy](https://ffdy.github.io/)
-- [g-zhima](https://g-zhima.github.io)
-- [Ghosin](https://www.ghosin.com/)
 - [Markjuruo](https://markjuruo.ooo/)
 - [Mitscherlich Wei](https://mitscherlich.me/) 
 - [MonoLogueChi](https://www.xxwhite.com/)
 - [MoshiYeap](https://junzhouliu.github.io/)
+- [Odeinjul](http://odeinjul.github.io/)
 - [SpencerWoo](https://spencerwoo.com/)
 - [StaunchKai](https://staunchkai.com/)
+- [Susreal](https://susreal.github.io/)
 - [weijunzi](https://weijunzii.github.io/)
 - [yi-yun](https://yi-yun.github.io/)
 - [yixiaomie](https://daiwen.me/)
-- [Susreal](https://susreal.github.io/)
+
 
 ## Hexo 主题开发者
 

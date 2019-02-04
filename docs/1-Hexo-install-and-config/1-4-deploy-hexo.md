@@ -6,13 +6,13 @@ title: 部署 Hexo
 
 [![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
 [![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](https://junzhouliu.github.io/)
-
+[![](https://img.shields.io/badge/Author-Odeinjul-66CCFF.svg?longCache=true&style=flat-square)](https://odeinjul.github.io/)
 ## 部署到 GitHub
 
 ### 准备工作
 
 1. 如果没有账号，请点此前往 [GitHub](gitHub.com) 注册一个 GitHub 账号。
-2. 新建一个公开仓库仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
+2. 新建一个公开仓库，仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
 3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
 
 ### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
@@ -41,12 +41,12 @@ deploy:
   type: git   # 类型填git
   repo: <repository url> # 你的Github仓库地址
   branch: master  # 分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。
-  message:  # 提交信息可以自定义，不填的话默认为提交时间
+  message:  # 提交信息可以自定义，不填的则默认为提交时间
 ```
 
 ### 发布到 GitHub
 
-在你的 Hexo 站点根目录下，执行如下命令即可部署到 GitHub Pages 上。
+在本地的 Hexo 站点根目录下，执行如下命令即可部署到 GitHub Pages 上。
 
 ```bash
 $ hexo clean && hexo d -g
@@ -79,7 +79,53 @@ $ hexo clean && hexo d -g
 
 ## 部署到 CODING（dev.tencent.com）
 
-部署到 CODING 的方法和部署到 GitHub 的方法类似，只不过域名解析指向你的 CODING Pages 地址而已。同时 CODING 在国内的访问速度会比较快。
+### 准备工作
+
+1. 如果没有账号，请点此前往 [CODING](dev.tencent.com) 注册 CODING 账号。
+2. 新建一个公开仓库，仓库名格式为 `your_username.coding.me` 例如你的 CODING 用户名(username)是 `easyhexo`，那么你的仓库名称就应该是  `easyhexo.coding.me`
+3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://coding.net/your_username/your_reponame.git` 在下一步会用到。
+4. 如果您没有配置 `Git` 和 `hexo-deployer-git` 请参阅前文配置方法配置。
+
+### 配置站点 `_config.yml` 文件
+
+```yaml
+deploy:
+  type: git   # 类型填git
+  repo: 
+    github: <github repository url> # 你的GitHub仓库地址
+    coding: <coding repository url> # 你的coding仓库地址
+  branch: master  # 默认填写 master。
+  message:  # 提交信息可以自定义，不填的则默认为提交时间
+```
+
+### 发布到 CODING 
+
+在本地 Hexo 站点根目录下，执行如下命令即可部署到 CODING Pages 上。
+
+```bash
+$ hexo clean && hexo d -g
+```
+
+:::tip 提醒
+如果是第一次使用，会弹出一个登录框，需要登陆你的 CODING 账号。
+:::
+
+### 自定义域名
+1. 如果你拥有个人域名，请添加 CNAME 记录。
+2. 绑定前请在域名 DNS 设置中添加一条 CNAME 记录指向 xxxx.coding.me。将@和www记录都解析到这个即可。 
+
+**参考表格**
+| 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒）|
+| :-----: | :-----: | :-----: | :-----:| :-----: | :-----:|
+|  CNAME  | www     |   默认  | xxxx.coding.me| - | 600 |
+|  CNAME  | @       |   默认  | xxxx.coding.me| - | 600 |
+
+2. 打开仓库设置,找到 代码-Pages 服务，在绑定新域名下的文本框内输入你的自定义域名（不带 http 等前缀）。
+3. 勾选 强制 HTTPS 访问。
+
+:::tip 提醒
+出于 SEO 的考虑，我们建议您绑定一个 www 域名即可，如果您使用的域名 DNS 解析服务不支持添加 CNAME 记录，建议更换 Nameservers 到其他支持该功能的域名提供商（如 腾讯云）。如果遇到自定义域名失效，请参照前文 GitHub 配置方案解决。
+:::
 
 详细内容请参阅 [CODING 官方文档](https://dev.tencent.com/help/) 。
 
