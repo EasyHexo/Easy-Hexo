@@ -76,56 +76,42 @@ git push origin hexo:hexo
 在博客项目源代码分支下（`hexo` 分支）创建文件 `.travis.yml`，并添加如下内容：
 
 ```yaml
-language: node_js
+language: node_js # 编译语言、环境
 
-sudo: required
+sudo: required # 需要管理员权限
 
-dist: xenial
+dist: xenial # 指定 CI 系统版本为 Ubuntu16.04 LTS
 
-node_js: stable
-
-install:
-  - npm install
+node_js: stable #Node.js 版本
 
 branches:
   only:
-    - hexo
+    - hexo # 只有hexo分支检出更改才触发CI
 
 before_install: 
-  - export TZ='Asia/Shanghai'
-  - npm install hexo-cli -g
-  - sudo apt-get install libpng16-dev
+  - export TZ='Asia/Shanghai' #配置时区为东八区UTC+8
+  - npm install hexo-cli # 安装 hexo
+#  - sudo apt-get install libpng16-dev # 安装 libpng16-dev CI编译出现相关报错时请取消注释
 
 install:
-  - npm install
+  - npm install # 安装依赖
 
-script:
+script: # 执行脚本，清除缓存，生成静态文件
   - hexo clean
   - hexo generate
 
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: public
-  name: $GIT_NAME
-  email: $GIT_EMAIL
-  keep-history: true
-  target-branch: master
+  skip_cleanup: true # 跳过清理
+  local_dir: public # 需要推送到Github的静态文件目录 
+  name: $GIT_NAME # 用户名变量
+  email: $GIT_EMAIL # 用户邮箱变量
+  github_token: $GITHUB_TOKEN # GitHub Token变量
+  keep-history: true # 保持推送记录，以增量提交的方式
+  target-branch: master # 推送的目标分支 local_dir->>master分支
   on:
-    branch: hexo
+    branch: hexo # 工作分支
 ```
-
-解释一下：
-
-- `language`：编译语言、环境；`node_js`：Node.js 版本；`sudo`：需要管理员权限；
-- `install`：安装环境 npm；
-- `dist` : 指定 CI 系统版本为 Ubuntu16.04 LTS '；
-- `branches`：工作仓库分支（hexo 分支）；
-- `before_install`：配置时区为中国时区东八区（UTC + 8），安装组件 `hexo` ， 安装 `libpng16-dev` ；
-- `install`：安装依赖 `npm install`；
-- `script`：执行脚本，清除缓存，生成静态文件并放在 `public` 文件夹下；
-- `deploy`：执行部署。
 
 :::warning 警告
 - 其他文档可能提到了利用 `hexo-deployer-git` 进行部署，但是由于 Travis CI 本身支持直接部署到 GitHub Pages 的工具，因此无需另行安装 `hexo-deployer-git` 了；
