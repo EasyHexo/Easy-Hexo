@@ -1,30 +1,18 @@
 language: node_js
 
-# VuePress v0.x need node.js version 10 and above. - @SpencerWoo
-node_js: 
-  - "10"
+node_js:
+  - "lts/*"
 
-# env:
-#   - CXX=g++-4.8
+cache:
+  yarn: true
+  directories:
+    - node_modules
 
-# addons:
-#   apt:
-#     sources:
-#       - ubuntu-toolchain-r-test
-#     packages:
-#       - g++-4.8
-
-# Cache node_modules for faster build. - @SpencerWoo
-cache: 
-  directories: 
-    - "node_modules"
-
-before_install: 
+before_install:
   - export TZ='Asia/Shanghai'
 
-install: 
-  - npm install
-  - npm install webpack@4.8.1 
+install:
+  - yarn install --pure-lockfile
 
 script:
   - npm run docs:build
