@@ -1,7 +1,8 @@
 <template>
   <main class="page">
+    
     <slot name="top"/>
-
+    
     <Content ref="content" />
 
     <footer class="page-edit">
@@ -15,23 +16,20 @@
           rel="noopener noreferrer"
         >{{ editLinkText }}</a>
         <OutboundLink/>
-
-        <small
-          class="word-count"
-          ref="counter"
-        >
-          <span>全文字数:&nbsp;</span>
-          <span id="word"></span>
-          <span>估计阅读时间:&nbsp;</span>
-          <span id="time"></span>
-        </small>
       </div>
 
+      <small
+          class="word-count"
+          ref="counter"
+      >
+        <small><span class="octicon octicon-file"></span></small>
+        <span id="word"></span>&nbsp;&nbsp;
+        <small><span class="octicon octicon-clock"></span></small>
+        <span id="time"></span>&nbsp;&nbsp;
+      </small>
       <div class="leancloud-visitors" :id="slug">
-        <span class="prefix">
-          <span class="octicon octicon-eye"></span>
-        </span>
-        <span class="pv leancloud-visitors-count"></span>
+        <small><span class="octicon octicon-eye"></span></small>
+        <span class="pv leancloud-visitors-count"></span>&nbsp;&nbsp;
       </div>
     </footer>
 
@@ -236,12 +234,12 @@ function find (page, items, offset) {
     a, small
       color lighten($textColor, 25%)
       margin-right 0.25rem
+  .word-count
+    float right
+    font-size 0.9em
   .leancloud-visitors
     float right
     font-size 0.9em
-    .prefix
-      font-weight 500
-      color lighten($textColor, 25%)
     .pv
       font-weight 400
       color #aaa
