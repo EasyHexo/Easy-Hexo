@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  
   title: 'Easy Hexo 👨‍💻',
   description: '轻松入门 Hexo',
   base: '/',
@@ -138,7 +139,7 @@ module.exports = {
   plugins: [
   /*
   * 这个插件有问题，会出现“window is not defined”，但不致命，等有时间排查一下，暂时注释掉
-  * by-MonoLogueChi
+  * by MonoLogueChi
     [
       '@vuepress/google-analytics',
       {
