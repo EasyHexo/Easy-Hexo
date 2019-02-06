@@ -1,4 +1,5 @@
-const path = require('path')
+const { resolve } = require('path')
+const r = path => resolve(__dirname, path)
 
 // Theme API.
 module.exports = (options, ctx) => ({
@@ -12,8 +13,8 @@ module.exports = (options, ctx) => ({
     )
     return {
       '@AlgoliaSearchBox': isAlgoliaSearch
-        ? path.resolve(__dirname, 'components/AlgoliaSearchBox.vue')
-        : path.resolve(__dirname, 'noopModule.js')
+        ? r('components/AlgoliaSearchBox.vue')
+        : r('noopModule.js')
     }
   },
 

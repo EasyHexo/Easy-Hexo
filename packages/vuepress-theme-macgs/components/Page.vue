@@ -20,9 +20,9 @@
           class="word-count"
           ref="counter"
         >
-          <span>全文字数:&nbsp;</span>
+          <span class="octicon octicon-file"></span>
           <span id="word"></span>
-          <span>估计阅读时间:&nbsp;</span>
+          <span class="octicon octicon-clock"></span>
           <span id="time"></span>
         </small>
       </div>
@@ -269,4 +269,9 @@ function find (page, items, offset) {
       float none
       text-align left
 
+.word-count
+  margin-left .25rem
+  vertical-align .1rem
+  #word, #time
+    margin-right .25rem
 </style>
