@@ -17,19 +17,12 @@ install:
 script:
   - yarn docs:build
 
-branches:
-  only:
-    - master
-
 deploy:
   provider: pages
   skip_cleanup: true
+  committer-from-gh: true
   github_token: $GITHUB_TOKEN
   local_dir: docs/.vuepress/dist
-  name: $GIT_NAME
-  email: $GIT_EMAIL
   keep-history: true
-  repo: EasyHexo/easyhexo.com
-  target-branch: master
   on:
     branch: master
