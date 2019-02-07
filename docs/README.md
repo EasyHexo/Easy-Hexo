@@ -68,6 +68,19 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 - 文档编写人员：写文档。有主题、插件、自制主题三个选择。
 - issue 区解答人员：目前 Easy-Hexo 的 issue 区提供了『Hexo 使用问题提出』的功能，人手不够，速度有点慢，所以急需人员补充。
 
+# Build 编译
+
+```bash
+# 下载项目
+git clone git@github.com:ChungZH/Easy-Hexo.git
+# 安装依赖
+yarn install
+# 本地运行
+yarn docs:dev
+# 生成静态文件
+yarn docs:build
+```
+
 # Changelog 更新日志
 
 - 2019.2.7 > 添加了 pv、wordcount 等新功能，将 vuepress 升级至 `1.x`，添加了 `vuepress-plugin-sitemap` 插件，修复了一些 bug | By [@ChungZH](https://github.com/ChungZH) [@MonoLogueChi](https://github.com/MonoLogueChi) [@Mitscherlich](https://github.com/Mitscherlich) [@JunzhouLiu](https://github.com/JunzhouLiu)

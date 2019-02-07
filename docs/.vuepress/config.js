@@ -134,5 +134,6 @@ module.exports = {
         '@img': r('img'),
       },
     },
-  }
+  },
+  plugins: ['@vuepress/back-to-top']
 }
