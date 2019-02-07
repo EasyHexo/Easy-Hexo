@@ -15,7 +15,7 @@ Easy Hexo <img height="30" width="30" src="https://i.loli.net/2018/10/20/5bcad7e
 
 
 > **您想拥有一个个人博客吗？**  
-> **您已经厌烦了CSDN，博客园的千篇一律吗？**  
+> **您已经厌烦了 CSDN、博客园等平台的千篇一律吗？**  
 > **您想展示自己的才华吗？**  
 > 如果您确实有以上需求，并且有一定耐心，不怕困难不怕坑，我们将会给您提供尽可能完善的个人博客搭建教程。  
 
@@ -37,19 +37,13 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 - 程序员
 - 对创作、编码感兴趣的学生
-- 希望可以定期整理笔记的OIer/ACMer
+- 希望可以定期整理笔记的 OIer/ACMer
 
 ## 学完本文后，你可以：
 
 - :sunglasses: 使用 Hexo 建立一个博客网站
 - :balloon: 修改 Hexo 现有主题
 - :gem: 自制一个 Hexo 主题
-
-## 十分感谢你能：
-
-- 如有疑问，请先百度，再联系我们 
-- 如果对我们有建议，可以联系我们
-- 如果想对本文档做出贡献，可以加入我们
 
 :gift: 感谢你的支持！
 
@@ -70,8 +64,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 # Changelog 更新日志
 
 - 2019.1.31 > [@cloudpool2017](https://github.com/cloudpool2017) 赞助一年 `easyhexo.com` 域名并投入使用 | [#112](https://github.com/EasyHexo/Easy-Hexo/pull/112/)
-
-- 2019.1.24 > 添加了[使用数据文件平滑升级主题](https://easyhexo.sm9.top/Easy-Hexo/5-Add/5-3-data-file.html) | By [@MoshiYeap](https://github.com/MoshiYeap) [#103](https://github.com/EasyHexo/Easy-Hexo/pull/103)
+- 2019.1.24 > 添加了[使用数据文件平滑升级主题](https://easyhexo.sm9.top/Easy-Hexo/5-Add/5-3-data-file.html) | By [@MoshiYeap](https://github.com/MoshiYeap) [#103](https://github.com/EasyHexo/Easy-Hexo/pull/103/)
 
 # Status 状态
 
