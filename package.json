@@ -12,13 +12,6 @@
   "author": "EasyHexo <124694738@qq.com>",
   "license": "CC-BY-NC-ND-4.0",
   "dependencies": {
-    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
-    "vuepress": "^1.0.0-alpha.35",
-    "vuepress-plugin-sitemap": "^2.1.1"
-  },
-  "devDependencies": {
-    "chalk": "^2.4.2",
-    "commander": "^2.19.0",
-    "esm": "^3.2.1"
+    "vuepress": "^1.0.0-alpha.35"
   }
 }

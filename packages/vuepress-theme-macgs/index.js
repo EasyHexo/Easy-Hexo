@@ -21,6 +21,8 @@ module.exports = (options, ctx) => ({
   plugins: [
     '@vuepress/active-header-links',
     '@vuepress/search',
-    '@vuepress/plugin-nprogress'
+    '@vuepress/plugin-nprogress',
+    // ['@vuepress/google-analytics', { 'ga': 'UA-130601883-3' }],
+    ['sitemap', { 'hostname': 'https://easyhexo.com' }],
   ]
 })
