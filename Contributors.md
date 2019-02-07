@@ -16,7 +16,6 @@
 - Hun Dean
 - [leonGravel](https://leongravel.com/)
 - [Markjuruo](https://markjuruo.ooo/)
-- [Mitscherlich Wei](https://mitscherlich.me/) 
 - [MonoLogueChi](https://www.xxwhite.com/)
 - [MoshiYeap](https://junzhouliu.github.io/)
 - [Odeinjul](http://odeinjul.github.io/)
@@ -32,6 +31,7 @@
 
 - [xaoxuu - Material X 主题开发者](https://xaoxuu.com/wiki/material-x/)
 - [GodBMW - BMW 主题开发者](https://godbmw.com/)
+- [Mitscherlich - Amber 主题开发者](https://mitscherlich.me/)
 
 ## 其他贡献
 
