@@ -15,21 +15,24 @@
           rel="noopener noreferrer"
         >{{ editLinkText }}</a>
         <OutboundLink/>
-
-        <small
-          class="word-count"
-          ref="counter"
-        >
-          <span class="octicon octicon-file"></span>
-          <span id="word"></span>
-          <span class="octicon octicon-clock"></span>
-          <span id="time"></span>
-        </small>
       </div>
 
+      <small
+        class="word-count"
+        ref="counter"
+      >
+        <span class = "prefix">
+          <small><span class="octicon octicon-file"></span></small>
+        </span>
+        <span id="word"></span>
+        <span class = "prefix">
+          <small><span class="octicon octicon-clock"></span></small>
+        </span>
+        <span id="time"></span>
+      </small>
       <div class="leancloud-visitors" :id="slug">
         <span class="prefix">
-          <span class="octicon octicon-eye"></span>
+          <small><span class="octicon octicon-eye"></span></small>
         </span>
         <span class="pv leancloud-visitors-count"></span>
       </div>
@@ -239,6 +242,8 @@ function find (page, items, offset) {
   .leancloud-visitors
     float right
     font-size 0.9em
+    margin-left .25rem
+    vertical-align .1rem
     .prefix
       font-weight 500
       color lighten($textColor, 25%)
@@ -270,8 +275,16 @@ function find (page, items, offset) {
       text-align left
 
 .word-count
+  float right
+  font-size 0.9em
   margin-left .25rem
   vertical-align .1rem
   #word, #time
-    margin-right .25rem
+    font-weight 400
+    color #aaa
+    vertical-align 1px
+  .prefix
+    font-weight 500
+    color lighten($textColor, 25%)
+
 </style>
