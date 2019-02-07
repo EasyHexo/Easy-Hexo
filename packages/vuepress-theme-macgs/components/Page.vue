@@ -22,15 +22,15 @@
           class="word-count"
           ref="counter"
         >
-          <span class="octicon octicon-file"></span>
+          <small><span class="octicon octicon-file"></span></small>
           <span id="word"></span>
-          <span class="octicon octicon-clock"></span>
+          <small><span class="octicon octicon-clock"></span></small>
           <span id="time"></span>
         </small>
 
         <div class="leancloud-visitors" :id="slug">
           <span class="prefix">
-            <span class="octicon octicon-eye"></span>
+            <small><span class="octicon octicon-eye"></span></small>
           </span>
           <span class="pv leancloud-visitors-count"></span>
         </div>
