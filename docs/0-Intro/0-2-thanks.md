@@ -1,5 +1,6 @@
 ---
 title: 特别致谢
+next: /1-Hexo-install-and-config/
 ---
 
 # 特别致谢
