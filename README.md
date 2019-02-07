@@ -1,24 +1,17 @@
 <div align="center"><img src="https://i.loli.net/2018/10/18/5bc852dfd5270.jpg" alt="Icon Badge" width="40%" /></div>
 
-
 <h1 align="center">
 Easy Hexo <img height="30" width="30" src="https://i.loli.net/2018/10/20/5bcad7e4bf535.png" /> 
 </h1>
 
-<br />
-
-[![Build Status](https://img.shields.io/travis/EasyHexo/Easy-Hexo.svg?style=flat-square)](https://travis-ci.org/EasyHexo/Easy-Hexo)
+[![Build Status](https://travis-ci.org/EasyHexo/Easy-Hexo.svg?branch=master)](https://travis-ci.org/EasyHexo/Easy-Hexo)
 [![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/EasyHexo/Easy-Hexo)
 ![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)
-
-
-
 
 > **您想拥有一个个人博客吗？**  
 > **您已经厌烦了CSDN，博客园的千篇一律吗？**  
 > **您想展示自己的才华吗？**  
 > 如果您确实有以上需求，并且有一定耐心，不怕困难不怕坑，我们将会给您提供尽可能完善的个人博客搭建教程。  
-
 # 前言
 
 > 轻松使用 Hexo 建站
@@ -31,7 +24,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 - 静态网页
 - 使用方便
 
-[*]：当然，这并不说明整个博客都是免费的。你可能会去购买域名等等。
+> 当然，这并不说明整个博客都是免费的。你可能会去购买域名等等。
 
 ## 本文档适用人群
 
@@ -86,8 +79,6 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 ⚖ 本作品采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
 
 ------
-
-
 
 **👨‍💻 Easy Hexo** © Easy Hexo. 
 

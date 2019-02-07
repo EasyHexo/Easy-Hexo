@@ -17,13 +17,10 @@ footer: © Easy Hexo. Released under the CC BY-NC-ND 4.0 International License.
 [![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/EasyHexo/Easy-Hexo)
 ![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)
 
-
-
 > **您想拥有一个个人博客吗？**  
 > **您已经厌烦了CSDN，博客园的千篇一律吗？**  
 > **您想展示自己的才华吗？**  
 > 如果您确实有以上需求，并且有一定耐心，不怕困难不怕坑，我们将会给您提供尽可能完善的个人博客搭建教程。  
-
 # 前言
 
 > 轻松使用 Hexo 建站
@@ -36,25 +33,19 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 - 静态网页
 - 使用方便
 
-[*]：当然，这并不说明整个博客都是免费的。你可能会去购买域名等等。
+> 当然，这并不说明整个博客都是免费的。你可能会去购买域名等等。
 
 ## 本文档适用人群
 
 - 程序员
 - 对创作、编码感兴趣的学生
-- 希望可以定期整理笔记的OIer/ACMer
+- 希望可以定期整理笔记的 OIer/ACMer
 
 ## 学完本文后，你可以：
 
 - :sunglasses: 使用 Hexo 建立一个博客网站
 - :balloon: 修改 Hexo 现有主题
 - :gem: 自制一个 Hexo 主题
-
-## 十分感谢你能：
-
-- 如有疑问，请先百度，再联系我们 
-- 如果对我们有建议，可以联系我们
-- 如果想对本文档做出贡献，可以加入我们
 
 :gift: 感谢你的支持！
 
@@ -90,8 +81,6 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 ⚖ 本作品采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
 
 ------
-
-
 
 **👨‍💻 Easy Hexo** © Easy Hexo. 
 

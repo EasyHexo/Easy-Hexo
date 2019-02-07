@@ -2,6 +2,8 @@
   "name": "easy-hexo",
   "version": "2.0.0",
   "description": "🤘 Build your own website with Hexo, the easy way.",
+  "private": true,
+  "workspaces": [ "packages/vuepress-theme-macgs" ],
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
@@ -10,6 +12,13 @@
   "author": "EasyHexo <124694738@qq.com>",
   "license": "CC-BY-NC-ND-4.0",
   "dependencies": {
-    "vuepress": "^0.14.4"
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
+    "vuepress": "^1.0.0-alpha.35",
+    "vuepress-plugin-sitemap": "^2.1.1"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "esm": "^3.2.1"
   }
 }
