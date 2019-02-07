@@ -1,6 +1,7 @@
 ---
 title: 持续集成
 sidebarDepth: 4
+next: /2-Theme-use-and-config/
 ---
 
 # 持续集成 Continuous Integration
