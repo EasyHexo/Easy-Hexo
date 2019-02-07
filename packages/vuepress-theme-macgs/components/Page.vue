@@ -15,7 +15,9 @@
           rel="noopener noreferrer"
         >{{ editLinkText }}</a>
         <OutboundLink/>
+      </div>
 
+      <div style="float: right">
         <small
           class="word-count"
           ref="counter"
@@ -25,13 +27,13 @@
           <span class="octicon octicon-clock"></span>
           <span id="time"></span>
         </small>
-      </div>
 
-      <div class="leancloud-visitors" :id="slug">
-        <span class="prefix">
-          <span class="octicon octicon-eye"></span>
-        </span>
-        <span class="pv leancloud-visitors-count"></span>
+        <div class="leancloud-visitors" :id="slug">
+          <span class="prefix">
+            <span class="octicon octicon-eye"></span>
+          </span>
+          <span class="pv leancloud-visitors-count"></span>
+        </div>
       </div>
     </footer>
 
@@ -233,7 +235,7 @@ function find (page, items, offset) {
   overflow auto
   .edit-link
     display inline-block
-    a, small
+    a, ^[0] small.word-count
       color lighten($textColor, 25%)
       margin-right 0.25rem
   .leancloud-visitors

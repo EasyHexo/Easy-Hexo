@@ -3,5 +3,15 @@
   "version": "0.1.0-rc.0",
   "description": "A vuepress theme for easyhexo.com",
   "author": "Mitscherlich <mitscherlich36@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dplayer": "^1.25.0",
+    "vuepress-plugin-sitemap": "^2.1.1"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "esm": "^3.2.2",
+    "webpack": "^4.29.2"
+  }
 }

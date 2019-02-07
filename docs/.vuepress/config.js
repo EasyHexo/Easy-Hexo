@@ -134,17 +134,5 @@ module.exports = {
         '@img': r('img'),
       },
     },
-  },
-  plugins: [
-    /*
-    * 这个插件有问题，会出现“window is not defined”，但不致命，等有时间排查一下，暂时注释掉
-    * by MonoLogueChi
-    */
-    // ['@vuepress/google-analytics', {
-    //   'ga': 'UA-130601883-3' // UA-00000000-0
-    // }],
-    ['sitemap', {
-      'hostname': 'https://easyhexo.com'
-    }]
-  ]
+  }
 }
