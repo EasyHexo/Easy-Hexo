@@ -2,21 +2,13 @@
 title: hexo-theme-amber
 ---
 
-# hexo-theme-amber
+# hexo-theme-amber <Badge text="@Mitscherlich"/> <Badge text="Finish"/> <Badge text="v0.1.0  rc.6"/>
 
-[![maintainer][maintainer-img]][maintainer-url]
-[![author][author-img]][author-url]
-[![theme][theme-img]][theme-url]
 [![juejin][juejin-img]][juejin-url]
 
-[maintainer-img]: https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square
-[maintainer-url]: https://github.com/EasyHexo/Easy-Hexo
-[author-img]: https://img.shields.io/badge/Author-Mitscherlich-0069d9.svg?longCache=true&style=flat-square
-[author-url]: https://github.com/Mitscherlich
-[theme-img]: https://img.shields.io/badge/hexo--theme--amber-v0.1.0--rc.6-007bff.svg?longCache=true&style=flat-square
-[theme-url]: https://github.com/Mitscherlich/hexo-theme-amber
 [juejin-img]: https://badge.juejin.im/entry/5c1b515ff265da61193bcc21/likes.svg?style=flat-square
 [juejin-url]: https://juejin.im/post/5c1b4b69f265da611c26ef7c
+[theme-url]: https://github.com/Mitscherlich/hexo-theme-amber
 
 ::: warning 注意
 这个主题仍处于开发中，此阶段会有测试性的功能加入或移除，这篇文章也可能在将来的某个时间被修改，请以最新的文档为准。

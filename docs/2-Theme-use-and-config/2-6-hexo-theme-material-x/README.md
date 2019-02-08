@@ -1,7 +1,7 @@
 ---
 title: hexo-theme-material-x
 ---
-# hexo-theme-material-x
+# hexo-theme-material-x <Badge text="@xaoxuu"/> <Badge text="Finish"/> <Badge text="1.0.4"/>
 
 ::: tip 提示
 特别鸣谢本文作者：[xaoxuu](https://xaoxuu.com/)

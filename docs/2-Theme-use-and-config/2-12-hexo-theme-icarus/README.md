@@ -2,12 +2,9 @@
 title: hexo-theme-icarus
 ---
 
-# hexo-theme-icarus
+<div align="center"><img src="@img/2/2-12/icaruslogo.svg"></div>
 
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Authur-Susreal-orange.svg?longCache=true&style=flat-square)](https://github.com/Susreal)
-[![](https://img.shields.io/badge/hexo--theme--icarus-latest-blue.svg?longCache=true&style=flat-square)](https://github.com/ppoffice/hexo-theme-icarus)
-![State: writing](https://img.shields.io/badge/State-writing-8E64B0.svg?style=flat-square)
+# hexo-theme-icarus <Badge text="@Susreal"/> <Badge text="Finish"/> <Badge text="2.3.0"/>
 
 ------
 
@@ -17,7 +14,7 @@ title: hexo-theme-icarus
 
 ------
 
-Hexo-theme-icarus 是一个优秀的 Hexo 主题，开发者 [Ruipeng Zhang](https://github.com/ppoffice) 同时还维护了 [hexo-theme-hueman](https://github.com/ppoffice/hexo-theme-hueman) 和 [hexo-theme-minos](https://github.com/ppoffice/hexo-theme-minos) 两个项目。
+[Hexo-theme-icarus](https://github.com/ppoffice/hexo-theme-icarus) 是一个优秀的 Hexo 主题，开发者 [Ruipeng Zhang](https://github.com/ppoffice) 同时还维护了 [hexo-theme-hueman](https://github.com/ppoffice/hexo-theme-hueman) 和 [hexo-theme-minos](https://github.com/ppoffice/hexo-theme-minos) 两个项目。
 
 icarus 是一个三栏结构的自适应主题，预置了大量第三方插件，可以方便使用者快速建站。整体风格简约，适合各种类型的站点，无论是技术文章，还是摄影佳作，都可以完美承载。
 

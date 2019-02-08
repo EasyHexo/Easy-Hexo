@@ -1,14 +1,11 @@
 ---
 title: hexo-theme-material-indigo
 ---
-# hexo-theme-material-indigo
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-Ghosin-F79F66.svg?longCache=true&style=flat-square)](https://www.ghosin.com)
-![State: writing](https://img.shields.io/badge/State-writing-8E64B0.svg?style=flat-square)
+# hexo-theme-material-indigo <Badge text="@Ghosin"/> <Badge text="Finish"/> <Badge text="1.7.0"/>
 
 ## 简介
 
-这是一个 Material Design 风格的 Hexo 主题，基于 Hexo 3.0+ 制作。  
+[hexo-theme-indigo](https://github.com/yscoder/hexo-theme-indigo/) 是一个 Material Design 风格的 Hexo 主题，基于 Hexo 3.0+ 制作。  
 
 本文使用`$`作为命令提示符, 部分内容搬运自[ indigo 主题官方文档](https://github.com/yscoder/hexo-theme-indigo/wiki)。
 
@@ -33,7 +30,7 @@ title: hexo-theme-material-indigo
 
 ### 主题安装
 
-安装需确认你的 Hexo 版本在 3.0 以上，以及 Node 版本为 6.x 以上，在 Hexo 根目录，执行以下命令。
+安装需确认你的 Hexo 版本在 3.0 以上，以及 Node 版本为 6.x 以上。然后在 Hexo 根目录执行以下命令。
 
 ```bash
 $ git clone https://github.com/yscoder/hexo-theme-indigo.git themes/indigo
@@ -137,22 +134,23 @@ theme: indigo
 
 #### 基本配置
 
-为了得到更好的使用体验，以下内容请务必填写完整，因为这些内容会在主题中得到展示。更多见 [Hexo 官方文档](https://hexo.io/zh-cn/docs/configuration.html)
+为了得到更好的使用体验，以下内容请务必填写完整，因为这些内容会在主题中得到展示。更多见[配置 Hexo](/1-Hexo-install-and-config/1-3-config-hexo.html#%E9%85%8D%E7%BD%AE-hexo-2)
 
 ```yaml
-title: 站点标题
-subtitle: 站点副标题
-description: 站点描述
-keywords: 站点关键字
-author: 作者名字
-email: 邮箱
-url: 站点域名
+# Site
+title:            
+subtitle: 
+description: 
+keywords:
+author: 
+language: 
+timezone: 
 ```
 
 #### feed 配置
 
 参考 [Hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)  
-如果`_config.yml`中没有，直接插入即可。
+如果 `_config.yml` 中没有，直接插入即可。
 
 ```yaml
 feed:
@@ -188,7 +186,7 @@ jsonContent:
 
 ### 主题配置
 
-编辑主题配置文件，`Hexo根目录/themes/indigo/_config.yml`。
+编辑主题配置文件，`Hexo 根目录/themes/indigo/_config.yml`。
 
 #### 左侧菜单
 
