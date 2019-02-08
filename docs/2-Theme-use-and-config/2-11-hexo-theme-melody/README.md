@@ -5,17 +5,10 @@ title: hexo-theme-melody
 <div align="center"><img src="@img/2/2-11/logo.png" alt="melody"/></div>
 
 
-# hexo-theme-melody
-
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-ChungZH-43CD80.svg?longCache=true&style=flat-square)](https://github.com/chungzh)
-[![](https://img.shields.io/badge/hexo--theme--melody-1.5.6-43CD80.svg?longCache=true&style=flat-square)](https://github.com/Molunerfinn/hexo-theme-melody)
-![State: writing](https://img.shields.io/badge/State-writing-8E64B0.svg?style=flat-square)
+# hexo-theme-melody <Badge text="@ChungZH"/> <Badge text="Writing" type="warn"/> <Badge text="1.5.6"/>
 
 :::tip 提醒
-
 hexo-theme-melody 已支持数据文件特性，可以平滑升级。有关内容请查阅[使用数据文件平滑升级主题](/5-Add/5-3-data-file.html)。
-
 :::
 
 [Melody 主题地址](https://github.com/Molunerfinn/hexo-theme-melody)

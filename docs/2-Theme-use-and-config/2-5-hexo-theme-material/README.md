@@ -2,10 +2,7 @@
 title: hexo-theme-material
 ---
 
-# hexo-theme-material
-
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-ffy-800080.svg?longCache=true&style=flat-square)](https://github.com/ffdy)
+# hexo-theme-material <Badge text="@ffy"/> <Badge text="Finish"/> <Badge text="1.5.2"/>
 
 ::: tip 提醒
 注意，这里介绍的 Material 主题是 1.5.2 的版本，不建议新手使用最新的版本，因为好像有很多 Bug（作者最近失联了）
