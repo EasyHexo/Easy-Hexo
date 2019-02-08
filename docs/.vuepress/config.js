@@ -62,7 +62,8 @@ module.exports = {
       items: [
         { text: '概要', link: '/3-Plugins-use-and-config/' },
         { text: 'hexo-tag-aplayer', link: '/3-Plugins-use-and-config/3-1-hexo-tag-aplayer/' },
-        { text: 'hexo-tag-dplayer', link: '/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/' }
+        { text: 'hexo-tag-dplayer', link: '/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/' },
+        { text: 'hexo-helper-live2d', link: '/3-Plugins-use-and-config/3-3-hexo-helper-live2d/' }
       ]
     }, {
       text: '高级 Hexo 玩家',
@@ -109,6 +110,7 @@ module.exports = {
         '',
         '3-1-hexo-tag-aplayer/',
         '3-2-hexo-tag-dplayer/',
+        '3-3-hexo-helper-live2d/',
       ],
       '/4-High-order-hexo-gamer/': [
         '',
