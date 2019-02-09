@@ -3,7 +3,7 @@ title: hexo-theme-material-t
 ---
 # hexo-theme-material-t <Badge text="@invom"/> <Badge text="Writing" type="warn"/> <Badge text="latest"/>
 
-![img](https://raw.githubusercontent.com/invom/Material-T/master/screenshot-index.png)
+![img](@img/2/2-13/1.png)
 
 ::: warning 注意
 hexo-theme-material-t 仍在开发中，请留意 changelog。
@@ -19,18 +19,31 @@ hexo-theme-material-t 仍在开发中，请留意 changelog。
 
 ------
 
+如果你是 Hexo 的新司机，建议按顺序阅读下文 `快速开始` ，它将带你快速了解该主题的结构。
+
 ## 安装
 
-**1.** 获取最新版本
-
-在博客根目录执行如下命令：
+**1.** 在博客根目录执行如下命令以获取最新版本：
 
 ```bash
 cd themes
 git clone -b master https://github.com/invom/Material-T.git
 ```
 
-**2.** 修改站点配置文件 `_config.yml`
+**2.** 在站点配置文件 `_config.yml` 中启用 `Material-T`：把文件里的 `themes: landscape` 项替换为 `themes: Material-T`。
+
+## 预览
+[invom's blog](https://invom.github.io)
+
+## 快速开始
+
+### 主题配置文件结构
+
+主题配置文件是按照页面（不包括 favicon、评论等）划分了几大对象，比如在首页相关的配置位于 `index` 对象中，文章页的配置位于 `post` 对象中。
+
+### 关闭冲突的默认配置
+
+修改站点配置文件 `_config.yml`
 
 ```yml
 // 关闭归档页中的默认分页：
@@ -49,85 +62,44 @@ highlight:
   tab_replace:
 ```
 
-**3.** 在站点配置文件 `_config.yml` 中启用 `Material-T`：把文件里的 `themes: landscape` 项改成 `themes: Material-T`。
-
-## 预览
-[invom's blog](https://invom.github.io)
-
-## 快速开始
-
-### icon
-
-- favicon 和 apple_touch_icon 均位于 `Material-T/source/` 目录下，直接替换即可。
-- 导航栏与关于页的社交网络图标，均引用自 [fontawesome](https://fontawesome.com/icons) 。只需要将属性名替换为图标名称，属性值替换为 url 即可。
-
-### banner-img
-
-:::tip 提醒
-文章的 banner-img 可在 Front Matter 中指定。
-:::
-
-#### 图片
-
-主题配置文件中，每个页面都有名为 `banner_img` 的属性，属性值(缺省值: index.head_img )可以为外链，也可以使用相对链接。若使用相对链接，建议将图片放置在 `Material-T/source/img/` 目录下，对应的图片地址为 `/img/your_img_name`。
-
-#### 高度控制
-
-鉴于每个人的喜好不同，此处开放对页面 banner-img 高度的控制。
-
-主题配置文件中，每个页面对应的 `banner_img_height` 属性，有效值为 0 - 100。100 即为全屏，个人建议 60 以上，看起来会比较和谐。
-
-### 评论
-
-当前只开发了对 disqus 的支持，对 valine、gitment 的支持还在开发计划中，欢迎对项目提交 PR。
-
 ### 开启关于页
 
-1. `hexo new page about`
+1. 在博客根目录执行 `hexo new page about`
 2. 编辑 `source/about/index.md`: 添加 Front Matter `type: "about"`（必需）。`title` 可自行修改。
 
-## 进阶玩家
+### 配置首页文章列表格式
 
-### 各页面配置
+首页的文章列表由四部分组成：文章略缩图、标题、摘要、文章信息（时间、标签），除标题外的三部分均可控制是否开启。
 
-:::tip 提醒
-见 [详细文档](http://invom.github.io/Material-T-docs)
-:::
+- 略缩图：由每篇文章的 Front Matter 中index_img属性设置。
+- 摘要：分为手动摘要及自动摘要，手动摘要可在文章中使用 `<!-- more -->` 划分，自动摘要则在主题配置文件中设置。
+- 文章信息：可在主题配置文件中的 `post_info` 属性控制是否开启。
 
-### 使用html
+### 选择文章页布局
 
-footer 与关于页的 extension 处均可使用 HTML。
-
-### 自动摘要
-
-::: warning
-优先级: 手动摘要 > 自动摘要
-:::
-
-若无特殊要求，可配置自动摘要，选取每篇文章中前 n 个字符。由于文章卡片左侧可能有略缩图（固定高度），所以建议 175 字符左右。
+目前提供两种文章页布局方式：居中式、左偏移式。可在配置文件中进行选择：
 
 ```yml
-index:
-  auto_excerpt:
-    enable: true
-    length: 175
+post: 
+  # available: 1 | 2
+  layout: 2
 ```
 
-### 文章页多种布局
+### 设置banner_img
 
-当前文章页有两种布局可供选择（ 居中 or 偏左）
+banner_img 即为每个页面最上方的图片，除具体文章页面可以在文章 Front Matter 中修改，其余页面均在主题配置文件中配置。以首页为例：
+
+```yml
+index: 
+  # 图片路径
+  banner_img: /img/index-banner.jpg
+  # 图片高度占屏幕的百分比: 0 - 100
+  banner_img_height: 100
+```
 
 ### 代码高亮
 
-1. 关闭 Hexo 默认代码高亮（此步已在安装教程中完成）
-修改博客配置文件：
-```yml
-highlight:
-  enable: false
-  line_number: false
-  auto_detect: false
-  tab_replace:
-```
+1. 确保已关闭 Hexo 默认代码高亮（方法在上文有提到）
 2. 选择高亮主题：
 修改主题配置文件：
 ```yml
@@ -138,6 +110,13 @@ highlight:
   theme: tomorrow-night-eighties
 ```
 
-## 贡献
+### 图标
 
-项目还在不断研发中，欢迎 dalao 们 pr。
+- favicon 和 apple_touch_icon 均位于 `Material-T/source/` 目录下，直接替换即可。
+- 导航栏与关于页的社交网络图标，均引用自 [fontawesome](https://fontawesome.com/icons) 。只需要将属性名替换为图标名称，属性值替换为 url 即可。
+
+----
+
+## 进阶玩家
+
+更细致的配置请移步 [详细文档](http://invom.github.io/Material-T-docs) 。如有疑问请在 issue 区提出，或加入交流社区。
