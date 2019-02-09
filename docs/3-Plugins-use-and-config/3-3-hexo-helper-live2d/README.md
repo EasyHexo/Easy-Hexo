@@ -2,18 +2,13 @@
 title: hexo-helper-live2d
 ---
 
-# Live2d 插件使用
+# hexo-helper-live2d <Badge text="@Odeinjul"/> <Badge text="Writing" type="warn"/> <Badge text="3.1.0"/>
 
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-Odeinjul-66CCFF.svg?longCache=true&style=flat-square)](odeinjul.github.io)
-
->**忠告:使用 live2d 插件的话会是网页加载速度变慢，请酌情使用**
+> **忠告:使用 live2d 插件的话会使网页加载速度变慢，请酌情使用**
 
 ## 介绍
 
 [hexo-helper-liv2d](https://github.com/EYHN/hexo-helper-live2d) 是一个在您博客上添加 live2d 模型(*看板娘!* )的插件，可以十分方便地在网页上展示 live2d 模型。
-
-> 本文只是指导你怎么用起来这个插件，相信如果你需要魔改本插件 时，已经不再需要人来指导了.
 
 ## 展示
 ![live2d-widget-model-z16](@img/3/3-3/1.png)
@@ -29,8 +24,7 @@ title: hexo-helper-live2d
 ```batch
 npm install --save hexo-helper-live2d
 ```
-> 试试更加NB的 [Yarn](https://yarnpkg.com/en/) 来安装?据说会比用 npm 少不少麻烦呢 
-`yarn add hexo-helper-live2d` . 
+> 或者使用 `yarn` 安装：`yarn add hexo-helper-live2d` . 
 
 ## 配置
 
@@ -85,20 +79,20 @@ live2d:
 
 ## 使用
 
-当你在配置好后，live2d就已经开始运行了.
+当你在配置好后，live2d 就已经开始运行了.
 
 ## 更多模型
 
 有许多方法来使用不同的模型:
 
-### a. live2d_models子目录名称
+### a. live2d_models 子目录名称
 
 1. 在您博客根目录下创建一个 `live2d_models` 文件夹.
 
 2. 在此文件夹内新建一个子文件夹.
 
 3. 将你的 Live2D 模型复制到这个子文件夹中.
-
+ 
 4. 将子文件夹的名称输入 `_config.yml` 的 `model.use` 中.
 
 <details><summary>示例</summary><br>
@@ -180,6 +174,6 @@ live2d:
 
 ### d. 使用CDN
 
-如果你是没有CDN会死星人,直接将 `.model.json` 的url地址输入 `model.use`.
+如果你是没有 CDN 会死星人,直接将 `.model.json` 的 url 地址输入 `model.use`.
 
 ##各模型包示例待完善
