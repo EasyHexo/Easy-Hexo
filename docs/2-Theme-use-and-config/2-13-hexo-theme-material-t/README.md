@@ -5,20 +5,25 @@ title: hexo-theme-material-t
 
 ![img](https://raw.githubusercontent.com/invom/Material-T/master/screenshot-index.png)
 
-::: warning
-项目仍在开发中，请留意changelog
+::: warning 注意
+hexo-theme-material-t 仍在开发中，请留意 changelog。
 :::
 
 [项目地址](https://github.com/invom/Material-T)
+
+------
 
 **目录**：
 
 [[toc]]
 
+------
 
 ## 安装
 
 **1.** 获取最新版本
+
+在博客根目录执行如下命令：
 
 ```bash
 cd themes
@@ -44,7 +49,7 @@ highlight:
   tab_replace:
 ```
 
-**3.** 在站点配置文件 `_config.yml` 中启用 `Material-T`
+**3.** 在站点配置文件 `_config.yml` 中启用 `Material-T`：把文件里的 `themes: landscape` 项改成 `themes: Material-T`。
 
 ## 预览
 [invom's blog](https://invom.github.io)
@@ -58,13 +63,13 @@ highlight:
 
 ### banner-img
 
-:::tip
+:::tip 提醒
 文章的 banner-img 可在 Front Matter 中指定。
 :::
 
 #### 图片
 
-主题配置文件中，每个页面都有名为 `banner_img` 的属性，属性值(缺省值: index.head_img )可以为外链，也可以使用相对链接。若使用相对链接，建议将图片放置在 `Material-T/source/img/` 目录下，对应的图片地址为 `/img/your_img_name`
+主题配置文件中，每个页面都有名为 `banner_img` 的属性，属性值(缺省值: index.head_img )可以为外链，也可以使用相对链接。若使用相对链接，建议将图片放置在 `Material-T/source/img/` 目录下，对应的图片地址为 `/img/your_img_name`。
 
 #### 高度控制
 
@@ -74,7 +79,7 @@ highlight:
 
 ### 评论
 
-当前只开发了对 disqus 的支持，对 valine、gitment 的支持还在开发计划中，欢迎 pr。
+当前只开发了对 disqus 的支持，对 valine、gitment 的支持还在开发计划中，欢迎对项目提交 PR。
 
 ### 开启关于页
 
@@ -85,7 +90,7 @@ highlight:
 
 ### 各页面配置
 
-::: tip
+:::tip 提醒
 见 [详细文档](http://invom.github.io/Material-T-docs)
 :::
 
