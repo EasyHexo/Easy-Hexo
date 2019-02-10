@@ -56,7 +56,8 @@ module.exports = {
         { text: 'hexo-theme-amber', link: '/2-Theme-use-and-config/2-9-hexo-theme-amber/' },
         { text: 'hexo-theme-indigo', link: '/2-Theme-use-and-config/2-10-hexo-theme-indigo/' },
         { text: 'hexo-theme-melody', link: '/2-Theme-use-and-config/2-11-hexo-theme-melody/' },
-        { text: 'hexo-theme-icarus', link: '/2-Theme-use-and-config/2-12-hexo-theme-icarus/' }
+        { text: 'hexo-theme-icarus', link: '/2-Theme-use-and-config/2-12-hexo-theme-icarus/' },
+        { text: 'hexo-theme-material-t', link: '/2-Theme-use-and-config/2-13-hexo-theme-material-t/' }
       ]
     }, {
       text: '插件使用与配置',
@@ -105,6 +106,7 @@ module.exports = {
         '2-10-hexo-theme-indigo/',
         '2-11-hexo-theme-melody/',
         '2-12-hexo-theme-icarus/',
+        '2-13-hexo-theme-material-t/',
       ],
       '/3-Plugins-use-and-config/': [
         '',
@@ -134,5 +136,6 @@ module.exports = {
         '@img': r('img'),
       },
     },
-  }
+  },
+  plugins: ['@vuepress/back-to-top']
 }

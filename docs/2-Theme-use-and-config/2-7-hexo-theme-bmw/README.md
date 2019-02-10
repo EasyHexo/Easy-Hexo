@@ -1,7 +1,7 @@
 ---
 title: hexo-theme-bmw
 ---
-# hexo-theme-bmw
+# hexo-theme-bmw <Badge text="@GodBMW"/> <Badge text="Finish"/> <Badge text="4.0.2"/>
 
 ::: tip 提示
 特别鸣谢 BMW 作者 [GodBMW](https://godbmw.com/) 的支持！
