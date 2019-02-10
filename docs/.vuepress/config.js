@@ -1,5 +1,33 @@
 const { resolve } = require('path')
 const r = path => resolve(__dirname, path)
+const jsyaml = require('js-yaml')
+const fs = require('fs');
+var yamlConfig = fs.readFileSync(r('cat.yml'), { encoding: 'utf8' })
+var yaml = jsyaml.load(yamlConfig);
+
+function getnav() {
+  var data = []
+  yaml.nav.forEach(e => {
+    for (k in e) {
+      data.push({
+        'text': k,
+        'items': function () {
+          var data1 = new Array()          
+          e[k].forEach(f => {
+            for (h in f) {
+              data1.push({
+                'text': h,
+                'link': f[h]
+              })
+            }
+          })
+          return data1
+        }()
+      })
+    }
+  });
+  return data;
+}
 
 module.exports = {
   title: 'Easy Hexo 👨‍💻',
@@ -24,105 +52,10 @@ module.exports = {
       placeholder: '🦜 来说话啊~',
       pageSize: 12
     },
-    nav: [{
-      text: '序',
-      items: [
-        { text: '序', link: '/0-Intro/' },
-        { text: '项目成员', link: '/0-Intro/0-1-member.html' },
-        { text: '特别致谢', link: '/0-Intro/0-2-thanks.html' },
-      ]
-    }, {
-      text: 'Hexo 安装与配置',
-      items: [
-        { text: '概要', link: '/1-Hexo-install-and-config/' },
-        { text: '认识 Hexo', link: '/1-Hexo-install-and-config/1-1-meet-hexo.html' },
-        { text: '安装 Hexo', link: '/1-Hexo-install-and-config/1-2-install-hexo.html' },
-        { text: '配置 Hexo', link: '/1-Hexo-install-and-config/1-3-config-hexo.html' },
-        { text: '部署 Hexo', link: '/1-Hexo-install-and-config/1-4-deploy-hexo.html' },
-        { text: '持续集成 CI', link: '/1-Hexo-install-and-config/1-5-continuous-integration.html' },
-      ]
-    }, {
-      text: '主题安装与配置',
-      items: [
-        { text: '概要', link: '/2-Theme-use-and-config/' },
-        { text: 'hexo-theme-next 5.x.x', link: '/2-Theme-use-and-config/2-1-hexo-theme-next-5.x.x/' },
-        { text: 'hexo-theme-next 6.x.x', link: '/2-Theme-use-and-config/2-2-hexo-theme-next-6.x.x/' },
-        { text: 'hexo-theme-yilia', link: '/2-Theme-use-and-config/2-3-hexo-theme-yilia/' },
-        { text: 'hexo-theme-apollo', link: '/2-Theme-use-and-config/2-4-hexo-theme-apollo/' },
-        { text: 'hexo-theme-material', link: '/2-Theme-use-and-config/2-5-hexo-theme-material/' },
-        { text: 'hexo-theme-material-x', link: '/2-Theme-use-and-config/2-6-hexo-theme-material-x/' },
-        { text: 'hexo-theme-bmw', link: '/2-Theme-use-and-config/2-7-hexo-theme-bmw/' },
-        { text: 'hexo-theme-aero-dual', link: '/2-Theme-use-and-config/2-8-hexo-theme-aero-dual/' },
-        { text: 'hexo-theme-amber', link: '/2-Theme-use-and-config/2-9-hexo-theme-amber/' },
-        { text: 'hexo-theme-indigo', link: '/2-Theme-use-and-config/2-10-hexo-theme-indigo/' },
-        { text: 'hexo-theme-melody', link: '/2-Theme-use-and-config/2-11-hexo-theme-melody/' },
-        { text: 'hexo-theme-icarus', link: '/2-Theme-use-and-config/2-12-hexo-theme-icarus/' },
-        { text: 'hexo-theme-material-t', link: '/2-Theme-use-and-config/2-13-hexo-theme-material-t/' }
-      ]
-    }, {
-      text: '插件使用与配置',
-      items: [
-        { text: '概要', link: '/3-Plugins-use-and-config/' },
-        { text: 'hexo-tag-aplayer', link: '/3-Plugins-use-and-config/3-1-hexo-tag-aplayer/' },
-        { text: 'hexo-tag-dplayer', link: '/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/' }
-      ]
-    }, {
-      text: '高级 Hexo 玩家',
-      link: '/4-High-order-hexo-gamer/'
-    }, {
-      text: '补充内容',
-      items: [
-        { text: '概要', link: '/5-Add/' },
-        { text: '参考资料', link: '/5-Add/5-1-quote.html' },
-        { text: 'YAML 语法简介', link: '/5-Add/5-2-yaml.html' },
-        { text: '使用数据文件平滑升级主题', link: '/5-Add/5-3-data-file.html' }
-      ],
-    }],
-    sidebar: {
-      '/0-Intro/': [
-        '',
-        '0-1-member.html',
-        '0-2-thanks.html',
-      ],
-      '/1-Hexo-install-and-config/': [
-        '',
-        '1-1-meet-hexo.html',
-        '1-2-install-hexo.html',
-        '1-3-config-hexo.html',
-        '1-4-deploy-hexo.html',
-        '1-5-continuous-integration.html',
-      ],
-      '/2-Theme-use-and-config/': [
-        '',
-        '2-1-hexo-theme-next-5.x.x/',
-        '2-2-hexo-theme-next-6.x.x/',
-        '2-3-hexo-theme-yilia/',
-        '2-4-hexo-theme-apollo/',
-        '2-5-hexo-theme-material/',
-        '2-6-hexo-theme-material-x/',
-        '2-7-hexo-theme-bmw/',
-        '2-8-hexo-theme-aero-dual/',
-        '2-9-hexo-theme-amber/',
-        '2-10-hexo-theme-indigo/',
-        '2-11-hexo-theme-melody/',
-        '2-12-hexo-theme-icarus/',
-        '2-13-hexo-theme-material-t/',
-      ],
-      '/3-Plugins-use-and-config/': [
-        '',
-        '3-1-hexo-tag-aplayer/',
-        '3-2-hexo-tag-dplayer/',
-      ],
-      '/4-High-order-hexo-gamer/': [
-        '',
-      ],
-      '/5-Add/': [
-        '',
-        '5-1-quote.html',
-        '5-2-yaml.html',
-        '5-3-data-file.html'
-      ],
-    },
+
+    nav: getnav(),
+    sidebar: yaml.sidebar,
+
     repo: 'EasyHexo/Easy-Hexo',
     repoLabel: 'GitHub',
     docsDir: 'docs',
