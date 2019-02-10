@@ -173,4 +173,4 @@ widgets:
 
 还有一些其他的设置就不在这里赘述了，具体可以参考 [官方文档](https://blog.zhangruipeng.me/hexo-theme-icarus/categories/) 进行了解。
 
-除此之外，我根据实际需求，在 icarus 主题内添加了 [置顶文章](https://susreal.github.io/2019/01/30/Hexo%E9%85%8D%E7%BD%AE/#%E4%B8%80%E3%80%81%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6) 和 [阅读量统计](https://susreal.github.io/2019/01/30/Hexo%E9%85%8D%E7%BD%AE/#%E4%BA%8C%E3%80%81%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E7%BB%9F%E8%AE%A1) 的两个小功能，大家如果有兴趣，可以前往我的博客和我交流喔:-O
+除此之外，我根据实际需求，在 icarus 主题内添加了 [置顶文章](https://susreal.com/article/2019/hexo-theme-icarus-2/#%E4%B8%80%E3%80%81%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6) 和 [阅读量统计](https://susreal.com/article/2019/hexo-theme-icarus-2/#%E4%BA%8C%E3%80%81%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E7%BB%9F%E8%AE%A1) 的两个小功能，大家如果有兴趣，可以前往我的博客和我交流喔:-O
