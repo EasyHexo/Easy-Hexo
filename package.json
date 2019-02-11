@@ -4,7 +4,6 @@
   "description": "🤘 Build your own website with Hexo, the easy way.",
   "private": true,
   "workspaces": [
-    "packages/vuepress-theme-macgs",
     "packages/yaml-loader"
   ],
   "scripts": {
@@ -15,14 +14,18 @@
   "author": "EasyHexo <124694738@qq.com>",
   "license": "CC-BY-NC-ND-4.0",
   "dependencies": {
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.37",
     "vuepress": "^1.0.0-alpha.35",
-    "vuepress-plugin-sitemap": "^2.1.1"
+    "vuepress-plugin-sitemap": "^2.1.1",
+    "vuepress-theme-macgs": "EasyHexo/vuepress-theme-macgs"
   },
   "devDependencies": {
     "chalk": "^2.0.0",
     "commander": "^2.0.0",
+    "debug": "^4.1.1",
     "esm": "^3.0.0",
     "lodash.merge": "^4.6.1",
-    "lodash.pick": "^4.4.0"
+    "lodash.pick": "^4.4.0",
+    "webpack": "^4.29.3"
   }
 }
