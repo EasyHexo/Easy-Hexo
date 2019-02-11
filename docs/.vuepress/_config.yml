@@ -3,24 +3,18 @@ description: 轻松入门 Hexo
 base: /
 head:
   - type: link
-    ref: icon
+    rel: icon
     href: favicon.png
   - type: link
-    rel: preload
+    rel: stylesheet
     href: https://cdn.jsdelivr.net/npm/octicons/build/font/octicons.css
-    as: style
   - type: link
-    rel: preload
+    rel: stylesheet
     href: https://cdn.jsdelivr.net/npm/octicons/build/build.css
-    as: style
-  - type: script
-    src: https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
-  - type: script
-    src: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
 theme: macgs
 themeConfig:
   valine:
-    app_id: ESvDkjHus9gVRVp3CB6EsR1o-gzGzoHsz,
+    app_id: ESvDkjHus9gVRVp3CB6EsR1o-gzGzoHsz
     app_key: VxvYP7M4pOSCguXajHYCFWey
     notify: false
     verify: false
