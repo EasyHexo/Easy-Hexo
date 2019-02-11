@@ -1,9 +1,11 @@
 const { resolve } = require('path')
 const { load } = require('yaml-loader')
 const merge = require('lodash.merge')
+const debug = require('debug')('easyhexo:config')
 const r = path => resolve(__dirname, path)
 
 const config = load(r('_config.yml'))
+debug(config)
 
 const configureWebpack = {
   resolve: {
@@ -14,7 +16,11 @@ const configureWebpack = {
 }
 
 const plugins = [
-  ['sitemap', { hostname: 'https://easyhexo.com' }]
+  ['sitemap', { hostname: 'https://easyhexo.com' }],
+  ['@vuepress/pwa', {
+    serviceWorker: true,
+    updatePopup: true
+  }]
 ]
 
 module.exports = merge(config, { configureWebpack, plugins })
