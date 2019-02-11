@@ -1,6 +1,8 @@
 const debug = require('debug')('yaml-loader:normalize')
 const _ = require('lodash')
 
+const autoprefixer = require('./autoprefixer')
+
 const isArray = v => _.isArray(v)
 
 exports.normalizeHead = function normalizeHead(raw) {
@@ -10,6 +12,10 @@ exports.normalizeHead = function normalizeHead(raw) {
   const head = []
   for (const item of raw) {
     const { type, ...options } = item
+    const prefixer = autoprefixer([type, options], 'prefetch')
+    if (prefixer) {
+      head.push(prefixer)
+    }
     head.push([type, options])
   }
   debug(head)
