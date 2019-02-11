@@ -2,12 +2,7 @@
 title: hexo-tag-dplayer
 ---
 
-
-# Dplayer 插件使用
-
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-MonoLogueChi-FE326D.svg?longCache=true&style=flat-square)](mailto:xxwhite@foxmail.com)
-
+# Dplayer 插件使用 <Badge text="@MonoLogueChi"/> <Badge text="Finish"/> <Badge text="0.3.3"/>
 
 ## 介绍
 
@@ -104,8 +99,8 @@ mutex | true | 互斥，阻止多个播放器同时播放，当前播放器播�
 
 解析 BiliBiLi 弹幕，这个上面的示例也已经有了，同样，免费的服务不一定稳定，有特殊需求的请自己搭建弹幕服务器。
 
-增加外部弹幕列表，同解析 BiliBiLi 弹幕一样，只要将外部弹幕的地址写进 `addition` 就可以了
+增加外部弹幕列表，同解析 BiliBiLi 弹幕一样，只要将外部弹幕的地址写进 `addition` 就可以了。
 
 ## 使用字幕
 
-增加参数 `"subtitle=字幕文件地址"` 就可以了，如需修改字幕颜色或者字体大小，仿照其他参数写就可以了
+增加参数 `"subtitle=字幕文件地址"` 就可以了，如需修改字幕颜色或者字体大小，仿照其他参数写就可以了。
