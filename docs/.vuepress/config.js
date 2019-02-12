@@ -57,14 +57,16 @@ module.exports = {
         { text: 'hexo-theme-indigo', link: '/2-Theme-use-and-config/2-10-hexo-theme-indigo/' },
         { text: 'hexo-theme-melody', link: '/2-Theme-use-and-config/2-11-hexo-theme-melody/' },
         { text: 'hexo-theme-icarus', link: '/2-Theme-use-and-config/2-12-hexo-theme-icarus/' },
-        { text: 'hexo-theme-material-t', link: '/2-Theme-use-and-config/2-13-hexo-theme-material-t/' }
+        { text: 'hexo-theme-material-t', link: '/2-Theme-use-and-config/2-13-hexo-theme-material-t/' },
+        { text: 'hexo-theme-matery', link: '/2-Theme-use-and-config/2-14-hexo-theme-matery/' }
       ]
     }, {
       text: '插件使用与配置',
       items: [
         { text: '概要', link: '/3-Plugins-use-and-config/' },
         { text: 'hexo-tag-aplayer', link: '/3-Plugins-use-and-config/3-1-hexo-tag-aplayer/' },
-        { text: 'hexo-tag-dplayer', link: '/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/' }
+        { text: 'hexo-tag-dplayer', link: '/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/' },
+        { text: 'hexo-helper-live2d', link: '/3-Plugins-use-and-config/3-3-hexo-helper-live2d/' }
       ]
     }, {
       text: '高级 Hexo 玩家',
@@ -107,11 +109,13 @@ module.exports = {
         '2-11-hexo-theme-melody/',
         '2-12-hexo-theme-icarus/',
         '2-13-hexo-theme-material-t/',
+        '2-14-hexo-theme-matery/',
       ],
       '/3-Plugins-use-and-config/': [
         '',
         '3-1-hexo-tag-aplayer/',
         '3-2-hexo-tag-dplayer/',
+        '3-3-hexo-helper-live2d/',
       ],
       '/4-High-order-hexo-gamer/': [
         '',
