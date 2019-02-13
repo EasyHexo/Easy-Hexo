@@ -34,6 +34,7 @@ title: 项目成员
 - [xaoxuu - Material X 主题开发者](https://xaoxuu.com/wiki/material-x/)
 - [GodBMW - BMW 主题开发者](https://godbmw.com/)
 - [Mitscherlich - Amber 主题开发者](https://mitscherlich.me/)
+- [blinkfox - matery 主题开发者](https://blinkfox.github.io/)
 
 ## 其他贡献
 

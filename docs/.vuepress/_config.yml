@@ -19,7 +19,7 @@ themeConfig:
     notify: false
     verify: false
     avatar_cdn: https://sdn.geekzu.org/avatar/
-    placeholder: 🦜 来说话啊~
+    placeholder: 👏 来说话啊~
     pageSize: 12
   nav:
     序:
@@ -48,6 +48,7 @@ themeConfig:
       hexo-theme-melody: /2-Theme-use-and-config/2-11-hexo-theme-melody/
       hexo-theme-icarus: /2-Theme-use-and-config/2-12-hexo-theme-icarus/
       hexo-theme-material-t: /2-Theme-use-and-config/2-13-hexo-theme-material-t/
+      hexo-theme-matery: /2-Theme-use-and-config/2-14-hexo-theme-matery/
     插件使用与配置:
       概要: /3-Plugins-use-and-config/
       hexo-tag-aplayer: /3-Plugins-use-and-config/3-1-hexo-tag-aplayer/
@@ -82,6 +83,7 @@ themeConfig:
       - 2-11-hexo-theme-melody/
       - 2-12-hexo-theme-icarus/
       - 2-13-hexo-theme-material-t/
+      - 2-14-hexo-theme-matery/
     /3-Plugins-use-and-config/:
       - 3-1-hexo-tag-aplayer/
       - 3-2-hexo-tag-dplayer/
