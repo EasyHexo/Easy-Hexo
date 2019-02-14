@@ -42,6 +42,7 @@ module.exports = {
   ],
   theme: 'macgs',
   themeConfig: {
+    /** 
     valine: {
       app_id: 'ESvDkjHus9gVRVp3CB6EsR1o-gzGzoHsz',
       app_key: "VxvYP7M4pOSCguXajHYCFWey",
@@ -52,6 +53,7 @@ module.exports = {
       placeholder: '🦜 来说话啊~',
       pageSize: 12
     },
+    */
 
     nav: getnav(),
     sidebar: yaml.sidebar,
