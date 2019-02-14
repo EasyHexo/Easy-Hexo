@@ -679,6 +679,48 @@
   resolved "http://registry.npm.taobao.org/@nodelib/fs.stat/download/@nodelib/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha1-K1o6s/kYzKSKjHVMCBaOPwPrphs=
 
+"@vssue/api-bitbucket-v2@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@vssue/api-bitbucket-v2/-/api-bitbucket-v2-0.6.0.tgz#94f495f17913913c0562fd17f2404690a34c07ea"
+  integrity sha512-5OKLlZyNRZiyzjYnABiOwwYC46ddHkXLUxhe/k1EbZTnXhmL/fDuM3tuA1enevcncshQu0NDZVyrsApcM7mofQ==
+  dependencies:
+    "@vssue/utils" "^0.6.0"
+    axios "^0.18.0"
+
+"@vssue/api-github-v3@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@vssue/api-github-v3/-/api-github-v3-0.6.0.tgz#15617f1d74decd5a007fdcc36ed08a4d2634c8e0"
+  integrity sha512-ky74LDzdTgKPpYsHCKa5KHgeV05Bfnq2U9zhwJ58HHZS8g/bY4BpQFrxslSUGFEaQZJdbxMyj4M8gSFtMAIxxg==
+  dependencies:
+    "@vssue/utils" "^0.6.0"
+    axios "^0.18.0"
+
+"@vssue/api-gitlab-v4@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@vssue/api-gitlab-v4/-/api-gitlab-v4-0.6.0.tgz#9b00a9900b116f8b468c08016268b94feadb5454"
+  integrity sha512-ZIoe39cJ43B4oZCVYlbXLU89SBDDr9wJsd2zSe4zuDPIOqPO8Yc68fnQJp6+FF9Hsvr6I7a8N5NVp76VE9N6PA==
+  dependencies:
+    "@vssue/utils" "^0.6.0"
+    axios "^0.18.0"
+
+"@vssue/utils@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@vssue/utils/-/utils-0.6.0.tgz#070361ff1498aa4b540fbab48cc7a6c8245a8904"
+  integrity sha512-vQEWCdTDzpKmV1t4RnshW5lUpgr6gB/519ebDh9oDvwrUrrkWss6pRkDB7DpSKj0ONIpPKt18mCQl8cxwHql6A==
+  dependencies:
+    date-fns "^1.29.0"
+    qs "^6.6.0"
+
+"@vssue/vuepress-plugin-vssue@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@vssue/vuepress-plugin-vssue/-/vuepress-plugin-vssue-0.6.0.tgz#7f3979df270695e29b95875eac3be5ff7ff9e003"
+  integrity sha512-4653Yv547hxzIX9NyvzFAEFyfmkNb7XmxJKcZqKTlR2x0yG8Gg7+8OHaPE9l6eNJmfC5r8WVA6OfBjnAVVVeCw==
+  dependencies:
+    "@vssue/api-bitbucket-v2" "^0.6.0"
+    "@vssue/api-github-v3" "^0.6.0"
+    "@vssue/api-gitlab-v4" "^0.6.0"
+    vssue "^0.6.0"
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0-beta.2":
   version "1.0.0-beta.2"
   resolved "http://registry.npm.taobao.org/@vue/babel-helper-vue-jsx-merge-props/download/@vue/babel-helper-vue-jsx-merge-props-1.0.0-beta.2.tgz#f3e20d77b89ddb7a4b9b7a75372f05cd3ac22d92"
@@ -1348,7 +1390,7 @@ aws4@^1.8.0:
   resolved "http://registry.npm.taobao.org/aws4/download/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha1-8OAD2cqef1nHpQiUXXsu+aBKVC8=
 
-axios@0.18.0:
+axios@0.18.0, axios@^0.18.0:
   version "0.18.0"
   resolved "http://registry.npm.taobao.org/axios/download/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
   integrity sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
@@ -2329,6 +2371,11 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
+date-fns@^1.29.0:
+  version "1.30.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
+  integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
+
 date-now@^0.1.4:
   version "0.1.4"
   resolved "http://registry.npm.taobao.org/date-now/download/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
@@ -3243,6 +3290,11 @@ getpass@^0.1.1:
   integrity sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
   dependencies:
     assert-plus "^1.0.0"
+
+github-markdown-css@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/github-markdown-css/-/github-markdown-css-2.10.0.tgz#0612fed22816b33b282f37ef8def7a4ecabfe993"
+  integrity sha512-RX5VUC54uX6Lvrm226M9kMzsNeOa81MnKyxb3J0G5KLjyoOySOZgwyKFkUpv6iUhooiUZdogk+OTwQPJ4WttYg==
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -5726,6 +5778,11 @@ qs@6.5.2, qs@~6.5.2:
   resolved "http://registry.npm.taobao.org/qs/download/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha1-yzroBuh0BERYTvFUzo7pjUA/PjY=
 
+qs@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.6.0.tgz#a99c0f69a8d26bf7ef012f871cdabb0aee4424c2"
+  integrity sha512-KIJqT9jQJDQx5h5uAVPimw6yVg2SekOKu959OCtktD3FjzbpvaPr8i4zzg07DOMz+igA4W/aNM7OV8H37pFYfA==
+
 query-string@^4.1.0:
   version "4.3.4"
   resolved "http://registry.npm.taobao.org/query-string/download/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
@@ -7073,10 +7130,31 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vssue@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/vssue/-/vssue-0.6.0.tgz#30dff5ad75c314a6b3e64fc02e496ea6de2bf9a3"
+  integrity sha512-tpDVuD80mo3t/+KV7IbgPC2pA98YVPZ7SXurVpcDEq7tv+sZ6ATK2kmoLauJleX35sOt0QJ3MNIjNphQTdiIpg==
+  dependencies:
+    "@vssue/utils" "^0.6.0"
+    github-markdown-css "^2.10.0"
+    vue "^2.5.21"
+    vue-i18n "^8.7.0"
+    vue-property-decorator "^7.2.0"
+
+vue-class-component@^6.2.0:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-6.3.2.tgz#e6037e84d1df2af3bde4f455e50ca1b9eec02be6"
+  integrity sha512-cH208IoM+jgZyEf/g7mnFyofwPDJTM/QvBNhYMjqGB8fCsRyTf68rH2ISw/G20tJv+5mIThQ3upKwoL4jLTr1A==
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.1"
   resolved "http://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.1.tgz#b2d3d95402a811602380783ea4f566eb875569a2"
   integrity sha1-stPZVAKoEWAjgHg+pPVm64dVaaI=
+
+vue-i18n@^8.7.0:
+  version "8.8.1"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.8.1.tgz#566e087b7131cd8439673f18ffd46da7e1afe95c"
+  integrity sha512-phAJs7iF06QxMY1Thd5c6WJnRSSp4fOG/352eiuRTWMlqBEOFApVa0q1TD//NEguKBO0qCz0gEckFpHWJzJA2Q==
 
 vue-loader@^15.2.4:
   version "15.6.2"
@@ -7088,6 +7166,13 @@ vue-loader@^15.2.4:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-property-decorator@^7.2.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-7.3.0.tgz#d50d67f0b0f1c814f9f2fba36d6eeccbcc62dbb6"
+  integrity sha512-HarXfTQ/Nxm4s/APpAaGIGHq5ZzslApImQy8ZrtkfGamw8rUFAVgMS5C50/AQ80+wfw3Wpnf4bNzbmj75m/k2Q==
+  dependencies:
+    vue-class-component "^6.2.0"
 
 vue-router@^3.0.2:
   version "3.0.2"
@@ -7133,6 +7218,11 @@ vue@^2.5.16:
   version "2.5.22"
   resolved "http://registry.npm.taobao.org/vue/download/vue-2.5.22.tgz#3bf88041af08b8539c37b268b70ca79245e9cc30"
   integrity sha1-O/iAQa8IuFOcN7JotwynkkXpzDA=
+
+vue@^2.5.21:
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.6.tgz#dde41e483c11c46a7bf523909f4f2f816ab60d25"
+  integrity sha512-Y2DdOZD8sxApS+iUlwv1v8U1qN41kq6Kw45lM6nVZKhygeWA49q7VCCXkjXqeDBXgurrKWkYQ9cJeEJwAq0b9Q==
 
 vuepress-html-webpack-plugin@^3.2.0:
   version "3.2.0"

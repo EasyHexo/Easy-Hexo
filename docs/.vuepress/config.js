@@ -70,5 +70,20 @@ module.exports = {
       },
     },
   },
-  plugins: ['@vuepress/back-to-top']
+  plugins: [
+    '@vuepress/back-to-top',
+    [
+      '@vssue/vuepress-plugin-vssue', 
+      {
+        // 设置 `platform` 而不是 `api`
+        platform: 'github',
+
+        // 其他的 Vssue 配置
+        owner: 'EasyHexo',
+        repo: 'Easy-Hexo',
+        clientId: '7aaa000b4dd00aea03de',
+        clientSecret: 'e7c4929e4e2b079eefb205aaa158c975be03bcc3',
+      },
+    ],
+  ]
 }

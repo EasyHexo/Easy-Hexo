@@ -17,6 +17,7 @@
     "vuepress": "^1.0.0-alpha.35"
   },
   "devDependencies": {
+    "@vssue/vuepress-plugin-vssue": "^0.6.0",
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
     "js-yaml": "^3.12.1"
   }
