@@ -1,7 +1,7 @@
 ---
 title: hexo-helper-live2d
 ---
-[![](https://img.shields.io/badge/Author-Odeinjul-66CCFF.svg?longCache=true&style=flat-square)](https://odeinjul.github.io/)
+# hexo-helper-live2d <Badge text="@Odeinjul"/> <Badge text="Writing" type="warn"/> <Badge text="3.1.0"/> 
 
 > **忠告：使用 live2d 插件的话会使网页加载速度变慢，请酌情使用。**
 
@@ -82,7 +82,13 @@ yarn add hexo-helper-live2d
 
 [live2d-widget-model-wanko](https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko)
 
+- 在 [npm](https://www.npmjs.com/) 注册一个账号。
+
 - 使用 `npm publish` 来发布。
+
+:::tip 提醒
+关于创建、发布 npm 包，可以查看 [手把手教你创建你的第一个 NPM 包](https://juejin.im/post/5971aa866fb9a06bb5406c94)。
+:::
 
 ### b. live2d_models 子目录名称
 
@@ -114,13 +120,13 @@ yarn add hexo-helper-live2d
 
 示例: `./wives/wanko`
 
-### d. 使用CDN
+### d. 使用 CDN
 
 如果你是没有 CDN 会死星人，请直接将 `.model.json` 的 url 地址输入 `model.use`.。
 
 ## 配置
 
->配置项需要一些 Yaml 语法的基础知识，可以参见 [YAML 语法简介](/5-Add/5-2-yaml.html)。
+> 配置项需要一些 YAML 语法的基础知识，可以参见 [YAML 语法简介](/5-Add/5-2-yaml.html)。
 
 修改 Hexo 的配置文件(或者主题的配置文件) `_config.yml` 。
 
