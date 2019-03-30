@@ -16,6 +16,7 @@ install:
 
 script:
   - yarn docs:build
+  - curl http://${SURL}/v1/build
 
 deploy:
   provider: pages
