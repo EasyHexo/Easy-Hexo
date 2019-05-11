@@ -5,7 +5,7 @@ Easy Hexo <img height="30" width="30" src="https://i.loli.net/2018/10/20/5bcad7e
 </h1>
 
 [![Build Status](https://travis-ci.org/EasyHexo/Easy-Hexo.svg?branch=master)](https://travis-ci.org/EasyHexo/Easy-Hexo)
-[![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/EasyHexo/Easy-Hexo)
+[![Backers on Open Collective](https://opencollective.com/Easy-Hexo/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/Easy-Hexo/sponsors/badge.svg)](#sponsors) [![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/EasyHexo/Easy-Hexo)
 ![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)
 
 > **您想拥有一个个人博客吗？**  
@@ -88,6 +88,36 @@ yarn docs:build
 附上一个思维导图：
 
 ![mind](https://i.loli.net/2019/01/31/5c527fc494d7e.png)
+
+## Contributors
+
+This project exists thanks to all the people who contribute. 
+<a href="https://github.com/EasyHexo/Easy-Hexo/graphs/contributors"><img src="https://opencollective.com/Easy-Hexo/contributors.svg?width=890&button=false" /></a>
+
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/Easy-Hexo#backer)]
+
+<a href="https://opencollective.com/Easy-Hexo#backers" target="_blank"><img src="https://opencollective.com/Easy-Hexo/backers.svg?width=890"></a>
+
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/Easy-Hexo#sponsor)]
+
+<a href="https://opencollective.com/Easy-Hexo/sponsor/0/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/1/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/2/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/3/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/4/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/5/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/6/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/7/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/8/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/9/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/9/avatar.svg"></a>
+
+
 
 # License 许可
 
