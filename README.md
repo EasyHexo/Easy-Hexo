@@ -91,18 +91,27 @@ yarn docs:build
 
 ## Contributors
 
+这个项目的存在多亏了所有的贡献者。 
+
 This project exists thanks to all the people who contribute. 
+
 <a href="https://github.com/EasyHexo/Easy-Hexo/graphs/contributors"><img src="https://opencollective.com/Easy-Hexo/contributors.svg?width=890&button=false" /></a>
 
+## Sponsor 赞助
 
-## Backers
+> 🙏 感谢所有金主爸爸，如有意向请通过 Open Collective 赞助我们！
+
+### Backers 支持者
+
+感谢我们所有的支持者！ 
 
 Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/Easy-Hexo#backer)]
 
 <a href="https://opencollective.com/Easy-Hexo#backers" target="_blank"><img src="https://opencollective.com/Easy-Hexo/backers.svg?width=890"></a>
 
+### Sponsors 赞助商
 
-## Sponsors
+通过成为赞助商来支持这个项目。您的 logo 将显示在此处，并带有指向您网站的链接。 
 
 Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/Easy-Hexo#sponsor)]
 
@@ -116,8 +125,6 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/Easy-Hexo/sponsor/7/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/7/avatar.svg"></a>
 <a href="https://opencollective.com/Easy-Hexo/sponsor/8/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/Easy-Hexo/sponsor/9/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/9/avatar.svg"></a>
-
-
 
 # License 许可
 
