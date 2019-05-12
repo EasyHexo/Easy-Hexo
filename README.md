@@ -12,6 +12,7 @@ Easy Hexo <img height="30" width="30" src="https://i.loli.net/2018/10/20/5bcad7e
 > **您已经厌烦了 CSDN，博客园的千篇一律吗？**  
 > **您想展示自己的才华吗？**  
 > 如果您确实有以上需求，并且有一定耐心，不怕困难不怕坑，我们将会给您提供尽可能完善的个人博客搭建教程。  
+
 # 前言
 
 > 轻松使用 Hexo 建站
@@ -89,7 +90,8 @@ yarn docs:build
 
 ![mind](https://i.loli.net/2019/01/31/5c527fc494d7e.png)
 
-## Contributors
+
+# Contributors
 
 这个项目的存在多亏了所有的贡献者。 
 
@@ -97,11 +99,11 @@ This project exists thanks to all the people who contribute.
 
 <a href="https://github.com/EasyHexo/Easy-Hexo/graphs/contributors"><img src="https://opencollective.com/Easy-Hexo/contributors.svg?width=890&button=false" /></a>
 
-## Sponsor 赞助
+# Sponsor 赞助
 
 > 🙏 感谢所有金主爸爸，如有意向请通过 Open Collective 赞助我们！
 
-### Backers 支持者
+## Backers 支持者
 
 感谢我们所有的支持者！ 
 
@@ -109,7 +111,7 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 <a href="https://opencollective.com/Easy-Hexo#backers" target="_blank"><img src="https://opencollective.com/Easy-Hexo/backers.svg?width=890"></a>
 
-### Sponsors 赞助商
+## Sponsors 赞助商
 
 通过成为赞助商来支持这个项目。您的 logo 将显示在此处，并带有指向您网站的链接。 
 
@@ -125,6 +127,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/Easy-Hexo/sponsor/7/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/7/avatar.svg"></a>
 <a href="https://opencollective.com/Easy-Hexo/sponsor/8/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/Easy-Hexo/sponsor/9/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/9/avatar.svg"></a>
+
 
 # License 许可
 
