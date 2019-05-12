@@ -89,6 +89,8 @@ yarn docs:build
 
 ![mind](https://i.loli.net/2019/01/31/5c527fc494d7e.png)
 
+> 注意：本图已经久未更新！
+
 # License 许可
 
 ⚖ 本作品采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
