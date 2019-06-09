@@ -16,12 +16,10 @@ title: Hexo 高级玩家
 
 缺点：
 
-1. 需要一个服务器，我推荐阿里云的轻量级学生机（ 114 元/年）
+1. 需要一个服务器，我推荐阿里云的轻量级学生机（114 元/年）
 2. 需要域名备案，需要成年人进行办理，审核时间在 7 天左右。
 3. 控制台页面可能对某些人来说有点丑。
-
-![Hexo-admin.PNG](http://cdn.17shou.vip/2019/06/09/5cfca31bd0ef6.png)
-
+   ![Hexo-admin.PNG](http://cdn.17shou.vip/2019/06/09/5cfca31bd0ef6.png)
 4. 安装过程可能有点复杂。
 
 - 在这一功能方面，可能 Wordpress​ 和 Typecho​ 能做的更好，但它们也一样需要服务器和域名备案。如果您认为不想再去重新搞个 Wordpress​ 或者 ​Typecho​ ，又想实现远程编辑这一功能的话，就可以进行这篇教程了！
@@ -34,7 +32,7 @@ title: Hexo 高级玩家
 
 ## 一、初步准备
 
-1. 现在第一步要做的事就是购买服务器了，如果已有服务器可以跳过。在这里，我推荐阿里云云翼计划的学生机（[购买地址](https://promotion.aliyun.com/ntms/act/campus2018.html)），我建议用轻量级的，因为有 $5M$ 带宽， $1000$ GB的流量不用担心不够用，我用了两个月连 1 GB都没有用完。
+1. 现在第一步要做的事就是购买服务器了，如果已有服务器可以跳过。在这里，我推荐阿里云云翼计划的学生机（[购买地址](https://promotion.aliyun.com/ntms/act/campus2018.html)），我建议用轻量级的，因为有 $5M$ 带宽， $1000$ GB 的流量不用担心不够用，我用了两个月连 1 GB 都没有用完。
 
 ![云翼计划.PNG](http://cdn.17shou.vip/2019/06/09/5cfca31e3619d.png)
 
@@ -44,7 +42,7 @@ title: Hexo 高级玩家
 
 ![服务器密码设置.PNG](http://cdn.17shou.vip/2019/06/09/5cfca31cd812a.png)
 
-3. 现在下载服务器的命令行工具 `Xshell` 和 `Xftp​` ，去百度一下官网，然后官网有个人免费版本下载（[链接](https://www.netsarang.com/zh/free-for-home-school/)），输入邮箱，然后会把软件下载链接邮箱发给你~~~~，或者你直接在什么软件助手下也可以，不过可能不是最新的。
+1. 现在下载服务器的命令行工具 `Xshell` 和 `Xftp​` ，去百度一下官网，然后官网有个人免费版本下载（[链接](https://www.netsarang.com/zh/free-for-home-school/)），输入邮箱，然后会把软件下载链接邮箱发给你，或者你直接在什么软件助手下也可以，不过可能不是最新的。
 
    现在开始连接服务器，安装完两个软件，先打开 `Xshell​` ，新建会话：
 
@@ -56,7 +54,7 @@ title: Hexo 高级玩家
 
 ![设置会话密码.PNG](http://cdn.17shou.vip/2019/06/09/5cfca31dc0326.png)
 
-没有问题的话，应该就可以连上去了。如果连不上去，在控制台检查一下服务器的防火墙设置，  看看 `22` 端口有没有打开，如果没有，就把 `80 443 4000 22 8888` 端口一起打开。
+没有问题的话，应该就可以连上去了。如果连不上去，在控制台检查一下服务器的防火墙设置，看看 `22` 端口有没有打开，如果没有，就把 `80 443 4000 22 8888` 端口一起打开。
 
 ## 二、配置服务器环境
 
@@ -127,11 +125,11 @@ npm install hexo-server --save
    npm install hexo-server --save
    ```
 
-5. 设置开机自启：因为我忘了，所以请自行 [Google](https://www.google.com/) 和 [Baidu](https://www.baidu.com/) 。
+5. 设置开机自启：因为我忘了，所以请自行上网查找资料。
 
 ------
 
-## 三、在本地安装 $Hexo-admin$ 
+## 三、在本地安装 Hexo-admin
 
 1. 在本地的 `hexo​` 文件夹中 `Git Bash` 。
 
@@ -153,7 +151,7 @@ npm install hexo-server --save
 
 ![Hexo-admin.PNG](http://cdn.17shou.vip/2019/06/09/5cfca31bd0ef6.png)
 
-   现在应该可以看到 `Hexo-admin​` 的界面了，应该不需要输入用户名和密码的。所以说现在要设密码，在 `Settings` 中打开 ` Setup authentification here` ：
+   现在应该可以看到 `Hexo-admin​` 的界面了，应该不需要输入用户名和密码的。所以说现在要设密码，在 `Settings` 中打开 `Setup authentification here` ：
 
 ![Hexo-admin设置密码.PNG](http://cdn.17shou.vip/2019/06/09/5cfca31bd1acb.png)
 
@@ -163,9 +161,9 @@ npm install hexo-server --save
 
    现在复制下面生成的代码，复制到 `hexo` 根目录下的 `_config.yml` 中，直接放在最下面即可。
 
-   把上面的代码复制后还要再加一段，这是后面要设置一键部署脚本的路径，记得与上面保持代码缩进！！
+   把上面的代码复制后还要再加一段，这是后面要设置一键部署脚本的路径，记得与上面保持代码缩进！
 
-```
+```yaml
    deployCommand: './Script/Depoly.sh'
 ```
 
@@ -198,7 +196,6 @@ npm install hexo-server --save
    #!/usr/bin/env sh
    hexo g
    【hexo d】
-   
    ```
 
    PS：这里不用 `hexo clean` ，然后根据自己需要，添加 `hexo d` 。如果先 `hexo clean` 了一遍后，在进行 `hexo g` 的过程中将无法访问网站，因为 `public` 目录已经被请了。关于 `【hexo d】` ，虽然我们已经使用了自己的服务器，不再使用 Github 了，但是鉴于有些读者会使用诸如 `baidu-url-submitter` 之类基于 `hexo d` 的插件，所以在这里给大家提示一下。
@@ -330,15 +327,13 @@ npm install hexo-server --save
   
   ```
 
-  
-
 ------
 
 ## Q&A
 
 Q：为什么我不能访问 `hexo-admin` ？
 
-A：可能因为你没开放4000端口，宝塔和服务器运营商那里都要开放端口。
+A：可能因为你没开放 4000 端口，宝塔和服务器运营商那里都要开放端口。
 
 Q：为什么我不能使用域名访问？？
 
