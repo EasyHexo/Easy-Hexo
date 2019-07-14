@@ -126,7 +126,7 @@ yarn add hexo-helper-live2d
 
 ## 配置
 
-> 配置项需要一些 YAML 语法的基础知识，可以参见 [YAML 语法简介](/5-Add/5-2-yaml.html)。
+> 配置项需要一些 YAML 语法的基础知识，可以参见 [YAML 语法简介](https://easyhexo.com/5-Add/5-2-yaml.html)。
 
 修改 Hexo 的配置文件(或者主题的配置文件) `_config.yml` 。
 
