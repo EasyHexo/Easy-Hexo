@@ -54,6 +54,7 @@ themeConfig:
       hexo-tag-aplayer: /3-Plugins-use-and-config/3-1-hexo-tag-aplayer/
       hexo-tag-dplayer: /3-Plugins-use-and-config/3-2-hexo-tag-dplayer/
       hexo-helper-live2d: /3-Plugins-use-and-config/3-3-hexo-helper-live2d/
+      hexo-blog-encrypt: /3-Plugins-use-and-config/3-4-hexo-blog-encrypt/
     高级 Hexo 玩家: /4-High-order-hexo-gamer/
     补充内容:
       概要: /5-Add/
@@ -89,6 +90,7 @@ themeConfig:
       - 3-1-hexo-tag-aplayer/
       - 3-2-hexo-tag-dplayer/
       - 3-3-hexo-helper-live2d/
+      - 3-4-hexo-blog-encrypt/
     /4-High-order-hexo-gamer/: \# # Put any thing here as a placeholder
     /5-Add/:
       - 5-1-quote.html
