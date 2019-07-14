@@ -11,8 +11,8 @@ title: hexo-blog-encrypt
 
 ## Demo
 
-* [MikeCoder](https://mhexo.github.io/example-site/2018/06/25/encrypt-test/) （本插件开发者）
-* [17shou_VIP](https://www.17shou.vip/%E3%80%90Diary%E3%80%912019-5-16/) （本文作者）
+* 插件开发者 [MikeCoder](https://mhexo.github.io/example-site/2018/06/25/encrypt-test/)
+* 作者 [17shou_VIP](https://www.17shou.vip/无题/)
 
 ## 开始
 
