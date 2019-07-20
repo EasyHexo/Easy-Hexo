@@ -18,7 +18,7 @@ footer: © Easy Hexo. Released under the CC BY-NC-ND 4.0 International License.
 ![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)
 
 > **您想拥有一个个人博客吗？**  
-> **您已经厌烦了CSDN，博客园的千篇一律吗？**  
+> **您已经厌烦了 CSDN，博客园的千篇一律吗？**  
 > **您想展示自己的才华吗？**  
 > 如果您确实有以上需求，并且有一定耐心，不怕困难不怕坑，我们将会给您提供尽可能完善的个人博客搭建教程。  
 # 前言
@@ -33,7 +33,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 - 静态网页
 - 使用方便
 
-> 当然，这并不说明整个博客都是免费的。你可能会去购买域名等等。
+> *：当然，这并不说明整个博客都是免费的。你可能会去购买域名等等。
 
 ## 本文档适用人群
 
@@ -48,6 +48,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 - :gem: 自制一个 Hexo 主题
 
 ## 十分感谢你能：
+
 - 如有疑问，请先百度，再联系我们 
 - 如果对我们有建议，可以联系我们
 - 如果想对本文档做出贡献，可以加入我们
@@ -62,11 +63,12 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 请联系 ChungZH `QQ:124694738`，加好友时请注明 `Easy Hexo`。或者你也可以加入 `EasyHexo` 团队的 `QQ 群：935778924`。
 
+> 注意：本群只允许**想要为本项目贡献**文档的同学加入，并非交流讨论群，谢谢！ 
+
 目前 EasyHexo 急需的人员有：
 
 - 专栏作者：EasyHexo专栏会写一些很基础的东西。比如：『Hexo 卜算子计算访客数为什么无法加载？』、『为什么我的 Hexo 样式丢失了？』之类的写进文档无法分类的问题。
 - 文档编写人员：写文档。有主题、插件、自制主题三个选择。
-- issue 区解答人员：目前 Easy-Hexo 的 issue 区提供了『Hexo 使用问题提出』的功能，人手不够，速度有点慢，所以急需人员补充。
 
 # Build 编译
 
@@ -95,6 +97,35 @@ yarn docs:build
 附上一个思维导图：
 
 ![mind](https://i.loli.net/2019/01/31/5c527fc494d7e.png)
+
+## Sponsor 赞助
+
+> 🙏 感谢所有金主爸爸，如有意向请通过 Open Collective 赞助我们！
+
+### Backers 支持者
+
+感谢我们所有的支持者！ 
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/Easy-Hexo#backer)]
+
+<a href="https://opencollective.com/Easy-Hexo#backers" target="_blank"><img src="https://opencollective.com/Easy-Hexo/backers.svg?width=890"></a>
+
+### Sponsors 赞助商
+
+通过成为赞助商来支持这个项目。您的 logo 将显示在此处，并带有指向您网站的链接。 
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/Easy-Hexo#sponsor)]
+
+<a href="https://opencollective.com/Easy-Hexo/sponsor/0/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/1/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/2/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/3/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/4/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/5/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/6/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/7/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/8/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/Easy-Hexo/sponsor/9/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/9/avatar.svg"></a>
 
 # License 许可
 
