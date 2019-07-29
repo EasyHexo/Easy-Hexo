@@ -1,11 +1,20 @@
 ---
+<<<<<<< HEAD:docs/4-High-order-hexo-gamer/4-1-部署-Hexo-到云端/README.md
 title: 部署 Hexo 到云端
 ---
 - 本文由[作者](https://www.17shou.vip/)从[个人博客](https://www.17shou.vip/让你的Hexo博客支持远程编辑/)和[洛谷日报](https://www.luogu.org/blog/AC-WA-RE-TLE-MLE/rang-ni-di-hexo-bo-ke-zhi-chi-yuan-cheng-bian-ji)中整理发表。
+=======
+title: 让你的 Hexo 博客支持远程编辑
+---
 
-------
+# 让你的 Hexo 博客支持远程编辑 <Badge text="@17shou_VIP"/> <Badge text="Finish"/>
+>>>>>>> 5cd6ce57bd051fd6419b9a9e1bffa82e7932780a:docs/4-High-order-hexo-gamer/4-1-remote-editing/README.md
 
-- 请先看看优缺点再决定是否进行教程：
+> 本文由[作者](https://www.17shou.vip/)从[个人博客](https://www.17shou.vip/让你的Hexo博客支持远程编辑/)和[洛谷日报](https://www.luogu.org/blog/AC-WA-RE-TLE-MLE/rang-ni-di-hexo-bo-ke-zhi-chi-yuan-cheng-bian-ji)中整理发表。
+
+## 优缺点
+
+请先看看这种方法的优缺点再决定是否进行教程：
 
 优点：
 
@@ -17,20 +26,24 @@ title: 部署 Hexo 到云端
 1. 需要一个服务器，我推荐阿里云的轻量级学生机（114 元/年）
 2. 需要域名备案，需要成年人进行办理，审核时间在 7 天左右。
 3. 控制台页面可能对某些人来说有点丑。
-   ![Hexo-admin.PNG](https://cdn.17shou.vip/2019/06/09/5cfca31bd0ef6.png)
+   ![Hexo-admin.PNG](http://cdn.17shou.vip/2019/06/09/5cfca31bd0ef6.png)
 4. 安装过程可能有点复杂。
 
-- 在这一功能方面，可能 Wordpress​ 和 Typecho​ 能做的更好，但它们也一样需要服务器和域名备案。如果您认为不想再去重新搞个 Wordpress​ 或者 ​Typecho​ ，又想实现远程编辑这一功能的话，就可以进行这篇教程了！
+在这一功能方面，可能 Wordpress​ 和 Typecho​ 能做的更好，但它们也一样需要服务器和域名备案。如果您认为不想再去重新搞个 Wordpress​ 或者 ​Typecho​ ，又想实现远程编辑这一功能的话，就可以进行这篇教程了！
 
 ------
 
-## 零、教程使用
+## 教程使用
 
-- 防止有些人根据自己情况要填的东西直接 Copy​ 命令，忘记修改了，我会在需要自己填的地方打上 `【】` 。比如一个地方要填密码，我会写 `【密码】` ，记得自己进行替换。
+防止有些人根据自己情况要填的东西直接 Copy​ 命令，忘记修改了，我会在需要自己填的地方打上 `【】` 。比如一个地方要填密码，我会写 `【密码】` ，**记得自己进行替换**。
 
-## 一、初步准备
+## 初步准备
 
+<<<<<<< HEAD:docs/4-High-order-hexo-gamer/4-1-部署-Hexo-到云端/README.md
 1. 现在第一步要做的事就是购买服务器了，如果已有服务器可以跳过。在这里，我推荐阿里云云翼计划的学生机（[购买地址](https://promotion.aliyun.com/ntms/act/campus2018.html)），我建议用轻量级的，因为有 5M 带宽， 1000GB 的流量不用担心不够用，我用了两个月连 1 GB 都没有用完。
+=======
+1. 现在第一步要做的事就是购买服务器了，如果已有服务器可以跳过。在这里，我推荐阿里云云翼计划的学生机（[购买地址](https://promotion.aliyun.com/ntms/act/campus2018.html)），我建议用轻量级的，因为有 5M 带宽、1000GB 的流量。你大可以不用担心不够用，我用了两个月连 1GB 都没有用完。
+>>>>>>> 5cd6ce57bd051fd6419b9a9e1bffa82e7932780a:docs/4-High-order-hexo-gamer/4-1-remote-editing/README.md
 
 ![云翼计划.PNG](https://cdn.17shou.vip/2019/06/09/5cfca31e3619d.png)
 
@@ -40,7 +53,7 @@ title: 部署 Hexo 到云端
 
 ![服务器密码设置.PNG](https://cdn.17shou.vip/2019/06/09/5cfca31cd812a.png)
 
-1. 现在下载服务器的命令行工具 `Xshell` 和 `Xftp​` ，去百度一下官网，然后官网有个人免费版本下载（[链接](https://www.netsarang.com/zh/free-for-home-school/)），输入邮箱，然后会把软件下载链接邮箱发给你，或者你直接在什么软件助手下也可以，不过可能不是最新的。
+3. 现在下载服务器的命令行工具 `Xshell` 和 `Xftp​` ，去百度一下官网，然后官网有个人免费版本下载（[链接](https://www.netsarang.com/zh/free-for-home-school/)），输入邮箱，然后会把软件下载链接邮箱发给你，或者你直接在什么软件助手下也可以，不过可能不是最新的。
 
    现在开始连接服务器，安装完两个软件，先打开 `Xshell​` ，新建会话：
 
@@ -129,7 +142,7 @@ npm install hexo-server --save
 
 ## 三、在本地安装 Hexo-admin
 
-1. 在本地的 `hexo​` 文件夹中 `Git Bash` 。
+1. 在**本地**的 `hexo​` 文件夹中 `Git Bash` 。
 
    输入如下命令（**现在是本地端**），安装 `Hexo-admin​` ：
 
@@ -325,18 +338,17 @@ npm install hexo-server --save
   
   ```
 
-------
-
 ## Q&A
 
-Q：为什么我不能访问 `hexo-admin` ？
+### Q：为什么我不能访问 `hexo-admin` ？
 
-A：可能因为你没开放 4000 端口，宝塔和服务器运营商那里都要开放端口。
+### A：可能因为你没开放 4000 端口，宝塔和服务器运营商那里都要开放端口。
 
-Q：为什么我不能使用域名访问？？
+### Q：为什么我不能使用域名访问？？
 
-A：如果端口没有任何问题的话，可能是备案问题，按照服务器运营商的操作去备案，个人认为阿里云是最方便的，自己扫一遍脸，写个备案单就可以了，所以刚开始我建议阿里云。
+### A：如果端口没有任何问题的话，可能是备案问题，按照服务器运营商的操作去备案，个人认为阿里云是最方便的，自己扫一遍脸，写个备案单就可以了，所以刚开始我建议阿里云。
 
-------
 
-- 参考资料：[如何优雅地发布 Hexo 博客](https://www.jianshu.com/p/68e727dda16d)
+## 参考资料
+
+[如何优雅地发布 Hexo 博客](https://www.jianshu.com/p/68e727dda16d)
