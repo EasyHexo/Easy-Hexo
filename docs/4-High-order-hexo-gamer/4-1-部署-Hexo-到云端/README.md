@@ -1,7 +1,6 @@
 ---
-title: 部署 Hexo 博客到云端
+title: 部署 Hexo 到云端
 ---
-
 - 本文由[作者](https://www.17shou.vip/)从[个人博客](https://www.17shou.vip/让你的Hexo博客支持远程编辑/)和[洛谷日报](https://www.luogu.org/blog/AC-WA-RE-TLE-MLE/rang-ni-di-hexo-bo-ke-zhi-chi-yuan-cheng-bian-ji)中整理发表。
 
 ------
@@ -31,7 +30,7 @@ title: 部署 Hexo 博客到云端
 
 ## 一、初步准备
 
-1. 现在第一步要做的事就是购买服务器了，如果已有服务器可以跳过。在这里，我推荐阿里云云翼计划的学生机（[购买地址](https://promotion.aliyun.com/ntms/act/campus2018.html)），我建议用轻量级的，因为有 5M 带宽， 1000 GB 的流量不用担心不够用，我用了两个月连 1 GB 都没有用完。
+1. 现在第一步要做的事就是购买服务器了，如果已有服务器可以跳过。在这里，我推荐阿里云云翼计划的学生机（[购买地址](https://promotion.aliyun.com/ntms/act/campus2018.html)），我建议用轻量级的，因为有 5M 带宽， 1000GB 的流量不用担心不够用，我用了两个月连 1 GB 都没有用完。
 
 ![云翼计划.PNG](https://cdn.17shou.vip/2019/06/09/5cfca31e3619d.png)
 
