@@ -224,7 +224,6 @@ npm install hexo-server --save
    #!/bin/sh -e
    /MyScript/hexo-sever.sh
    exit 0
-   
    ```
 
     `Ctrl+X` 退出。
@@ -236,15 +235,12 @@ npm install hexo-server --save
    mkdir MyScript
    cd MyScript
    nano hexo-sever.sh
-   
    ```
 
    ```shell
    #!/bin/bash
    cd /usr/local/Blog
    hexo s
-   
-   
    ```
 
    `Ctrl+X` 退出。
@@ -253,7 +249,6 @@ npm install hexo-server --save
 
    ```shell
    chmod +x hexo-sever.sh
-   
    ```
 
 7. 现在重启一下服务器，在浏览器输入 `http://【服务器公网IP】:4000/admin` ，如果能上去，就说明成功了。
@@ -296,7 +291,6 @@ npm install hexo-server --save
                   index  index.html index.htm;
           }
       }
-  
   ```
 
 - SSL ​+ 强制 https ：
@@ -325,7 +319,6 @@ npm install hexo-server --save
       	server_name www.17shou.vip 17shou.vip;  
       	rewrite ^(.*)$  https://$host$1 permanent;
   	}  
-  
   ```
 
 ## Q&A
