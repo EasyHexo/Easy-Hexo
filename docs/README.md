@@ -67,7 +67,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 目前 EasyHexo 急需的人员有：
 
-- 专栏作者：EasyHexo专栏会写一些很基础的东西。比如：『Hexo 卜算子计算访客数为什么无法加载？』、『为什么我的 Hexo 样式丢失了？』之类的写进文档无法分类的问题。
+- 专栏作者：EasyHexo 专栏会写一些很基础的东西。比如：『Hexo 卜算子计算访客数为什么无法加载？』、『为什么我的 Hexo 样式丢失了？』之类的写进文档无法分类的问题。
 - 文档编写人员：写文档。有主题、插件、自制主题三个选择。
 
 # Build 编译
@@ -83,26 +83,27 @@ yarn docs:dev
 yarn docs:build
 ```
 
-# Changelog 更新日志
-
-- 2019.2.7 > 添加了 pv、wordcount 等新功能，将 vuepress 升级至 `1.x`，添加了 `vuepress-plugin-sitemap` 插件，修复了一些 bug | By [@ChungZH](https://github.com/ChungZH) [@MonoLogueChi](https://github.com/MonoLogueChi) [@Mitscherlich](https://github.com/Mitscherlich) [@JunzhouLiu](https://github.com/JunzhouLiu)
-- 2019.2.2 > 添加了[ hexo-theme-icarus 主题文档](https://easyhexo.com/2-Theme-use-and-config/2-12-hexo-theme-icarus/) | By [@Susreal](https://github.com/Susreal) [#120](https://github.com/EasyHexo/Easy-Hexo/pull/120)
-- 2019.1.31 > [@cloudpool2017](https://github.com/cloudpool2017) 赞助一年 `easyhexo.com` 域名并投入使用 | [#112](https://github.com/EasyHexo/Easy-Hexo/pull/112/)
-- 2019.1.24 > 添加了[使用数据文件平滑升级主题](https://easyhexo.com/5-Add/5-3-data-file.html) | By [@MoshiYeap](https://github.com/MoshiYeap) [#103](https://github.com/EasyHexo/Easy-Hexo/pull/103)
-
 # Status 状态
 
-欢迎查阅 [项目进度板](https://github.com/orgs/EasyHexo/projects/1)。
+欢迎查阅 [项目进度板](https://github.com/EasyHexo/Easy-Hexo/projects/2)。
 
-附上一个思维导图：
+~~附上一个思维导图：~~由于作者没空（懒），思维导图已经很久没更新了。请查阅上面的项目进度板，谢谢！
 
-![mind](https://i.loli.net/2019/01/31/5c527fc494d7e.png)
+<!-- ![mind](https://i.loli.net/2019/01/31/5c527fc494d7e.png) -->
 
-## Sponsor 赞助
+# Contributors
+
+这个项目的存在多亏了所有的贡献者。 
+
+This project exists thanks to all the people who contribute. 
+
+<a href="https://github.com/EasyHexo/Easy-Hexo/graphs/contributors"><img src="https://opencollective.com/Easy-Hexo/contributors.svg?width=890&button=false" /></a>
+
+# Sponsor 赞助
 
 > 🙏 感谢所有金主爸爸，如有意向请通过 Open Collective 赞助我们！
 
-### Backers 支持者
+## Backers 支持者
 
 感谢我们所有的支持者！ 
 
@@ -110,7 +111,7 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 <a href="https://opencollective.com/Easy-Hexo#backers" target="_blank"><img src="https://opencollective.com/Easy-Hexo/backers.svg?width=890"></a>
 
-### Sponsors 赞助商
+## Sponsors 赞助商
 
 通过成为赞助商来支持这个项目。您的 logo 将显示在此处，并带有指向您网站的链接。 
 

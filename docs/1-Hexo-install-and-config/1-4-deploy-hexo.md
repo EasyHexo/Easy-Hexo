@@ -2,11 +2,8 @@
 title: 部署 Hexo
 ---
 
-# 部署 Hexo
+# 部署 Hexo <Badge text="@MoshiYeap"/> <Badge text="@Odeinjul"/> <Badge text="Finish"/>
 
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](https://junzhouliu.github.io/)
-[![](https://img.shields.io/badge/Author-Odeinjul-66CCFF.svg?longCache=true&style=flat-square)](https://odeinjul.github.io/)
 ## 部署到 GitHub
 
 ### 准备工作
@@ -269,7 +266,7 @@ yum install nginx -y   //安装Nginx
         listen       [::]:80 default_server;
         server_name  _;
 -       root         /data/www;
-+       root         /homr/www/hexo;
++       root         /home/www/hexo;
 
         include /etc/nginx/default.d/*.conf;
 

@@ -1,10 +1,7 @@
 ---
 title: YAML 语法简介
 ---
-# YAML 语法简介
-
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-MonoLogueChi-FE326D.svg?longCache=true&style=flat-square)](mailto:xxwhite@foxmail.com)
+# YAML 语法简介 <Badge text="MonoLogueChi"/> <Badge text="Finish"/>
 
 使用 Hexo 并不需要掌握过多的 YAML 语法知识，只需要简单的了解一下就可以。
 

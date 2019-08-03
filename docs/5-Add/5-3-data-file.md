@@ -1,10 +1,8 @@
 ---
 title: 使用数据文件平滑升级主题
 ---
-# 使用数据文件平滑升级主题
 
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](https://junzhouliu.github.io/)
+# 使用数据文件平滑升级主题 <Badge text="MoshiYeap"/> <Badge text="Finish"/>
 
 ## 关于「数据文件」
 
