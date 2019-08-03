@@ -3,10 +3,7 @@ title: 持续集成
 sidebarDepth: 4
 ---
 
-# 持续集成 Continuous Integration
-
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-SpencerWoo-E87A90.svg?longCache=true&style=flat-square)](https://github.com/spencerwooo)
+# 持续集成 Continuous Integration <Badge text="@SpencerWoo"/> <Badge text="Finish"/>
 
 :::tip
 利用 Travis CI 将 Hexo 持续集成部署到 GitHub Pages. 👷

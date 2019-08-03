@@ -341,4 +341,3 @@ npm install hexo-server --save
 
 ## 参考资料
 
-[如何优雅地发布 Hexo 博客](https://www.jianshu.com/p/68e727dda16d)

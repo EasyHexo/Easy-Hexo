@@ -2,10 +2,7 @@
 title: hexo-tag-aplayer
 ---
 
-# Aplayer 插件使用
-
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-MonoLogueChi-FE326D.svg?longCache=true&style=flat-square)](mailto:xxwhite@foxmail.com)
+# Aplayer 插件使用 <Badge text="MonoLogueChi"/> <Badge text="Finish"/>
 
 ## 介绍
 
