@@ -49,6 +49,7 @@ themeConfig:
       hexo-theme-icarus: /2-Theme-use-and-config/2-12-hexo-theme-icarus/
       hexo-theme-material-t: /2-Theme-use-and-config/2-13-hexo-theme-material-t/
       hexo-theme-matery: /2-Theme-use-and-config/2-14-hexo-theme-matery/
+      hexo-theme-stun: /2-Theme-use-and-config/2-16-hexo-theme-stun/
     插件使用与配置:
       概要: /3-Plugins-use-and-config/
       hexo-tag-aplayer: /3-Plugins-use-and-config/3-1-hexo-tag-aplayer/
@@ -88,6 +89,7 @@ themeConfig:
       - 2-12-hexo-theme-icarus/
       - 2-13-hexo-theme-material-t/
       - 2-14-hexo-theme-matery/
+      - 2-16-hexo-theme-stun/
     /3-Plugins-use-and-config/:
       - 3-1-hexo-tag-aplayer/
       - 3-2-hexo-tag-dplayer/
