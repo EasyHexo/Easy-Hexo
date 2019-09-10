@@ -23,7 +23,7 @@ hexo-theme-stun 支持主题平滑升级。有关内容请查阅[使用数据文
 - 支持 `Fancybox`
 - 支持 `Quicklink`
 - 支持 `MathJax`、`KaTex`
-- 支持 `Gitalk`、`Valine`、`Livere` 和 `Disqus ` 评论系统
+- 支持 `Gitalk`、`Valine`、`Livere` 和 `Disqus` 评论系统
 - 瀑布流式的相册页面
 - 内置谷歌广告，一键开启
 - 代码高亮，多种配色可选
@@ -32,7 +32,7 @@ hexo-theme-stun 支持主题平滑升级。有关内容请查阅[使用数据文
 
 ## 主题演示
 
-[liuyib`s Blog](https://liuyib.github.io/)
+[liuyib's Blog](https://liuyib.github.io/)
 
 ## 下载主题
 
@@ -58,7 +58,7 @@ $ hexo new page tags
 
 2. 修改 Front-Matter
 
-找到 Hexo 根目录下的 `source/categories` 或 `source/tags` 文件夹中的 markdown 文件，添加 Front-Matter：
+找到 Hexo 根目录下的 `source/categories` 或 `source/tags` 文件夹中的 Markdown 文件，添加 Front-Matter：
 
 ``` yaml
 # 如果是分类页，添加这个
@@ -170,7 +170,7 @@ header:
 
 ### 指定顶部图
 
-如果想要为某个页面或某篇文章单独指定顶部图，你需要在页面或文章 markdown 源文件的 [Front-Matter](https://hexo.io/zh-cn/docs/Front-Matter) 中，添加 `top_image` 项，然后填入的图片 url 或路径即可。例如：
+如果想要为某个页面或某篇文章单独指定顶部图，你需要在页面或文章 Markdown 源文件的 [Front-Matter](https://hexo.io/zh-cn/docs/Front-Matter) 中，添加 `top_image` 项，然后填入的图片 url 或路径即可。例如：
 
 ``` yaml
 ---
@@ -266,7 +266,7 @@ social:
 
 ### 文章摘要
 
-如果想要保留文章摘要，需要**手动**在文章的 markdown 源文件中添加 `<!-- more -->` 标记。标记之前的部分都会被保留为文章摘要，显示在文章列表中。
+如果想要保留文章摘要，需要**手动**在文章的 Markdown 源文件中添加 `<!-- more -->` 标记。标记之前的部分都会被保留为文章摘要，显示在文章列表中。
 
 如果想要自动保留文章摘要，可以通过修改主题配置文件：
 
