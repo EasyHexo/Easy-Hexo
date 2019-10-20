@@ -8,7 +8,7 @@ title: 部署 Hexo
 
 ### 准备工作
 
-1. 如果没有账号，请点此前往 [GitHub](gitHub.com) 注册一个 GitHub 账号。
+1. 如果没有账号，请点此前往 [GitHub](https://github.com) 注册一个 GitHub 账号。
 2. 新建一个公开仓库，仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
 3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
 
@@ -50,7 +50,7 @@ $ hexo clean && hexo d -g
 ```
 
 :::tip 提醒
-如果是第一次使用，会弹出一个登录框，需要登陆你的 GitHub 账号。
+如果是第一次使用，会弹出一个登录框，需要登录你的 GitHub 账号。
 :::
 
 ### 自定义域名
@@ -78,7 +78,13 @@ $ hexo clean && hexo d -g
 
 ### 准备工作
 
-1. 如果没有账号，请点此前往 [CODING](dev.tencent.com) 注册 CODING 账号。
+::: tip 提醒
+
+CODING = dev.tencent.com
+
+:::
+
+1. 如果没有账号，请点此前往 [CODING](https://dev.tencent.com) 注册 CODING 账号。
 2. 新建一个公开仓库，仓库名格式为 `your_username.coding.me` 例如你的 CODING 用户名(username)是 `easyhexo`，那么你的仓库名称就应该是  `easyhexo.coding.me`
 3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://coding.net/your_username/your_reponame.git` 在下一步会用到。
 4. 如果您没有配置 `Git` 和 `hexo-deployer-git` 请参阅前文配置方法配置。
@@ -109,7 +115,7 @@ $ hexo clean && hexo d -g
 
 ### 自定义域名
 1. 如果你拥有个人域名，请添加 CNAME 记录。
-2. 绑定前请在域名 DNS 设置中添加一条 CNAME 记录指向 xxxx.coding.me。将@和www记录都解析到这个即可。 
+2. 绑定前请在域名 DNS 设置中添加一条 CNAME 记录指向 xxxx.coding.me。将 @ 和 www 记录都解析到这个即可。 
 
 **参考表格**
 | 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒）|

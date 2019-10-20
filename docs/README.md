@@ -16,11 +16,7 @@ footer: © Easy Hexo. Released under the CC BY-NC-ND 4.0 International License.
 [![Build Status](https://img.shields.io/travis/EasyHexo/Easy-Hexo.svg?style=flat-square)](https://travis-ci.org/EasyHexo/Easy-Hexo)
 [![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/EasyHexo/Easy-Hexo)
 ![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)
-
-> **您想拥有一个个人博客吗？**  
-> **您已经厌烦了 CSDN，博客园的千篇一律吗？**  
-> **您想展示自己的才华吗？**  
-> 如果您确实有以上需求，并且有一定耐心，不怕困难不怕坑，我们将会给您提供尽可能完善的个人博客搭建教程。  
+  
 # 前言
 
 > 轻松使用 Hexo 建站
@@ -63,12 +59,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 请联系 ChungZH `QQ:124694738`，加好友时请注明 `Easy Hexo`。或者你也可以加入 `EasyHexo` 团队的 `QQ 群：935778924`。
 
-> 注意：本群只允许**想要为本项目贡献**文档的同学加入，并非交流讨论群，谢谢！ 
-
-目前 EasyHexo 急需的人员有：
-
-- 专栏作者：EasyHexo 专栏会写一些很基础的东西。比如：『Hexo 卜算子计算访客数为什么无法加载？』、『为什么我的 Hexo 样式丢失了？』之类的写进文档无法分类的问题。
-- 文档编写人员：写文档。有主题、插件、自制主题三个选择。
+本群欢迎吃瓜群众以及贡献者们光临！
 
 # Build 编译
 
@@ -86,10 +77,6 @@ yarn docs:build
 # Status 状态
 
 欢迎查阅 [项目进度板](https://github.com/EasyHexo/Easy-Hexo/projects/2)。
-
-~~附上一个思维导图：~~由于作者没空（懒），思维导图已经很久没更新了。请查阅上面的项目进度板，谢谢！
-
-<!-- ![mind](https://i.loli.net/2019/01/31/5c527fc494d7e.png) -->
 
 # Contributors
 
