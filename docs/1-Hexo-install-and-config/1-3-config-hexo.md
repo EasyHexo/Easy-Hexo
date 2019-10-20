@@ -112,7 +112,7 @@ skip_render: README.md
 | `category_dir` | 分类文件夹          |
 | `code_dir`     | Include code 文件夹 |
 | `i18n_dir`     | 国际化文件夹        |
-| `skip_render`  | 跳过文件的渲染。匹配到的文件将不会做改动并复制到 `public` 目录中。您可使用 [glob](https://github.com/micromatch/micromatch#extended-globbing) 表达式来匹配路径。 |
+| `skip_render`  | 跳过文件的渲染。匹配到的文件将直接复制到 `public` 目录中。您可使用 [glob](https://github.com/micromatch/micromatch#extended-globbing) 表达式来匹配路径。 |
 
 :::tip 提醒
 
