@@ -14,32 +14,39 @@ hexo-theme-stun 支持主题平滑升级。有关内容请查阅[使用数据文
 
 ## 特性
 
-- 简洁，易用，可定制性高
+- 简洁，快速，易用，可定制性高
 - 响应式设计
+- 二级导航菜单
 - 支持文章图片懒加载
-- 支持 `MathJax`
-- 支持 `Gitalk`、`Gitment`、`Valine`、`Livere` 和 `Disqus ` 评论系统
-- 瀑布流式的相册页面
+- 支持 `Pjax`
+- 支持 `Pwa`
 - 支持 `Fancybox`
+- 支持 `Quicklink`
+- 支持 `MathJax`、`KaTex`
+- 支持 `Gitalk`、`Valine`、`Livere` 和 `Disqus` 评论系统
+- 瀑布流式的相册页面
 - 内置谷歌广告，一键开启
+- 代码高亮，多种配色可选
 - 好看的背景特效
 - `...`
 
 ## 主题演示
 
-[liuyib`s Blog](https://liuyib.github.io/)
+[liuyib's Blog](https://liuyib.github.io/)
 
 ## 下载主题
 
 1. 进入 hexo 根目录，执行指令：`git clone https://github.com/liuyib/hexo-theme-stun.git themes/stun`
 
-2. 安装依赖：`npm install --save-dev hexo-render-pug hexo-renderer-stylus`
+2. 安装依赖：`npm install --save-dev hexo-render-pug`
 
 ## 配置
 
 ### 添加新页面
 
-Stun 主题内置了三种页面：分类页、标签页、关于页。想启用这些页面，只需要在 Hexo 根目录下执行命令：
+Stun 主题内置有：分类页、标签页。默认没有启用。想启用这些页面，需要按照如下步骤操作：
+
+1. 在 Hexo 根目录下执行命令
 
 ``` bash
 # 启用分类页，执行这条指令
@@ -47,237 +54,250 @@ $ hexo new page categories
 
 # 启用标签页，执行这条指令
 $ hexo new page tags
-
-# 启用关于页，执行这条指令
-$ hexo new page about
 ```
 
-除了上述三种内置页面外，如果你想使用自定义页面，需要执行如下步骤：
+2. 修改 Front-Matter
 
-这里以添加**阅读**页面为例。
+找到 Hexo 根目录下的 `source/categories` 或 `source/tags` 文件夹中的 Markdown 文件，添加 Front-Matter：
 
-1. 修改主题配置文件
+``` yaml
+# 如果是分类页，添加这个
+type: "categories"
+
+# 如果是标签页，添加这个
+type: "tags"
+```
+
+3. 然后修改主题配置文件，将 `categories` 或 `tags` 对应项取消注释
+
+``` yaml
+menu:
+  # `||` 分隔符前面表示路径，后面表示 Font Awesome 图标名称
+  # 如果不需要使用图标，直接填写路径即可
+  home: / || home
+  archives: /archives/ || folder-open
+  # categories: /categories/ || th
+  # tags: /tags/ || tags
+  # xxx: /xxx/ || xxx
+```
+
+除了使用上述内置页面外，如果你想使用自定义页面，需要执行如下步骤：
+
+以添加**阅读**页面为例。
+
+1. 修改主题配置文件，添加相应的菜单项
 
 ``` yaml
 menu:
   # 格式如下
-  # xxx: 路径 || 图标名称
-  read: /read/ || book
+  # 名称: 路径 || 图标名称
+  reading: /reading/ || book
 ```
 
-> 图标的名称在这里获取：[https://fontawesome.com/v4.7.0/icons/](https://fontawesome.com/v4.7.0/icons/)
+> 图标的名称在这里获取：[https://fontawesome.com/v4.7.0/icons/](https://fontawesome.com/v4.7.0/icons/)。
 
 2. 创建页面文件
 
 在 Hexo 根目录下执行指令：
 
 ``` bash
-$ hexo new page read
+$ hexo new page reading # 这里的 reading 对应你设置的路径
 ```
 
 3. 国际化设置
 
-找到 `languages` 目录下的语言文件进行修改：
+找到 `languages` 目录下的语言文件，选择你网站使用的那种语言进行修改，这里以中文作为举例：
 
 `zh-CN.yml`：
 
-```yaml
+``` yaml
 nav:
-  read: 阅读
-```
-
-`en.yml`：
-
-```yaml
-nav:
-  read: Read
+  reading: 阅读
 ```
 
 这样就完成了自定义页面的添加。
 
-### 图标
-
-设置网站图标（favicon），修改主题配置文件：
-
-```yaml
-favicon:
-  small: /images/icons/favicon-16x16.png
-  medium: /images/icons/favicon-32x32.png
-  # # 如果你不懂，请忽略下面这些
-  # apple_touch_icon: /images/icons/apple-touch-icon.png
-  # safari_pinned_tab: /images/icons/logo-stun.svg
-  # msapplication: /images/icons/favicon-144x144.png
-```
-
-### PWA
-
-如果你想要使网站支持 PWA 特性，需要安装插件 [hexo-pwa](https://github.com/lavas-project/hexo-pwa)，该插件可以使你的网站具有以下功能：
-
-- [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) - 用户可以将您的站点添加到移动主屏幕
-- [Service Worker](https://developers.google.com/web/fundamentals/primers/service-workers/) - 让您的网站离线可用
-
-使用步骤如下：
-
-1、安装插件
-
-```bash
-$ npm install --save hexo-pwa
-```
-
-2、配置插件
-
-找到 Hexo 根目录下的 `_config.yml` 文件，添加以下字段：
+另外，你可以通过修改主题配置文件里的 `menu_settings` 字段，来设置图标和文字是否显示：
 
 ``` yaml
-pwa:
-  manifest:
-    # Manifest 文件名和路径
-    path: /manifest.json
-  serviceWorker:
-    # Service Worker 的文件名和路径
-    path: /sw.js
-    # 在 / 路径（首页）下，预加载的文章数
-    preload:
-      urls:
-        - /
-      posts: 5
-    # 具体请查看：https://googlechromelabs.github.io/sw-toolbox/api.html#options
-    opts:
-      # 网络请求超时自动返回到缓存过的响应的时间
-      networkTimeoutSeconds: 5
-    routes:
-      # 缓存你的静态资源，例如你使用了 webp 格式的图片，将其添加进去
-      - pattern: !!js/regexp /.*\.(js|css|html|jpg|jpeg|png|svg|gif|json|xml|eot|ttf|woff|woff2)$/
-        # 缓存策略，可选值：cacheFirst, networkFirst, cacheOnly, networkOnly, fastest
-        # 每个值的具体含义请查看：https://googlechromelabs.github.io/sw-toolbox/api.html#handlers
-        strategy: cacheFirst
-      - pattern: !!js/regexp /\//
-        strategy: networkFirst
-      # 如果你想缓存 CDN 资源，请像下面这样进行设置
-      - pattern: !!js/regexp /cdn.jsdelivr.net/
-        strategy: cacheFirst
-  # Hexo 插件的优先级，默认为 10
-  priority: 5
+menu_settings:
+  # 是否只显示图标
+  icon_only: false
+  # 是否只显示文字
+  text_only: false
 ```
 
-有关插件的详尽信息，请查看插件的[文档](https://github.com/lavas-project/hexo-pwa)。
+### Favicon
 
-3、修改主题配置
+刚开始，主题默认使用 Stun 的 Logo 作为网站图标，你需要换成自己的。
+
+建议你在 **Hexo 根目录**下的 `source` 目录中，新建一个文件夹用于放置图片，例如 `assets`，然后你可以通过 `/assets/xxx.png` 这样的路径使用图片。将图片路径填入你的主题配置文件：
+
+``` yaml
+favicon:
+  small: /assets/favicon-16x16.png                  # 16x16 像素大小的图片
+  medium: /assets/favicon-32x32.png                 # 32x32 像素大小的图片
+  # ！！如果你不懂，请忽略下面这些！！
+  # apple_touch_icon: /assets/apple-touch-icon.png  # 180x180 像素大小的图片
+  # safari_pinned_tab: /assets/logo-stun.svg        # SVG 格式的图片
+  # msapplication: /assets/favicon-144x144.png      # 144x144 像素大小的图片
+```
+
+> 你也可以在**主题目录**下的 `source` 目录中放置图片，但不建议这种做法，因为更新主题时，可能会覆盖你的文件。
+
+### 顶部栏
+
+如果想要设置网站顶部栏的高度，导航栏的高度，背景图片，需要修改主题配置文件：
+
+``` yaml
+header:
+  # 网站顶部的高度（设置为百分数，表示所占屏幕高度的百分比。支持所有 CSS 长度单位）
+  height: 80%
+  # 顶部导航栏的高度（支持所有 CSS 长度单位）
+  nav_height: 50px
+  # 顶部背景图片
+  bg_image:
+    # 是否启用
+    enable: false
+    # 填写图片路径或链接
+    url: https://xxxxx.png
+  # 顶部背景图的遮罩效果
+  mask:
+    enable: true
+    # 透明度（取值：0 ~ 1）
+    opacity: 0.5
+```
+
+### 指定顶部图
+
+如果想要为某个页面或某篇文章单独指定顶部图，你需要在页面或文章 Markdown 源文件的 [Front-Matter](https://hexo.io/zh-cn/docs/Front-Matter) 中，添加 `top_image` 项，然后填入的图片 url 或路径即可。例如：
+
+``` yaml
+---
+title: Hello Stun
+date: 2019-05-15 22:54:49
+top_image: https://xxxxx.jpg
+---
+```
+
+### 作者信息
+
+侧边栏默认头像是 Stun 的 Logo，你需要换成自己的，修改主题配置文件：
+
+``` yaml
+author:
+  # 是否启用
+  enable: true
+  # 侧边栏头像
+  avatar:
+    # 填写图片路径或链接
+    url: https://xxx.png
+    # 是否显示为圆形
+    rounded: true
+    # 头像透明度（取值：0 ~ 1）
+    opacity: 1
+    # 鼠标 hover 动画，可选值：trun 或 shake
+    animation: trun
+  # 格言（可以是任意一句想写的话）
+  motto: hello world
+```
+
+### 社交链接
 
 修改主题配置文件：
 
-```yaml
-pwa:
-  # 是否启用
+``` yaml
+# `||` 分隔符前面表示社交链接的 URL 或信息，后面表示 Font Awesome 图标
+# 如果你找不到想要的图标，可以考虑用文字来代替图标显示
+# 通过添加 `origin:` 前缀即可显示文字。例如：`origin:知` 会以 `知` 代替图标显示
+social:
+  github: https://github.com/ || github
+  google: https://plus.google.com/ || google
+  # twitter: https://twitter.com/ || twitter
+  # youtube: https://youtube.com/ || youtube
+  # segmentfault: https://segmentfault.com/ || origin:sf
+  # weibo: https://weibo.com/ || weibo
+  # zhihu: https://www.zhihu.com/ || origin:知
+  # wechat: yournumber || weixin
+  # telegram: yournumber || telegram
+  # qq: yournumber || qq
+  # 你可以自行添加这里没有的社交链接，格式如下：
+  # xxx: xxx || (origin:)xxx
+
+# 社交链接的设置
+social_setting:
+  # 是否启用社交链接
   enable: true
-  manifest: /manifest.json
-  theme_color: "#54bcff"
+  # 是否只显示图标
+  icon_only: true
 ```
 
-4、创建 `manifest.json` 文件
+> 如果不想启用某个社交链接，直接注释掉即可。
+>
+> 图标的名称在这里查找：[https://fontawesome.com/v4.7.0/icons/](https://fontawesome.com/v4.7.0/icons/)
 
-你可以通过 [Web App Manifest](https://app-manifest.firebaseapp.com/) 网站来快速生成 `manifest.json` 文件。`manifest.json` 文件的内容如下：
+当你添加一个默认没有的社交链接时，需要进行国际化设置。这里以添加链接 `掘金` 为例，步骤如下：
 
-```json
-{
-  "name": "xxx", // 应用全称
-  "short_name": "xxx", // 应用简称
-  "theme_color": "#ffffff", // 匹配浏览器的地址栏颜色
-  "background_color": "#ffffff", // 加载应用时的背景色
-  "display": "standalone", // 首选显示模式。其他选项有：fullscreen, minimal-ui, browser
-  "scope": "/",
-  "start_url": "/",
-  "icons": [ // 该数组指定图标参数，用来适配不同设备（格式为 png，至少包含一个 192px*192px 的图标）
-    {
-      "src": "images/icons/favicon-48x48.png", // 图标文件的路径，需在 source/ 目录下自行创建
-      "sizes": "48x48",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/favicon-72x72.png",
-      "sizes": "72x72",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/favicon-96x96.png",
-      "sizes": "96x96",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/favicon-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
-      "src": "images/icons/favicon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ],
-  "splash_pages": null // 配置自定义启动动画。
-}
+1. 修改主题配置文件
+
+``` yaml
+social:
+  juejin: https://juejin.im/timeline || origin:掘
 ```
 
-5、重启 Hexo 服务器
+> 由于 Font Awesome 中找不到掘金的 logo，所以这里使用 `掘` 字来代替显示。
 
-### 订阅
+2. 国际化设置
 
-设置邮件订阅和 RSS 订阅，修改主题配置文件：
+找到 `languages` 目录下的语言文件，选择你网站使用的那种语言进行修改，这里以中文作为举例：
 
-```yaml
-feed:
+`zh-CN`：
+
+``` yaml
+social:
+  juejin: 掘金
+```
+
+> 这里的国际化设置，是针对鼠标经过图标时，显示的提示文字。
+
+效果如下：
+
+![](https://raw.githubusercontent.com/liuyib/picBed/master/hexo-theme-stun/doc/20190717165333.png)
+
+### 文章摘要
+
+如果想要保留文章摘要，需要**手动**在文章的 Markdown 源文件中添加 `<!-- more -->` 标记。标记之前的部分都会被保留为文章摘要，显示在文章列表中。
+
+如果想要自动保留文章摘要，可以通过修改主题配置文件：
+
+``` yaml
+auto_excerpt:
   # 是否启用
   enable: false
-  # 邮件订阅地址 (例如：http://eepurl.com/guAE6j).
-  email:
-  # RSS 订阅地址 (例如：/atom.xml)
-  rss:
+  # 自动保留的字数
+  length: 150
 ```
 
-想要使用邮件订阅，你需要自己构建 或 使用第三方提供的邮件订阅服务。
+> 由于自动保留摘要的效果并不理想，所以这里不建议开启。
 
-开启 RSS 订阅之前，你需要安装 hexo 插件：[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)。然后在 Hexo 根目录下的 `_config.yml` 文件中添加配置项（关于各个配置项的具体含义，请自行查看插件的文档）：
+### 启用赞赏码
 
-```yaml
-feed:
-  type: atom
-  # 这是 RSS 订阅的地址（可以随意设置，和上面 rss 配置项对应）
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
-  icon: icon.png
-```
+如果想要在文章底部启用打赏的二维码，需要修改主题配置文件：
 
-配置完成之后，访问你设置的订阅地址，如：`https://yoursite.com/atom.xml`，即可看到 RSS 订阅信息。
-
-### 代码高亮
-
-设置代码高亮以及高亮样式，修改主题配置文件：
-
-```yaml
-highlight_theme: light
-```
-
-有三种可供选择的代码高亮样式：`light`、`drak`、`ocean`
-
-### 打赏
-
-设置文章的赞赏码，修改主题配置文件：
-
-```yaml
+``` yaml
 # Reward
 reward:
   # 是否启用
-  enable: false
+  enable: true
   # 支付宝
   alipay: https://xxxxx.png
   # 微信
   wechat: https://xxxxx.png
 ```
+
+效果如下：
+
+![](https://raw.githubusercontent.com/liuyib/picBed/master/hexo-theme-stun/doc/20190608175556.png)
 
 ### 更多配置
 
