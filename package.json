@@ -27,7 +27,7 @@
     "commander": "^2.0.0",
     "debug": "^4.1.1",
     "esm": "^3.0.0",
-    "lodash.merge": "^4.6.1",
+    "lodash.merge": "^4.6.2",
     "lodash.pick": "^4.4.0",
     "webpack": "^4.29.3"
   },
