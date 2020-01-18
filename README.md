@@ -52,7 +52,7 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 ```bash
 # 下载项目
-git clone git@github.com:ChungZH/Easy-Hexo.git
+git clone git@github.com:EasyHexo/Easy-Hexo.git
 # 安装依赖
 yarn install
 # 本地运行

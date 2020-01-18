@@ -47,7 +47,7 @@ themeConfig:
       hexo-theme-indigo: /2-Theme-use-and-config/2-10-hexo-theme-indigo/
       hexo-theme-melody: /2-Theme-use-and-config/2-11-hexo-theme-melody/
       hexo-theme-icarus: /2-Theme-use-and-config/2-12-hexo-theme-icarus/
-      hexo-theme-material-t: /2-Theme-use-and-config/2-13-hexo-theme-material-t/
+      hexo-theme-fluid: /2-Theme-use-and-config/2-13-hexo-theme-fluid/
       hexo-theme-matery: /2-Theme-use-and-config/2-14-hexo-theme-matery/
       hexo-theme-stun: /2-Theme-use-and-config/2-16-hexo-theme-stun/
     插件使用与配置:
@@ -56,7 +56,7 @@ themeConfig:
       hexo-tag-dplayer: /3-Plugins-use-and-config/3-2-hexo-tag-dplayer/
       hexo-helper-live2d: /3-Plugins-use-and-config/3-3-hexo-helper-live2d/
       hexo-blog-encrypt: /3-Plugins-use-and-config/3-4-hexo-blog-encrypt/
-    高级 Hexo 玩家: 
+    高级 Hexo 玩家:
       概要: /4-High-order-hexo-gamer/
       让你的 Hexo 博客支持远程编辑: /4-High-order-hexo-gamer/4-1-remote-editing/
     补充内容:
@@ -87,7 +87,7 @@ themeConfig:
       - 2-10-hexo-theme-indigo/
       - 2-11-hexo-theme-melody/
       - 2-12-hexo-theme-icarus/
-      - 2-13-hexo-theme-material-t/
+      - 2-13-hexo-theme-fluid/
       - 2-14-hexo-theme-matery/
       - 2-16-hexo-theme-stun/
     /3-Plugins-use-and-config/:
@@ -95,7 +95,7 @@ themeConfig:
       - 3-2-hexo-tag-dplayer/
       - 3-3-hexo-helper-live2d/
       - 3-4-hexo-blog-encrypt/
-    /4-High-order-hexo-gamer/: 
+    /4-High-order-hexo-gamer/:
       - 4-1-remote-editing/
     /5-Add/:
       - 5-1-quote.html
