@@ -21,7 +21,12 @@ hexo init <your_blog_name>
 
 这样就建立好网站了！
 
+
 ## 配置 Hexo
+
+::: danger
+此部分内容可能过期，请见 [Hexo 官方文档](https://hexo.io/zh-cn/docs/configuration)。
+:::
 
 没错，就是在 Hexo 根目录 `_config.yml` 这个文件里配置！
 
@@ -112,7 +117,7 @@ skip_render: README.md
 | `category_dir` | 分类文件夹          |
 | `code_dir`     | Include code 文件夹 |
 | `i18n_dir`     | 国际化文件夹        |
-| `skip_render`  | 跳过文件的渲染。匹配到的文件将不会做改动并复制到 `public` 目录中。您可使用 [glob](https://github.com/micromatch/micromatch#extended-globbing) 表达式来匹配路径。 |
+| `skip_render`  | 跳过文件的渲染。匹配到的文件将直接复制到 `public` 目录中。您可使用 [glob](https://github.com/micromatch/micromatch#extended-globbing) 表达式来匹配路径。 |
 
 :::tip 提醒
 
