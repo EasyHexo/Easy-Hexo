@@ -51,15 +51,11 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 
 :gift: 感谢你的支持！
 
-# 相关信息
+# 如何贡献
 
-本项目使用 [Vuepress](https://vuepress.vuejs.org) 生成。
+如想要贡献，可加入 EasyHexo 团队的 `QQ 群：935778924`。（本群欢迎吃瓜群众以及贡献者们光临！）
 
-目前仍有很多地方没有写完，欢迎各位大佬加入我们 Easy Hexo 团队！🎉🎉🎉
-
-请联系 ChungZH `QQ:124694738`，加好友时请注明 `Easy Hexo`。或者你也可以加入 `EasyHexo` 团队的 `QQ 群：935778924`。
-
-本群欢迎吃瓜群众以及贡献者们光临！
+贡献前，请**务必**阅读 [CONTRIBUTING.md](https://github.com/EasyHexo/Easy-Hexo/blob/master/.github/CONTRIBUTING.md)。
 
 # Build 编译
 
