@@ -21,7 +21,12 @@ hexo init <your_blog_name>
 
 这样就建立好网站了！
 
+
 ## 配置 Hexo
+
+::: danger
+此部分内容可能过期，请见 [Hexo 官方文档](https://hexo.io/zh-cn/docs/configuration)。
+:::
 
 没错，就是在 Hexo 根目录 `_config.yml` 这个文件里配置！
 
