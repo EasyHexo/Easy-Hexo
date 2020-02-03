@@ -35,8 +35,6 @@ themeConfig:
       持续集成 CI: /1-Hexo-install-and-config/1-5-continuous-integration.html
     主题安装与配置:
       概要: /2-Theme-use-and-config/
-      hexo-theme-next 5.x.x: /2-Theme-use-and-config/2-1-hexo-theme-next-5.x.x/
-      hexo-theme-next 6.x.x: /2-Theme-use-and-config/2-2-hexo-theme-next-6.x.x/
       hexo-theme-yilia: /2-Theme-use-and-config/2-3-hexo-theme-yilia/
       hexo-theme-apollo: /2-Theme-use-and-config/2-4-hexo-theme-apollo/
       hexo-theme-material: /2-Theme-use-and-config/2-5-hexo-theme-material/
@@ -45,7 +43,6 @@ themeConfig:
       hexo-theme-aero-dual: /2-Theme-use-and-config/2-8-hexo-theme-aero-dual/
       hexo-theme-amber: /2-Theme-use-and-config/2-9-hexo-theme-amber/
       hexo-theme-indigo: /2-Theme-use-and-config/2-10-hexo-theme-indigo/
-      hexo-theme-melody: /2-Theme-use-and-config/2-11-hexo-theme-melody/
       hexo-theme-icarus: /2-Theme-use-and-config/2-12-hexo-theme-icarus/
       hexo-theme-fluid: /2-Theme-use-and-config/2-13-hexo-theme-fluid/
       hexo-theme-matery: /2-Theme-use-and-config/2-14-hexo-theme-matery/
@@ -75,8 +72,6 @@ themeConfig:
       - 1-4-deploy-hexo.html
       - 1-5-continuous-integration.html
     /2-Theme-use-and-config/:
-      - 2-1-hexo-theme-next-5.x.x/
-      - 2-2-hexo-theme-next-6.x.x/
       - 2-3-hexo-theme-yilia/
       - 2-4-hexo-theme-apollo/
       - 2-5-hexo-theme-material/
@@ -85,7 +80,6 @@ themeConfig:
       - 2-8-hexo-theme-aero-dual/
       - 2-9-hexo-theme-amber/
       - 2-10-hexo-theme-indigo/
-      - 2-11-hexo-theme-melody/
       - 2-12-hexo-theme-icarus/
       - 2-13-hexo-theme-fluid/
       - 2-14-hexo-theme-matery/

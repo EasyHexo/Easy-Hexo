@@ -20,7 +20,8 @@ const plugins = [
   ['@vuepress/pwa', {
     serviceWorker: true,
     updatePopup: true
-  }]
+  }],
+  ['@vuepress/medium-zoom']
 ]
 
 module.exports = merge(config, { configureWebpack, plugins })
