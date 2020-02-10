@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - "lts/*"
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+before_install:
+  - export TZ='Asia/Shanghai'
+
+install:
+  - yarn install --pure-lockfile
+
+script:
+  - yarn docs:build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  committer-from-gh: true
+  github_token: $GITHUB_TOKEN
+  local_dir: docs/.vuepress/dist
+  keep-history: true
+  on:
+    branch: master

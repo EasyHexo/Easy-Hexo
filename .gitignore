@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+.vscode/
+docs/.vuepress/dist/
+package-lock.json
