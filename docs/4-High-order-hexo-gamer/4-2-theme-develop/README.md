@@ -8,19 +8,21 @@ title: 编写自己的 Hexo 主题
 
 开始使用 Hexo 时，使用的都是其他大佬做好的主题，时间久了就产生了不如意的地方，要么是功能太过繁杂自己用不到，要么就是自己想要的东西主题上没有，于是乎，我有了一个自己写主题的想法，便开始接触学习前端，到现在，我的 Hexo 博客网站，用的都是自己写的主题。[https://staunchkai.com](https://staunchkai.com)
 
-这篇文章应该在 18 年就出现的，由于懒癌晚期拖到了现在。
+~~这篇文章应该在 18 年就出现的，由于懒癌晚期拖到了现在~~。
 
-**在我制作主题的过程中，参考了很多大佬写的主题，例如：Next、yilia、icarus 等等，在这里表示感谢。**
+> 在我制作主题的过程中，参考了很多大佬写的主题，例如：[NexT](https://github.com/theme-next/hexo-theme-next)、[yilia](https://github.com/litten/hexo-theme-yilia)、[icarus](https://github.com/ppoffice/hexo-theme-icarus) 等等，在这里表示感谢。
 
 在正式开始编写自己的主题之前，希望你多少具备点以下知识：
 
-- 前端知识：包含 `html` 、`css` 、`JavaScript`（这是一切的前提，不用多熟练，可以一边写一边练）
+- 前端知识：包含 HTML、CSS、JavaScript（这是一切的前提，不用多熟练，可以一边写一边练）
 - 一点基础的编程语法（至少知道什么是 `for` 、`if`）
 - 会查看资料，包含但不限于官方文档、第三方文档
 - 出现问题会主动去寻找解决方法，推荐 Google
 - 模板引擎和预处理（这两个我是一边写一边学的）
 
-<div class="tip custom-block"><p>编写本文我不想重复造太多轮子，大多属于小坑提醒之类的。</p></div>
+:::tip 提醒
+编写本文我不想重复造太多轮子，大多属于小坑提醒之类的。
+:::
 
 ## 预备知识
 
@@ -28,7 +30,7 @@ title: 编写自己的 Hexo 主题
 
 Hexo 支持主流的模板引擎，如：`EJS`、`Jade`、`Swing` 等，**本文我使用的是 EJS**，可查看 [文档](https://ejs.bootcss.com/)。
 
-Hexo 的页面都是通过模板引擎渲染出来的页面，它可以实现一些代码的复用，若是采用一般的 `html` ，则会造成很大的工作量，非常不方便，因此需要事先了解和学习一下。
+Hexo 的页面都是通过模板引擎渲染出来的页面，它可以实现一些代码的复用，若是采用一般的 HTML，则会造成很大的工作量，非常不方便，因此需要事先了解和学习一下。
 
 ### CSS 预处理
 
@@ -62,13 +64,13 @@ theme folder
 
 我们在编写主题的时候，都是一边写一边就要看到效果，所以需要使用 `hexo s` 命令在本地运行，更改文件刷新页面就能看到效果，嫌弃麻烦的可使用 [hexo-browsersync](https://github.com/hexojs/hexo-browsersync) 插件，当修改主题文件保存后，浏览器将自动进行刷新。
 
-在使用 `hexo s` 之前要先 `hexo g`，**修改主题配置文件时，不需要重新构建文件，修改根目录配置文件时，需要重新构建即（hexo g）**。
+在使用 `hexo s` 之前要先 `hexo g`，**修改主题配置文件时，不需要重新构建文件，修改根目录配置文件时，需要重新构建（`hexo g`）**。
 
 ## 页面编写
 
-> 编写推荐使用 `VS Code` 安装 ejs、Stylus 插件。
+> 编写推荐使用 [VS Code](https://code.visualstudio.com/) 编辑器并安装 ejs、Stylus 插件。
 
-先从 `layout.ejs` 文件开始，该文件是布局文件，其他页面都按照其来进行渲染，编写时遵循 [h5 规范](https://www.runoob.com/html/html5-syntax.html)。
+先从 `layout.ejs` 文件开始，该文件是布局文件，其他页面都按照其来进行渲染，编写时遵循 [HTML5 规范](https://www.runoob.com/html/html5-syntax.html)。
 
 ```ejs
 <!DOCTYPE html>
@@ -279,7 +281,9 @@ social:
 </div>
 ```
 
-PS: 按照上面的，导航栏菜单也是同样的方法。
+:::tip 提醒
+按照上面的，导航栏菜单也是同样的方法。
+:::
 
 ## 辅助函数
 
@@ -350,7 +354,9 @@ post-card 文件内容为：
 <% }); %>
 ```
 
-<div class="tip custom-block"><p>上面两个，分别使用了官方文档中的两个变量 site.posts 和 page.pots，请注意官方文档的重要性。</p></div>
+:::tip 提醒
+上面两个，分别使用了官方文档中的两个变量 `site.posts` 和 `page.pots`，请注意官方文档的重要性。
+:::
 
 **分类列表：**
 
@@ -467,8 +473,8 @@ mainColor = unquote(hexo-config("color"))
 
 目前就想到这些了，纯小白肯定是没法看懂的，本文大多属于小坑小提醒类型，最好具备文首所述的那些知识再来折腾比较好。要是有其他啥问题的可以到 [我的网站](https://staunchkai.com) 评论留言或者找到我的联系方式进行交流，我可能很菜，只是将我写主题时遇到的些磕磕碰碰写出来，万一对谁起作用呢！
 
-另外：
+广告：
 
-[Hexo 博客部署到腾讯云服务器全流程](https://staunchkai.com/hexo_deploy.html)
+- [Hexo 博客部署到腾讯云服务器全流程](https://staunchkai.com/hexo_deploy.html)
 
-[Hexo 博客开启 https (SSL 证书)](https://staunchkai.com/hexo_SSL.html)
+- [Hexo 博客开启 https (SSL 证书)](https://staunchkai.com/hexo_SSL.html)
