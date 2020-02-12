@@ -316,4 +316,4 @@ meta_generator:
 
 ## 视频
 
-<dplayer src="https://dl.sm9.top/Video/EasyHexo/配置.mp4" danmaku-id="392996DE0ABBA502BF97AED350AD3E2B" subtitle="https://dl.sm9.top/Video/EasyHexo/配置.vtt" :cross-origin="true" />
+<dplayer src="https://dl.sm9.top/Video/EasyHexo/配置.mp4" danmaku-api="https://danmaku.xwhite.studio/api/dplayer/" danmaku-id="392996DE0ABBA502BF97AED350AD3E2B" danmaku-addition="https://danmaku.xwhite.studio/api/dplayer/v3/bilibili?aid=34828870&p=2" subtitle="https://dl.sm9.top/Video/EasyHexo/配置.vtt" />
