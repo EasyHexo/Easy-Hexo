@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>编写自己的 Hexo 主题 | Easy Hexo 👨‍💻</title>
+    <meta name="description" content="轻松入门 Hexo">
+    <link rel="icon" href="favicon.png">
+  <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/octicons/build/font/octicons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/octicons/build/font/octicons.css">
+  <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/octicons/build/build.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/octicons/build/build.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.63c68c03.css" as="style"><link rel="preload" href="/assets/js/app.f094dda7.js" as="script"><link rel="preload" href="/assets/js/5.ee36bdda.js" as="script"><link rel="preload" href="/assets/js/42.59f6f1e2.js" as="script"><link rel="preload" href="/assets/js/17.00b9f0e7.js" as="script"><link rel="preload" href="/assets/js/16.473f814a.js" as="script"><link rel="prefetch" href="/assets/js/10.f7c979ad.js"><link rel="prefetch" href="/assets/js/11.6339dd1e.js"><link rel="prefetch" href="/assets/js/12.4a9723bd.js"><link rel="prefetch" href="/assets/js/13.3f545145.js"><link rel="prefetch" href="/assets/js/14.d8baca11.js"><link rel="prefetch" href="/assets/js/15.cdb6bcab.js"><link rel="prefetch" href="/assets/js/18.1487a5c4.js"><link rel="prefetch" href="/assets/js/19.e35e1032.js"><link rel="prefetch" href="/assets/js/20.f30982db.js"><link rel="prefetch" href="/assets/js/21.62549e2c.js"><link rel="prefetch" href="/assets/js/22.b9c51ff3.js"><link rel="prefetch" href="/assets/js/23.ee22ce19.js"><link rel="prefetch" href="/assets/js/24.4cf9e920.js"><link rel="prefetch" href="/assets/js/25.8a260cbb.js"><link rel="prefetch" href="/assets/js/26.b88f7f02.js"><link rel="prefetch" href="/assets/js/27.abb7e601.js"><link rel="prefetch" href="/assets/js/28.6a8c4bcc.js"><link rel="prefetch" href="/assets/js/29.b5f70e43.js"><link rel="prefetch" href="/assets/js/30.21957f4d.js"><link rel="prefetch" href="/assets/js/31.42697a3a.js"><link rel="prefetch" href="/assets/js/32.07f6e889.js"><link rel="prefetch" href="/assets/js/33.924dcbb1.js"><link rel="prefetch" href="/assets/js/34.f16dc467.js"><link rel="prefetch" href="/assets/js/35.9701da89.js"><link rel="prefetch" href="/assets/js/36.7d28f57a.js"><link rel="prefetch" href="/assets/js/37.32c8db72.js"><link rel="prefetch" href="/assets/js/38.001cbca8.js"><link rel="prefetch" href="/assets/js/39.94a87489.js"><link rel="prefetch" href="/assets/js/40.8e067891.js"><link rel="prefetch" href="/assets/js/41.68a9fcf7.js"><link rel="prefetch" href="/assets/js/43.39e8e7c3.js"><link rel="prefetch" href="/assets/js/44.b31083b6.js"><link rel="prefetch" href="/assets/js/45.bc7531d8.js"><link rel="prefetch" href="/assets/js/46.635250a6.js"><link rel="prefetch" href="/assets/js/47.bb81d1ea.js"><link rel="prefetch" href="/assets/js/48.c38d23ce.js"><link rel="prefetch" href="/assets/js/49.e05e3347.js"><link rel="prefetch" href="/assets/js/6.5e1558c7.js"><link rel="prefetch" href="/assets/js/7.169b04d4.js"><link rel="prefetch" href="/assets/js/8.ced6f501.js"><link rel="prefetch" href="/assets/js/9.2a1e4d9a.js"><link rel="prefetch" href="/assets/js/vendors~dplayer.45e95d91.js"><link rel="prefetch" href="/assets/js/vendors~leancloud-storage.5ea5b991.js"><link rel="prefetch" href="/assets/js/vendors~valine.cf23df87.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.63c68c03.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">
+      Easy Hexo 👨‍💻
+    </span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      序
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/0-Intro/" class="nav-link">
+  序
+</a></li><li class="dropdown-item"><!----> <a href="/0-Intro/0-1-member.html" class="nav-link">
+  项目成员
+</a></li><li class="dropdown-item"><!----> <a href="/0-Intro/0-2-thanks.html" class="nav-link">
+  特别致谢
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      Hexo 安装与配置
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/" class="nav-link">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-1-meet-hexo.html" class="nav-link">
+  认识 Hexo
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-2-install-hexo.html" class="nav-link">
+  安装 Hexo
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-3-config-hexo.html" class="nav-link">
+  配置 Hexo
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-4-deploy-hexo.html" class="nav-link">
+  部署 Hexo
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-5-continuous-integration.html" class="nav-link">
+  持续集成 CI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      主题安装与配置
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/" class="nav-link">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-1-hexo-theme-next-5.x.x/" class="nav-link">
+  hexo-theme-next 5.x.x
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-2-hexo-theme-next-6.x.x/" class="nav-link">
+  hexo-theme-next 6.x.x
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-3-hexo-theme-yilia/" class="nav-link">
+  hexo-theme-yilia
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-4-hexo-theme-apollo/" class="nav-link">
+  hexo-theme-apollo
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-5-hexo-theme-material/" class="nav-link">
+  hexo-theme-material
+</a></li><li class="dropdown-item"><!----> <a href="/4-High-order-hexo-gamer/4-2-theme-develop/2-Theme-use-and-config/2-6-hexo-theme-material-x/" class="nav-link">
+  hexo-theme-material-x
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-7-hexo-theme-bmw/" class="nav-link">
+  hexo-theme-bmw
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-8-hexo-theme-aero-dual/" class="nav-link">
+  hexo-theme-aero-dual
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-9-hexo-theme-amber/" class="nav-link">
+  hexo-theme-amber
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-10-hexo-theme-indigo/" class="nav-link">
+  hexo-theme-indigo
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-11-hexo-theme-melody/" class="nav-link">
+  hexo-theme-melody
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-12-hexo-theme-icarus/" class="nav-link">
+  hexo-theme-icarus
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-13-hexo-theme-fluid/" class="nav-link">
+  hexo-theme-fluid
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-14-hexo-theme-matery/" class="nav-link">
+  hexo-theme-matery
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-16-hexo-theme-stun/" class="nav-link">
+  hexo-theme-stun
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      插件使用与配置
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/" class="nav-link">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/3-1-hexo-tag-aplayer/" class="nav-link">
+  hexo-tag-aplayer
+</a></li><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/" class="nav-link">
+  hexo-tag-dplayer
+</a></li><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/3-3-hexo-helper-live2d/" class="nav-link">
+  hexo-helper-live2d
+</a></li><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/3-4-hexo-blog-encrypt/" class="nav-link">
+  hexo-blog-encrypt
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      高级 Hexo 玩家
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/4-High-order-hexo-gamer/" class="nav-link router-link-active">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/4-High-order-hexo-gamer/4-1-remote-editing/" class="nav-link">
+  让你的 Hexo 博客支持远程编辑
+</a></li><li class="dropdown-item"><!----> <a href="/4-High-order-hexo-gamer/4-2-theme-develop/" class="nav-link router-link-exact-active router-link-active">
+  编写自己的 Hexo 主题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      补充内容
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/5-Add/" class="nav-link">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/5-Add/5-1-quote.html" class="nav-link">
+  参考资料
+</a></li><li class="dropdown-item"><!----> <a href="/5-Add/5-2-yaml.html" class="nav-link">
+  YAML 语法简介
+</a></li><li class="dropdown-item"><!----> <a href="/5-Add/5-3-data-file.html" class="nav-link">
+  使用数据文件平滑升级主题
+</a></li></ul></div></div> <a href="https://github.com/EasyHexo/Easy-Hexo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      序
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/0-Intro/" class="nav-link">
+  序
+</a></li><li class="dropdown-item"><!----> <a href="/0-Intro/0-1-member.html" class="nav-link">
+  项目成员
+</a></li><li class="dropdown-item"><!----> <a href="/0-Intro/0-2-thanks.html" class="nav-link">
+  特别致谢
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      Hexo 安装与配置
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/" class="nav-link">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-1-meet-hexo.html" class="nav-link">
+  认识 Hexo
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-2-install-hexo.html" class="nav-link">
+  安装 Hexo
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-3-config-hexo.html" class="nav-link">
+  配置 Hexo
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-4-deploy-hexo.html" class="nav-link">
+  部署 Hexo
+</a></li><li class="dropdown-item"><!----> <a href="/1-Hexo-install-and-config/1-5-continuous-integration.html" class="nav-link">
+  持续集成 CI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      主题安装与配置
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/" class="nav-link">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-1-hexo-theme-next-5.x.x/" class="nav-link">
+  hexo-theme-next 5.x.x
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-2-hexo-theme-next-6.x.x/" class="nav-link">
+  hexo-theme-next 6.x.x
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-3-hexo-theme-yilia/" class="nav-link">
+  hexo-theme-yilia
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-4-hexo-theme-apollo/" class="nav-link">
+  hexo-theme-apollo
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-5-hexo-theme-material/" class="nav-link">
+  hexo-theme-material
+</a></li><li class="dropdown-item"><!----> <a href="/4-High-order-hexo-gamer/4-2-theme-develop/2-Theme-use-and-config/2-6-hexo-theme-material-x/" class="nav-link">
+  hexo-theme-material-x
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-7-hexo-theme-bmw/" class="nav-link">
+  hexo-theme-bmw
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-8-hexo-theme-aero-dual/" class="nav-link">
+  hexo-theme-aero-dual
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-9-hexo-theme-amber/" class="nav-link">
+  hexo-theme-amber
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-10-hexo-theme-indigo/" class="nav-link">
+  hexo-theme-indigo
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-11-hexo-theme-melody/" class="nav-link">
+  hexo-theme-melody
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-12-hexo-theme-icarus/" class="nav-link">
+  hexo-theme-icarus
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-13-hexo-theme-fluid/" class="nav-link">
+  hexo-theme-fluid
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-14-hexo-theme-matery/" class="nav-link">
+  hexo-theme-matery
+</a></li><li class="dropdown-item"><!----> <a href="/2-Theme-use-and-config/2-16-hexo-theme-stun/" class="nav-link">
+  hexo-theme-stun
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      插件使用与配置
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/" class="nav-link">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/3-1-hexo-tag-aplayer/" class="nav-link">
+  hexo-tag-aplayer
+</a></li><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/3-2-hexo-tag-dplayer/" class="nav-link">
+  hexo-tag-dplayer
+</a></li><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/3-3-hexo-helper-live2d/" class="nav-link">
+  hexo-helper-live2d
+</a></li><li class="dropdown-item"><!----> <a href="/3-Plugins-use-and-config/3-4-hexo-blog-encrypt/" class="nav-link">
+  hexo-blog-encrypt
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      高级 Hexo 玩家
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/4-High-order-hexo-gamer/" class="nav-link router-link-active">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/4-High-order-hexo-gamer/4-1-remote-editing/" class="nav-link">
+  让你的 Hexo 博客支持远程编辑
+</a></li><li class="dropdown-item"><!----> <a href="/4-High-order-hexo-gamer/4-2-theme-develop/" class="nav-link router-link-exact-active router-link-active">
+  编写自己的 Hexo 主题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">
+      补充内容
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/5-Add/" class="nav-link">
+  概要
+</a></li><li class="dropdown-item"><!----> <a href="/5-Add/5-1-quote.html" class="nav-link">
+  参考资料
+</a></li><li class="dropdown-item"><!----> <a href="/5-Add/5-2-yaml.html" class="nav-link">
+  YAML 语法简介
+</a></li><li class="dropdown-item"><!----> <a href="/5-Add/5-3-data-file.html" class="nav-link">
+  使用数据文件平滑升级主题
+</a></li></ul></div></div> <a href="https://github.com/EasyHexo/Easy-Hexo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/4-High-order-hexo-gamer/" class="sidebar-link">Hexo 高级玩家</a></li><li><a href="/4-High-order-hexo-gamer/4-1-remote-editing/" class="sidebar-link">让你的 Hexo 博客支持远程编辑</a></li><li><a href="/4-High-order-hexo-gamer/4-2-theme-develop/" class="active sidebar-link">编写自己的 Hexo 主题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#前言" class="sidebar-link">前言</a></li><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#预备知识" class="sidebar-link">预备知识</a></li><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#主题结构" class="sidebar-link">主题结构</a></li><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#注意事项" class="sidebar-link">注意事项</a></li><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#页面编写" class="sidebar-link">页面编写</a></li><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#数据使用" class="sidebar-link">数据使用</a></li><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#辅助函数" class="sidebar-link">辅助函数</a></li><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#其他页面" class="sidebar-link">其他页面</a></li><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#样式文件" class="sidebar-link">样式文件</a></li><li class="sidebar-sub-header"><a href="/4-High-order-hexo-gamer/4-2-theme-develop/#结语" class="sidebar-link">结语</a></li></ul></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="编写自己的-hexo-主题"><a href="#编写自己的-hexo-主题" aria-hidden="true" class="header-anchor">#</a> 编写自己的 Hexo 主题 <span class="badge tip top" data-v-33c4b1f2>@STAUNCHKAI</span> <span class="badge tip top" data-v-33c4b1f2>Finish</span></h1> <h2 id="前言"><a href="#前言" aria-hidden="true" class="header-anchor">#</a> 前言</h2> <p>开始使用 Hexo 时，使用的都是其他大佬做好的主题，时间久了就产生了不如意的地方，要么是功能太过繁杂自己用不到，要么就是自己想要的东西主题上没有，于是乎，我有了一个自己写主题的想法，便开始接触学习前端，到现在，我的 Hexo 博客网站，用的都是自己写的主题。<a href="https://staunchkai.com" target="_blank" rel="noopener noreferrer">https://staunchkai.com<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><s>这篇文章应该在 18 年就出现的，由于懒癌晚期拖到了现在</s>。</p> <blockquote><p>在我制作主题的过程中，参考了很多大佬写的主题，例如：<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener noreferrer">NexT<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener noreferrer">yilia<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>、<a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener noreferrer">icarus<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 等等，在这里表示感谢。</p></blockquote> <p>在正式开始编写自己的主题之前，希望你多少具备点以下知识：</p> <ul><li>前端知识：包含 HTML、CSS、JavaScript（这是一切的前提，不用多熟练，可以一边写一边练）</li> <li>一点基础的编程语法（至少知道什么是 <code>for</code> 、<code>if</code>）</li> <li>会查看资料，包含但不限于官方文档、第三方文档</li> <li>出现问题会主动去寻找解决方法，推荐 Google</li> <li>模板引擎和预处理（这两个我是一边写一边学的）</li></ul> <div class="tip custom-block"><p class="custom-block-title">提醒</p> <p>编写本文我不想重复造太多轮子，大多属于小坑提醒之类的。</p></div> <h2 id="预备知识"><a href="#预备知识" aria-hidden="true" class="header-anchor">#</a> 预备知识</h2> <h3 id="模板引擎"><a href="#模板引擎" aria-hidden="true" class="header-anchor">#</a> 模板引擎</h3> <p>Hexo 支持主流的模板引擎，如：<code>EJS</code>、<code>Jade</code>、<code>Swing</code> 等，<strong>本文我使用的是 EJS</strong>，可查看 <a href="https://ejs.bootcss.com/" target="_blank" rel="noopener noreferrer">文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <p>Hexo 的页面都是通过模板引擎渲染出来的页面，它可以实现一些代码的复用，若是采用一般的 HTML，则会造成很大的工作量，非常不方便，因此需要事先了解和学习一下。</p> <h3 id="css-预处理"><a href="#css-预处理" aria-hidden="true" class="header-anchor">#</a> CSS 预处理</h3> <p>与模板引擎一样，CSS 预处理能够更方便地写 CSS 样式，Hexo 中也支持大量的预处理，如：<code>sass</code>、<code>Stylus</code>、<code>Less</code> 等，<strong>本文我是用的是 Stylus</strong>，可查看 <a href="http://stylus-lang.com" target="_blank" rel="noopener noreferrer">文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <h3 id="hexo-官方文档"><a href="#hexo-官方文档" aria-hidden="true" class="header-anchor">#</a> Hexo 官方文档</h3> <p>可到 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener noreferrer">Hexo<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 查看其文档，里面有很多用模板引擎用得到的变量以及辅助函数。</p> <h2 id="主题结构"><a href="#主题结构" aria-hidden="true" class="header-anchor">#</a> 主题结构</h2> <p>Hexo 主题结构通常如下所示：</p> <div class="language- extra-class"><pre class="language-text"><code>theme folder
+├── languages	// 多语言文件夹
+├── layout		// 页面文件
+├── source		// 资源文件
+└── _config.yml	// 主题配置文件
+</code></pre></div><p><code>languages</code> 文件夹放有一个或多个语言文件。</p> <p><code>layout</code> 文件夹下面用于存放页面文件，通常第一层有 <code>Index 首页</code>、<code>Archive 归档页</code>、<code>Tag 标签页</code>、<code>Category 分类页</code>、<code>Post 文章页</code>、<code>Page 页面详情页</code>、<code>layout 布局</code>，一般还会创建一个公共页面的文件夹，该文件夹用于放置一个页面的部分内容，用于复用。</p> <p><code>source</code> 文件夹用于放一些资源文件，例如：<code>字体</code>、<code>CSS</code>、<code>JS</code>、<code>图片</code> 等，也会根据他们的文件类型进行再次分类，图片放到图片的文件夹，JS 放到 JS 的文件夹。</p> <p>以上内容可以手动自建，也可以使用 <a href="https://github.com/tcrowe/generator-hexo-theme" target="_blank" rel="noopener noreferrer">generator-hexo-theme<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 来生成主题结构。</p> <h2 id="注意事项"><a href="#注意事项" aria-hidden="true" class="header-anchor">#</a> 注意事项</h2> <p>我们在编写主题的时候，都是一边写一边就要看到效果，所以需要使用 <code>hexo s</code> 命令在本地运行，更改文件刷新页面就能看到效果，嫌弃麻烦的可使用 <a href="https://github.com/hexojs/hexo-browsersync" target="_blank" rel="noopener noreferrer">hexo-browsersync<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 插件，当修改主题文件保存后，浏览器将自动进行刷新。</p> <p>在使用 <code>hexo s</code> 之前要先 <code>hexo g</code>，<strong>修改主题配置文件时，不需要重新构建文件，修改根目录配置文件时，需要重新构建（<code>hexo g</code>）</strong>。</p> <h2 id="页面编写"><a href="#页面编写" aria-hidden="true" class="header-anchor">#</a> 页面编写</h2> <blockquote><p>编写推荐使用 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VS Code<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 编辑器并安装 ejs、Stylus 插件。</p></blockquote> <p>先从 <code>layout.ejs</code> 文件开始，该文件是布局文件，其他页面都按照其来进行渲染，编写时遵循 <a href="https://www.runoob.com/html/html5-syntax.html" target="_blank" rel="noopener noreferrer">HTML5 规范<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <div class="language-ejs extra-class"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;&lt;%= config.language %&gt;&quot;&gt;
+&lt;head&gt;
+    &lt;%- partial('common/head') %&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;%- partial('common/header') %&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+        &lt;%- body %&gt;
+    &lt;/div&gt;
+    &lt;%- partial('common/footer') %&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><p>参考 <a href="https://hexo.io/zh-cn/docs/templates" target="_blank" rel="noopener noreferrer">官方文档 - 模板<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <ul><li><code>config.language</code> 表示使用根目录配置文件中 <code>language</code> 属性，假设配置文件中该属性填的是 <code>zh-CN</code>，则最终渲染成 <code>&lt;html lang=&quot;zh-CN&quot;&gt;</code> 。</li> <li><code>partial()</code> 用于引入公共布局，当引用后，每个页面都会存在你引用的这个布局，上面一共引用了三个文件 <code>head</code>、<code>header</code>、<code>footer</code>，三个文件都在 <code>common</code> 文件夹下，这时候应该建立该文件夹，并在下面创建对应的三个 ejs 文件。假设 <code>head.ejs</code> 中的内容为 <code>this is head</code>，最终渲染成如下：（每个页面都会存在此内容）</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    this is head
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li><code>&lt;%- body %&gt;</code> 表示其他页面内容，例如：<code>index.ejs</code>、<code>archive.ejs</code> 等，假设 <code>index.ejs</code> 内容为 <code>this is index</code>，则最终渲染成如下：（因为是写在首页文件中，所以只有首页会存在该内容）</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    this is index
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>现在我们把其他文件也假设写出来。</p> <table><thead><tr><th style="text-align:center;">文件</th> <th style="text-align:center;">内容</th></tr></thead> <tbody><tr><td style="text-align:center;">index.ejs</td> <td style="text-align:center;">index</td></tr> <tr><td style="text-align:center;">head.ejs</td> <td style="text-align:center;">head</td></tr> <tr><td style="text-align:center;">header.ejs</td> <td style="text-align:center;">header</td></tr> <tr><td style="text-align:center;">footer.ejs</td> <td style="text-align:center;">footer</td></tr></tbody></table> <p>最终渲染成的 index 为：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zh-CN<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    head
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    header
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        index
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    footer
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><blockquote><p>其他页面都是一样的用法，都是在生成在 <code>&lt;%- body %&gt;</code> 里面</p></blockquote> <h2 id="数据使用"><a href="#数据使用" aria-hidden="true" class="header-anchor">#</a> 数据使用</h2> <p>Hexo 中存在着三种变量数据：</p> <ul><li><strong>根目录配置文件</strong>：上面提到，该文件内的属性采用 <code>config.XXX</code> 来使用，更改此处属性要重新构建才能生效</li> <li><strong>主题配置文件</strong>：和根目录配置文件使用方法一样，不过需要使用 <code>theme.XXX</code> 来调用，更改后无需重新构建</li> <li><strong>Hexo 预置</strong>：可查看 <a href="https://hexo.io/zh-cn/docs/variables" target="_blank" rel="noopener noreferrer">官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</li></ul> <h3 id="配置文件数据"><a href="#配置文件数据" aria-hidden="true" class="header-anchor">#</a> 配置文件数据</h3> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token comment"># 根目录配置文件</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> STAUNCHKAI
+<span class="token key atrule">subtitle</span><span class="token punctuation">:</span> this is a subtitle
+
+<span class="token comment"># 主题配置文件</span>
+<span class="token key atrule">avatar</span><span class="token punctuation">:</span> /images/avatar.png
+a
+  <span class="token key atrule">b</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//staunchkai.com
+</code></pre></div><p>分类页面 <code>category.ejs</code> 中内容如下：</p> <div class="language-ejs extra-class"><pre class="language-text"><code>&lt;div class=&quot;category-page&quot;&gt;
+    &lt;h1&gt;&lt;%= config.title %&gt;&lt;/h1&gt;
+    &lt;p&gt;&lt;%= config.subtitle %&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cateogry-page-other&quot;&gt;
+    &lt;img src=&quot;&lt;%= theme.avatar %&gt;&quot;&gt;
+    &lt;p&gt;&lt;%= theme.a.b %&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div><p>最终渲染结果为：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zh-CN<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    head
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    header
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>category-page<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>STAUNCHKAI<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>this is a subtitle<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cateogry-page-other<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/images/avatar.png<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>https://staunchkai.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    footer
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="hexo-预置数据"><a href="#hexo-预置数据" aria-hidden="true" class="header-anchor">#</a> Hexo 预置数据</h3> <p><code>post.ejs</code> 文件内容如下：</p> <div class="language-ejs extra-class"><pre class="language-text"><code>&lt;div class=&quot;post&quot;&gt;
+    &lt;h1&gt;&lt;%= page.title %&gt;&lt;/h1&gt;
+    &lt;p&gt;&lt;%= page.tip %&gt;&lt;/p&gt;
+    &lt;div class=&quot;post-content&quot;&gt;
+        &lt;%- page.content %&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>一篇 <code>md</code> 文章内容如下：</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
+title: 这是一篇文章
+<span class="token title important">tip: hexo 开发
+<span class="token punctuation">---</span></span>
+主内容...
+</code></pre></div><p>文章页面最终渲染成：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zh-CN<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    head
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    header
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>post<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>这是一篇文章<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>hexo 开发<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>post-content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                主内容...
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    footer
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="例子"><a href="#例子" aria-hidden="true" class="header-anchor">#</a> 例子</h3> <p>举个复杂一丢丢的例子，主题配置文件如下：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">social</span><span class="token punctuation">:</span>
+  <span class="token key atrule">Github</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/staunchkai
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> icon<span class="token punctuation">-</span>github
+  <span class="token key atrule">Email</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> mailto<span class="token punctuation">:</span>staunchkai@outlook.com
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> icon<span class="token punctuation">-</span>email
+  <span class="token key atrule">Rss</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /atom.xml
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> icon<span class="token punctuation">-</span>rss
+</code></pre></div><p>要把 social 属性全部读取出来，如下：</p> <div class="language-ejs extra-class"><pre class="language-text"><code>&lt;div class=&quot;social&quot;&gt;
+    &lt;% for (let i in theme.social) { %&gt;
+    	&lt;% let social = theme.socail[i]; %&gt;
+    	&lt;a href=&quot;&lt;%- url_for(social.url) %&gt;&quot; class=&quot;&lt;%= social.icon %&gt;&quot;&gt;&lt;%= i %&gt;&lt;/a&gt;
+    &lt;% } %&gt;
+&lt;/div&gt;
+</code></pre></div><p>最终结果：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>social<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://github.com/staunchkai<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>icon-github<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Github<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mailto:staunchkai@outlook.com<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>icon-email<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Email<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/atom.xml<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>icon-rss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Rss<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">提醒</p> <p>按照上面的，导航栏菜单也是同样的方法。</p></div> <h2 id="辅助函数"><a href="#辅助函数" aria-hidden="true" class="header-anchor">#</a> 辅助函数</h2> <p>辅助函数参考 <a href="https://hexo.io/zh-cn/docs/helpers" target="_blank" rel="noopener noreferrer">官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，官方文档最近几版更新的都比较详细，有具体的例子。在这里我挑几个来举例子。</p> <h3 id="条件函数"><a href="#条件函数" aria-hidden="true" class="header-anchor">#</a> 条件函数</h3> <div class="language-ejs extra-class"><pre class="language-text"><code>&lt;% if (is_home()) { %&gt;	// 如果是首页
+	&lt;%- partial('common/header') %&gt;	// 引入 header 文件
+&lt;% } %&gt;
+
+&lt;% if (!is_archive()) { %&gt;	// 如果不是归档页
+	&lt;%- partial('common/footer') %&gt;	// 引入 footer 文件
+&lt;% } %&gt;
+</code></pre></div><h3 id="日期"><a href="#日期" aria-hidden="true" class="header-anchor">#</a> 日期</h3> <p>官方文档中有多个日期函数，但是我觉得使用下面这一个就足够了。</p> <div class="language-ejs extra-class"><pre class="language-text"><code>官方文档
+&lt;%- date(date, [format]) %&gt;
+
+// 示例：
+&lt;%- date(Date.now()) %&gt;
+// 2013-01-01
+
+&lt;%- date(Date.now(), 'YYYY/M/D') %&gt;
+// Jan 1 2013
+
+页面中的日期
+&lt;%- date(page.date, 'YYYY/M/D') %&gt;	// 这样就能按照格式获取到页面中的日期
+</code></pre></div><h3 id="列表"><a href="#列表" aria-hidden="true" class="header-anchor">#</a> 列表</h3> <p>官方文档中有 <code>list_categories</code>、<code>list_posts</code> 等函数，都有具体的使用方法，在这里对于列表我写出我常用的方法。</p> <p><strong>文章列表：</strong></p> <p>对于文章通常有两种，一种是每页只显示 <code>config.per_page</code> 数量的文章，带有分页，另外一种是一个页面显示所有文章。</p> <div class="language-ejs extra-class"><pre class="language-text"><code>// 带分页，使用 Hexo 预置变量 page.posts
+&lt;% page.posts.each(function(post) { %&gt;	// 因为这里有个对象 post
+	&lt;h1&gt;&lt;% post.title %&gt;&lt;/h1&gt;	// 所以这里才可以用 post.title
+	&lt;%- partial('common/post-card') %&gt;	// 这时引用一个文件
+&lt;% }); %&gt;
+
+post-card 文件内容为：
+&lt;div class=&quot;post-card&quot;&gt;
+    &lt;%= post.title %&gt;	// 这里是会报错的，无法通过
+&lt;/div&gt;
+
+需要修改引用为：
+&lt;%- partial('common/post-card', {post: post}) %&gt;	// 把 post 传过去才可使用
+
+// 若没有传过去，只能使用 page.title，因为 Hexo 中没有预置 post 这个东东，具体可查看文档
+</code></pre></div><div class="language-ejs extra-class"><pre class="language-text"><code>// 一个页面显示所有文章
+&lt;% site.posts.each(function(post) { %&gt;
+	&lt;h1&gt;&lt;% post.title %&gt;&lt;/h1&gt;
+	&lt;%- partial('common/post-card', {post: post}) %&gt;
+&lt;% }); %&gt;
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">提醒</p> <p>上面两个，分别使用了官方文档中的两个变量 <code>site.posts</code> 和 <code>page.posts</code>，请注意官方文档的重要性。</p></div> <p><strong>分类列表：</strong></p> <div class="language-ejs extra-class"><pre class="language-text"><code>// 文章分类显示
+&lt;% page.categories.each(function(category) { %&gt;		// 这里就没用 post.categories 了，除非是包含在上面的文章列表循环里面才可以用
+	&lt;a href=&quot;&lt;%- url_for(category.path) %&gt;&quot;&gt;&lt;%= category.name %&gt;&lt;/a&gt;
+&lt;% }); %&gt;
+</code></pre></div><p><strong>标签列表：</strong> 根据分类列表估计能把标签列表给弄出来了</p> <h2 id="其他页面"><a href="#其他页面" aria-hidden="true" class="header-anchor">#</a> 其他页面</h2> <p>主题中原有的 <code>category.ejs</code> 和 <code>tag.ejs</code> 文件都是属于单个对象的页面，啥意思呢？ 假设一篇文章 <code>Front-matter</code> 如下：</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
+categories:
+<span class="token code keyword">	- 分类1</span>
+<span class="token code keyword">	- 分类2</span>
+tags:
+<span class="token code keyword">	- tag1</span>
+<span class="token code keyword">	- tag2</span>
+<span class="token hr punctuation">---</span>
+</code></pre></div><p><code>category.ejs</code> 页面只显示单个分类，当你点击分类1跳转过去的页面就是 <code>category</code> ，它不会显示出网站中所有的分类。</p> <p>根据上面的可以看出，目前网站存在两个分类，想要全部显示出来，需要自行创建一个页面，这也就是在我们使用其他主题的时候，为啥什么 <code>categories</code>、<code>tags</code> 需要在根目录 <code>source</code> 文件夹下面创一个对应的文件夹，再创建一个 <code>index.md</code>  的原因所在，Hexo 里面没有预置这个东西。</p> <p><code>tag.ejs</code> 也同理。</p> <p>还记得主题文件夹下面的 <code>page.ejs</code> 文件吗？他的作用就是用来创建其他文件的，只要把对应的内容写到这个文件里面就可以了。那我们除了分类、标签页面，还有友情链接、关于页面等等，难道全部写到一个文件里面吗？</p> <p>显然这种做法是可行的，但是会导致文件内容复杂，将来不好维护，通常都会重新新建对应的一个页面文件，然后再到 <code>page.ejs</code> 里面引用即可。</p> <p>下面做一个 <code>关于</code> 页面的例子：</p> <ol><li><strong>首先在根目录资源文件夹创建一个名为 <code>about</code> 的文件夹，再到该文件夹下创建一个 <code>index.md</code> 文件，内容为：</strong></li></ol> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
+title: 关于
+<span class="token title important">type: 'about'
+<span class="token punctuation">---</span></span>
+这是一个关于页面内容
+</code></pre></div><ol start="2"><li><strong>到主题文件夹中布局文件夹中创建一个 <code>about.ejs</code> 页面，内容为：</strong></li></ol> <div class="language-ejs extra-class"><pre class="language-text"><code>&lt;div class=&quot;about-page&quot;&gt;
+    &lt;h1&gt;&lt;%= page.title %&gt;&lt;/h1&gt;
+    &lt;p&gt;&lt;%- page.content %&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div><ol start="3"><li><strong>在 <code>page.ejs</code> 中引入<code>about.ejs</code></strong></li></ol> <div class="language-ejs extra-class"><pre class="language-text"><code>&lt;% if (is_page() &amp;&amp; page.type === 'about') { %&gt;	// 该文件是其他页面的集合，所以得判断啥情况引入啥文件
+	&lt;%- partial('about') %&gt;
+&lt;% } %&gt;
+
+// 假设引入友情链接文件
+&lt;% if (is_page() &amp;&amp; page.type === 'links') { %&gt;	// is_page() 是啥请看官方文档 - 辅助函数
+	&lt;%- partial('links') %&gt;
+&lt;% } %&gt;
+</code></pre></div><ol start="4"><li><strong>最终渲染结果</strong></li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zh-CN<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    head
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    header
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>about-page<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>关于<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>这是一个关于页面内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    footer
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><code>categories.ejs</code> 和 <code>tags.ejs</code> 页面是不是就可以使用 <code>site.categories.each...</code> 和 <code>site.tags.each...</code> 用同样的方式给弄出来了。</p> <h2 id="样式文件"><a href="#样式文件" aria-hidden="true" class="header-anchor">#</a> 样式文件</h2> <p>如何在样式代码文件中引用主题文件的参数呢？假设主题配置文件中如下：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">color</span><span class="token punctuation">:</span> <span class="token string">'#c5cae9'</span>
+</code></pre></div><p>在 ejs 页面中完全可以使用 <code>theme.color</code> 来获取到该属性。</p> <p>在 Stylus 文件中使用如下：</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token variable-declaration"><span class="token variable">$main-color</span> <span class="token operator">=</span> hexo-config<span class="token punctuation">(</span><span class="token string">'color'</span><span class="token punctuation">)</span></span>
+<span class="token comment">// 或</span>
+<span class="token variable-declaration"><span class="token variable">mainColor</span> <span class="token operator">=</span> unquote<span class="token punctuation">(</span>hexo-config<span class="token punctuation">(</span><span class="token string">&quot;color&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+</code></pre></div><h2 id="结语"><a href="#结语" aria-hidden="true" class="header-anchor">#</a> 结语</h2> <p>目前就想到这些了，纯小白肯定是没法看懂的，本文大多属于小坑小提醒类型，最好具备文首所述的那些知识再来折腾比较好。要是有其他啥问题的可以到 <a href="https://staunchkai.com" target="_blank" rel="noopener noreferrer">我的网站<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 评论留言或者找到我的联系方式进行交流，我可能很菜，只是将我写主题时遇到的些磕磕碰碰写出来，万一对谁起作用呢！</p> <p>广告：</p> <ul><li><p><a href="https://staunchkai.com/hexo_deploy.html" target="_blank" rel="noopener noreferrer">Hexo 博客部署到腾讯云服务器全流程<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="https://staunchkai.com/hexo_SSL.html" target="_blank" rel="noopener noreferrer">Hexo 博客开启 https (SSL 证书)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/EasyHexo/Easy-Hexo/edit/master/docs/4-High-order-hexo-gamer/4-2-theme-develop/README.md" target="_blank" rel="noopener noreferrer">
+        在 GitHub 上编辑此页
+      </a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div style="float: right"><small class="word-count"><small><span class="octicon octicon-file"></span></small> <span id="word"></span> <small><span class="octicon octicon-clock"></span></small> <span id="time"></span></small> <div id="/4-High-order-hexo-gamer/4-2-theme-develop/" class="leancloud-visitors"><span class="prefix"><small><span class="octicon octicon-eye"></span></small></span> <span class="pv leancloud-visitors-count"></span></div></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/4-High-order-hexo-gamer/4-1-remote-editing/" class="prev">
+          让你的 Hexo 博客支持远程编辑
+        </a></span> <!----></p></div> <section class="content"><div class="warning custom-block"><p class="custom-block-title">
+      关于评论
+    </p> <p>评论前请填好“昵称”、“邮箱”这两栏内容，否则不会收到回复，谢谢！</p></div> <article id="vcomments"></article></section> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.f094dda7.js" defer></script><script src="/assets/js/5.ee36bdda.js" defer></script><script src="/assets/js/42.59f6f1e2.js" defer></script><script src="/assets/js/17.00b9f0e7.js" defer></script><script src="/assets/js/16.473f814a.js" defer></script>
+  </body>
+</html>
