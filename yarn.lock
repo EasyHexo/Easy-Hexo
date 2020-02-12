@@ -633,6 +633,13 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.7.4":
+  version "7.8.4"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/@babel/runtime/-/runtime-7.8.4.tgz#d79f5a2040f7caa24d53e563aad49cbc05581308"
+  integrity sha512-neAp3zt80trRVBI1x0azq6c57aNBqYZH8KhMm3TaB7wEI5Q4A2SHfBHE8w9gOhI/lrqxtEbXZgQIrHP+wvSGwQ==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.1.0", "@babel/template@^7.1.2", "@babel/template@^7.2.2":
   version "7.2.2"
   resolved "http://registry.npm.taobao.org/@babel/template/download/@babel/template-7.2.2.tgz#005b3fdf0ed96e88041330379e0da9a708eb2907"
@@ -845,17 +852,17 @@
   dependencies:
     lodash.throttle "^4.1.1"
 
-"@vuepress/plugin-active-header-links@^1.0.0-alpha.37":
-  version "1.0.0-alpha.37"
-  resolved "http://registry.npm.taobao.org/@vuepress/plugin-active-header-links/download/@vuepress/plugin-active-header-links-1.0.0-alpha.37.tgz#f854199bec2b0f79a1b63193275e083b1a55617f"
-  integrity sha1-+FQZm+wrD3mhtjGTJ14IOxpVYX8=
+"@vuepress/plugin-active-header-links@^1.2.0":
+  version "1.3.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.3.0.tgz#8b4184e7c84a5ee754e6b4f34997c3bd7ae07b72"
+  integrity sha512-C+EhZefAOxN83jVZebRWqFUBUklTsTtWRiDFczxcxqH995ZZumi1UFKj9TurOjrZppUDr4ftfxIqGkj4QSUeWw==
   dependencies:
-    lodash.throttle "^4.1.1"
+    lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-back-to-top@^1.0.0-alpha.37":
-  version "1.0.0-alpha.37"
-  resolved "http://registry.npm.taobao.org/@vuepress/plugin-back-to-top/download/@vuepress/plugin-back-to-top-1.0.0-alpha.37.tgz#f32403954b74571a376e0467f0ef0d852b194246"
-  integrity sha1-8yQDlUt0Vxo3bgRn8O8NhSsZQkY=
+"@vuepress/plugin-back-to-top@^1.2.0":
+  version "1.3.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.3.0.tgz#0193858287d6c18b30e31c4730ecaecef7c8d7b5"
+  integrity sha512-YuJEYaxPRAJScoqiq4uEcqdVt+vBOpdTDhepxtmN0vDRatvOqwJctwi5xqHcII2ziB7ddhOsibk8fhYwc/42ww==
   dependencies:
     lodash.debounce "^4.0.8"
 
@@ -873,10 +880,10 @@
   dependencies:
     nprogress "^0.2.0"
 
-"@vuepress/plugin-nprogress@^1.0.0-alpha.37":
-  version "1.0.0-alpha.37"
-  resolved "http://registry.npm.taobao.org/@vuepress/plugin-nprogress/download/@vuepress/plugin-nprogress-1.0.0-alpha.37.tgz#8eaa720223cd17daf742457ff6e313fb9e49eeb4"
-  integrity sha1-jqpyAiPNF9r3QkV/9uMT+55J7rQ=
+"@vuepress/plugin-nprogress@^1.2.0":
+  version "1.3.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/@vuepress/plugin-nprogress/-/plugin-nprogress-1.3.0.tgz#8cdb7cc7b881e838035b2041e209da959998b8e2"
+  integrity sha512-PuBDAhaYLvwG63LamIc1fMk+s4kUqPuvNYKfZjQlF3LtXjlCMvd6YEQyogfB9cZnFOg1nryeHJwWoAdFvzw29Q==
   dependencies:
     nprogress "^0.2.0"
 
@@ -901,10 +908,10 @@
   resolved "http://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.0.0-alpha.35.tgz#c579e57805d86ee8020a3704a968984d050c8589"
   integrity sha1-xXnleAXYbugCCjcEqWiYTQUMhYk=
 
-"@vuepress/plugin-search@^1.0.0-alpha.37":
-  version "1.0.0-alpha.37"
-  resolved "http://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.0.0-alpha.37.tgz#4bad17b4c7597bbed48a5b7a0876838caf9400ef"
-  integrity sha1-S60XtMdZe77Uilt6CHaDjK+UAO8=
+"@vuepress/plugin-search@^1.2.0":
+  version "1.3.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/@vuepress/plugin-search/-/plugin-search-1.3.0.tgz#ec3619a2d70696f7f91575121f4b7409ba229d07"
+  integrity sha512-buoQ6gQ2MLbLQ7Nhg5KJWPzKo7NtvdK/e6Fo1ig/kbOG5HyYKHCyqLjbQ/ZqT+fGbaSeEjH3DaVYTNx55GRX5A==
 
 "@vuepress/shared-utils@^1.0.0-alpha.35":
   version "1.0.0-alpha.35"
@@ -1388,7 +1395,7 @@ asynckit@^0.4.0:
   resolved "http://registry.npm.taobao.org/asynckit/download/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-atob@^2.1.1:
+atob@^2.1.1, atob@^2.1.2:
   version "2.1.2"
   resolved "http://registry.npm.taobao.org/atob/download/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
@@ -1397,6 +1404,13 @@ autocomplete.js@0.33.0:
   version "0.33.0"
   resolved "http://registry.npm.taobao.org/autocomplete.js/download/autocomplete.js-0.33.0.tgz#33d460367e2e7b6c2fe424353d955e022fe4594c"
   integrity sha1-M9RgNn4ue2wv5CQ1PZVeAi/kWUw=
+  dependencies:
+    immediate "^3.2.3"
+
+autocomplete.js@0.36.0:
+  version "0.36.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/autocomplete.js/-/autocomplete.js-0.36.0.tgz#94fe775fe64b6cd42e622d076dc7fd26bedd837b"
+  integrity sha512-jEwUXnVMeCHHutUt10i/8ZiRaCb0Wo+ZyKxeGsYwBDtw6EJHqEeDrq4UwZRD8YBSvp3g6klP678il2eeiVXN2Q==
   dependencies:
     immediate "^3.2.3"
 
@@ -1434,7 +1448,7 @@ aws4@^1.8.0:
   resolved "http://registry.npm.taobao.org/aws4/download/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha1-8OAD2cqef1nHpQiUXXsu+aBKVC8=
 
-axios@0.18.0, axios@^0.18.0:
+axios@0.18.0:
   version "0.18.0"
   resolved "http://registry.npm.taobao.org/axios/download/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
   integrity sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
@@ -1497,7 +1511,7 @@ babel-polyfill@6.23.0:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-runtime@^6.22.0, babel-runtime@^6.26.0, babel-runtime@^6.6.1:
+babel-runtime@^6.22.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "http://registry.npm.taobao.org/babel-runtime/download/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -2146,6 +2160,13 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
+combined-stream@^1.0.8:
+  version "1.0.8"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
+  integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+  dependencies:
+    delayed-stream "~1.0.0"
+
 commander@2.17.x, commander@~2.17.1:
   version "2.17.1"
   resolved "http://registry.npm.taobao.org/commander/download/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
@@ -2170,6 +2191,11 @@ component-emitter@^1.2.0, component-emitter@^1.2.1:
   version "1.2.1"
   resolved "http://registry.npm.taobao.org/component-emitter/download/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
   integrity sha1-E3kY1teCg/ffemt8WmPhQOaUJeY=
+
+component-emitter@^1.3.0:
+  version "1.3.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
+  integrity sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg==
 
 compressible@~2.0.14:
   version "2.0.15"
@@ -2277,7 +2303,7 @@ cookie@0.3.1:
   resolved "http://registry.npm.taobao.org/cookie/download/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
   integrity sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
 
-cookiejar@^2.1.0:
+cookiejar@^2.1.0, cookiejar@^2.1.2:
   version "2.1.2"
   resolved "http://registry.npm.taobao.org/cookiejar/download/cookiejar-2.1.2.tgz#dd8a235530752f988f9a0844f3fc589e3111125c"
   integrity sha1-3YojVTB1L5iPmghE8/xYnjERElw=
@@ -2441,6 +2467,13 @@ css-parse@1.7.x:
   resolved "http://registry.npm.taobao.org/css-parse/download/css-parse-1.7.0.tgz#321f6cf73782a6ff751111390fc05e2c657d8c9b"
   integrity sha1-Mh9s9zeCpv91ERE5D8BeLGV9jJs=
 
+css-parse@~2.0.0:
+  version "2.0.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/css-parse/-/css-parse-2.0.0.tgz#a468ee667c16d81ccf05c58c38d2a97c780dbfd4"
+  integrity sha1-pGjuZnwW2BzPBcWMONKpfHgNv9Q=
+  dependencies:
+    css "^2.0.0"
+
 css-select@^1.1.0:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/css-select/download/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
@@ -2464,6 +2497,16 @@ css-what@2.1:
   version "2.1.2"
   resolved "http://registry.npm.taobao.org/css-what/download/css-what-2.1.2.tgz#c0876d9d0480927d7d4920dcd72af3595649554d"
   integrity sha1-wIdtnQSAkn19SSDc1yrzWVZJVU0=
+
+css@^2.0.0:
+  version "2.2.4"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/css/-/css-2.2.4.tgz#c646755c73971f2bba6a601e2cf2fd71b1298929"
+  integrity sha512-oUnjmWpy0niI3x/mPL8dVEI1l7MnG3+HHyRPHf+YFSbK+svOhXpmSOcDURUh2aOCgl2grzrOPt1nHLuCVFULLw==
+  dependencies:
+    inherits "^2.0.3"
+    source-map "^0.6.1"
+    source-map-resolve "^0.5.2"
+    urix "^0.1.0"
 
 cssesc@^0.1.0:
   version "0.1.0"
@@ -2557,7 +2600,7 @@ debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.
   dependencies:
     ms "2.0.0"
 
-debug@=3.1.0:
+debug@=3.1.0, debug@~3.1.0:
   version "3.1.0"
   resolved "http://registry.npm.taobao.org/debug/download/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
@@ -2761,6 +2804,19 @@ docsearch.js@^2.5.2:
   dependencies:
     algoliasearch "^3.24.5"
     autocomplete.js "0.33.0"
+    hogan.js "^3.0.2"
+    request "^2.87.0"
+    stack-utils "^1.0.1"
+    to-factory "^1.0.0"
+    zepto "^1.2.0"
+
+docsearch.js@^2.6.3:
+  version "2.6.3"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/docsearch.js/-/docsearch.js-2.6.3.tgz#57cb4600d3b6553c677e7cbbe6a734593e38625d"
+  integrity sha512-GN+MBozuyz664ycpZY0ecdQE0ND/LSgJKhTLA0/v3arIS3S1Rpf2OJz6A35ReMsm91V5apcmzr5/kM84cvUg+A==
+  dependencies:
+    algoliasearch "^3.24.5"
+    autocomplete.js "0.36.0"
     hogan.js "^3.0.2"
     request "^2.87.0"
     stack-utils "^1.0.1"
@@ -3405,6 +3461,11 @@ fast-levenshtein@~2.0.4:
   resolved "http://registry.npm.taobao.org/fast-levenshtein/download/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
+fast-safe-stringify@^2.0.7:
+  version "2.0.7"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/fast-safe-stringify/-/fast-safe-stringify-2.0.7.tgz#124aa885899261f68aedb42a7c080de9da608743"
+  integrity sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==
+
 fastparse@^1.1.1:
   version "1.1.2"
   resolved "http://registry.npm.taobao.org/fastparse/download/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
@@ -3561,7 +3622,16 @@ form-data@^2.3.1, form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-formidable@^1.2.0:
+form-data@^3.0.0:
+  version "3.0.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/form-data/-/form-data-3.0.0.tgz#31b7e39c85f1355b7139ee0c647cf0de7f83c682"
+  integrity sha512-CKMFDglpbMi6PyN+brwB9Q/GOw0eAnsrEZDgcsH5Krhz5Od/haKHAX0NmQfha2zPPz0JpWzA7GJHGSnvCRLWsg==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
+
+formidable@^1.2.0, formidable@^1.2.1:
   version "1.2.1"
   resolved "http://registry.npm.taobao.org/formidable/download/formidable-1.2.1.tgz#70fb7ca0290ee6ff961090415f4b3df3d2082659"
   integrity sha1-cPt8oCkO5v+WEJBBX0s989IIJlk=
@@ -4737,37 +4807,37 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-leancloud-realtime-plugin-live-query@^1.1.2:
-  version "1.1.2"
-  resolved "http://registry.npm.taobao.org/leancloud-realtime-plugin-live-query/download/leancloud-realtime-plugin-live-query-1.1.2.tgz#16c4ba1babe0b907bcf63c4ec85462a0ab349662"
-  integrity sha1-FsS6G6vguQe89jxOyFRioKs0lmI=
+leancloud-realtime-plugin-live-query@^1.2.0:
+  version "1.2.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/leancloud-realtime-plugin-live-query/-/leancloud-realtime-plugin-live-query-1.2.0.tgz#1e07da1b5b99e44cddbc3b052234422f278c4ab9"
+  integrity sha512-eJooIH8/FyUoozr3Eeby2DpDnmX39m1bfxfxlYPuojkio+i/DLwPD+aTHnRDH6QXJcT6tNTt85RcxVR/Txg98Q==
 
-leancloud-realtime@^4.2.0:
-  version "4.2.1"
-  resolved "http://registry.npm.taobao.org/leancloud-realtime/download/leancloud-realtime-4.2.1.tgz#4336cb055ed246fb67157aa09a3218bdb7d87003"
-  integrity sha1-QzbLBV7SRvtnFXqgmjIYvbfYcAM=
+leancloud-realtime@^5.0.0-beta.0:
+  version "5.0.0-beta.2"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/leancloud-realtime/-/leancloud-realtime-5.0.0-beta.2.tgz#ab87dda84a3316a0b16a62ad999b1891e59eecbf"
+  integrity sha512-mnpX7MshoYnIZ/BXQDgHW8MIoZoloiR3kzRmJKngSndWGOa+N4CeYP0QGIyv0b1rax4nZ1266JImhGhHzuLIiw==
   dependencies:
-    axios "^0.18.0"
-    babel-runtime "^6.6.1"
+    "@babel/runtime" "^7.7.4"
     base64-arraybuffer "^0.1.5"
     debug "^3.1.0"
     eventemitter3 "^3.0.0"
     javascript-state-machine "^2.3.5"
     lodash "^4.17.10"
     protobufjs "^5.0.1"
+    superagent "^5.1.0"
     uuid "^3.0.0"
     ws "^5.2.1"
 
-leancloud-storage@^3.11.1:
-  version "3.11.1"
-  resolved "http://registry.npm.taobao.org/leancloud-storage/download/leancloud-storage-3.11.1.tgz#af27874e19f934647ed9a86a8a19507bd6f649e7"
-  integrity sha1-ryeHThn5NGR+2ahqihlQe9b2Sec=
+leancloud-storage@^4.2.0:
+  version "4.2.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/leancloud-storage/-/leancloud-storage-4.2.0.tgz#c973cf488cb3d9309eeaac7c081c27adef7cb73a"
+  integrity sha512-Mfw1hZScZGM6lpUyAninyrpMaFyibF4g26jMXfTTC9z64wOXyOWaM5SCddTRvAbs3ppcnL9N8TL1/nMgzJRtCQ==
   dependencies:
     debug "^3.1.0"
     es6-promise "4.2.3"
     eventemitter3 "^2.0.3"
-    leancloud-realtime "^4.2.0"
-    leancloud-realtime-plugin-live-query "^1.1.2"
+    leancloud-realtime "^5.0.0-beta.0"
+    leancloud-realtime-plugin-live-query "^1.2.0"
     localstorage-memory "^1.0.1"
     md5 "^2.0.0"
     superagent "^3.3.1"
@@ -4918,6 +4988,11 @@ lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5
   version "4.17.11"
   resolved "http://registry.npm.taobao.org/lodash/download/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha1-s56mIp72B+zYniyN8SU2iRysm40=
+
+lodash@^4.17.15:
+  version "4.17.15"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 lodash@^4.3.0:
   version "4.17.14"
@@ -5108,7 +5183,7 @@ merge2@^1.2.3:
   resolved "http://registry.npm.taobao.org/merge2/download/merge2-1.2.3.tgz#7ee99dbd69bb6481689253f018488a1b902b0ed5"
   integrity sha1-fumdvWm7ZIFoklPwGEiKG5ArDtU=
 
-methods@^1.1.1, methods@~1.1.2:
+methods@^1.1.1, methods@^1.1.2, methods@~1.1.2:
   version "1.1.2"
   resolved "http://registry.npm.taobao.org/methods/download/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
@@ -5166,6 +5241,11 @@ mime@^2.0.3, mime@^2.3.1:
   version "2.4.0"
   resolved "http://registry.npm.taobao.org/mime/download/mime-2.4.0.tgz#e051fd881358585f3279df333fe694da0bcffdd6"
   integrity sha1-4FH9iBNYWF8yed8zP+aU2gvP/dY=
+
+mime@^2.4.4:
+  version "2.4.4"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/mime/-/mime-2.4.4.tgz#bd7b91135fc6b01cde3e9bae33d659b63d8857e5"
+  integrity sha512-LRxmNwziLPT828z+4YkNzloCFC2YM4wrB99k+AV5ZbEyfGNWfG8SO1FUXLmLDBSo89NrJZ4DIWeLjy1CHGhMGA==
 
 mimic-fn@^1.0.0:
   version "1.2.0"
@@ -5283,7 +5363,7 @@ mkdirp@0.3.0:
   resolved "http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.3.0.tgz#1bbf5ab1ba827af23575143490426455f481fe1e"
   integrity sha1-G79asbqCevI1dRQ0kEJkVfSB/h4=
 
-mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
+mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1, mkdirp@~0.5.x:
   version "0.5.1"
   resolved "http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
@@ -6496,6 +6576,11 @@ qs@^6.5.1:
   resolved "http://registry.npm.taobao.org/qs/download/qs-6.6.0.tgz#a99c0f69a8d26bf7ef012f871cdabb0aee4424c2"
   integrity sha1-qZwPaajSa/fvAS+HHNq7Cu5EJMI=
 
+qs@^6.9.1:
+  version "6.9.1"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/qs/-/qs-6.9.1.tgz#20082c65cb78223635ab1a9eaca8875a29bf8ec9"
+  integrity sha512-Cxm7/SS/y/Z3MHWSxXb8lIFqgqBowP5JMlTUFyJN88y0SGQhVmZnqFK/PeuMX9LzUyWsqqhNxIyg0jlzq946yA==
+
 query-string@^4.1.0:
   version "4.3.4"
   resolved "http://registry.npm.taobao.org/query-string/download/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
@@ -6608,6 +6693,15 @@ readable-stream@^3.0.6:
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
 
+readable-stream@^3.4.0:
+  version "3.5.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/readable-stream/-/readable-stream-3.5.0.tgz#465d70e6d1087f6162d079cd0b5db7fbebfd1606"
+  integrity sha512-gSz026xs2LfxBPudDuI41V1lka8cxg64E66SGe78zJlsUofOg/yqwezdIcdfwik6B4h8LFmWPA9ef9X3FiNFLA==
+  dependencies:
+    inherits "^2.0.3"
+    string_decoder "^1.1.1"
+    util-deprecate "^1.0.1"
+
 readdirp@^2.0.0:
   version "2.2.1"
   resolved "http://registry.npm.taobao.org/readdirp/download/readdirp-2.2.1.tgz#0e87622a3325aa33e892285caf8b4e846529a525"
@@ -6666,6 +6760,11 @@ regenerator-runtime@^0.12.0:
   version "0.12.1"
   resolved "http://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
   integrity sha1-+hpxVEdkwDb4xJsToIsllMn4oN4=
+
+regenerator-runtime@^0.13.2:
+  version "0.13.3"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
+  integrity sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
 
 regenerator-transform@^0.13.3:
   version "0.13.3"
@@ -6918,7 +7017,7 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
+"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@^2.1.2, safer-buffer@~2.1.0:
   version "2.1.2"
   resolved "http://registry.npm.taobao.org/safer-buffer/download/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
@@ -6928,7 +7027,7 @@ sax@0.5.x:
   resolved "http://registry.npm.taobao.org/sax/download/sax-0.5.8.tgz#d472db228eb331c2506b0e8c15524adb939d12c1"
   integrity sha1-1HLbIo6zMcJQaw6MFVJK25OdEsE=
 
-sax@^1.2.4, sax@~1.2.1:
+sax@^1.2.4, sax@~1.2.1, sax@~1.2.4:
   version "1.2.4"
   resolved "http://registry.npm.taobao.org/sax/download/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha1-KBYjTiN4vdxOU1T6tcqold9xANk=
@@ -6979,6 +7078,11 @@ selfsigned@^1.9.1:
   version "5.6.0"
   resolved "http://registry.npm.taobao.org/semver/download/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
   integrity sha1-fnQlb7qknHWqfHogXMInmcrIAAQ=
+
+semver@^6.0.0, semver@^6.3.0:
+  version "6.3.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
+  integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
 send@0.16.2:
   version "0.16.2"
@@ -7117,6 +7221,11 @@ slice-ansi@^2.0.0:
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
 
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/snapdragon-node/download/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
@@ -7190,6 +7299,17 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
+source-map-resolve@^0.5.2:
+  version "0.5.3"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/source-map-resolve/-/source-map-resolve-0.5.3.tgz#190866bece7553e1f8f267a2ee82c606b5509a1a"
+  integrity sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==
+  dependencies:
+    atob "^2.1.2"
+    decode-uri-component "^0.2.0"
+    resolve-url "^0.2.1"
+    source-map-url "^0.4.0"
+    urix "^0.1.0"
+
 source-map-support@~0.5.6:
   version "0.5.10"
   resolved "http://registry.npm.taobao.org/source-map-support/download/source-map-support-0.5.10.tgz#2214080bc9d51832511ee2bab96e3c2f9353120c"
@@ -7224,6 +7344,11 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
   version "0.6.1"
   resolved "http://registry.npm.taobao.org/source-map/download/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha1-dHIq8y6WFOnCh6jQu95IteLxomM=
+
+source-map@^0.7.3:
+  version "0.7.3"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
+  integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
 
 spdx-correct@^3.0.0:
   version "3.1.0"
@@ -7497,6 +7622,20 @@ stylus@^0.54.5:
     sax "0.5.x"
     source-map "0.1.x"
 
+stylus@^0.54.7:
+  version "0.54.7"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/stylus/-/stylus-0.54.7.tgz#c6ce4793965ee538bcebe50f31537bfc04d88cd2"
+  integrity sha512-Yw3WMTzVwevT6ZTrLCYNHAFmanMxdylelL3hkWNgPMeTCpMwpV3nXjpOHuBXtFv7aiO2xRuQS6OoAdgkNcSNug==
+  dependencies:
+    css-parse "~2.0.0"
+    debug "~3.1.0"
+    glob "^7.1.3"
+    mkdirp "~0.5.x"
+    safer-buffer "^2.1.2"
+    sax "~1.2.4"
+    semver "^6.0.0"
+    source-map "^0.7.3"
+
 superagent@^3.3.1:
   version "3.8.3"
   resolved "http://registry.npm.taobao.org/superagent/download/superagent-3.8.3.tgz#460ea0dbdb7d5b11bc4f78deba565f86a178e128"
@@ -7512,6 +7651,23 @@ superagent@^3.3.1:
     mime "^1.4.1"
     qs "^6.5.1"
     readable-stream "^2.3.5"
+
+superagent@^5.1.0:
+  version "5.2.1"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/superagent/-/superagent-5.2.1.tgz#9f5f86b705be0865a8c1b9bcde533ab7773ff63a"
+  integrity sha512-46b4Lkwnlz7Ebdv2FBbfuqb3kVkG1jV/SK3EW6NnwL9a3T4h5hHtegNEQfbXvTFbDoUZXId4W3dMgap2f6ic1g==
+  dependencies:
+    component-emitter "^1.3.0"
+    cookiejar "^2.1.2"
+    debug "^4.1.1"
+    fast-safe-stringify "^2.0.7"
+    form-data "^3.0.0"
+    formidable "^1.2.1"
+    methods "^1.1.2"
+    mime "^2.4.4"
+    qs "^6.9.1"
+    readable-stream "^3.4.0"
+    semver "^6.3.0"
 
 supports-color@^2.0.0:
   version "2.0.0"
@@ -7979,10 +8135,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-valine@^1.3.4:
-  version "1.3.4"
-  resolved "http://registry.npm.taobao.org/valine/download/valine-1.3.4.tgz#c59a910a2a2b040632668033957e0ef5b33846c8"
-  integrity sha1-xZqRCiorBAYyZoAzlX4O9bM4Rsg=
+valine@^1.3.10:
+  version "1.3.10"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/valine/-/valine-1.3.10.tgz#f42b5409e822290b0d8fea75db5c1a67b56fe552"
+  integrity sha512-Cl5vksIz5T8p8cvxBYQG1MTUKG3GRJ8fwtAb+jAnQ/Zk6/cwTN4CI36FdN2ZN/54XgdPeHhm6W0M+57sTJsxVw==
 
 vary@~1.1.2:
   version "1.1.2"
@@ -8084,6 +8240,13 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
+vuepress-plugin-container@^2.1.2:
+  version "2.1.2"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/vuepress-plugin-container/-/vuepress-plugin-container-2.1.2.tgz#688c1e5a9709a1b8658605bcaee580b3abb19d16"
+  integrity sha512-Df5KoIDMYiFg45GTfFw2hIiLGSsjhms4f3ppl2UIBf5nWMxi2lfifcoo8MooMSfxboxRZjoDccqQfu0fypaKrQ==
+  dependencies:
+    markdown-it-container "^2.0.0"
+
 vuepress-plugin-sitemap@^2.1.1:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/vuepress-plugin-sitemap/download/vuepress-plugin-sitemap-2.1.1.tgz#9cf7144ba5b2e92071e80bcf47e7f115d4600d62"
@@ -8091,19 +8254,30 @@ vuepress-plugin-sitemap@^2.1.1:
   dependencies:
     sitemap "^2.0.1"
 
-vuepress-theme-macgs@EasyHexo/vuepress-theme-macgs:
-  version "1.0.0-alpha.37"
-  resolved "https://codeload.github.com/EasyHexo/vuepress-theme-macgs/tar.gz/a9224583e50be2d58b66c67b590e9de5462e779c"
+vuepress-plugin-smooth-scroll@^0.0.9:
+  version "0.0.9"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/vuepress-plugin-smooth-scroll/-/vuepress-plugin-smooth-scroll-0.0.9.tgz#6c5d01db60def3d7b976b53404e56b97da9e8f39"
+  integrity sha512-UXX+HLZO1NKVwyiOJlj0smh8F9dKnwybjEi7w/Mj9EYLhKrNYr5uXs+N+OTt8VwKCn3f0vZ1XAwFIjsPlD7GJA==
   dependencies:
-    "@vuepress/plugin-active-header-links" "^1.0.0-alpha.37"
-    "@vuepress/plugin-back-to-top" "^1.0.0-alpha.37"
-    "@vuepress/plugin-nprogress" "^1.0.0-alpha.37"
-    "@vuepress/plugin-search" "^1.0.0-alpha.37"
+    smoothscroll-polyfill "^0.4.4"
+
+"vuepress-theme-macgs@git+https://github.com/EasyHexo/vuepress-theme-macgs.git":
+  version "1.2.0"
+  resolved "git+https://github.com/EasyHexo/vuepress-theme-macgs.git#50e10168dd0ecaa6e658f72b6d4b0b7399f1563c"
+  dependencies:
+    "@vuepress/plugin-active-header-links" "^1.2.0"
+    "@vuepress/plugin-back-to-top" "^1.2.0"
+    "@vuepress/plugin-nprogress" "^1.2.0"
+    "@vuepress/plugin-search" "^1.2.0"
+    docsearch.js "^2.6.3"
     dplayer "^1.25.0"
-    leancloud-storage "^3.11.1"
-    stylus "^0.54.5"
+    leancloud-storage "^4.2.0"
+    lodash "^4.17.15"
+    stylus "^0.54.7"
     stylus-loader "^3.0.2"
-    valine "^1.3.4"
+    valine "^1.3.10"
+    vuepress-plugin-container "^2.1.2"
+    vuepress-plugin-smooth-scroll "^0.0.9"
 
 vuepress@^1.0.0-alpha.35:
   version "1.0.0-alpha.35"
