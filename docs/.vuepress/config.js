@@ -17,6 +17,9 @@ const configureWebpack = {
 
 const plugins = [
   ['sitemap', { hostname: 'https://easyhexo.com' }],
+  ["@vuepress/google-analytics", { ga: 'UA-130601883-3' }],
+  ['vuepress-plugin-pangu'],
+  ['@vuepress/medium-zoom', { selector: '.theme-macgs-content :not(a) >img' }],
   ['@vuepress/pwa', {
     serviceWorker: true,
     updatePopup: true

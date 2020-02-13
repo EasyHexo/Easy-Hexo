@@ -4,7 +4,7 @@ base: /
 head:
   - type: link
     rel: icon
-    href: favicon.png
+    href: /favicon.png
   - type: link
     rel: stylesheet
     href: https://cdn.jsdelivr.net/npm/octicons/build/font/octicons.css
