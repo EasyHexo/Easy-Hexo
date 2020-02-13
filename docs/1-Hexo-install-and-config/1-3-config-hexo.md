@@ -24,7 +24,7 @@ hexo init <your_blog_name>
 
 ## 配置 Hexo
 
-::: danger
+::: danger 警告
 此部分内容可能过期，请见 [Hexo 官方文档](https://hexo.io/zh-cn/docs/configuration)。
 :::
 
