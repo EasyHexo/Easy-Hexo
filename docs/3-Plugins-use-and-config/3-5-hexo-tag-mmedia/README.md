@@ -14,7 +14,7 @@ hexo-tag-mmedia 是 MonoLogueChi 自用的一个媒体插入插件，在添加�
 - [x] [Meting](https://github.com/metowolf/MetingJS)
 - [x] [Dplayer](https://github.com/DIYgod/DPlayer)
 - [x] [BiliBili](https://www.bilibili.com/)
-- [ ] [YouTube]()
+- [ ] [YouTube](https://youtube.com/)
 - [ ] [ArtPlayer](https://github.com/zhw2590582/ArtPlayer)
 
 ## 使用
@@ -86,7 +86,7 @@ meting:
 
 参数：
 
-基本兼容 hexo-tag-aplayer，绝大部分可以直接从 hexo-tag-aplayer 迁移，参数形式为`"option:vaule"`，不懂的可以参考 [MetingJS](https://github.com/metowolf/MetingJS#option)
+基本兼容 hexo-tag-aplayer，绝大部分可以直接从 hexo-tag-aplayer 迁移，参数形式为 `"option:vaule"`，不懂的可以参考 [MetingJS](https://github.com/metowolf/MetingJS#option)
 
 | 配置项        | 默认       | 描述                                                                        |
 | :------------ | :--------- | :-------------------------------------------------------------------------- |
@@ -94,11 +94,11 @@ meting:
 | server        | 必须       | 音乐平台，第二个参数，可选：`netease`, `tencent`, `kugou`, `xiami`, `baidu` |
 | type          | 必须       | 音乐类型，第三个参数，可选：`song`, `playlist`, `album` `search`, `artist`  |
 | auto          | 无         | 有 auto 选项时前面参数不需要填写，否则为必填，见示例 2                      |
-| autoplay      | `false`    | 自动播放，带有此参数表示`true`，不带表示`false`                             |
-| fixed         | `false`    | 吸底模式，带有此参数表示`true`，不带表示`false`                             |
-| mini          | `false`    | 迷你模式，带有此参数表示`true`，不带表示`false`                             |
-| listfolded    | `false`    | 默认折叠列表，带有此参数表示`true`，不带表示`false`                         |
-| mutex         | `true`     | 互斥，如不需互斥`"mutex:false"`                                             |
+| autoplay      | `false`    | 自动播放，带有此参数表示 `true`，不带表示 `false`                             |
+| fixed         | `false`    | 吸底模式，带有此参数表示 `true`，不带表示 `false`                             |
+| mini          | `false`    | 迷你模式，带有此参数表示 `true`，不带表示 `false`                             |
+| listfolded    | `false`    | 默认折叠列表，带有此参数表示 `true`，不带表示 `false`                         |
+| mutex         | `true`     | 互斥，如不需互斥 `"mutex:false"`                                             |
 | theme         | `#2980b9`  | 主题颜色                                                                    |
 | loop          | `all`      | 循环模式 ，可选值 `all`, `one`, `none`                                      |
 | order         | `list`     | 播放顺序，可选值 `list`, `random`                                           |
@@ -124,15 +124,15 @@ meting:
 | author      | 必须    | 曲目作者，第二个参数                            |
 | url         | 必须    | 音乐文件地址                                    |
 | picture_url |         | 音乐对应的图片地址                              |
-| narrow      | `false` | 袖珍风格，带有此参数表示`true`，不带表示`false` |
-| autoplay    | `false` | 自动播放，带有此参数表示`true`，不带表示`false` |
+| narrow      | `false` | 袖珍风格，带有此参数表示 `true`，不带表示 `false` |
+| autoplay    | `false` | 自动播放，带有此参数表示 `true`，不带表示 `false` |
 | width:xxx   | `100%`  | 播放器宽度                                      |
 | lrc         |         | 歌词地址                                        |
 
 AplayerList（不推荐使用）
 
 ::: warning 警告
-此模式测试不够完善，如果遇到问题请提[issue](https://github.com/MonoLogueChi/hexo-tag-mmedia/issues)
+此模式测试不够完善，如果遇到问题请提 [issue](https://github.com/MonoLogueChi/hexo-tag-mmedia/issues)
 :::
 
 ```
