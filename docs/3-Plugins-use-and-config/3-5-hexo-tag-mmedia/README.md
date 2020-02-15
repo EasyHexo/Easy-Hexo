@@ -13,8 +13,8 @@ hexo-tag-mmedia 是 MonoLogueChi 自用的一个媒体插入插件，在添加�
 - [x] [Aplayer](https://github.com/DIYgod/APlayer)
 - [x] [Meting](https://github.com/metowolf/MetingJS)
 - [x] [Dplayer](https://github.com/DIYgod/DPlayer)
-- [x] [BiliBili](https://www.bilibili.com/)
-- [ ] [YouTube](https://youtube.com/)
+- [x] [Bilibili](https://www.bilibili.com/)
+- [ ] YouTube
 - [ ] [ArtPlayer](https://github.com/zhw2590582/ArtPlayer)
 
 ## 使用
@@ -171,7 +171,7 @@ AplayerList（不推荐使用）
 {% dplayer "url:KeyCastOW.mp4" "id:DDEC4F882C0B66FAD" "addition:addition0" "addition:addition1" %}
 ```
 
-非必填项，不懂不要填
+非必填项，如果不清楚请不要填写。
 
 | 配置项      | 默认      | 描述                                                                   |
 | :---------- | :-------- | :--------------------------------------------------------------------- |
@@ -203,10 +203,10 @@ AplayerList（不推荐使用）
 | logo        |           | logo 地址                                                              |
 | volume      | 0.7       | 默认音量 `0-1`                                                         |
 | contextmenu |           | 右键菜单，可叠加                                                       |
-| highlight   |           | 高光点，可叠加多个，例如`"highlight:{time: 20, text: '这是第 20 秒'}"` |
+| highlight   |           | 高光点，可叠加多个，例如 `"highlight:{time: 20, text: '这是第 20 秒'}"` |
 | code        |           | 额外代码，不懂不要填，需要写的请参考源码                               |
 
-## BiliBili
+## Bilibili
 
 ```
 {% bilibili "aid:60016166" "quality:high" "danmaku" "allowfullscreen" %}
