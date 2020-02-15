@@ -56,6 +56,7 @@ themeConfig:
       hexo-tag-dplayer: /3-Plugins-use-and-config/3-2-hexo-tag-dplayer/
       hexo-helper-live2d: /3-Plugins-use-and-config/3-3-hexo-helper-live2d/
       hexo-blog-encrypt: /3-Plugins-use-and-config/3-4-hexo-blog-encrypt/
+      hexo-tag-mmedia: /3-Plugins-use-and-config/3-5-hexo-tag-mmedia/
     高级 Hexo 玩家:
       概要: /4-High-order-hexo-gamer/
       让你的 Hexo 博客支持远程编辑: /4-High-order-hexo-gamer/4-1-remote-editing/
@@ -96,6 +97,7 @@ themeConfig:
       - 3-2-hexo-tag-dplayer/
       - 3-3-hexo-helper-live2d/
       - 3-4-hexo-blog-encrypt/
+      - 3-5-hexo-tag-mmedia/
     /4-High-order-hexo-gamer/:
       - 4-1-remote-editing/
       - 4-2-theme-develop/
