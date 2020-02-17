@@ -15,6 +15,13 @@ const configureWebpack = {
   }
 }
 
+const markdown = {
+  extendMarkdown: md => {
+    md.use(require("markdown-it-task-lists"));
+    md.use(require('markdown-it-imsize'));
+  }
+};
+
 const plugins = [
   ['sitemap', { hostname: 'https://easyhexo.com' }],
   ["@vuepress/google-analytics", { ga: 'UA-130601883-3' }],
@@ -26,4 +33,4 @@ const plugins = [
   }]
 ]
 
-module.exports = merge(config, { configureWebpack, plugins })
+module.exports = merge(config, { configureWebpack, markdown, plugins })
