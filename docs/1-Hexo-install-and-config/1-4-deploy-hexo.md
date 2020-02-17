@@ -62,29 +62,34 @@ $ hexo clean && hexo d -g
 185.199.111.153
 ```
 **参考表格**
-| 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒）|
-| :-----: | :-----: | :-----: | :-----:| :-----: | :-----:|
-|    A    | @       |   默认  | 185.199.110.153| - | 600 |
-|  CNAME  | @       |   默认  | GitHub 博客仓库名称| - | 600 |
+| 记录类型 | 主机记录 | 解析路线 |       记录值        | MAX 优先级 | TTL（秒） |
+| :------: | :------: | :------: | :-----------------: | :--------: | :-------: |
+|    A     |    @     |   默认   |   185.199.110.153   |     -      |    600    |
+|  CNAME   |    @     |   默认   | GitHub 博客仓库名称 |     -      |    600    |
 
 2. 打开仓库设置,找到 GitHub Pages 项目，修改 Custom domain 选项的值为你的自定义域名（不带 http 等前缀）
 3. 勾选 Custom domain 选项下的 Enforce HTTPS 选项，强制开启 Https 。如果遇到 `Enforce HTTPS` 选项无法打开，可以稍等一会儿再尝试。
 
 :::tip 提醒
-同时需要在本地的 `source` 目录新建一个 CNAME 文件，内容为你的自定义域名（不带 http 等前缀）。否则无法使用自定义域名功能（ hexo d 生成的文件没有 CNAME 文件，导致仓库的自定域名设置失效）
+同时需要在本地的 `source` 目录新建一个 CNAME 文件，内容为你的自定义域名（不带 http 等前缀）。否则无法使用自定义域名功能（`hexo d` 生成的文件没有 CNAME 文件，导致仓库的自定域名设置失效）
 :::
 
-## 部署到 CODING（dev.tencent.com）
+## 部署到 CODING
 
 ### 准备工作
 
-::: tip 提醒
+::: details CODING or dev.tencent.com?
+~~CODING = dev.tencent.com~~
 
-CODING = dev.tencent.com
+2019 年 12 月 25 日，CODING 个人版与腾讯云开发者平台升级至全新 CODING。也就是说，这两个平台回合并成 CODING 了。
 
+::: right
+[致 CODING 个人版/腾讯云开发者
+平台用户的一封信](https://coding.net/products/upgrade)
 :::
 
-1. 如果没有账号，请点此前往 [CODING](https://dev.tencent.com) 注册 CODING 账号。
+
+1. 如果没有账号，请点此前往 [CODING](https://coding.net) 注册 CODING 账号。
 2. 新建一个公开仓库，仓库名格式为 `your_username.coding.me` 例如你的 CODING 用户名(username)是 `easyhexo`，那么你的仓库名称就应该是  `easyhexo.coding.me`
 3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://coding.net/your_username/your_reponame.git` 在下一步会用到。
 4. 如果您没有配置 `Git` 和 `hexo-deployer-git` 请参阅前文配置方法配置。
@@ -93,10 +98,10 @@ CODING = dev.tencent.com
 
 ```yaml
 deploy:
-  type: git   # 类型填git
+  type: git   # 类型填 git
   repo: 
-    github: <github repository url> # 你的GitHub仓库地址
-    coding: <coding repository url> # 你的coding仓库地址
+    github: <github repository url> # 你的 GitHub 仓库地址
+    coding: <coding repository url> # 你的 coding 仓库地址
   branch: master  # 默认填写 master。
   message:  # 提交信息可以自定义，不填的则默认为提交时间
 ```
@@ -118,10 +123,10 @@ $ hexo clean && hexo d -g
 2. 绑定前请在域名 DNS 设置中添加一条 CNAME 记录指向 xxxx.coding.me。将 @ 和 www 记录都解析到这个即可。 
 
 **参考表格**
-| 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒）|
-| :-----: | :-----: | :-----: | :-----:| :-----: | :-----:|
-|  CNAME  | www     |   默认  | xxxx.coding.me| - | 600 |
-|  CNAME  | @       |   默认  | xxxx.coding.me| - | 600 |
+| 记录类型 | 主机记录 | 解析路线 |     记录值     | MAX 优先级 | TTL（秒） |
+| :------: | :------: | :------: | :------------: | :--------: | :-------: |
+|  CNAME   |   www    |   默认   | xxxx.coding.me |     -      |    600    |
+|  CNAME   |    @     |   默认   | xxxx.coding.me |     -      |    600    |
 
 2. 打开仓库设置,找到 代码-Pages 服务，在绑定新域名下的文本框内输入你的自定义域名（不带 http 等前缀）。
 3. 勾选 强制 HTTPS 访问。
@@ -130,14 +135,14 @@ $ hexo clean && hexo d -g
 出于 SEO 的考虑，我们建议您绑定一个 www 域名即可，如果您使用的域名 DNS 解析服务不支持添加 CNAME 记录，建议更换 Nameservers 到其他支持该功能的域名提供商（如 腾讯云）。如果遇到自定义域名失效，请参照前文 GitHub 配置方案解决。
 :::
 
-详细内容请参阅 [CODING 官方文档](https://dev.tencent.com/help/) 。
+详细内容请参阅 [CODING 官方文档](https://coding.net/help/) 。
 
 ## 部署到 CentOS Servers
 
 ### 预先准备
 
 - 确保你的 PC 已经安装好 Hexo 主程序的并且生成站点文件夹。安装 Hexo，请参阅[安装 Hexo](/1-Hexo-install-and-config/1-2-install-hexo.html)
-- 一台搭载 CenOS 7.4 64bit 的 ECS 服务器实例，其他 Linux 系统也可以
+- 一台搭载 CentOS 7.4 64bit 的 ECS 服务器实例，其他 Linux 系统也可以
 - 你至少应该掌握一丢丢的 Linux 命令
 
 ### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
