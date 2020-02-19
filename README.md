@@ -108,6 +108,14 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 ⚖ 本作品采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
 
+# 鸣谢
+
+感谢 [CloudPool](https://zhuochi.org/) 捐赠了 easyhexo.com 的域名！
+
+同时感谢 [JetBrains](https://www.jetbrains.com/?from=Easy-Hexo) 的支持。
+
+<a href="https://www.jetbrains.com/?from=Easy-Hexo"><img src="https://i.loli.net/2020/02/19/SHAFq6smOMEjXeg.png" width="200px"></img></a>
+
 ------
 
 **👨‍💻 Easy Hexo** © Easy Hexo. 
