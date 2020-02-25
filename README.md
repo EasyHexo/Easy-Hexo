@@ -1,4 +1,4 @@
-<div align="center"><img src="https://i.loli.net/2018/10/18/5bc852dfd5270.jpg" alt="Icon Badge" width="40%" /></div>
+<div align="center"><img src="https://i.loli.net/2020/02/25/d7JrUAVkiun6GI1.png" alt="Icon Badge" width="40%" /></div>
 
 <h1 align="center">
 Easy Hexo <img height="30" width="30" src="https://i.loli.net/2018/10/20/5bcad7e4bf535.png" /> 
@@ -111,6 +111,8 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 # 鸣谢
 
 感谢 [CloudPool](https://zhuochi.org/) 捐赠了 easyhexo.com 的域名！
+
+感谢 [Newlearnerの自留地](https://t.me/NewlearnerChannel) 给我们打广告！
 
 同时感谢 [JetBrains](https://www.jetbrains.com/?from=Easy-Hexo) 的支持。
 
