@@ -19,7 +19,7 @@ title: 使用数据文件平滑升级主题
 ## 支持列表
 
 :::warning 警告
-点击主题列表即可查看设置方法，不同主题配置方式可能存在差异。
+点击主题列表即可查看设置方法，不同主题配置方式可能 **存在差异**。
 :::
 
 - [hexo-theme-NexT](https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/DATA-FILES.md)

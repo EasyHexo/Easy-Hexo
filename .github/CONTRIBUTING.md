@@ -61,14 +61,14 @@ Hi，欢迎对本项目贡献！
 - 专有名词请严格遵守。如 GitHub 勿写为 Github。
 - 如果在 Markdown 中需要用到代码块语法，请使用 https://prismjs.com/#languages-list 作为标准。例如：
     ```markdown
-    ```yaml
+    \`\`\`yaml
     ···
-    ```
+    \`\`\`
     ```
 
 你也可以使用 [lint-md](https://github.com/hustcc/lint-md/tree/master/packages/lint-md-cli) 这个工具来检测一下是否合规。
 
 ## 提示
 
-- 图片需要在项目内的 `./docs/.vuepress/img` 文件夹里整理好。
+- 图片需要在项目内的 `./docs/.vuepress/img` 文件夹里整理好。（当然如果你嫌麻烦我们也是可以帮你搞定的~你只要专注于内容就好）
 - 文章要放对位置。

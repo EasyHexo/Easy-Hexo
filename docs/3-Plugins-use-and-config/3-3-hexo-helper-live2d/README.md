@@ -35,7 +35,7 @@ yarn add hexo-helper-live2d
 
 我们有许多现有的模型，[来看看](https://github.com/xiazeyu/live2d-widget-models)
 
-<details><summary>点我如果你不想跳转</summary><br>
+:::details 点我如果你不想跳转
 
 - `live2d-widget-model-chitose`
 - `live2d-widget-model-epsilon2_1`
@@ -60,7 +60,7 @@ yarn add hexo-helper-live2d
 - `live2d-widget-model-wanko`
 - `live2d-widget-model-z16`
 
-</details>
+:::
 
 你需要先使用 `npm install 模型的包名` 来安装，
 
@@ -78,9 +78,11 @@ yarn add hexo-helper-live2d
 
 - 在刚刚创建的目录下创建 `assets` 子目录，把你的模型放进去。
 
-示例：
+:::details 示例
 
 [live2d-widget-model-wanko](https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko)
+
+:::
 
 - 在 [npm](https://www.npmjs.com/) 注册一个账号。
 
@@ -100,7 +102,7 @@ yarn add hexo-helper-live2d
  
 4. 将子文件夹的名称输入 `_config.yml` 的 `model.use` 中。
 
-<details><summary>示例</summary><br>
+:::details 示例
 
 你的模型叫 `mymiku`。
 
@@ -112,7 +114,7 @@ yarn add hexo-helper-live2d
 
 将 `mymiku` 输入到位于 `_config.yml` 的 `model.use` 中。
 
-</details>
+:::
 
 ### c. 相对于博客根目录的自定义路径
 
@@ -180,9 +182,8 @@ live2d:
 
 当你在配置好后，live2d 就已经开始运行了。
 
----
-
 ## 各模型包示例待完善
 
 ## 官方文档
-[hexo-helper-liv2d](https://github.com/EYHN/hexo-helper-live2d)
+
+[hexo-helper-live2d](https://github.com/EYHN/hexo-helper-live2d)

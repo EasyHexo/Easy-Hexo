@@ -19,7 +19,7 @@ themeConfig:
     notify: false
     verify: false
     avatar_cdn: https://sdn.geekzu.org/avatar/
-    placeholder: 👏 来说话啊~
+    placeholder: 👏 欢迎评论~如有疑问，可加群 935778924 讨论
     pageSize: 12
   nav:
     序:
