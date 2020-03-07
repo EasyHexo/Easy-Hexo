@@ -37,17 +37,13 @@ title: hexo-theme-fluid
 
 ## 快速开始
 
-#### 1. 搭建 Hexo 博客
-
-如果你还没有 Hexo 博客，请按照 [Hexo 官方文档](https://hexo.io/zh-cn/docs/) 进行安装、建站。
-
-#### 2. 获取主题最新版本
+#### 1. 获取主题最新版本
 
 请优先下载 [最新 release 版本](https://github.com/fluid-dev/hexo-theme-fluid/releases)，master 分支无法保证稳定。
 
 下载后解压到 themes 目录下并重命名为 `fluid`。
 
-#### 3. 指定主题
+#### 2. 指定主题
 
 如下修改 Hexo 博客目录中的 `_config.yml`：
 
@@ -57,7 +53,7 @@ theme: fluid  # 指定主题
 language: zh-CN  # 指定语言，可不改
 ```
 
-#### 4. 创建「关于页」
+#### 3. 创建「关于页」
 
 自 v1.7.0 开始，「关于页」需要手动创建：
 
@@ -91,6 +87,10 @@ layout: about
 - [x] 页脚备案信息
 - [x] 网页访问统计
 - [x] 支持 LaTeX 数学公式
+
+:::tip 提醒
+hexo-theme-stun 支持主题平滑升级。有关内容请查阅[使用数据文件平滑升级主题](/5-Add/5-3-data-file.html)。
+:::
 
 ## 反馈
 
