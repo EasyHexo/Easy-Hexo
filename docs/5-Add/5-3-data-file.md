@@ -25,3 +25,4 @@ title: 使用数据文件平滑升级主题
 - [hexo-theme-NexT](https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/DATA-FILES.md)
 - [hexo-theme-Melody](https://molunerfinn.com/hexo-theme-melody-doc/#/zh-Hans/quick-start?id=%E8%AE%BE%E7%BD%AE)
 - [hexo-theme-Stun](https://liuyib.github.io/hexo-theme-stun/zh-CN/advanced/theme-config.html#%E5%B9%B3%E6%BB%91%E5%8D%87%E7%BA%A7)
+- [hexo-theme-fluid](https://liuyib.github.io/hexo-theme-stun/zh-CN/advanced/theme-config.html#%E5%B9%B3%E6%BB%91%E5%8D%87%E7%BA%A7)

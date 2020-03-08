@@ -1,39 +1,21 @@
 ---
 title: hexo-theme-fluid
 ---
+
+<div align="center"><img alt="Fluid Logo" src="@img/2/2-13/logo.png" width="128"></div>
+
 # hexo-theme-fluid <Badge text="@fluid-dev"/> <Badge text="Finish"/> <Badge text="1.7.1"/>
 
-<p align="center">
-  <img alt="Fluid Logo" src="https://avatars2.githubusercontent.com/t/3419353?s=280&v=4" width="128">
-</p>
+一款 Material Design 风格的主题。
 
-<p align="center">一款 Material Design 风格的主题</p>
-<p align="center">An elegant Material-Design theme for Hexo</p>
+![ScreenShot](@img/2/2-13/1.png)
 
-![ScreenShot](https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/screenshots/index.png)
+文档：
+- [用户手册](https://hexo.fluid-dev.com/docs/)
+- [更新日志](https://github.com/fluid-dev/hexo-theme-fluid/blob/master/Changelog.md)
+- [文章配置](https://hexo.io/zh-cn/docs/front-matter)
 
-<p align="center">
-  <a href="https://github.com/fluid-dev/hexo-theme-fluid/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/fluid-dev/hexo-theme-fluid"></a>
-  <a href="https://hexo.io/zh-cn/"><img alt="Hexo version" src="https://img.shields.io/badge/Hexo-3%2B-orange"></a>
-  <a href="https://github.com/fluid-dev/hexo-theme-fluid/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/fluid-dev/hexo-theme-fluid.svg?style=flat"></a>
-  <a href="https://github.com/fluid-dev/hexo-theme-fluid/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/fluid-dev/hexo-theme-fluid.svg?style=flat"></a>
-</p>
-
-<p align="center">中文简体  |  <a title="English" href="README_en.md">English</a></p>
-
-<p align="center">
-  <span>文档：</span>
-  <a href="https://hexo.fluid-dev.com/docs/">用户手册</a>&nbsp&nbsp&nbsp&nbsp
-  <a href="https://github.com/fluid-dev/hexo-theme-fluid/blob/master/Changelog.md">更新日志</a>&nbsp&nbsp&nbsp&nbsp
-  <a href="https://hexo.io/zh-cn/docs/front-matter">文章配置</a>
-</p>
-
-<p align="center">
-  <span>预览：</span>
-  <a href="https://rook1e.com">Rook1e's blog</a>&nbsp&nbsp&nbsp&nbsp
-  <a href="https://zkqiang.cn">zkqiang's blog</a>&nbsp&nbsp&nbsp&nbsp
-  <a href="https://eatrice.top">吃白饭的休伯利安号</a>
-</p>
+预览：[zkqiang's blog](https://zkqiang.cn)
 
 ## 快速开始
 
@@ -41,7 +23,7 @@ title: hexo-theme-fluid
 
 请优先下载 [最新 release 版本](https://github.com/fluid-dev/hexo-theme-fluid/releases)，master 分支无法保证稳定。
 
-下载后解压到 themes 目录下并重命名为 `fluid`。
+下载后解压到 `themes` 目录下并重命名为 `fluid`。
 
 #### 2. 指定主题
 
@@ -81,18 +63,16 @@ layout: about
 - [x] 自定义代码高亮方案
 - [x] 内置多语言
 - [x] 支持多款评论插件
-- [x] 支持使用[数据文件](https://hexo.io/zh-cn/docs/data-files)存放配置
+- [x] 支持使用[数据文件](/5-Add/5-3-data-file.html)存放配置，平滑升级
 - [x] 自定义静态资源 CDN
 - [x] 内置文章搜索
 - [x] 页脚备案信息
 - [x] 网页访问统计
 - [x] 支持 LaTeX 数学公式
 
-:::tip 提醒
-hexo-theme-stun 支持主题平滑升级。有关内容请查阅[使用数据文件平滑升级主题](/5-Add/5-3-data-file.html)。
+:::details 反馈
+
+- 微信群：扫描后添加好友，**回复「fluid」**（在聊天回复，不是加好友验证）自动拉群。
+- 二维码<img width="250" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.jpeg">
+
 :::
-
-## 反馈
-
-- 微信群：扫描后添加好友，**回复「fluid」**（在聊天回复，不是加好友验证）自动拉群<details> <summary>二维码</summary><img width="250" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.jpeg"></details>
-

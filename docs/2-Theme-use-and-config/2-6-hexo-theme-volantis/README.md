@@ -1,71 +1,55 @@
 ---
-title: hexo-theme-material-x
+title: hexo-theme-volantis
 ---
-# hexo-theme-material-x <Badge text="@xaoxuu"/> <Badge text="Finish"/> <Badge text="1.0.4"/>
+# hexo-theme-volantis <Badge text="@xaoxuu"/> <Badge text="Writing" type="warn"/> <Badge text="1.0.4"/>
 
 ::: tip 提示
-特别鸣谢本文作者：[xaoxuu](https://xaoxuu.com/)
+特别鸣谢本文作者：[xaoxuu](https://xaoxuu.com/)，本文来自[官方文档](https://volantis.js.org/)。
 :::
 
-[Material X 主题地址](https://github.com/xaoxuu/hexo-theme-material-x)
+[Volantis 主题地址](https://github.com/xaoxuu/hexo-theme-material-x)
 
-## Material-x 主题演示
+## Volantis 主题演示
 
 ![演示](@img/2/2-6/1.png)
 
 ## 简介
 
-**Material X** 是 xaoxuu 基于 Material Flow（已停止维护）改编的一个 Hexo 主题，相对作者原主题主要有以下方面改动：
-
-- 调整卡片阴影细节以及增加卡片的动画效果。
-- 博文列表将作者的多列布局改为单列布局。
-- 使用 [Font Awesome](http://fontawesome.io) 图标。
-- 优化了颜色搭配，方便在 defines 中更换主题色。
-- 一些 UI 细节，如调整搜索框长度使之与右边卡片等宽、优化了在手机端的显示效果。
-- 可以显示网易云音乐歌单。
-- 支持 3 种评论系统：Disqus、来必力和 Valine。
-- 增加了推荐文章列表，增加博客流量。
-- 增加了阅读统计。
-- 支持渲染 MathJax 数学公式。
-- 修复了目录有时无法定位的 BUG。
-
+**Volantis**，原名 Material X。
 
 ## Demo Blogs
 
 本主题将持续更新和维护，你可以在这里查看主题最新的实际效果：[👉 https://blog.xaoxuu.com 👈](https://blog.xaoxuu.com)
 
 
-## 下载主题
+## 下载与安装
 
-到博客的根目录打开终端 ，下载主题到 `themes/` 文件夹：
+### 自动安装
 
-```bash
-git clone https://github.com/xaoxuu/hexo-theme-material-x themes/material-x
-```
-
-然后安装依赖包：
+1. 打开终端输入下面命令安装脚本：
 
 ```bash
-npm i -S hexo-generator-search hexo-generator-feed hexo-renderer-less hexo-autoprefixer hexo-generator-json-content hexo-recommended-posts
+curl -s https://xaoxuu.com/install | sh -s hexo.sh
 ```
 
-然后将 Hexo 的 `_config.yml` 的 `theme` 项改为 `material-x` 即可。
+2. 在博客路径打开终端，输入下面命令即可安装主题和依赖包：
 
-## 站点配置
-
-### 网站图标
-
-在博客主目录的 `_config.yml` 文件中，添加 `shortcut_icon` 和 `favicon`。
-例如：
-
-```yaml
-shortcut_icon: "https://xaoxuu.com/assets/img/favicon.ico"
-favicon: "https://xaoxuu.com/assets/img/favicon.ico"
+```bash
+hexo.sh i v
 ```
 
-## 主题配置
+### 手动安装
 
-把 `themes/material-x/_config.yml` 中的 **所有** 内容复制到博客主目录的 `_config.yml` 文件中，然后根据自己的需要填写和修改。这样做的好处是：更新主题的时候你修改过的配置就不会被覆盖了。
+在终端中输入以下命令，下载主题源码到 `themes/` 文件夹并安装依赖：
+
+```bash
+git clone https://github.com/xaoxuu/hexo-theme-volantis themes/volantis
+npm i -S hexo-generator-search hexo-generator-json-content hexo-renderer-less
+```
+
+::: warning 警示
+以下内容可能过期，本文仍在更新中。可先前往[官方文档](https://volantis.js.org/)查看。
+:::
 
 ::: tip 提示
 以下这些配置如果没有特殊说明，都指的是博客主目录的 `_config.yml` 文件。
@@ -484,7 +468,7 @@ mathjax: true
 
 #### 背景颜色
 
-| key                  | value 的作用                                |
+| key                  | value 的作用                               |
 | -------------------- | ------------------------------------------ |
 | @theme_bg_main       | 网页背景色                                 |
 | @theme_bg_navbar     | 导航栏背景色                               |
@@ -495,7 +479,7 @@ mathjax: true
 
 #### 文字颜色
 
-| key                   | value 的作用                            |
+| key                   | value 的作用                           |
 | --------------------- | -------------------------------------- |
 | @theme_text_header    | 标题文字颜色（h1/h2）                  |
 | @theme_text_link      | 链接颜色                               |
