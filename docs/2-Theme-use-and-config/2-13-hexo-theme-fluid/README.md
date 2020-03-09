@@ -11,6 +11,7 @@ title: hexo-theme-fluid
 ![ScreenShot](@img/2/2-13/1.png)
 
 文档：
+
 - [用户手册](https://hexo.fluid-dev.com/docs/)
 - [更新日志](https://github.com/fluid-dev/hexo-theme-fluid/blob/master/Changelog.md)
 - [文章配置](https://hexo.io/zh-cn/docs/front-matter)
