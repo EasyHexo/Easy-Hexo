@@ -405,19 +405,19 @@ meta:
 
 Widget库中的小部件通常可用于侧边栏、左边主体区域，部分也可用作文章页脚。组件的类别（class）共有以下几种：
 
-| class         | 功能     | 适用区域                 |
-| ------------- | ------ | -------------------- |
-| blogger       | 博主信息模块 | sidebar              |
-| toc           | 目录     | sidebar              |
-| category      | 文章分类   | sidebar、body         |
-| tagcloud      | 标签云    | sidebar、body、article |
+| class         | 功能         | 适用区域               |
+| ------------- | ------------ | ---------------------- |
+| blogger       | 博主信息模块 | sidebar                |
+| toc           | 目录         | sidebar                |
+| category      | 文章分类     | sidebar、body          |
+| tagcloud      | 标签云       | sidebar、body、article |
 | related_posts | 相关文章推荐 | sidebar、body、article |
-| copyright     | 版权标识   | article              |
-| qrcode        | 二维码控件  | sidebar、body、article |
-| text          | 文本控件   | sidebar、body、article |
-| grid          | 网格控件   | sidebar、body、article |
-| list          | 列表控件   | sidebar、body、article |
-| page          | 页面控件   | sidebar、body、article |
+| copyright     | 版权标识     | article                |
+| qrcode        | 二维码控件   | sidebar、body、article |
+| text          | 文本控件     | sidebar、body、article |
+| grid          | 网格控件     | sidebar、body、article |
+| list          | 列表控件     | sidebar、body、article |
+| page          | 页面控件     | sidebar、body、article |
 
 一种类型（class）的组件可以创建多个，不能够重名。
 
@@ -623,11 +623,11 @@ widget:
 
 在页面的 front-matter 中设置一个 `pid` 值，然后 `page` 组件中传入对应的 `pid` 值，便可将页面作为组件。
 
-| content取值 | 含义         |
-| --------- | ---------- |
-| excerpt   | 只显示摘要      |
-| more      | 只显示更多后面的内容 |
-| content   | 显示全文       |
+| content取值 | 含义                 |
+| ----------- | -------------------- |
+| excerpt     | 只显示摘要           |
+| more        | 只显示更多后面的内容 |
+| content     | 显示全文             |
 
 #### 如何新增自定义组件 <Badge text="^1.7.0"/>
 
@@ -799,8 +799,8 @@ footer:
 
 ### 布局模板
 
-| 取值       | 含义   |
-| -------- | ---- |
+| 取值     | 含义     |
+| -------- | -------- |
 | page     | 独立页面 |
 | post     | 文章页面 |
 | category | 分类页面 |
@@ -814,53 +814,53 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别�
 
 :::details 查看全部取值
 
-| 字段          | 含义           | 值类型          | 默认值                       |
-| ----------- | ------------ | ------------ | ------------------------- |
-| layout      | 布局模版         | String       | -                         |
-| title       | 标题           | String       | -                         |
-| seotitle    | 网页标题         | String       | page.title                |
-| date        | 创建时间         | Date         | 文件创建时间                    |
-| updated     | 更新日期         | Date         | 文件修改时间                    |
-| permalink   | 覆盖文章网址       | String       | -                         |
-| music       | 内部音乐控件       | [Object]     | -                         |
-| robots      | robots       | String       | -                         |
-| keywords    | 页面关键词        | String       | -                         |
-| description | 页面描述、摘要      | String       | -                         |
-| cover       | 是否显示封面       | Bool         | true                      |
+| 字段        | 含义                 | 值类型       | 默认值                    |
+| ----------- | -------------------- | ------------ | ------------------------- |
+| layout      | 布局模版             | String       | -                         |
+| title       | 标题                 | String       | -                         |
+| seotitle    | 网页标题             | String       | page.title                |
+| date        | 创建时间             | Date         | 文件创建时间              |
+| updated     | 更新日期             | Date         | 文件修改时间              |
+| permalink   | 覆盖文章网址         | String       | -                         |
+| music       | 内部音乐控件         | [Object]     | -                         |
+| robots      | robots               | String       | -                         |
+| keywords    | 页面关键词           | String       | -                         |
+| description | 页面描述、摘要       | String       | -                         |
+| cover       | 是否显示封面         | Bool         | true                      |
 | meta        | 文章或页面的meta信息 | Bool, Array  | theme.layout.*.meta       |
-| sidebar     | 页面侧边栏        | Bool, Array  | theme.layout.*.sidebar    |
-| body        | 页面主体元素       | Array        | theme.layout.on_page.body |
-| mathjax     | 是否渲染公式       | Bool, String | false                     |
-| thumbnail   | 缩略图          | String       | false                     |
-| icons       | 图标           | Array        | []                        |
+| sidebar     | 页面侧边栏           | Bool, Array  | theme.layout.*.sidebar    |
+| body        | 页面主体元素         | Array        | theme.layout.on_page.body |
+| mathjax     | 是否渲染公式         | Bool, String | false                     |
+| thumbnail   | 缩略图               | String       | false                     |
+| icons       | 图标                 | Array        | []                        |
 
 >  提醒：没有 `seotitle` 时，以 `title` 作为网页标题。
 
 `layout:post` 时特有的字段：
 
-| 字段         | 含义     | 值类型           | 默认值           |
-| ---------- | ------ | ------------- | ------------- |
-| author     | 文章作者   | [Object]      | config.author |
-| categories | 分类     | String, Array | -             |
-| tags       | 标签     | String, Array | -             |
+| 字段       | 含义         | 值类型        | 默认值        |
+| ---------- | ------------ | ------------- | ------------- |
+| author     | 文章作者     | [Object]      | config.author |
+| categories | 分类         | String, Array | -             |
+| tags       | 标签         | String, Array | -             |
 | toc        | 是否生成目录 | Bool          | true          |
-| top        | 是否置顶   | Bool          | false         |
+| top        | 是否置顶     | Bool          | false         |
 
 author
 
-| 字段     | 含义  | 值类型    | 默认值           |
-| ------ | --- | ------ | ------------- |
+| 字段   | 含义   | 值类型 | 默认值        |
+| ------ | ------ | ------ | ------------- |
 | name   | 作者名 | String | config.author |
-| avatar | 头像  | String | config.avatar |
-| url    | 链接  | String | config.url    |
+| avatar | 头像   | String | config.avatar |
+| url    | 链接   | String | config.url    |
 
 music
 
-| 字段     | 是否必须 | 值类型                                               |
-| ------ | ---- | ------------------------------------------------- |
-| server | 是    | netease, tencent, kugou, xiami, baidu             |
-| type   | 是    | song, playlist, album, search, artist             |
-| id     | 是    | song id / playlist id / album id / search keyword |
+| 字段   | 是否必须 | 值类型                                            |
+| ------ | -------- | ------------------------------------------------- |
+| server | 是       | netease, tencent, kugou, xiami, baidu             |
+| type   | 是       | song, playlist, album, search, artist             |
+| id     | 是       | song id / playlist id / album id / search keyword |
 
 :::
 

@@ -2,7 +2,7 @@
 title: 部署 Hexo
 ---
 
-# 部署 Hexo <Badge text="@MoshiYeap"/> <Badge text="@Odeinjul"/> <Badge text="Finish"/>
+# 部署 Hexo <Badge text="@MoshiYeap"/> <Badge text="@Odeinjul"/> <Badge text="@ChungZH"> <Badge text="Finish"/>
 
 ## 部署到 GitHub
 
@@ -10,7 +10,7 @@ title: 部署 Hexo
 
 1. 如果没有账号，请点此前往 [GitHub](https://github.com) 注册一个 GitHub 账号。
 2. 新建一个公开仓库，仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
-3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
+3. 创建完成后记下该仓库的 HTTPS/SSH 地址，一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
 
 ### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
 
@@ -73,6 +73,70 @@ $ hexo clean && hexo d -g
 :::tip 提醒
 同时需要在本地的 `source` 目录新建一个 CNAME 文件，内容为你的自定义域名（不带 http 等前缀）。否则无法使用自定义域名功能（`hexo d` 生成的文件没有 CNAME 文件，导致仓库的自定域名设置失效）
 :::
+
+## 部署到 Netlify
+
+Netlify 是一个可以部署静态网站的平台，也可以从 GitHub/GitLab/Bitbucket 的项目中快速构建你的网站。相比 GitHub Pages 更加专业、便捷，即使在国内的访问速度也不错，百度也能收录。
+
+### 准备工作
+
+:::tip 提醒
+准备工作和部署到 GitHub 一样。
+:::
+
+1. 如果没有账号，请点此前往 [GitHub](https://github.com) 注册一个 GitHub 账号。
+2. 新建一个公开仓库，仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
+3. 创建完成后记下该仓库的 HTTPS/SSH 地址，一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
+
+### 配置 Git
+
+:::tip 提醒
+配置 Git 也和部署到 GitHub 一样。
+:::
+
+如果你只是安装好了 Git 但没有配置过你的 Git ，那么现在需要做的第一件事情就是设置你的 Git 用户名和邮箱。
+在 Git Bash 中执行以下两条命令配置你的用户名和邮箱，这里建议用户名和邮箱与你的 GitHub 用户名和邮箱保持一致。
+
+```bash
+$ git config --global user.name "Your_user_name"
+$ git config --global user.email Your_email@example.com
+```
+:::tip 提醒
+每次 Git 提交时都会附带这两条信息，用于记录是谁提交的更新，并且会随更新内容一起被记录到历史记录中。简单说，是用来标记的你的身份的~
+:::
+
+### 配置本地和远程仓库
+
+在博客根目录打开终端并执行以下命令：
+
+```bash
+git init
+git add .
+git commit -m ":tada: Init repo"
+git remote add origin git@github.com:你的名字/你的项目名字.git
+git push -u origin master
+```
+
+这样就将你的 Hexo 博客 push 上 GitHub 仓库了。以后更新博客只需要 `git push origin master` 即可。
+
+### 配置 Netlify
+
+1. 首先打开 [Netlify 官网](https://www.netlify.com/)，用 GitHub 帐号登录。
+2. 点击 **New site from Git**，进入 **Create a new site** 页面。
+   1. **Connect to Git provider** 页面，选择 GitHub。
+   2. **Pick a repository** 页面，选择你刚刚创建的博客存储库。
+   3. 最后一步 **Build options, and deploy!**，Netlify 会检测到是 Hexo 项目，自动配置好了。点击 **Deploy site** 按钮即可。
+   ![build-options](@img/1/1-4/1.png)
+
+最后出现如下界面：
+
+![deploy-done](@img/1/1-4/2.png)
+
+可以看到 Netlify 自动分配了一个域名，在这个网站中是 `https://nifty-noyce-b98546.netlify.com`。
+
+如果你有自己的域名并想要绑定它，请点击 **Set up a custom domain** 链接。这里不再赘述，详细步骤请见 [Netlify Docs: custom-domains](https://www.netlify.com/docs/custom-domains)。
+
+关于 HTTPS 的设置，Netlify Docs 中也有详细教程。请自行阅读。
 
 ## 部署到 CODING
 
