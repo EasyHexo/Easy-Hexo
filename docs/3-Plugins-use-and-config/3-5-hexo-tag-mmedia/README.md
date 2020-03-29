@@ -94,11 +94,11 @@ meting:
 | server        | 必须       | 音乐平台，第二个参数，可选：`netease`, `tencent`, `kugou`, `xiami`, `baidu` |
 | type          | 必须       | 音乐类型，第三个参数，可选：`song`, `playlist`, `album` `search`, `artist`  |
 | auto          | 无         | 有 auto 选项时前面参数不需要填写，否则为必填，见示例 2                      |
-| autoplay      | `false`    | 自动播放，带有此参数表示 `true`，不带表示 `false`                             |
-| fixed         | `false`    | 吸底模式，带有此参数表示 `true`，不带表示 `false`                             |
-| mini          | `false`    | 迷你模式，带有此参数表示 `true`，不带表示 `false`                             |
-| listfolded    | `false`    | 默认折叠列表，带有此参数表示 `true`，不带表示 `false`                         |
-| mutex         | `true`     | 互斥，如不需互斥 `"mutex:false"`                                             |
+| autoplay      | `false`    | 自动播放，带有此参数表示 `true`，不带表示 `false`                           |
+| fixed         | `false`    | 吸底模式，带有此参数表示 `true`，不带表示 `false`                           |
+| mini          | `false`    | 迷你模式，带有此参数表示 `true`，不带表示 `false`                           |
+| listfolded    | `false`    | 默认折叠列表，带有此参数表示 `true`，不带表示 `false`                       |
+| mutex         | `true`     | 互斥，如不需互斥 `"mutex:false"`                                            |
 | theme         | `#2980b9`  | 主题颜色                                                                    |
 | loop          | `all`      | 循环模式 ，可选值 `all`, `one`, `none`                                      |
 | order         | `list`     | 播放顺序，可选值 `list`, `random`                                           |
@@ -118,16 +118,16 @@ meting:
 {% aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx] %}
 ```
 
-| 配置项      | 默认    | 描述                                            |
-| :---------- | :------ | :---------------------------------------------- |
-| title       | 必须    | 曲目标题，第一个参数                            |
-| author      | 必须    | 曲目作者，第二个参数                            |
-| url         | 必须    | 音乐文件地址                                    |
-| picture_url |         | 音乐对应的图片地址                              |
+| 配置项      | 默认    | 描述                                              |
+| :---------- | :------ | :------------------------------------------------ |
+| title       | 必须    | 曲目标题，第一个参数                              |
+| author      | 必须    | 曲目作者，第二个参数                              |
+| url         | 必须    | 音乐文件地址                                      |
+| picture_url |         | 音乐对应的图片地址                                |
 | narrow      | `false` | 袖珍风格，带有此参数表示 `true`，不带表示 `false` |
 | autoplay    | `false` | 自动播放，带有此参数表示 `true`，不带表示 `false` |
-| width:xxx   | `100%`  | 播放器宽度                                      |
-| lrc         |         | 歌词地址                                        |
+| width:xxx   | `100%`  | 播放器宽度                                        |
+| lrc         |         | 歌词地址                                          |
 
 AplayerList（不推荐使用）
 
@@ -173,38 +173,38 @@ AplayerList（不推荐使用）
 
 非必填项，如果不清楚请不要填写。
 
-| 配置项      | 默认      | 描述                                                                   |
-| :---------- | :-------- | :--------------------------------------------------------------------- |
-| url         | 必填      | 视频地址                                                               |
-| pic         |           | 封面                                                                   |
-| thumbnails  |           | 缩略图                                                                 |
-| type        | `auto`    | 视频格式，可选 `auto` `hls` `dash` `shakaDash` `flv` `webtorrent`      |
-| id          |           | 弹幕 id，建议使用视频的 CRC 或 MD5，再或使用 UUID                      |
-| api         |           | 弹幕 api                                                               |
-| token       |           |                                                                        |
-| maximum     | `10000`   | 最大弹幕数                                                             |
-| user        | `DIYgod`  | 弹幕发送用户名                                                         |
-| bottom      | `15%`     | 弹幕底端距离                                                           |
-| unlimited   | `true`    |                                                                        |
-| addition    |           | 额外弹幕，可重叠加多个                                                 |
-| suburl      |           | 字幕地址                                                               |
-| subtype     | `webvtt`  | 字幕类型，可选 `webvtt` `ass`                                          |
-| subbottom   | `40px`    | 字幕底端距离                                                           |
-| subfontSize | `20px`    | 字幕字体大小                                                           |
-| subcolor    | #fff      | 字幕字体颜色                                                           |
-| autoplay    | `false`   | 自动播放，带有此参数表示 true，不带表示 false                          |
-| loop        | `false`   | 循环，带有此参数表示 true，不带表示 false                              |
-| screenshot  | `false`   | 截屏按钮，带有此参数表示 true，不带表示 false，此参数会造成跨域        |
-| hotkey      | `true`    | 热键控制                                                               |
-| mutex       | `true`    | 互斥                                                                   |
-| theme       | `#b7daff` | 主题颜色                                                               |
-| lang        |           | 语言，不指定会根据浏览器环境自动识别                                   |
-| preload     | `auto`    | 预加载，可选 `none` `metadata` `auto`                                  |
-| logo        |           | logo 地址                                                              |
-| volume      | 0.7       | 默认音量 `0-1`                                                         |
-| contextmenu |           | 右键菜单，可叠加                                                       |
+| 配置项      | 默认      | 描述                                                                    |
+| :---------- | :-------- | :---------------------------------------------------------------------- |
+| url         | 必填      | 视频地址                                                                |
+| pic         |           | 封面                                                                    |
+| thumbnails  |           | 缩略图                                                                  |
+| type        | `auto`    | 视频格式，可选 `auto` `hls` `dash` `shakaDash` `flv` `webtorrent`       |
+| id          |           | 弹幕 id，建议使用视频的 CRC 或 MD5，再或使用 UUID                       |
+| api         |           | 弹幕 api                                                                |
+| token       |           |                                                                         |
+| maximum     | `10000`   | 最大弹幕数                                                              |
+| user        | `DIYgod`  | 弹幕发送用户名                                                          |
+| bottom      | `15%`     | 弹幕底端距离                                                            |
+| unlimited   | `true`    |                                                                         |
+| addition    |           | 额外弹幕，可重叠加多个                                                  |
+| suburl      |           | 字幕地址                                                                |
+| subtype     | `webvtt`  | 字幕类型，可选 `webvtt` `ass`                                           |
+| subbottom   | `40px`    | 字幕底端距离                                                            |
+| subfontSize | `20px`    | 字幕字体大小                                                            |
+| subcolor    | #fff      | 字幕字体颜色                                                            |
+| autoplay    | `false`   | 自动播放，带有此参数表示 true，不带表示 false                           |
+| loop        | `false`   | 循环，带有此参数表示 true，不带表示 false                               |
+| screenshot  | `false`   | 截屏按钮，带有此参数表示 true，不带表示 false，此参数会造成跨域         |
+| hotkey      | `true`    | 热键控制                                                                |
+| mutex       | `true`    | 互斥                                                                    |
+| theme       | `#b7daff` | 主题颜色                                                                |
+| lang        |           | 语言，不指定会根据浏览器环境自动识别                                    |
+| preload     | `auto`    | 预加载，可选 `none` `metadata` `auto`                                   |
+| logo        |           | logo 地址                                                               |
+| volume      | 0.7       | 默认音量 `0-1`                                                          |
+| contextmenu |           | 右键菜单，可叠加                                                        |
 | highlight   |           | 高光点，可叠加多个，例如 `"highlight:{time: 20, text: '这是第 20 秒'}"` |
-| code        |           | 额外代码，不懂不要填，需要写的请参考源码                               |
+| code        |           | 额外代码，不懂不要填，需要写的请参考源码                                |
 
 ## Bilibili
 
@@ -212,17 +212,18 @@ AplayerList（不推荐使用）
 {% bilibili "aid:60016166" "quality:high" "danmaku" "allowfullscreen" %}
 ```
 
-| 配置项          | 默认    | 描述                                                      |
-| :-------------- | :------ | :-------------------------------------------------------- |
-| aid             | 必填    | 视频 av 号，填写 av 时非必填                              |
-| av              |         | 视频链接地址，不要带分 P 信息，与 aid 同时填写会被覆盖    |
-| page            | `1`     | 分 P，填写 av 时才会生效                                  |
-| quality         | `low`   | 视频质量，可选 `high` `low`                               |
-| danmaku         | `false` | 开启弹幕，带有此参数表示 true，不带表示 false             |
-| allowfullscreen | `true`  | 是否允许全屏                                              |
-| width           | `100%`  | 宽度                                                      |
-| height          | `500px` | 高度                                                      |
-| margin          | `auto`  | 位置，css 属性，例：`"margin:auto"` `"margin:0 0 0 auto"` |
+| 配置项          | 默认    | 描述                                                               |
+| :-------------- | :------ | :----------------------------------------------------------------- |
+| bvid            |         | 视频 bv 号，bvid、aid 和 av 必填一项，推荐使用 bvid                |
+| aid             |         | 视频 av 号                                                         |
+| av              |         | 视频链接地址，不要带分 P 信息，与 aid 同时填写会被覆盖，不推荐使用 |
+| page            | `1`     | 分 P，填写 av 时才会生效                                           |
+| quality         | `low`   | 视频质量，可选 `high` `low`                                        |
+| danmaku         | `false` | 开启弹幕，带有此参数表示 true，不带表示 false                      |
+| allowfullscreen | `true`  | 是否允许全屏                                                       |
+| width           | `100%`  | 宽度                                                               |
+| height          | `500px` | 高度                                                               |
+| margin          | `auto`  | 位置，css 属性，例：`"margin:auto"` `"margin:0 0 0 auto"`          |
 
 ## ArtPlayer
 
