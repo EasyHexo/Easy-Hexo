@@ -127,3 +127,5 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 Authored by Easy Hexo, [@ChungZH](https://chungzh.cn/). Maintained by [contributers](https://github.com/EasyHexo/Easy-Hexo/graphs/contributors). :heart:
 
 [@ChungZH's Blog](https://chungzh.cn/) · [@GitHub](https://github.com/EasyHexo)
+
+AWESOME! 
