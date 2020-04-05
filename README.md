@@ -129,3 +129,4 @@ Authored by Easy Hexo, [@ChungZH](https://chungzh.cn/). Maintained by [contribut
 [@ChungZH's Blog](https://chungzh.cn/) · [@GitHub](https://github.com/EasyHexo)
 
 AWESOME! 
+ orz
