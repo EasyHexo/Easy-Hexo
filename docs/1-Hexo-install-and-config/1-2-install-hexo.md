@@ -55,11 +55,12 @@ $ nvm install stable
 
 安装好后，即可使用 npm 完成 Hexo 的安装。
 
-
 ```bash
 $ npm install -g hexo-cli
 ```
 
 ## 视频
 
-<dplayer src="https://dl.sm9.top/Video/EasyHexo/安装.mp4" danmaku-api="https://danmaku.xwhite.studio/api/dplayer/" danmaku-id="6EF601270CB011D781FD2E84D102EC60" danmaku-addition="https://danmaku.xwhite.studio/api/dplayer/v3/bilibili?aid=34828870&p=1" subtitle="https://dl.sm9.top/Video/EasyHexo/安装.vtt"/>
+<!-- <dplayer src="https://dl.sm9.top/Video/EasyHexo/安装.mp4" danmaku-api="https://danmu.u2sb.top/api/danmu/dplayer/" danmaku-id="6EF601270CB011D781FD2E84D102EC60" danmaku-addition="https://danmu.u2sb.top/api/danmu/dplayer/v3/bilibili?aid=34828870&p=1" subtitle="https://dl.sm9.top/Video/EasyHexo/安装.vtt"/> -->
+
+<bilibili bvid="BV12b411N7xW" :page="1" :highQuality="true" :danmaku="true" />
