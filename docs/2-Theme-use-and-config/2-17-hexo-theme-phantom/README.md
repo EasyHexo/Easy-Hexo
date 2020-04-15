@@ -200,7 +200,7 @@ rss_url:
 
 ## （五）发布自定义配置
 
-对于每个文章，您都可以在[最前面](https://hexo.io/docs/front-matter.html)指定其他信息
+对于每个文章，您都可以在 front-matter 指定其他信息
 
 ### 1. 文章副标题
 
@@ -227,12 +227,4 @@ cover_index: /assets/work1.jpg
 ```yaml
 cover_detail: /assets/hero_image.jpg
 ```
-
-## 创作者
-
-该主题由 [HTML5 Up](http://html5up.net/phantom/) 创建，并由 [Jonathan Klughertz](http://www.codeblocq.com/) 改编到 [Hexo](http://www.codeblocq.com/)。
-
-## Bugs
-
-如果您有问题，功能要求或需要我解决的错误，请[单击此处](https://github.com/klugjo/hexo-theme-phantom/issues/new)提出问题。
 
