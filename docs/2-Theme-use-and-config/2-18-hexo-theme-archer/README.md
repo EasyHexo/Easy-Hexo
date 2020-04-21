@@ -1,3 +1,7 @@
+---
+title: hexo-theme-archer
+---
+
 # hexo-theme-archer <Badge text="@Odeinjul"/>  <Badge text="Finish"/> 
 
 一款简洁美观的 Hexo 主题
@@ -17,7 +21,7 @@
 - 支持分页 
 
 ## 下载安装
-在 Hexo 目录下执行
+在 Hexo 博客根目录下执行
 ```sh
 $ npm i hexo-generator-json-content --save && npm i --save hexo-wordcount && git clone https://github.com/fi3ework/hexo-theme-archer.git themes/archer --depth=1
 ```
@@ -32,7 +36,7 @@ theme: archer
 ```
 
 添加 sidebar 启用支持：
-在Hexo目录下的 ```_config.yml``` 中添加以下字段（不是archer下的 ```_config.yml```）
+在 Hexo 博客根目录下的 `_config.yml` 中添加以下字段（不是 archer 下的 `_config.yml`）
 
 ```yml
 jsonContent:
@@ -67,8 +71,8 @@ jsonContent:
 参考了 [The hexo-theme-archer wiki](https://github.com/fi3ework/hexo-theme-archer/wiki) 。
 
 ### 启用 404 页面
-
-在**hexo的source目录**下加入404.md文件，```layout```字段必须设为```404```，例如：
+ 
+在 **hexo 的 source 目录**下加入 `404.md` 文件，`layout` 字段必须设为 `404`，例如：
 ```markdown
 ---
 layout: 404
@@ -80,11 +84,11 @@ description: "May the Force be with you :&#41;（引号内为页面内容可更�
 
 ### 启用 About 页面
 
-* 在**hexo目录**下执行
+* 在 **hexo 目录**下执行
 ```bash
 hexo new page "about"
 ```
-* 在**hexo目录**下```source/about/index.md```中添加字段```layout: about```，例如：
+* 在 **hexo 目录**下 `source/about/index.md` 中添加字段 `layout: about`，例如：
 ```markdown
 ---
 title: 这是自我介绍的题目(此处可更改)
@@ -92,7 +96,7 @@ layout: about
 ---
 这是一段自我介绍（此处可更改）
 ```
-* 在**主题目录**下```_config.yml```中添加以下字段
+* 在**主题目录**下 `_config.yml`中添加以下字段
 ```yml
 about:
   enable: true #是否开启about页面
@@ -105,25 +109,25 @@ about:
 请参考：https://nathaniel.blog/tutorials/make-hexo-support-math-again/
 
 ---
-### 启用rss订阅
+### 启用 RSS 订阅
 ```bash
 npm install hexo-generator-feed --save
 ```
-* 在**主题目录**下```_config.yml```的```social```字段中添加```rss: /atom.xml```，侧边栏便会出现rss.
+* 在**主题目录**下 `_config.yml` 的 `social` 字段中添加 `rss: /atom.xml`，侧边栏便会出现 RSS.
 
 ---
 
-### 使用随机图片作为banner
-banner图片可使用url作为地址，利用这一点便可使用随机图片的API来实现。
-在**主题目录**下```_config.yml```的```site_header_image/post_header_image:/_404_image```字段修改图片地址，便可改变**主页/文章/404页面**的banner.
+### 使用随机图片作为 banner
+banner 图片可使用 url 作为地址，利用这一点便可使用随机图片的 API 来实现。
+在**主题目录**下 `_config.yml` 的 `site_header_image/post_header_image:/_404_image` 字段修改图片地址，便可改变**主页/文章/404 页面**的banner.
 API参数页面：https://source.unsplash.com/ ，可以使用随机图片或某用户收藏的图片
 建议使用的参数：https://source.unsplash.com/random/2560x863
-你也可以使用别的url来实现这一效果
+你也可以使用别的 url 来实现这一效果
 
 ---
 
 ### 自定义主题颜色
-* 修改 ```archer\source-src\scss\_variables.scss``` 中的 ```$feature-color``` 的颜色。
+* 修改 `archer\source-src\scss\_variables.scss` 中的 `$feature-color` 的颜色。
 * 在 archer 目录下执行 ```npm install```，然后执行 ```npm run build```。
 
 ---
