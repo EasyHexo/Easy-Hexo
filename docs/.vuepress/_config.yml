@@ -48,6 +48,7 @@ themeConfig:
       hexo-theme-matery: /2-Theme-use-and-config/2-14-hexo-theme-matery/
       hexo-theme-stun: /2-Theme-use-and-config/2-16-hexo-theme-stun/
       hexo-theme-phantom: /2-Theme-use-and-config/2-17-hexo-theme-phantom/
+      hexo-theme-archer: /2-Theme-use-and-config/2-18-hexo-theme-archer/
     插件使用与配置:
       概要: /3-Plugins-use-and-config/
       hexo-tag-aplayer: /3-Plugins-use-and-config/3-1-hexo-tag-aplayer/
@@ -88,6 +89,7 @@ themeConfig:
       - 2-14-hexo-theme-matery/
       - 2-16-hexo-theme-stun/
       - 2-17-hexo-theme-phantom/
+      - 2-18-hexo-theme-archer/
     /3-Plugins-use-and-config/:
       - 3-1-hexo-tag-aplayer/
       - 3-2-hexo-tag-dplayer/
