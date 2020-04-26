@@ -113,13 +113,13 @@ about:
 ```bash
 npm install hexo-generator-feed --save
 ```
-* 在**主题目录**下 `_config.yml` 的 `social` 字段中添加 `rss: /atom.xml`，侧边栏便会出现 RSS.
+* 在**主题目录**下 `_config.yml` 的 `social` 字段中添加 `rss: /atom.xml`，侧边栏便会出现 RSS。
 
 ---
 
 ### 使用随机图片作为 banner
 banner 图片可使用 url 作为地址，利用这一点便可使用随机图片的 API 来实现。
-在**主题目录**下 `_config.yml` 的 `site_header_image/post_header_image:/_404_image` 字段修改图片地址，便可改变**主页/文章/404 页面**的banner.
+在**主题目录**下 `_config.yml` 的 `site_header_image/post_header_image:/_404_image` 字段修改图片地址，便可改变**主页/文章/404 页面**的banner。
 API参数页面：https://source.unsplash.com/ ，可以使用随机图片或某用户收藏的图片
 建议使用的参数：https://source.unsplash.com/random/2560x863
 你也可以使用别的 url 来实现这一效果
@@ -128,12 +128,12 @@ API参数页面：https://source.unsplash.com/ ，可以使用随机图片或某
 
 ### 自定义主题颜色
 * 修改 `archer\source-src\scss\_variables.scss` 中的 `$feature-color` 的颜色。
-* 在 archer 目录下执行 ```npm install```，然后执行 ```npm run build```。
+* 在 archer 目录下执行 `npm install`，然后执行 `npm run build`。
 
 ---
 
 ### 自定义文章的banner
-通过配置每篇文章(即.md文件)的头部的```header_image```字段来修改，如果不填写将采用主题配置中的```post_header_image```字段，如果```post_header_image```字段未填写则采用```site_header_image```字段。
+通过配置每篇文章(即.md文件)的头部的 `header_image` 字段来修改，如果不填写将采用主题配置中的```post_header_image```字段，如果 `post_header_image` 字段未填写则采用 `site_header_image` 字段。
 例如：
 ```markdown
 ---
@@ -150,7 +150,7 @@ header_image: /intro/post-bg.jpg
 ### 自定义文章在首页的摘要
 首页的摘要有三种形式，优先级依次递减，高优先级会屏蔽掉低优先级的摘要。
 
-#### 使用 hexo 的 ```<!-- more -->```
+#### 使用 hexo 的 `<!-- more -->`
 在文章中插入 <!-- more --> 分隔符，分隔符之前的会显示在首页
 
 #### 自定义摘要
@@ -170,16 +170,16 @@ abstract: this is a custom abstract
 ---
 
 ### 设置文章版权信息
-修改主题配置文件中的 ```copyright``` 字段开启/关闭：
+修改主题配置文件中的 `copyright` 字段开启/关闭：
 ```yml
 copyright:
   enable: true
   # https://creativecommons.org/
   license: '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 ```
-默认显示作者，链接，日期以及版权说明，版权说明可通过 ```copyright.lincese``` 自定义。
+默认显示作者，链接，日期以及版权说明，版权说明可通过 `copyright.lincese` 自定义。
 
-```copyright.lincese``` 的值可以是 HTML
+`copyright.lincese` 的值可以是 HTML
 
 当文章版权信息开启时，可通过修改文章的meta关闭这一篇的版权：
 ```markdown
@@ -199,7 +199,7 @@ copyright: false
 
 ### 修改字
 
-字体文件在```./themes//archer/source/font```,最简单的方法就是拖入一个字体文件并将它的名字改为你想替换的字体名。
+字体文件在 `./themes//archer/source/font`，最简单的方法就是拖入一个字体文件并将它的名字改为你想替换的字体名。
 
 ---
 
