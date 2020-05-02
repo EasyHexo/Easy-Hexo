@@ -21,6 +21,7 @@ title: hexo-theme-archer
 - 支持分页 
 
 ## 下载安装
+
 在 Hexo 博客根目录下执行
 ```sh
 $ npm i hexo-generator-json-content --save && npm i --save hexo-wordcount && git clone https://github.com/fi3ework/hexo-theme-archer.git themes/archer --depth=1
@@ -60,6 +61,7 @@ jsonContent:
 ```
 
 ## 主题配置
+
 主题的全局配置在：`/themes/hexo-theme-phantom/_config.yml`。
 
 :::warning 注意
@@ -67,6 +69,7 @@ jsonContent:
 :::
 
 ## 进阶配置
+
 以下主要是关于安装完 hexo-theme-archer 后对其进行的一些魔改，
 参考了 [The hexo-theme-archer wiki](https://github.com/fi3ework/hexo-theme-archer/wiki) 。
 
@@ -80,7 +83,7 @@ title: "[404]（引号内为页面标题可更改）"
 description: "May the Force be with you :&#41;（引号内为页面内容可更改）"
 ---
 ```
----
+
 
 ### 启用 About 页面
 
@@ -103,12 +106,10 @@ about:
   image: '/intro/about-page.jpg' #about页面banner处图片地址
 ```
 
----
+### 启用 Latex 支持
 
-### 启用Latex支持
-请参考：https://nathaniel.blog/tutorials/make-hexo-support-math-again/
+请参考：[Make Hexo Support Math (LaTeX) Again](https://nathaniel.blog/tutorials/make-hexo-support-math-again/)
 
----
 ### 启用 RSS 订阅
 ```bash
 npm install hexo-generator-feed --save
@@ -118,21 +119,25 @@ npm install hexo-generator-feed --save
 ---
 
 ### 使用随机图片作为 banner
+
 banner 图片可使用 url 作为地址，利用这一点便可使用随机图片的 API 来实现。
+
 在**主题目录**下 `_config.yml` 的 `site_header_image/post_header_image:/_404_image` 字段修改图片地址，便可改变**主页/文章/404 页面**的banner。
-API参数页面：https://source.unsplash.com/ ，可以使用随机图片或某用户收藏的图片
-建议使用的参数：https://source.unsplash.com/random/2560x863
+
+API 参数页面：`https://source.unsplash.com/`，可以使用随机图片或某用户收藏的图片
+
+建议使用的参数：`https://source.unsplash.com/random/2560x863`
+
 你也可以使用别的 url 来实现这一效果
 
----
 
 ### 自定义主题颜色
+
 * 修改 `archer\source-src\scss\_variables.scss` 中的 `$feature-color` 的颜色。
 * 在 archer 目录下执行 `npm install`，然后执行 `npm run build`。
 
----
 
-### 自定义文章的banner
+### 自定义文章的 banner
 通过配置每篇文章(即.md文件)的头部的 `header_image` 字段来修改，如果不填写将采用主题配置中的```post_header_image```字段，如果 `post_header_image` 字段未填写则采用 `site_header_image` 字段。
 例如：
 ```markdown
@@ -145,16 +150,18 @@ header_image: /intro/post-bg.jpg
 ---
 ```
 
----
-
 ### 自定义文章在首页的摘要
+
 首页的摘要有三种形式，优先级依次递减，高优先级会屏蔽掉低优先级的摘要。
 
 #### 使用 hexo 的 `<!-- more -->`
+
 在文章中插入 <!-- more --> 分隔符，分隔符之前的会显示在首页
 
 #### 自定义摘要
+
 可以在文章的 meta 中定义 abstract 字段来自定义该文章在首页显示的摘要。
+
 例如：
 ```markdown
 ---
