@@ -20,11 +20,11 @@ title: hexo-theme-ils
 
 [在线预览](https://xpoet.cn)
 
-![Preview Image](https://user-images.githubusercontent.com/24516169/82140521-ae324080-9861-11ea-809f-ea73d09e24ad.jpg)
+![Preview Image](@img/2/2-2/01.jpg)
 
-![Preview Image](https://user-images.githubusercontent.com/24516169/82140654-e8501200-9862-11ea-8013-935897635d17.png)
+![Preview Image](@img/2/2-2/02.png)
 
-![Preview Image](https://user-images.githubusercontent.com/24516169/82140673-10d80c00-9863-11ea-9b2e-9fcf575e9aef.png)
+![Preview Image](@img/2/2-2/03.png)
 
 ## Features 功能特性
 
