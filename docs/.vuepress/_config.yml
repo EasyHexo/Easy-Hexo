@@ -57,6 +57,7 @@ themeConfig:
       hexo-helper-live2d: /3-Plugins-use-and-config/3-3-hexo-helper-live2d/
       hexo-blog-encrypt: /3-Plugins-use-and-config/3-4-hexo-blog-encrypt/
       hexo-tag-mmedia: /3-Plugins-use-and-config/3-5-hexo-tag-mmedia/
+      hexo-submit-urls-to-search-engine: /3-Plugins-use-and-config/3-6-hexo-submit-urls-to-search-engine/
     高级 Hexo 玩家:
       概要: /4-High-order-hexo-gamer/
       让你的 Hexo 博客支持远程编辑: /4-High-order-hexo-gamer/4-1-remote-editing/
