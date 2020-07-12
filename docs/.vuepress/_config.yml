@@ -99,6 +99,7 @@ themeConfig:
       - 3-3-hexo-helper-live2d/
       - 3-4-hexo-blog-encrypt/
       - 3-5-hexo-tag-mmedia/
+      - 3-6-hexo-submit-urls-to-search-engine/
     /4-High-order-hexo-gamer/:
       - 4-1-remote-editing/
       - 4-2-theme-develop/
