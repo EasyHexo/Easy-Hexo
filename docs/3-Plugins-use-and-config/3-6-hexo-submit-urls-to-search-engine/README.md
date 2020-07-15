@@ -3,8 +3,8 @@ title: hexo-submit-urls-to-search-engine
 ---
 # hexo-submit-urls-to-search-engine 插件使用 <Badge text="@cjh0613"/> <Badge text="Finish"/>
 
-## 一句话介绍
-hexo使用 `hexo-submit-urls-to-search-engine` 插件后，可主动推送Hexo博客新链接至谷歌、必应、百度搜索引擎站长平台以**提升网站收录质量和速度**。
+## 简洁
+使用 `hexo-submit-urls-to-search-engine` 插件，可主动推送 Hexo 博客新链接至谷歌、必应、百度搜索引擎站长平台以**提升网站收录质量和速度**。
 
 ## 官方文档
 [中文详细文档](https://cjh0613.github.io/blog/20200603HexoSubmitUrlsToSearchEngine.html)
