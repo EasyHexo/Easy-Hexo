@@ -8,7 +8,7 @@
   "private": true,
   "dependencies": {
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.19"
   },
   "devDependencies": {
     "debug": "^4.1.1",
