@@ -27,167 +27,167 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "0-Intro/0-1-member.html",
-    "revision": "d0314a31f268a9f60391bdab1cf873b2"
+    "revision": "602c0ce1e85e7c8532b450ac59e395fa"
   },
   {
     "url": "0-Intro/0-2-thanks.html",
-    "revision": "984cc281d6d13b0d245a80ff192686ba"
+    "revision": "eacb7c93af714940a3dff555a8890123"
   },
   {
     "url": "0-Intro/index.html",
-    "revision": "01ecf21010b7167fb59eee284262f8d6"
+    "revision": "18dc9867ff87fcd00a4184dac8d4a79b"
   },
   {
     "url": "1-Hexo-install-and-config/1-1-meet-hexo.html",
-    "revision": "846ec9c0cad8a82d5cc1e40d08794c81"
+    "revision": "251c583683d0a58b830286161ee2b5e3"
   },
   {
     "url": "1-Hexo-install-and-config/1-2-install-hexo.html",
-    "revision": "68d88a6f7210401c7cad30f07dfe607c"
+    "revision": "b277df6da04a023d16ec999dce245a05"
   },
   {
     "url": "1-Hexo-install-and-config/1-3-config-hexo.html",
-    "revision": "5fb6d30375781b83e1d08277462c77a4"
+    "revision": "6804a8d197aed99c45b8887ef497f031"
   },
   {
     "url": "1-Hexo-install-and-config/1-4-deploy-hexo.html",
-    "revision": "2f84d9f37a29ed079e2231502959bf7f"
+    "revision": "01efaf34b218bce2dea620df220eeb36"
   },
   {
     "url": "1-Hexo-install-and-config/1-5-continuous-integration.html",
-    "revision": "ea4276273bb3e95fe88a0474efe0e428"
+    "revision": "13cc43342fc37e1cedd54223565918b5"
   },
   {
     "url": "1-Hexo-install-and-config/index.html",
-    "revision": "e66c3a8d1fb556d3e5424eda4bd4f863"
+    "revision": "09839d9c63493a482180fbb0dd279ce8"
   },
   {
     "url": "2-Theme-use-and-config/2-10-hexo-theme-indigo/index.html",
-    "revision": "2799e62addde50d71a1a000a4ca77d94"
+    "revision": "548c78e0e15d81f0f93512a6f0ed22a1"
   },
   {
     "url": "2-Theme-use-and-config/2-12-hexo-theme-icarus/index.html",
-    "revision": "51f2f5a6d7f8a92e26648a951de0b495"
+    "revision": "0f0e24c1f57f12126d4399c2e7ddcd33"
   },
   {
     "url": "2-Theme-use-and-config/2-13-hexo-theme-fluid/index.html",
-    "revision": "1b9fb7f7b84fb87bc040f9cd0fe31e06"
+    "revision": "20eeb0626119d1d459b98d0f16bfb319"
   },
   {
     "url": "2-Theme-use-and-config/2-14-hexo-theme-matery/index.html",
-    "revision": "7df50f84c4f34e3bbe08621984c23a08"
+    "revision": "246a9f70cf7362b19395a9a1a75ff269"
   },
   {
     "url": "2-Theme-use-and-config/2-15-hexo-theme-journal/index.html",
-    "revision": "7cd5ea82f4260b463a665e7e657f8784"
+    "revision": "5f18f85bc2b0e20530bbaf10b598a51f"
   },
   {
     "url": "2-Theme-use-and-config/2-16-hexo-theme-stun/index.html",
-    "revision": "4bee7e35cad1897d1d6fcdeeb110f230"
+    "revision": "31c88e8770959a6d13ea6f5510562604"
   },
   {
     "url": "2-Theme-use-and-config/2-17-hexo-theme-phantom/index.html",
-    "revision": "5121b063966bc1a8372da9555738003a"
+    "revision": "65725b04ec7418a1b71388d62afe005c"
   },
   {
     "url": "2-Theme-use-and-config/2-18-hexo-theme-archer/index.html",
-    "revision": "ced1f4c2c07a10996e2afdd858ac0f43"
+    "revision": "93a6ec488bbaabaa25a0beb051d0ba1f"
   },
   {
     "url": "2-Theme-use-and-config/2-2-hexo-theme-ils/index.html",
-    "revision": "ff87c2dcec5f93e961f9282ddfed2655"
+    "revision": "e12dd6198f78572a8f51f1c801143ce7"
   },
   {
     "url": "2-Theme-use-and-config/2-3-hexo-theme-yilia/index.html",
-    "revision": "71dc4ef30bcc42bdb19d967c907c2bcd"
+    "revision": "a46994131e2239bf5d1b889fce2a4383"
   },
   {
     "url": "2-Theme-use-and-config/2-4-hexo-theme-apollo/index.html",
-    "revision": "038079ec6c43e7e05b1e498ef30ddc52"
+    "revision": "3da7277498b699410f218b00d0bc9586"
   },
   {
     "url": "2-Theme-use-and-config/2-5-hexo-theme-material/index.html",
-    "revision": "02d6f7ded291002319bb978aa84f0296"
+    "revision": "22b51ec8df78dfae00f55b24813e93ee"
   },
   {
     "url": "2-Theme-use-and-config/2-6-hexo-theme-volantis/index.html",
-    "revision": "ccda2494b5b19acd76930f1051c0e3d9"
+    "revision": "d690080eb2133966f0d0ef7c2344c75b"
   },
   {
     "url": "2-Theme-use-and-config/2-7-hexo-theme-bmw/index.html",
-    "revision": "acf69e76528a17a48f3a820c074878eb"
+    "revision": "712369b8c5adfb008c3ac218630686fb"
   },
   {
     "url": "2-Theme-use-and-config/2-8-hexo-theme-aero-dual/index.html",
-    "revision": "a34b26ee95ad39589927ab4ce6b96988"
+    "revision": "929a7da5564e9b1d699b189caec13acb"
   },
   {
     "url": "2-Theme-use-and-config/2-9-hexo-theme-amber/index.html",
-    "revision": "b022b45ba3af15f0339d996ca3597880"
+    "revision": "6be0af05cf0a16023312f4b0d1569cec"
   },
   {
     "url": "2-Theme-use-and-config/index.html",
-    "revision": "b7a241116ba5056bb919dc76f423534f"
+    "revision": "7f306fd30c46a3c2b918986aeb30f012"
   },
   {
     "url": "3-Plugins-use-and-config/3-1-hexo-tag-aplayer/index.html",
-    "revision": "56da500ffc26d152e1d7cb5f8a3416d7"
+    "revision": "8e4024d5bb5d62e174850dc8c30355fc"
   },
   {
     "url": "3-Plugins-use-and-config/3-2-hexo-tag-dplayer/index.html",
-    "revision": "f0692f549a933255131315f1c56bcb9c"
+    "revision": "7f0e3932c00ebeef85e51d71a8203e42"
   },
   {
     "url": "3-Plugins-use-and-config/3-3-hexo-helper-live2d/index.html",
-    "revision": "472cdc44a6f8e6d02ea00c7e7cbec324"
+    "revision": "8e2a30150d61e62c747ffac894ea68c3"
   },
   {
     "url": "3-Plugins-use-and-config/3-4-hexo-blog-encrypt/index.html",
-    "revision": "5fda796f4dad8e00f93cd5d6d3431197"
+    "revision": "50674e544b85bb6510597796e4be73cd"
   },
   {
     "url": "3-Plugins-use-and-config/3-5-hexo-tag-mmedia/index.html",
-    "revision": "7948db891f07dbb55a114c7b9230a7fe"
+    "revision": "16228df219de0362c16e99038f5d252b"
   },
   {
     "url": "3-Plugins-use-and-config/3-6-hexo-submit-urls-to-search-engine/index.html",
-    "revision": "439b041bd514c69b47fbee5ebb095709"
+    "revision": "16abd882c08f1e27a88336230c086ac8"
   },
   {
     "url": "3-Plugins-use-and-config/index.html",
-    "revision": "fb26665547c13833bd969d7048e34061"
+    "revision": "8be697c9e3a8590ee3adb3654b37b075"
   },
   {
     "url": "4-High-order-hexo-gamer/4-1-remote-editing/index.html",
-    "revision": "9850b87ba429b1e5a51446b5dc96ed3d"
+    "revision": "ab9db8e7932439b43ef7949a3cfaeadc"
   },
   {
     "url": "4-High-order-hexo-gamer/4-2-theme-develop/index.html",
-    "revision": "0823205f7d4c4c3682a32bf24cefe934"
+    "revision": "3a99d3fb8931f6dbbb970a8112191a15"
   },
   {
     "url": "4-High-order-hexo-gamer/index.html",
-    "revision": "812739b338a6d98b5a8484297b1ddbbf"
+    "revision": "6d093d5ebfbfa1a26804ec48fca078dc"
   },
   {
     "url": "404.html",
-    "revision": "fc585c95ead4ee81ce6b276b5a8f70f9"
+    "revision": "54cec06cb47a2767df0e132084eee792"
   },
   {
     "url": "5-Add/5-1-quote.html",
-    "revision": "59fa4c0fece92a76b8221a796420ffe6"
+    "revision": "2adfed35adcee8334c17084001d0ed7e"
   },
   {
     "url": "5-Add/5-2-yaml.html",
-    "revision": "4a9e5acb0d4318cbe69bb96e67cfc6d2"
+    "revision": "3d9fd7afddb771fe73e664143892d0af"
   },
   {
     "url": "5-Add/5-3-data-file.html",
-    "revision": "6f404731aabd837958954aa127727944"
+    "revision": "b70c10cf10d4537a9a3cf7a21fd30976"
   },
   {
     "url": "5-Add/index.html",
-    "revision": "ad95499dcfc059ba88cafaa5eebc0475"
+    "revision": "b8284f6827f2e727846783497e25b053"
   },
   {
     "url": "assets/css/0.styles.28b347e9.css",
@@ -802,8 +802,8 @@ self.__precacheManifest = [
     "revision": "bfea49b1473e042e70a0a20633ae961b"
   },
   {
-    "url": "assets/js/app.9bc4fd96.js",
-    "revision": "11d56ac5607b4e9ccda79e4ebf58aab5"
+    "url": "assets/js/app.c31d9198.js",
+    "revision": "154dda92f767677e8ddbec88d08cd735"
   },
   {
     "url": "assets/js/vendors~dplayer.7e62b2a7.js",
@@ -827,7 +827,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "b3629c48ee2d4fec0f68438a7e68f736"
+    "revision": "0049077aa903d016a6b9c1b204d5418e"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
