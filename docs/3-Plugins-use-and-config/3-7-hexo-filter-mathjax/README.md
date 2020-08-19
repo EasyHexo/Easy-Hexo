@@ -7,7 +7,9 @@ title: hexo-filter-mathjax
 
 `hexo-filter-mathjax` 是一个用于在 Hexo 渲染 [MathJax](https://www.mathjax.org/)（数学公式）的插件。
 
-**警告：不需要前端脚本与其他数学公式插件。使用此插件之前，请将其全部删除。**
+::: danger 警告
+不需要前端脚本与其他数学公式插件。使用此插件之前，请将其全部删除。
+:::
 
 ## 官方文档
 
@@ -37,7 +39,7 @@ mathjax:
 
 ## 使用
 
-在需要启用 mathjax 的文章的 [Front-matter](https://hexo.io/zh-cn/docs/front-matter) 区内添加 `mathjax: true`：
+在需要启用 mathjax 的文章的 [front-matter](https://hexo.io/zh-cn/docs/front-matter) 区内添加 `mathjax: true`：
 
 ```markdown
 ---
@@ -61,7 +63,9 @@ mathjax: true
 +$\frac{\partial}{\partial t}$
 ```
 
-**注意！** 使用例如默认的 [`hexo-renderer-marked`](https://github.com/hexojs/hexo-renderer-marked) 渲染器时 LaTeX 与 Markdown 语法之间的冲突。如有必要，请使用 `\` 进行转义：
+::: warning 注意
+
+使用例如默认的 [`hexo-renderer-marked`](https://github.com/hexojs/hexo-renderer-marked) 渲染器时 LaTeX 与 Markdown 语法之间的冲突。如有必要，请使用 `\` 进行转义：
 
 ```diff
 -$\epsilon_0$
@@ -71,6 +75,8 @@ mathjax: true
 ```
 
 > 也可以尝试更换能更好处理数学公式的渲染器 [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc)
+
+:::
 
 ## 示例
 
