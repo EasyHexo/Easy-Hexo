@@ -14,6 +14,7 @@ title: 项目成员
 - [GodBMW - BMW 主题开发者](https://godbmw.com/)
 - [Mitscherlich - Amber 主题开发者](https://mitscherlich.me/)
 - [blinkfox - matery 主题开发者](https://blinkfox.github.io/)
+- [Yue-plus - arknights 主题开发者](https://github.com/Yue-plus)
 
 ## 其他贡献
 

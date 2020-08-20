@@ -11,5 +11,6 @@ title: 插件使用与配置
 - [hexo-blog-encrypt](3-4-hexo-blog-encrypt)
 - [hexo-tag-mmedia](3-5-hexo-tag-mmedia)
 - [hexo-submit-urls-to-search-engine](3-6-hexo-submit-urls-to-search-engine)
+- [hexo-filter-mathjax](3-7-hexo-filter-mathjax)
 
 同时，我们也欢迎各位给我们贡献其他插件文档，可先阅读 [CONTRIBUTING](https://github.com/EasyHexo/Easy-Hexo/blob/master/.github/CONTRIBUTING.md)。
