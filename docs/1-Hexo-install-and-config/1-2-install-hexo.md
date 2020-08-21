@@ -51,6 +51,16 @@ $ nvm install stable
 
 或者您也可以下载 [安装程序](http://nodejs.org/) 来安装。
 
+:::tip 提醒
+在中国大陆由于某些众所周知的网络原因，推荐使用[淘宝 NPM 镜像](https://developer.aliyun.com/mirror/NPM)：
+
+```shell script
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+使用 `cnpm install` 来代替所有 `npm install` 指令。
+:::
+
 ## 安装 Hexo
 
 安装好后，即可使用 npm 完成 Hexo 的安装。
