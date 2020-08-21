@@ -16,7 +16,7 @@ Hi，欢迎对本项目贡献！
 
 ## 安装 Yarn
 
-[Yarn](https://classic.yarnpkg.com/zh-Hans/) 是一个快速、可靠、安全的依赖管理。
+[Yarn](https://classic.yarnpkg.com/zh-Hans/) 是一个快速、可靠、安全的依赖管理器。
 
 ### 下载
 
@@ -28,27 +28,25 @@ Hi，欢迎对本项目贡献！
 
 WSL 是“适用于 Linux 的 Windows 子系统”。
 
+> 如果你没在 WSL 上开发，也不要紧。跳过这一点即可。
+
 #### PGP Key 添加失败
 
-卸载 `gpg` 软件包：
+卸载 `gpg` ，用 `gnupg1` 替换：
 
 ```sh
-sudo apt-get remove gpg
-```
-
-安装 `gnupg1` 软件包
-```sh
-sudo apt-get install gnupg1
+sudo apt remove gpg
+sudo apt install gnupg1
 ```
 
 #### 软件包冲突
 
-在使用 Debian 或 Ubuntu 执行 `sudo apt-get install yarn` 尝试安装 Yarn 时可能会遇到与 `cmdtest` 软件包冲突。
+在使用 Debian 或 Ubuntu 执行 `sudo apt install yarn` 尝试安装 Yarn 时可能会遇到与 `cmdtest` 软件包冲突。
 
 使用以下指令卸载 `cmdtest`，然后尝试重新安装 Yarn：
 
 ```sh
-sudo apt-get autoremove cmdtest
+sudo apt autoremove cmdtest
 ```
 
 > [在 GitHub 上更多信息](https://github.com/yarnpkg/yarn/issues/2821)
@@ -68,7 +66,7 @@ yarn config get registry
 yarn config set registry https://registry.npm.taobao.org/
 ```
 
-设置为官方镜像：
+如果你不想使用国内的镜像了，可以还原为官方镜像：
 ```sh
 yarn config set registry https://registry.yarnpkg.com
 ```
@@ -95,7 +93,6 @@ yarn docs:dev
 
 ### 扩展语法
 可以使用 VuePress 的 [Markdown 拓展语法](https://vuepress.vuejs.org/zh/guide/markdown.html#header-anchors)。
-
 
 ### 文章
 
