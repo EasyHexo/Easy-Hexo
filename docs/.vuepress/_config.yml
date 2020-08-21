@@ -68,6 +68,7 @@ themeConfig:
       参考资料: /5-Add/5-1-quote.html
       YAML 语法简介: /5-Add/5-2-yaml.html
       使用数据文件平滑升级主题: /5-Add/5-3-data-file.html
+      参与本项目: /5-Add/5-4-contributing.html
   sidebar:
     /0-Intro/:
       - 0-1-member.html
@@ -109,6 +110,7 @@ themeConfig:
       - 5-1-quote.html
       - 5-2-yaml.html
       - 5-3-data-file.html
+      - 5-4-contributing.html
   repo: EasyHexo/Easy-Hexo
   repoLabel: GitHub
   docsDir: docs
