@@ -35,6 +35,7 @@ themeConfig:
       持续集成 CI: /1-Hexo-install-and-config/1-5-continuous-integration.html
     主题安装与配置:
       概要: /2-Theme-use-and-config/
+      hexo-theme-ayer: /2-Theme-use-and-config/2-1-hexo-theme-ayer/
       hexo-theme-ils: /2-Theme-use-and-config/2-2-hexo-theme-ils/
       hexo-theme-yilia: /2-Theme-use-and-config/2-3-hexo-theme-yilia/
       hexo-theme-apollo: /2-Theme-use-and-config/2-4-hexo-theme-apollo/
