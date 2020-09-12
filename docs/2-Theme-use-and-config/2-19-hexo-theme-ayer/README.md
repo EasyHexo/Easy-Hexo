@@ -10,7 +10,7 @@ title: hexo-theme-ayer
 
 [Ayer](https://github.com/Shen-Yu/hexo-theme-ayer) 在马来语中是“水”的意思，在西班牙语中是“昨天”的意思。
 
-![hexo-theme-ayer](https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/picgo/ayer.jpg)
+![hexo-theme-ayer](@img/2/2-19/1.jpg)
 
 [GitHub地址](https://github.com/Shen-Yu/hexo-theme-ayer)
 
@@ -44,7 +44,7 @@ title: hexo-theme-ayer
 
 如果想体验手机端浏览效果，可以扫一下二维码：
 
-![手机端效果](https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/picgo/mobile_ayer.jpg)
+![手机端效果](@img/2/2-19/2.jpg)
 
 ## 多语言支持
 zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（Japanese） es（Spanish） de（German） fr（French） ru（Russian） ko（Korean） vi（Vietnamese） nl（Dutch） no（Norwegian） pt（Portuguese）
@@ -58,10 +58,10 @@ zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（Japanese）
 <div style="width:100%;text-align:center;font-weight:bold">
 <span style="width:30%;display:inline-block">
 微信
-<img src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/picgo/wechatpay.png" alt="wechat" style="width:100%"></span>
+<img src="@img/2/2-19/3.jpg" alt="wechat" style="width:100%"></span>
 <span style="width:30%;;display:inline-block">
 支付宝
-<img src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/picgo/alipay.jpg" alt="alipay" style="width:100%"></span>
+<img src="@img/2/2-19/4.jpg" alt="alipay" style="width:100%"></span>
 </div>
 
 ## 安装
@@ -502,7 +502,7 @@ menu:
 修改网站各种资料，例如标题、副标题和邮箱等个人资料，请修改站点根目录下的`_config.yml`
 
 以我的博客为例：
-![](https://pic.downk.cc/item/5e75c69c9d7d586a54cf119d.jpg)
+![](@img/2/2-19/5.jpg)
 
 ### 六.怎么添加百度或谷歌统计
 
@@ -528,4 +528,4 @@ menu:
 
 ### 十.怎么让搜索引擎收录站点
 
-参考：[Hexo站点SEO优化技巧](/2020/hexo-seo)
+参考：[Hexo站点SEO优化技巧](https://shen-yu.gitee.io/2020/hexo-seo/)

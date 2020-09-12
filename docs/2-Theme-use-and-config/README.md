@@ -7,7 +7,6 @@ title: 主题使用与配置
 
 在本章节中，收录的主题有：
 
-- [hexo-theme-ayer](2-1-hexo-theme-ayer)
 - [hexo-theme-ils](2-2-hexo-theme-ils)
 - [hexo-theme-yilia](2-3-hexo-theme-yilia)
 - [hexo-theme-apollo](2-4-hexo-theme-apollo)
@@ -23,6 +22,7 @@ title: 主题使用与配置
 - [hexo-theme-journal](2-15-hexo-theme-journal)
 - [hexo-theme-stun](2-16-hexo-theme-stun)
 - [hexo-theme-phantom](2-17-hexo-theme-phantom)
+- [hexo-theme-ayer](2-19-hexo-theme-ayer)
 
 还有许多优秀主题由于各种原因没有收录：
 - [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody)
