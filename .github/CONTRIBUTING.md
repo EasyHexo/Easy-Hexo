@@ -43,7 +43,7 @@ Hi，欢迎对本项目贡献！
 ### 工作流程
 
 1. Fork 一份[原仓库](https://github.com/EasyHexo/Easy-Hexo)
-2. [搭建本地服务器](https://easyhexo.com/5-Add/5-4-contributing.html)
+2. [搭建本地服务器](https://easyhexo.com/0-Intro/0-3-contributing.html)
 3. 干任何事之前，`git fetch` 到本地仓库新建分支，然后合并。
     > 可使用 `git fetch https://github.com/EasyHexo/Easy-Hexo.git master:分支名` 命令，然后 `git merge 分支名`，如有冲突先解决。
 4. 写作。
