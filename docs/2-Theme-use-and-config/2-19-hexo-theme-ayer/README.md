@@ -6,7 +6,7 @@ title: hexo-theme-ayer
 
 ## 介绍
 
-> [Ayer](https://github.com/Shen-Yu/hexo-theme-ayer) 是一个干净且优雅的Hexo主题，自带响应式，加载速度很快，该有的功能都有，可配置项很多，非常适合作为你的博客主题，主题内还附送了6张精美的高清壁纸。欢迎使用和Star支持，如果你在使用过程中有任何疑问或者建议，欢迎联系我！如果你的博客采用了本主题，欢迎在下面评论区留下地址~
+> [Ayer](https://github.com/Shen-Yu/hexo-theme-ayer) 是一个干净且优雅的 Hexo 主题，自带响应式，加载速度很快，该有的功能都有，可配置项很多，非常适合作为你的博客主题，主题内还附送了6张精美的高清壁纸。欢迎使用和 Star 支持，如果你在使用过程中有任何疑问或者建议，欢迎联系我！如果你的博客采用了本主题，欢迎在下面评论区留下地址~
 
 [Ayer](https://github.com/Shen-Yu/hexo-theme-ayer) 在马来语中是“水”的意思，在西班牙语中是“昨天”的意思。
 
@@ -36,10 +36,10 @@ title: hexo-theme-ayer
 10. 支持网易云音乐播放
 11. 支持 `MathJax` 和 `Katex` 数学公式
 12. `TOC` 目录在文章页悬浮，跳转更方便
-13. 可设置阅读文章时做密码验证[hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
-14. [Valine](https://valine.js.org/)和[Gitalk](https://gitalk.github.io/)评论模块（推荐配合`leancloud`使用 `Valine`）
+13. 可设置阅读文章时做密码验证 [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
+14. [Valine](https://valine.js.org/) 和 [Gitalk](https://gitalk.github.io/) 评论模块（推荐配合`leancloud`使用 `Valine`）
 15. 集成了不蒜子、百度统计、Google Analytics、CNZZ等统计功能
-16. 支持Github Ribbons
+16. 支持 Github Ribbons
 
 
 如果想体验手机端浏览效果，可以扫一下二维码：
@@ -49,7 +49,7 @@ title: hexo-theme-ayer
 ## 多语言支持
 zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（Japanese） es（Spanish） de（German） fr（French） ru（Russian） ko（Korean） vi（Vietnamese） nl（Dutch） no（Norwegian） pt（Portuguese）
 
-默认语言是英语，把博客目录下的_config文件里的`language`修改成以上简写即可更换语言。
+默认语言是英语，把博客目录下的 _config 文件里的 `language` 修改成以上简写即可更换语言。
 
 ## 打赏
 
@@ -79,8 +79,8 @@ git clone https://github.com/Shen-Yu/hexo-theme-ayer.git themes/ayer
 npm i hexo-theme-ayer -S
 ```
 
-- 如果是新安装本主题，安装完成后会在根目录生成一个`_config.ayer.yml`文件，直接编辑`_config.ayer.yml`文件进行配置即可。
-- 如果是主题升级，可以使用方法一，也可以将原来的配置文件移动到根目录，并重命名为`_config.ayer.yml`。
+- 如果是新安装本主题，安装完成后会在根目录生成一个 `_config.ayer.yml` 文件，直接编辑 `_config.ayer.yml` 文件进行配置即可。
+- 如果是主题升级，可以使用方法一，也可以将原来的配置文件移动到根目录，并重命名为 `_config.ayer.yml`。
 
 ## 修改
 
@@ -92,14 +92,14 @@ theme: ayer
 
 ## 更新
 
-更新主题可能会覆盖你之前改动过的config文件，建议先把`config.yml`里的配置备份一下，然后删掉ayer目录后重新`git clone`下载主题，再把配置复制进去。
+更新主题可能会覆盖你之前改动过的 config 文件，建议先把 `config.yml` 里的配置备份一下，然后删掉 ayer 目录后重新 `git clone` 下载主题，再把配置复制进去。
 
 ``` bash
 cd themes/ayer
 git pull
 ```
 
-如果你是用方法二的npm安装本主题，那么在根目录执行以下命令就可更新。
+如果你是用方法二的 npm 安装本主题，那么在根目录执行以下命令就可更新。
 
 ``` bash
 npm update hexo-theme-ayer -S
@@ -107,7 +107,7 @@ npm update hexo-theme-ayer -S
 
 ## 主题配置
 
-以下是ayer主题目录下的 `_config.yml`文件配置，如果你是用方法二的npm安装，那么在根目录下的`_config.ayer.yml`配置就行，注意别把hexo的配置文件和主题的配置文件搞混。另外，请先确保你已经读过[Hexo文档](https://hexo.io/zh-cn/docs/)。如果你在配置过程中有问题，请先擅用 [搜索引擎](https://cn.bing.com)。如果你搜不到解决方法，你可以参考：[我的博客源码](https://gitee.com/shen-yu/shen-yu/tree/dev/)，按照我的一模一样配肯定是不会有问题的。如果对部分字体或颜色等有定制需求，请自行在css文件进行修改，主题本身已经很符合审美，自定义配置项也很多，不建议改得花里胡哨，过大的字体和库都会影响博客加载速度。如果还有问题或者建议，那么请在评论区给我留言~
+以下是ayer主题目录下的 `_config.yml`文件配置，如果你是用方法二的npm安装，那么在根目录下的 `_config.ayer.yml` 配置就行，注意别把hexo的配置文件和主题的配置文件搞混。另外，请先确保你已经读过 [Hexo文档](https://hexo.io/zh-cn/docs/)。如果你在配置过程中有问题，请先擅用 [搜索引擎](https://cn.bing.com)。如果你搜不到解决方法，你可以参考：[我的博客源码](https://gitee.com/shen-yu/shen-yu/tree/dev/)，按照我的一模一样配肯定是不会有问题的。如果对部分字体或颜色等有定制需求，请自行在css文件进行修改，主题本身已经很符合审美，自定义配置项也很多，不建议改得花里胡哨，过大的字体和库都会影响博客加载速度。如果还有问题或者建议，那么请在评论区给我留言~
 
 ``` yaml
 # 侧边栏菜单
@@ -384,7 +384,7 @@ gitalk:
 ``` bash
   hexo new page categories
 ```
-然后将以下复制到/source/categories/index.md文件
+然后将以下复制到 /source/categories/index.md 文件
 ``` md
 ---
 title: categories
@@ -403,7 +403,7 @@ layout: "categories"
 ``` bash
 hexo new page friends
 ```
-然后将以下复制到/source/friends/index.md文件
+然后将以下复制到 /source/friends/index.md 文件
 ``` md
 ---
 title: friends
@@ -417,7 +417,7 @@ layout: "friends"
 ``` bash
   hexo new page photos
 ```
-然后将以下复制到/source/photos/index.md文件，img_url替换成图片路径，caption替换成图片名称
+然后将以下复制到 /source/photos/index.md 文件，`img_url` 替换成图片路径，`caption` 替换成图片名称
 
 ``` md
 ---
@@ -432,9 +432,9 @@ albums: [
 
 ### 文章目录
 
-用Tocbot解析文章标题并生成目录
+用 Tocbot 解析文章标题并生成目录
 
-+ 将以下配置复制到你ayer目录下的 `_config.yml` 里：
++ 将以下配置复制到你 ayer 目录下的 `_config.yml` 里：
 
 	``` bash
 	# Toc
@@ -465,16 +465,16 @@ albums: [
 {% asset_img image.jpg [title] %}
 ```
 
-如果还是无法显示，请尝试在文章里用html的img标签来引用本地图片。
+如果还是无法显示，请尝试在文章里用 html 的 img 标签来引用本地图片。
 
 
 ### 二.可以启动但是样式变形了
 
-这很可能是因为你把博客部署到了服务器子目录，导致静态资源加载的路径不对，在此强烈建议你部署到根目录，github和码云都支持根目录部署，只要你把仓库名搞成和用户名一样就行了。
+这很可能是因为你把博客部署到了服务器子目录，导致静态资源加载的路径不对，在此强烈建议你部署到根目录，Github 和码云都支持根目录部署，只要你把仓库名搞成和用户名一样就行了。
 
 ### 三.点击侧边栏页面无法显示
 
-原因：ayer主题目录下的 `config.yml` 里menu属性的路径不对，这需要你根据页面路径手动配置。
+原因：ayer主题目录下的 `config.yml` 里 menu 属性的路径不对，这需要你根据页面路径手动配置。
 
 以我的博客为例：
 
@@ -489,7 +489,7 @@ menu:
   关于我: /2019/about
 ```
 
-上面的`归档/archives`是固定的，你不需要修改，`标签`和`分类`都需要手动创建目录，`旅行`实际上就是一个标签页，当你在文章头部设置tags属性后就会自动生成，`摄影`是一个站外的绝对路径，`关于我`实际上就是一个正常的文章页。好了，现在一个侧边栏导航就已经配置好了。
+上面的 `归档/archives` 是固定的，你不需要修改，`标签`和`分类`都需要手动创建目录，`旅行`实际上就是一个标签页，当你在文章头部设置tags属性后就会自动生成，`摄影`是一个站外的绝对路径，`关于我`实际上就是一个正常的文章页。好了，现在一个侧边栏导航就已经配置好了。
 
 ### 四.为什么修改了配置却没有效果
 
@@ -497,9 +497,9 @@ menu:
 
 ### 五.怎么修改大标题和站点信息
 
-站点配置文件`_config.yml`是hexo站点根目录下的主配置文件(还不知道是哪里的，自己google)，注意：别和`ayer`主题目录下的`_config.yml`搞混了。
+站点配置文件 `_config.yml` 是hexo站点根目录下的主配置文件(还不知道是哪里的，自己google)，注意：别和 `ayer` 主题目录下的 `_config.yml` 搞混了。
 
-修改网站各种资料，例如标题、副标题和邮箱等个人资料，请修改站点根目录下的`_config.yml`
+修改网站各种资料，例如标题、副标题和邮箱等个人资料，请修改站点根目录下的 `_config.yml`
 
 以我的博客为例：
 ![](@img/2/2-19/5.jpg)
@@ -508,15 +508,15 @@ menu:
 
 #### 百度统计
 
-在ayer的config配置里的`baidu_analytics`填上百度统计代码中的hm.js问好后面那一串东西
+在 ayer 的 config 配置里的 `baidu_analytics` 填上百度统计代码中的 `hm.js` 问好后面那一串东西
 
 #### 谷歌统计
 
-在ayer的config配置里的`google_analytics`填上谷歌统计代码的跟踪ID，即UA值(包含UA)
+在 ayer 的 config 配置里的 `google_analytics` 填上谷歌统计代码的跟踪ID，即UA值(包含UA)
 
 ### 七.怎么查看文章的访问量
 
-在ayer的config配置里有`busuanzi`选项，默认设置为`enable:true`，就开启了站点访问量的统计，站点尾部左下角的`PV`代表了当前页的访问次数，`UV`代表了当前站点的访问人数。注意：不蒜子统计是根据当前域名来统计的，你在本地启动的时候由于是localhost，所以数字会很大，部署到线上之后就会根据域名重新统计。
+在ayer的config配置里有 `busuanzi`选项，默认设置为 `enable:true`，就开启了站点访问量的统计，站点尾部左下角的 `PV` 代表了当前页的访问次数，`UV` 代表了当前站点的访问人数。注意：不蒜子统计是根据当前域名来统计的，你在本地启动的时候由于是 localhost，所以数字会很大，部署到线上之后就会根据域名重新统计。
 
 ### 八.网易云音乐无法播放
 
@@ -524,7 +524,7 @@ menu:
 
 ### 九.分享链接无法打开
 
-你需要在根目录下的_config.yml文件中把url配置成部署后的域名。
+你需要在根目录下的 `_config.yml` 文件中把 url 配置成部署后的域名。
 
 ### 十.怎么让搜索引擎收录站点
 
