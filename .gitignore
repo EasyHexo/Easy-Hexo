@@ -6,3 +6,4 @@ node_modules/
 .vscode/
 docs/.vuepress/dist/
 package-lock.json
+/.idea/
