@@ -2,7 +2,7 @@
 title: hexo-theme-stun
 ---
 
-<div align="center"><img src="@img/2/2-16/logo.png" alt="stun-logo"/></div>
+<div align="center"><img src="@img/2/2-16/logo.svg" alt="stun-logo" style="height: 100px" /></div>
 
 # hexo-theme-stun <Badge text="@liuyib"/> <Badge text="Finish"/> <Badge text="latest"/>
 
@@ -33,6 +33,8 @@ hexo-theme-stun 支持主题平滑升级。有关内容请查阅[使用数据文
 ## 主题演示
 
 [liuyib's Blog](https://liuyib.github.io/)
+
+![stun-demo](@img/2/2-16/demo.jpg)
 
 ## 下载主题
 
@@ -262,7 +264,7 @@ social:
 
 效果如下：
 
-![](https://raw.githubusercontent.com/liuyib/picBed/master/hexo-theme-stun/doc/20190717165333.png)
+![](@img/2/2-16/1.jpg)
 
 ### 文章摘要
 
@@ -297,7 +299,7 @@ reward:
 
 效果如下：
 
-![](https://raw.githubusercontent.com/liuyib/picBed/master/hexo-theme-stun/doc/20190608175556.png)
+![转账二维码](@img/2/2-16/support.jpg)
 
 ### 更多配置
 

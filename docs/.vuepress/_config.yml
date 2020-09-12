@@ -26,6 +26,7 @@ themeConfig:
       序: /0-Intro/
       项目成员: /0-Intro/0-1-member.html
       特别致谢: /0-Intro/0-2-thanks.html
+      参与本项目: /0-Intro/0-3-contributing.html
     Hexo 安装与配置:
       概要: /1-Hexo-install-and-config/
       认识 Hexo: /1-Hexo-install-and-config/1-1-meet-hexo.html
@@ -72,6 +73,7 @@ themeConfig:
     /0-Intro/:
       - 0-1-member.html
       - 0-2-thanks.html
+      - 0-3-contributing.html
     /1-Hexo-install-and-config/:
       - 1-1-meet-hexo.html
       - 1-2-install-hexo.html
