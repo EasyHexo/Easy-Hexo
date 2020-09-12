@@ -8,7 +8,6 @@ title: 补充内容
 - [5-1 参考资料](/5-Add/5-1-quote.html)
 - [5-2 YAML 语法简介](/5-Add/5-1-quote.html)
 - [5-3 使用数据文件平滑升级主题](/5-Add/5-3-data-file.html)
-- [5-4 参与本项目](/5-Add/5-4-contributing.html)
 
 ## 专栏
 
