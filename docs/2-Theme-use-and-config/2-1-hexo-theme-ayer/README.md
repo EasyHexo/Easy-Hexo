@@ -2,7 +2,9 @@
 title: hexo-theme-ayer
 ---
 
-# 介绍
+# hexo-theme-ayer
+
+## 介绍
 
 > [Ayer](https://github.com/Shen-Yu/hexo-theme-ayer) 是一个干净且优雅的Hexo主题，自带响应式，加载速度很快，该有的功能都有，可配置项很多，非常适合作为你的博客主题，主题内还附送了6张精美的高清壁纸。欢迎使用和Star支持，如果你在使用过程中有任何疑问或者建议，欢迎联系我！如果你的博客采用了本主题，欢迎在下面评论区留下地址~
 
@@ -20,36 +22,36 @@ title: hexo-theme-ayer
 
 <!-- more -->
 
-# 特性
+## 特性
 
 1. 干净且优雅，文章内容美观易读
-1. 首页封面全屏平铺，扁平化设计，简洁又不失高大上
-1. 响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现
-1. 首页封面和文案可以任意更换，主题内附送6张精美高清壁纸
-1. 时间轴式的归档页
-1. 支持 `黑夜阅读` 模式
-1. 侧边栏可以点击显示或隐藏
-1. 支持文章置顶和文章打赏
-1. 支持文章字数和阅读时长统计
-1. 支持网易云音乐播放
-1. 支持 `MathJax` 和 `Katex` 数学公式
-1. `TOC` 目录在文章页悬浮，跳转更方便
-1. 可设置阅读文章时做密码验证[hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
-1. [Valine](https://valine.js.org/)和[Gitalk](https://gitalk.github.io/)评论模块（推荐配合`leancloud`使用 `Valine`）
-1. 集成了不蒜子、百度统计、Google Analytics、CNZZ等统计功能
-1. 支持Github Ribbons
+2. 首页封面全屏平铺，扁平化设计，简洁又不失高大上
+3. 响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现
+4. 首页封面和文案可以任意更换，主题内附送6张精美高清壁纸
+5. 时间轴式的归档页
+6. 支持 `黑夜阅读` 模式
+7. 侧边栏可以点击显示或隐藏
+8. 支持文章置顶和文章打赏
+9. 支持文章字数和阅读时长统计
+10. 支持网易云音乐播放
+11. 支持 `MathJax` 和 `Katex` 数学公式
+12. `TOC` 目录在文章页悬浮，跳转更方便
+13. 可设置阅读文章时做密码验证[hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
+14. [Valine](https://valine.js.org/)和[Gitalk](https://gitalk.github.io/)评论模块（推荐配合`leancloud`使用 `Valine`）
+15. 集成了不蒜子、百度统计、Google Analytics、CNZZ等统计功能
+16. 支持Github Ribbons
 
 
 如果想体验手机端浏览效果，可以扫一下二维码：
 
 ![手机端效果](https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/picgo/mobile_ayer.jpg)
 
-# 多语言支持
+## 多语言支持
 zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（Japanese） es（Spanish） de（German） fr（French） ru（Russian） ko（Korean） vi（Vietnamese） nl（Dutch） no（Norwegian） pt（Portuguese）
 
 默认语言是英语，把博客目录下的_config文件里的`language`修改成以上简写即可更换语言。
 
-# 打赏
+## 打赏
 
 本主题完全开源且免费，目前由我一个人维护，如果你觉得主题不错，你可以选择继续白嫖，也可以选择适当打赏我，不在于金额多少，而是能让我更有动力去维护这个主题。打赏请备注说明，谢谢~
 
@@ -62,7 +64,7 @@ zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（Japanese）
 <img src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/picgo/alipay.jpg" alt="alipay" style="width:100%"></span>
 </div>
 
-# 安装
+## 安装
 
 **方法一：**
 
@@ -80,7 +82,7 @@ npm i hexo-theme-ayer -S
 - 如果是新安装本主题，安装完成后会在根目录生成一个`_config.ayer.yml`文件，直接编辑`_config.ayer.yml`文件进行配置即可。
 - 如果是主题升级，可以使用方法一，也可以将原来的配置文件移动到根目录，并重命名为`_config.ayer.yml`。
 
-# 修改
+## 修改
 
 将博客根目录下的 `_config.yml` 里的 `theme` 值修改成 `ayer`
 
@@ -88,7 +90,7 @@ npm i hexo-theme-ayer -S
 theme: ayer
 ```
 
-# 更新
+## 更新
 
 更新主题可能会覆盖你之前改动过的config文件，建议先把`config.yml`里的配置备份一下，然后删掉ayer目录后重新`git clone`下载主题，再把配置复制进去。
 
@@ -103,7 +105,7 @@ git pull
 npm update hexo-theme-ayer -S
 ```
 
-# 主题配置
+## 主题配置
 
 以下是ayer主题目录下的 `_config.yml`文件配置，如果你是用方法二的npm安装，那么在根目录下的`_config.ayer.yml`配置就行，注意别把hexo的配置文件和主题的配置文件搞混。另外，请先确保你已经读过[Hexo文档](https://hexo.io/zh-cn/docs/)。如果你在配置过程中有问题，请先擅用 [搜索引擎](https://cn.bing.com)。如果你搜不到解决方法，你可以参考：[我的博客源码](https://gitee.com/shen-yu/shen-yu/tree/dev/)，按照我的一模一样配肯定是不会有问题的。如果对部分字体或颜色等有定制需求，请自行在css文件进行修改，主题本身已经很符合审美，自定义配置项也很多，不建议改得花里胡哨，过大的字体和库都会影响博客加载速度。如果还有问题或者建议，那么请在评论区给我留言~
 
@@ -327,7 +329,7 @@ gitalk:
 ```
 
 
-## 插件(必需)
+### 插件(必需)
 
 + [hexo-generator-searchdb](https://github.com/theme-next/hexo-generator-searchdb) 用于搜索
 	
@@ -364,7 +366,7 @@ gitalk:
       order_by: -date	
   ```
 
-## 插件(可选)
+### 插件(可选)
 
 + [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) 用于文章置顶
 
@@ -378,7 +380,7 @@ gitalk:
 
 更多插件请见 [hexo插件市场](https://hexo.io/plugins/)
 
-## 分类
+### 分类
 ``` bash
   hexo new page categories
 ```
@@ -391,13 +393,13 @@ layout: "categories"
 ---
 ```
 
-## 标签
+### 标签
 ``` bash
   hexo new page tags
 ```
 配置同分类一样
 
-## 友情链接
+### 友情链接
 ``` bash
 hexo new page friends
 ```
@@ -411,7 +413,7 @@ layout: "friends"
 ```
 然后在 `_config.yml` 中自定义 `friends_link` 配置项即可
 
-## 相册
+### 相册
 ``` bash
   hexo new page photos
 ```
@@ -428,7 +430,7 @@ albums: [
 ---
 ```
 
-## 文章目录
+### 文章目录
 
 用Tocbot解析文章标题并生成目录
 
@@ -448,16 +450,16 @@ albums: [
 
 ---
 
-# 常见问题
+## 常见问题
 
-## 一.本地图片引用了却无法显示
+### 一.本地图片引用了却无法显示
 
 > 插入图片的两种方法：1.引用图床，2.引用本地图片。为了防止路径出错，建议使用图床。
 
-### 1.图床
+#### 1.图床
 推荐使用：[SM.MS](https://sm.ms/)，[聚合图床](https://www.superbed.cn/)
 
-### 2.本地图片
+#### 2.本地图片
 参照 [Hexo文档](https://hexo.io/zh-cn/docs/asset-folders)，然后用这种方式引用图片：
 ``` md
 {% asset_img image.jpg [title] %}
@@ -466,11 +468,11 @@ albums: [
 如果还是无法显示，请尝试在文章里用html的img标签来引用本地图片。
 
 
-## 二.可以启动但是样式变形了
+### 二.可以启动但是样式变形了
 
 这很可能是因为你把博客部署到了服务器子目录，导致静态资源加载的路径不对，在此强烈建议你部署到根目录，github和码云都支持根目录部署，只要你把仓库名搞成和用户名一样就行了。
 
-## 三.点击侧边栏页面无法显示
+### 三.点击侧边栏页面无法显示
 
 原因：ayer主题目录下的 `config.yml` 里menu属性的路径不对，这需要你根据页面路径手动配置。
 
@@ -489,11 +491,11 @@ menu:
 
 上面的`归档/archives`是固定的，你不需要修改，`标签`和`分类`都需要手动创建目录，`旅行`实际上就是一个标签页，当你在文章头部设置tags属性后就会自动生成，`摄影`是一个站外的绝对路径，`关于我`实际上就是一个正常的文章页。好了，现在一个侧边栏导航就已经配置好了。
 
-## 四.为什么修改了配置却没有效果
+### 四.为什么修改了配置却没有效果
 
 建议每次生成站点或部署之前都用 `hexo clean` 命令清理一下缓存，另外你可能还需要刷新一下。
 
-## 五.怎么修改大标题和站点信息
+### 五.怎么修改大标题和站点信息
 
 站点配置文件`_config.yml`是hexo站点根目录下的主配置文件(还不知道是哪里的，自己google)，注意：别和`ayer`主题目录下的`_config.yml`搞混了。
 
@@ -502,28 +504,28 @@ menu:
 以我的博客为例：
 ![](https://pic.downk.cc/item/5e75c69c9d7d586a54cf119d.jpg)
 
-## 六.怎么添加百度或谷歌统计
+### 六.怎么添加百度或谷歌统计
 
-### 百度统计
+#### 百度统计
 
 在ayer的config配置里的`baidu_analytics`填上百度统计代码中的hm.js问好后面那一串东西
 
-### 谷歌统计
+#### 谷歌统计
 
 在ayer的config配置里的`google_analytics`填上谷歌统计代码的跟踪ID，即UA值(包含UA)
 
-## 七.怎么查看文章的访问量
+### 七.怎么查看文章的访问量
 
 在ayer的config配置里有`busuanzi`选项，默认设置为`enable:true`，就开启了站点访问量的统计，站点尾部左下角的`PV`代表了当前页的访问次数，`UV`代表了当前站点的访问人数。注意：不蒜子统计是根据当前域名来统计的，你在本地启动的时候由于是localhost，所以数字会很大，部署到线上之后就会根据域名重新统计。
 
-## 八.网易云音乐无法播放
+### 八.网易云音乐无法播放
 
 这是由于网易云音乐对部分歌曲做了版权限制，你可以多换几首试试，配置文件里的默认歌曲 `潮鳴り` 是可以播放的。如果你动手能力强，也可以试试音乐播放插件 [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md)，配合`MetingJS`可以支持对于 QQ音乐、网易云、虾米、酷狗、百度等平台的音乐播放。
 
-## 九.分享链接无法打开
+### 九.分享链接无法打开
 
 你需要在根目录下的_config.yml文件中把url配置成部署后的域名。
 
-## 十.怎么让搜索引擎收录站点
+### 十.怎么让搜索引擎收录站点
 
 参考：[Hexo站点SEO优化技巧](/2020/hexo-seo)
