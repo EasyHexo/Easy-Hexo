@@ -51,6 +51,7 @@ themeConfig:
       hexo-theme-stun: /2-Theme-use-and-config/2-16-hexo-theme-stun/
       hexo-theme-phantom: /2-Theme-use-and-config/2-17-hexo-theme-phantom/
       hexo-theme-archer: /2-Theme-use-and-config/2-18-hexo-theme-archer/
+      hexo-theme-ayer: /2-Theme-use-and-config/2-19-hexo-theme-ayer/
     插件使用与配置:
       概要: /3-Plugins-use-and-config/
       hexo-tag-aplayer: /3-Plugins-use-and-config/3-1-hexo-tag-aplayer/
@@ -60,6 +61,7 @@ themeConfig:
       hexo-tag-mmedia: /3-Plugins-use-and-config/3-5-hexo-tag-mmedia/
       hexo-submit-urls-to-search-engine: /3-Plugins-use-and-config/3-6-hexo-submit-urls-to-search-engine/
       hexo-filter-mathjax: /3-Plugins-use-and-config/3-7-hexo-filter-mathjax/
+      hexo-tag-chart: /3-Plugins-use-and-config/3-8-hexo-tag-chart/
     高级 Hexo 玩家:
       概要: /4-High-order-hexo-gamer/
       让你的 Hexo 博客支持远程编辑: /4-High-order-hexo-gamer/4-1-remote-editing/
@@ -96,6 +98,7 @@ themeConfig:
       - 2-16-hexo-theme-stun/
       - 2-17-hexo-theme-phantom/
       - 2-18-hexo-theme-archer/
+      - 2-19-hexo-theme-ayer/
     /3-Plugins-use-and-config/:
       - 3-1-hexo-tag-aplayer/
       - 3-2-hexo-tag-dplayer/
@@ -104,6 +107,7 @@ themeConfig:
       - 3-5-hexo-tag-mmedia/
       - 3-6-hexo-submit-urls-to-search-engine/
       - 3-7-hexo-filter-mathjax/
+      - 3-8-hexo-tag-chart/
     /4-High-order-hexo-gamer/:
       - 4-1-remote-editing/
       - 4-2-theme-develop/

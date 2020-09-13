@@ -22,6 +22,7 @@ title: 主题使用与配置
 - [hexo-theme-journal](2-15-hexo-theme-journal)
 - [hexo-theme-stun](2-16-hexo-theme-stun)
 - [hexo-theme-phantom](2-17-hexo-theme-phantom)
+- [hexo-theme-ayer](2-19-hexo-theme-ayer)
 
 还有许多优秀主题由于各种原因没有收录：
 - [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody)
