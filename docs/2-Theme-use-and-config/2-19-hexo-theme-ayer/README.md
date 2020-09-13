@@ -12,9 +12,9 @@ title: hexo-theme-ayer
 
 ![hexo-theme-ayer](@img/2/2-19/1.jpg)
 
-[GitHub地址](https://github.com/Shen-Yu/hexo-theme-ayer)
+[GitHub 地址](https://github.com/Shen-Yu/hexo-theme-ayer)
 
-[国内镜像](https://gitee.com/shen-yu/hexo-theme-ayer)
+[Gitee 地址](https://gitee.com/shen-yu/hexo-theme-ayer)
 
 [效果预览](https://shen-yu.gitee.io)
 
@@ -27,7 +27,7 @@ title: hexo-theme-ayer
 1. 干净且优雅，文章内容美观易读
 2. 首页封面全屏平铺，扁平化设计，简洁又不失高大上
 3. 响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现
-4. 首页封面和文案可以任意更换，主题内附送6张精美高清壁纸
+4. 首页封面和文案可以任意更换，主题内附送 6 张精美高清壁纸
 5. 时间轴式的归档页
 6. 支持 `黑夜阅读` 模式
 7. 侧边栏可以点击显示或隐藏
@@ -37,8 +37,8 @@ title: hexo-theme-ayer
 11. 支持 `MathJax` 和 `Katex` 数学公式
 12. `TOC` 目录在文章页悬浮，跳转更方便
 13. 可设置阅读文章时做密码验证 [hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
-14. [Valine](https://valine.js.org/) 和 [Gitalk](https://gitalk.github.io/) 评论模块（推荐配合`leancloud`使用 `Valine`）
-15. 集成了不蒜子、百度统计、Google Analytics、CNZZ等统计功能
+14. [Valine](https://valine.js.org/) 和 [Gitalk](https://gitalk.github.io/) 评论模块（推荐配合 `leancloud` 使用 `Valine` ）
+15. 集成了[不蒜子 - 极简网页计数器](http://busuanzi.ibruce.info/)、百度统计、Google Analytics、CNZZ 等统计功能
 16. 支持 Github Ribbons
 
 
@@ -47,22 +47,13 @@ title: hexo-theme-ayer
 ![手机端效果](@img/2/2-19/2.jpg)
 
 ## 多语言支持
-zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（Japanese） es（Spanish） de（German） fr（French） ru（Russian） ko（Korean） vi（Vietnamese） nl（Dutch） no（Norwegian） pt（Portuguese）
+`zh-CN（简体中文）` ; `en（English）` ; `zh-TW（繁體中文）` ; `ja（Japanese）` ; `es（Spanish）` ; `de（German）` ; `fr（French）` ; `ru（Russian）` ; `ko（Korean）` ; `vi（Vietnamese）` ; `nl（Dutch）` ; `no（Norwegian）` ; `pt（Portuguese）` 
 
-默认语言是英语，把博客目录下的 _config 文件里的 `language` 修改成以上简写即可更换语言。
+Hexo 默认语言为英语（en），请参照上表修改 Hexo 博客目录下的 `_config.yml` 文件中 `language:` 的值（第 11 行）。
 
-## 打赏
+## 支持
 
-本主题完全开源且免费，目前由我一个人维护，如果你觉得主题不错，你可以选择继续白嫖，也可以选择适当打赏我，不在于金额多少，而是能让我更有动力去维护这个主题。打赏请备注说明，谢谢~
-
-<div style="width:100%;text-align:center;font-weight:bold">
-<span style="width:30%;display:inline-block">
-微信
-<img src="@img/2/2-19/3.jpg" alt="wechat" style="width:100%"></span>
-<span style="width:30%;;display:inline-block">
-支付宝
-<img src="@img/2/2-19/4.jpg" alt="alipay" style="width:100%"></span>
-</div>
+根据 [hexo-theme-ayer 主题的开源许可证](https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE)，只要给这个主题点一个 star 并且不抹掉页脚的主题仓库链接就可以免费使用该主题。
 
 ## 安装
 
@@ -84,7 +75,7 @@ npm i hexo-theme-ayer -S
 
 ## 修改
 
-将博客根目录下的 `_config.yml` 里的 `theme` 值修改成 `ayer`
+将 Hexo 博客目录下的 `_config.yml` 里的 `theme` 值修改成 `ayer`
 
 ``` yaml
 theme: ayer
@@ -107,7 +98,7 @@ npm update hexo-theme-ayer -S
 
 ## 主题配置
 
-以下是ayer主题目录下的 `_config.yml`文件配置，如果你是用方法二的npm安装，那么在根目录下的 `_config.ayer.yml` 配置就行，注意别把hexo的配置文件和主题的配置文件搞混。另外，请先确保你已经读过 [Hexo文档](https://hexo.io/zh-cn/docs/)。如果你在配置过程中有问题，请先擅用 [搜索引擎](https://cn.bing.com)。如果你搜不到解决方法，你可以参考：[我的博客源码](https://gitee.com/shen-yu/shen-yu/tree/dev/)，按照我的一模一样配肯定是不会有问题的。如果对部分字体或颜色等有定制需求，请自行在css文件进行修改，主题本身已经很符合审美，自定义配置项也很多，不建议改得花里胡哨，过大的字体和库都会影响博客加载速度。如果还有问题或者建议，那么请在评论区给我留言~
+以下是 ayer 主题目录下的 `_config.yml` 文件配置，如果你是用方法二的 npm 安装，那么在 Hexo 博客目录下的 `_config.ayer.yml` 配置就行，注意别把 Hexo 的配置文件和主题的配置文件搞混。另外，请先确保你已经读过 [Hexo 文档](https://hexo.io/zh-cn/docs/)。如果你在配置过程中有问题，请先擅用 [搜索引擎](https://cn.bing.com)。如果你搜不到解决方法，你可以参考：[我的博客源码](https://gitee.com/shen-yu/shen-yu/tree/dev/)，按照我的一模一样配肯定是不会有问题的。如果对部分字体或颜色等有定制需求，请自行在 css 文件进行修改，主题本身已经很符合审美，自定义配置项也很多，不建议改得花里胡哨，过大的字体和库都会影响博客加载速度。如果还有问题或者建议，那么请在评论区给我留言~
 
 ``` yaml
 # 侧边栏菜单
@@ -336,7 +327,7 @@ gitalk:
   ```bash
   npm install hexo-generator-searchdb --save
   ```
-  然后将以下配置复制到你博客根目录下的 `_config.yml` 里（注意不是ayer目录下的）:
+  然后将以下配置复制到你 Hexo 博客目录下的 `_config.yml` 里（注意不是ayer目录下的）:
   
   ```yaml
   # hexo-generator-searchdb
@@ -352,7 +343,7 @@ gitalk:
   npm install hexo-generator-feed --save
   ```
   
-    然后将以下配置复制到你博客根目录下的 `_config.yml` 里（注意不是ayer目录下的）:
+    然后将以下配置复制到你 Hexo 博客目录下的 `_config.yml` 里（注意不是ayer目录下的）:
   
   ```yaml
   feed:
@@ -411,7 +402,7 @@ type: friends
 layout: "friends"
 ---
 ```
-然后在 `_config.yml` 中自定义 `friends_link` 配置项即可
+然后在 ayer 主题目录下的 `_config.yml` 中自定义 `friends_link` 配置项即可
 
 ### 相册
 ``` bash
@@ -434,19 +425,19 @@ albums: [
 
 用 Tocbot 解析文章标题并生成目录
 
-+ 将以下配置复制到你 ayer 目录下的 `_config.yml` 里：
++ 将以下配置复制到你 ayer 主题目录下的 `_config.yml` 里：
 
-	``` bash
-	# Toc
-  toc: true
-	```
+``` bash
+# Toc
+toc: true
+```
 + 当然你可能并不想所有文章都生成悬浮目录，你可以在文章顶部的配置中加一行来进行关闭：
 
-	``` md
-  ---
-  no_toc: true
-  ---
-	```
+``` md
+---
+no_toc: true
+---
+```
 
 ---
 
@@ -454,7 +445,9 @@ albums: [
 
 ### 一.本地图片引用了却无法显示
 
-> 插入图片的两种方法：1.引用图床，2.引用本地图片。为了防止路径出错，建议使用图床。
+> 插入图片的两种方法：
+1. 引用图床
+2. 引用本地图片。为了防止路径出错，建议使用图床。
 
 #### 1.图床
 推荐使用：[SM.MS](https://sm.ms/)，[聚合图床](https://www.superbed.cn/)
@@ -493,13 +486,15 @@ menu:
 
 ### 四.为什么修改了配置却没有效果
 
-建议每次生成站点或部署之前都用 `hexo clean` 命令清理一下缓存，另外你可能还需要刷新一下。
+建议每次生成站点或部署之前都用 `hexo clean` 命令清理一下缓存，请使用 Ctrl + F5 清除缓存并刷新页面。
 
 ### 五.怎么修改大标题和站点信息
 
+参考 [Hexo 文档](https://hexo.io/zh-cn/docs/configuration)
+
 站点配置文件 `_config.yml` 是hexo站点根目录下的主配置文件(还不知道是哪里的，自己google)，注意：别和 `ayer` 主题目录下的 `_config.yml` 搞混了。
 
-修改网站各种资料，例如标题、副标题和邮箱等个人资料，请修改站点根目录下的 `_config.yml`
+修改网站各种资料，例如标题、副标题和邮箱等个人资料，请修改 Hexo 博客目录下的 `_config.yml`
 
 以我的博客为例：
 ![](@img/2/2-19/5.jpg)
@@ -508,9 +503,13 @@ menu:
 
 #### 百度统计
 
-在 ayer 的 config 配置里的 `baidu_analytics` 填上百度统计代码中的 `hm.js` 问好后面那一串东西
+参考这里：[百度统计代码介绍](https://tongji.baidu.com/web/help/article?id=174&type=0&castk=LTE%3D)
+
+在 ayer 的 config 配置里的 `baidu_analytics` 填上百度统计代码中的 `hm.js?` 后面那一串东西
 
 #### 谷歌统计
+
+参考这里：[Get started with Google Analytics](https://support.google.com/analytics/answer/1008015?hl=en)
 
 在 ayer 的 config 配置里的 `google_analytics` 填上谷歌统计代码的跟踪ID，即UA值(包含UA)
 
@@ -524,7 +523,7 @@ menu:
 
 ### 九.分享链接无法打开
 
-你需要在根目录下的 `_config.yml` 文件中把 url 配置成部署后的域名。
+你需要在 Hexo 博客目录下的 `_config.yml` 文件中把 url 配置成部署后的域名。
 
 ### 十.怎么让搜索引擎收录站点
 
