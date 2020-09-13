@@ -2,7 +2,7 @@
 title: hexo-tag-chart
 ---
 
-# hexo-tag-chart
+# hexo-tag-chart <Badge text="@Shen-Yu"/>  <Badge text="Finish"/>  <Badge text="v1.0.7"/>
 
 ![npm](https://img.shields.io/npm/v/hexo-tag-chart)
 ![npm](https://img.shields.io/npm/dt/hexo-tag-chart)
@@ -32,7 +32,7 @@ $ npm install hexo-tag-chart --save
 | width  | decimal | 100% | 图表宽度 (%)  |
 | height  | number | 300 | 图表高度 (px) |
 
-其中 `chart` 是标签名，`endchart` 是结束标签，不需要更改，`90%` 是图表容器的相对宽度，默认是100%，`300` 是图表容器的高度，默认是按正常比例缩放的，你可以通过设置 `options` 里面的 `aspectRatio` 属性来调整宽高比例，另外还有许多属性可以自定义，你可以查看 [官方文档](https://www.chartjs.org/docs/latest/general/responsive.html)。在标签之间的部分，都是需要自己填充的图表数据和属性。
+其中 `chart` 是标签名，`endchart` 是结束标签，不需要更改，`90%` 是图表容器的相对宽度，默认是 100%，`300` 是图表容器的高度，默认是按正常比例缩放的，你可以通过设置 `options` 里面的 `aspectRatio` 属性来调整宽高比例，另外还有许多属性可以自定义，你可以查看 [官方文档](https://www.chartjs.org/docs/latest/general/responsive.html)。在标签之间的部分，都是需要自己填充的图表数据和属性。
 
 ## 例子
 
@@ -64,7 +64,7 @@ $ npm install hexo-tag-chart --save
 
 ![](@img/3/3-8/1.jpg)
 
-### 更多用法介绍，请参考 [这里](https://shen-yu.gitee.io/2020/chartjs/) 
+更多用法介绍，请参考 [这里](https://shen-yu.gitee.io/2020/chartjs/) 
 
 > 最后宣传一波自己的主题~
 >
