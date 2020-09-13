@@ -467,7 +467,7 @@ no_toc: true
 
 ### 三.点击侧边栏页面无法显示
 
-原因：ayer主题目录下的 `config.yml` 里 menu 属性的路径不对，这需要你根据页面路径手动配置。
+原因：ayer 主题目录下的 `config.yml` 里 menu 属性的路径不对，这需要你根据页面路径手动配置。
 
 以我的博客为例：
 
@@ -492,7 +492,7 @@ menu:
 
 参考 [Hexo 文档](https://hexo.io/zh-cn/docs/configuration)
 
-站点配置文件 `_config.yml` 是hexo站点根目录下的主配置文件(还不知道是哪里的，自己google)，注意：别和 `ayer` 主题目录下的 `_config.yml` 搞混了。
+站点配置文件 `_config.yml` 是 Hexo 站点根目录下的主配置文件（还不知道是哪里的，自己搜索），注意：别和 `ayer` 主题目录下的 `_config.yml` 搞混了。
 
 修改网站各种资料，例如标题、副标题和邮箱等个人资料，请修改 Hexo 博客目录下的 `_config.yml`
 
@@ -511,11 +511,11 @@ menu:
 
 参考这里：[Get started with Google Analytics](https://support.google.com/analytics/answer/1008015?hl=en)
 
-在 ayer 的 config 配置里的 `google_analytics` 填上谷歌统计代码的跟踪ID，即UA值(包含UA)
+在 ayer 的 config 配置里的 `google_analytics` 填上谷歌统计代码的跟踪 ID，即 UA 值(包含 UA)
 
 ### 七.怎么查看文章的访问量
 
-在ayer的config配置里有 `busuanzi`选项，默认设置为 `enable:true`，就开启了站点访问量的统计，站点尾部左下角的 `PV` 代表了当前页的访问次数，`UV` 代表了当前站点的访问人数。注意：不蒜子统计是根据当前域名来统计的，你在本地启动的时候由于是 localhost，所以数字会很大，部署到线上之后就会根据域名重新统计。
+在 ayer 的 config 配置里有 `busuanzi` 选项，默认设置为 `enable:true`，就开启了站点访问量的统计，站点尾部左下角的 `PV` 代表了当前页的访问次数，`UV` 代表了当前站点的访问人数。注意：不蒜子统计是根据当前域名来统计的，你在本地启动的时候由于是 localhost，所以数字会很大，部署到线上之后就会根据域名重新统计。
 
 ### 八.网易云音乐无法播放
 
