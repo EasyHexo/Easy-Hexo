@@ -1,12 +1,13 @@
 ---
 title: hexo-tag-chart
 ---
-# hexo-tag-chart 插件使用
+
+# hexo-tag-chart
 
 ![npm](https://img.shields.io/npm/v/hexo-tag-chart)
 ![npm](https://img.shields.io/npm/dt/hexo-tag-chart)
 
-在Hexo站点中插入 [Chartjs](https://www.chartjs.org/) 动态图表
+在 Hexo 站点中插入 [Chartjs](https://www.chartjs.org/) 动态图表
 
 ## 简介
 
