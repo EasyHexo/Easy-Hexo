@@ -327,7 +327,7 @@ gitalk:
   ```bash
   npm install hexo-generator-searchdb --save
   ```
-  然后将以下配置复制到你 Hexo 博客目录下的 `_config.yml` 里（注意不是ayer目录下的）:
+  然后将以下配置复制到你 Hexo 博客目录下的 `_config.yml` 里（注意不是 ayer 目录下的）:
   
   ```yaml
   # hexo-generator-searchdb
@@ -337,13 +337,13 @@ gitalk:
     format: html
   ```
 
-+ [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 用于生成RSS订阅
++ [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 用于生成 RSS 订阅
 
   ```bash
   npm install hexo-generator-feed --save
   ```
   
-    然后将以下配置复制到你 Hexo 博客目录下的 `_config.yml` 里（注意不是ayer目录下的）:
+  然后将以下配置复制到你 Hexo 博客目录下的 `_config.yml` 里（注意不是 ayer 目录下的）:
   
   ```yaml
   feed:
@@ -373,9 +373,9 @@ gitalk:
 
 ### 分类
 ``` bash
-  hexo new page categories
+hexo new page categories
 ```
-然后将以下复制到 /source/categories/index.md 文件
+然后将以下复制到 `/source/categories/index.md` 文件
 ``` md
 ---
 title: categories
@@ -386,7 +386,7 @@ layout: "categories"
 
 ### 标签
 ``` bash
-  hexo new page tags
+hexo new page tags
 ```
 配置同分类一样
 
@@ -394,7 +394,7 @@ layout: "categories"
 ``` bash
 hexo new page friends
 ```
-然后将以下复制到 /source/friends/index.md 文件
+然后将以下复制到 `/source/friends/index.md` 文件
 ``` md
 ---
 title: friends
@@ -406,9 +406,9 @@ layout: "friends"
 
 ### 相册
 ``` bash
-  hexo new page photos
+hexo new page photos
 ```
-然后将以下复制到 /source/photos/index.md 文件，`img_url` 替换成图片路径，`caption` 替换成图片名称
+然后将以下复制到 `/source/photos/index.md` 文件，`img_url` 替换成图片路径，`caption` 替换成图片名称
 
 ``` md
 ---
@@ -453,7 +453,7 @@ no_toc: true
 推荐使用：[SM.MS](https://sm.ms/)，[聚合图床](https://www.superbed.cn/)
 
 #### 2.本地图片
-参照 [Hexo文档](https://hexo.io/zh-cn/docs/asset-folders)，然后用这种方式引用图片：
+参照 [Hexo 文档](https://hexo.io/zh-cn/docs/asset-folders)，然后用这种方式引用图片：
 ``` md
 {% asset_img image.jpg [title] %}
 ```
