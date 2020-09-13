@@ -2,7 +2,7 @@
 title: hexo-theme-ayer
 ---
 
-# hexo-theme-ayer
+# hexo-theme-ayer <Badge text="@Shen-Yu"/>  <Badge text="Finish"/>  <Badge text="v1.8.8"/>
 
 ## 介绍
 
