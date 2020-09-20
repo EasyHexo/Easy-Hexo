@@ -9,7 +9,7 @@ title: hexo-submit-urls-to-search-engine
 
 ## 官方文档
 
-[中文详细文档](https://cjh0613.github.io/blog/20200603HexoSubmitUrlsToSearchEngine.html)
+[中文详细文档](https://cjh0613.com/20200603HexoSubmitUrlsToSearchEngine.html)
 
 [GitHub 地址](https://github.com/cjh0613/hexo-submit-urls-to-search-engine)
 
@@ -35,7 +35,7 @@ hexo_submit_urls_to_search_engine:
   # 则 https://yoursite.com/a.txt 会被提交，https://yoursite.com/b.txt 不会
   period: 900
   # 提交链接的条件，可选值：count | period。不同取值的含义如下：
-  # count ：应用上述的 count  配置项
+  # count ：应用上述的 count  配置项，现仅支持此方式
   # period：应用上述的 period 配置项
   submit_condition: count
   # 是否向 Google 提交，可选值：1 | 0（0：否；1：是）
@@ -48,16 +48,19 @@ hexo_submit_urls_to_search_engine:
   txt_path: submit_urls.txt
   # 在百度站长平台中注册的域名
   baidu_host: https://yoursite.com/
-  # 百度自动推送 API 的 token（获取方式见插件文档：https://cjh0613.github.io/blog/20200603HexoSubmitUrlsToSearchEngine.html）
+  # 百度自动推送 API 的 token（获取方式见插件文档：https://cjh0613.com/20200603HexoSubmitUrlsToSearchEngine.html）
   baidu_token: xxxxx
   # 在必应站长平台中注册的域名
   bing_host: https://yoursite.com/
-  # 必应自动推送 API 的 token（获取方式见插件文档：https://cjh0613.github.io/blog/20200603HexoSubmitUrlsToSearchEngine.html）
+  # 必应自动推送 API 的 token（获取方式见插件文档：https://cjh0613.com/20200603HexoSubmitUrlsToSearchEngine.html）
   bing_token: xxxxx
   # 在谷歌站长平台中注册的域名
   google_host: https://yoursite.com/
   # 存放 google key 的 json 文件，放于网站根目录
   google_key_file: google_key.json
+  replace: 0  # 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）
+  find_what: http://cjh0613.github.io/blog
+  replace_with: https://cjh0613.com
 ```
 
 
@@ -74,4 +77,4 @@ deploy:
 - type: cjh_baidu_url_submitter
 ```
 
-如果你使用插件时**遇到了问题**或者想进行**更详细的设置**，请查看插件的[文档](https://cjh0613.github.io/blog/20200603HexoSubmitUrlsToSearchEngine.html)。
+如果你使用插件时**遇到了问题**或者想进行**更详细的设置**，请查看插件的[文档](https://cjh0613.com/20200603HexoSubmitUrlsToSearchEngine.html)。
