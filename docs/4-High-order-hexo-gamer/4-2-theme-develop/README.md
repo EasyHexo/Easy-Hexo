@@ -2,11 +2,11 @@
 title: 编写自己的 Hexo 主题
 ---
 
-# 编写自己的 Hexo 主题 <Badge text="@STAUNCHKAI"/> <Badge text="Finish"/>
+# 编写自己的 Hexo 主题 <Badge text="@CareyQ"/> <Badge text="Finish"/>
 
 ## 前言
 
-开始使用 Hexo 时，使用的都是其他大佬做好的主题，时间久了就产生了不如意的地方，要么是功能太过繁杂自己用不到，要么就是自己想要的东西主题上没有，于是乎，我有了一个自己写主题的想法，便开始接触学习前端，到现在，我的 Hexo 博客网站，用的都是自己写的主题。[https://staunchkai.com](https://staunchkai.com)
+开始使用 Hexo 时，使用的都是其他大佬做好的主题，时间久了就产生了不如意的地方，要么是功能太过繁杂自己用不到，要么就是自己想要的东西主题上没有，于是乎，我有了一个自己写主题的想法，便开始接触学习前端，到现在，我的 Hexo 博客网站，用的都是自己写的主题。[https://careyq.cool](https://careyq.cool)
 
 ~~这篇文章应该在 18 年就出现的，由于懒癌晚期拖到了现在~~。
 
@@ -475,6 +475,6 @@ mainColor = unquote(hexo-config("color"))
 
 广告：
 
-- [Hexo 博客部署到腾讯云服务器全流程](https://staunchkai.com/hexo_deploy.html)
+- [Hexo 博客部署到腾讯云服务器全流程](https://careyq.cool/post/hexo_deploy.html)
 
-- [Hexo 博客开启 https (SSL 证书)](https://staunchkai.com/hexo_SSL.html)
+- [Hexo 博客开启 https (SSL 证书)](https://careyq.cool/post/hexo_SSL.html)
