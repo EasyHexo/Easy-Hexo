@@ -1,0 +1,3 @@
+[submodule "packages/vuepress-theme-macgs"]
+	path = packages/vuepress-theme-macgs
+	url = https://github.com/EasyHexo/vuepress-theme-macgs.git

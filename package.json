@@ -1,10 +1,11 @@
 {
   "name": "easy-hexo",
-  "version": "2.0.0",
+  "version": "2.0.0-20210423",
   "description": "🤘 Build your own website with Hexo, the easy way.",
   "private": true,
   "workspaces": [
-    "packages/yaml-loader"
+    "packages/yaml-loader",
+    "packages/vuepress-theme-macgs"
   ],
   "scripts": {
     "docs:dev": "vuepress dev docs",
@@ -15,26 +16,24 @@
   "author": "EasyHexo <124694738@qq.com>",
   "license": "CC-BY-NC-ND-4.0",
   "dependencies": {
-    "@vuepress/plugin-google-analytics": "^1.3.0",
-    "@vuepress/plugin-medium-zoom": "^1.3.0",
-    "@vuepress/plugin-pwa": "^1.0.0-alpha.37",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-task-lists": "^2.1.1",
     "opencollective": "^1.0.3",
-    "opencollective-postinstall": "^2.0.2",
-    "vuepress": "^1.0.0-alpha.35",
+    "opencollective-postinstall": "^2.0.3",
+    "vuepress": "^1.8.2",
     "vuepress-plugin-pangu": "^1.0.1",
-    "vuepress-plugin-sitemap": "^2.1.1",
-    "vuepress-theme-macgs": "git+https://github.com/EasyHexo/vuepress-theme-macgs.git"
+    "vuepress-plugin-sitemap": "^2.3.1"
   },
   "devDependencies": {
-    "chalk": "^2.0.0",
+    "chalk": "^2.4.2",
     "commander": "^2.0.0",
-    "debug": "^4.1.1",
-    "esm": "^3.0.0",
+    "debug": "^4.3.1",
+    "esm": "^3.2.25",
     "lodash.merge": "^4.6.2",
-    "lodash.pick": "^4.4.0",
-    "webpack": "^4.29.3"
+    "lodash.pick": "^4.4.0"
   },
   "collective": {
     "type": "opencollective",
