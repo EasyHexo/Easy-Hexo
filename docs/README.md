@@ -66,6 +66,10 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 git clone git@github.com:EasyHexo/Easy-Hexo.git
 # 安装依赖
 yarn install
+# 安装vuepress-theme-macgs主题依赖
+npm i -S github:EasyHexo/vuepress-theme-macgs
+或者
+yarn add github:EasyHexo/vuepress-theme-macgs
 # 本地运行
 yarn docs:dev
 # 生成静态文件
