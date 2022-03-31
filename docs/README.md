@@ -1,22 +1,13 @@
----
-home: true
-heroImage: ./EasyHexo.png
-actionText: 进入深坑 →
-actionLink: /1-Hexo-install-and-config/
-features:
-- title: ❤️
-  details: 这是一个用爱编写的教程。
-- title: 👨‍🏭
-  details: 简单易懂，轻松上手。
-- title: ✨
-  details: 只要你熟悉一个主题、插件或是其他骚操作，都能对本项目贡献！
-footer: © Easy Hexo. Released under the CC BY-NC-ND 4.0 International License.
----
+<div align="center"><img src="https://i.loli.net/2020/02/25/d7JrUAVkiun6GI1.png" alt="Icon Badge" width="40%" /></div>
 
-[![Build Status](https://img.shields.io/travis/EasyHexo/Easy-Hexo.svg?style=flat-square)](https://travis-ci.org/EasyHexo/Easy-Hexo)
-[![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/EasyHexo/Easy-Hexo)
-![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)
-  
+<h1 align="center">
+Easy Hexo <img height="30" src="https://i.loli.net/2020/02/26/EnQZuJwlazt3iMV.png" /> 
+</h1>
+
+[![Build Status](https://travis-ci.org/EasyHexo/Easy-Hexo.svg?branch=master)](https://travis-ci.org/EasyHexo/Easy-Hexo)
+[![Backers on Open Collective](https://opencollective.com/Easy-Hexo/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/Easy-Hexo/sponsors/badge.svg)](#sponsors) [![GitHub stars](https://img.shields.io/github/stars/EasyHexo/Easy-Hexo.svg?style=flat-square&label=⭐%20Stars)](https://github.com/EasyHexo/Easy-Hexo)
+![love](https://img.shields.io/badge/Made%20with-love-ff69b4.svg?style=flat-square)  
+
 # 前言
 
 > 轻松使用 Hexo 建站
@@ -64,6 +55,10 @@ Hexo 是一个快速、简洁且高效的博客框架，许多人使用它来建
 ```bash
 # 下载项目
 git clone git@github.com:EasyHexo/Easy-Hexo.git
+# 安装vuepress-macgs主题依赖
+npm i -S github:EasyHexo/vuepress-theme-macgs
+或者
+yarn add github:EasyHexo/vuepress/theme-macgs
 # 安装依赖
 yarn install
 # 本地运行
@@ -75,6 +70,7 @@ yarn docs:build
 # Status 状态
 
 欢迎查阅 [项目进度板](https://github.com/EasyHexo/Easy-Hexo/projects/2)。
+
 
 # Contributors
 
@@ -113,6 +109,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/Easy-Hexo/sponsor/8/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/Easy-Hexo/sponsor/9/website" target="_blank"><img src="https://opencollective.com/Easy-Hexo/sponsor/9/avatar.svg"></a>
 
+
 # License 许可
 
 ⚖ 本作品采用[知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-nd/4.0/)进行许可。
@@ -133,4 +130,4 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 Authored by Easy Hexo, [@ChungZH](https://chungzh.cn/). Maintained by [contributers](https://github.com/EasyHexo/Easy-Hexo/graphs/contributors). :heart:
 
-[@ChungZH's Blog](https://chungzh.cn/) · [@GitHub](https://github.com/EasyHexo/Easy-Hexo)
+[@ChungZH's Blog](https://chungzh.cn/) · [@GitHub](https://github.com/EasyHexo)

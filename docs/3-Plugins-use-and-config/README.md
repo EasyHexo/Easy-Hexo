@@ -13,5 +13,6 @@ title: 插件使用与配置
 - [hexo-submit-urls-to-search-engine](3-6-hexo-submit-urls-to-search-engine)
 - [hexo-filter-mathjax](3-7-hexo-filter-mathjax)
 - [hexo-tag-chart](3-8-hexo-tag-chart)
+- [hexo-asset-link](3-9-hexo-asset-link)
 
 同时，我们也欢迎各位给我们贡献其他插件文档，可先阅读 [CONTRIBUTING](https://github.com/EasyHexo/Easy-Hexo/blob/master/.github/CONTRIBUTING.md)。

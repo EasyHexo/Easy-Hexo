@@ -25,7 +25,8 @@
     "opencollective-postinstall": "^2.0.3",
     "vuepress": "^1.8.2",
     "vuepress-plugin-pangu": "^1.0.1",
-    "vuepress-plugin-sitemap": "^2.3.1"
+    "vuepress-plugin-sitemap": "^2.3.1",
+    "vuepress-theme-macgs": "github:EasyHexo/vuepress-theme-macgs"
   },
   "devDependencies": {
     "chalk": "^2.4.2",
