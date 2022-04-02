@@ -2,18 +2,15 @@
 title: 部署 Hexo
 ---
 
-# 部署 Hexo
+# 部署 Hexo <Badge text="@MoshiYeap"/> <Badge text="@Odeinjul"/> <Badge text="@ChungZH"/> <Badge text="Finish"/>
 
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-MoshiYeap-FF6666.svg?longCache=true&style=flat-square)](https://junzhouliu.github.io/)
-[![](https://img.shields.io/badge/Author-Odeinjul-66CCFF.svg?longCache=true&style=flat-square)](https://odeinjul.github.io/)
 ## 部署到 GitHub
 
 ### 准备工作
 
-1. 如果没有账号，请点此前往 [GitHub](gitHub.com) 注册一个 GitHub 账号。
-2. 新建一个公开仓库，仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是  `easyhexo.github.io`
-3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
+1. 如果没有账号，请点此前往 [GitHub](https://github.com) 注册一个 GitHub 账号。
+2. 新建一个公开仓库，仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是 `easyhexo.github.io`
+3. 创建完成后记下该仓库的 HTTPS/SSH 地址，一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
 
 ### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
 
@@ -21,6 +18,7 @@ title: 部署 Hexo
 $ npm install hexo-deployer-git --save
 $ npm install hexo-server --save
 ```
+
 ### 配置 Git
 
 如果你只是安装好了 Git 但没有配置过你的 Git ，那么现在需要做的第一件事情就是设置你的 Git 用户名和邮箱。
@@ -30,6 +28,7 @@ $ npm install hexo-server --save
 $ git config --global user.name "Your_user_name"
 $ git config --global user.email Your_email@example.com
 ```
+
 :::tip 提醒
 每次 Git 提交时都会附带这两条信息，用于记录是谁提交的更新，并且会随更新内容一起被记录到历史记录中。简单说，是用来标记的你的身份的~
 :::
@@ -38,10 +37,10 @@ $ git config --global user.email Your_email@example.com
 
 ```yaml
 deploy:
-  type: git   # 类型填git
+  type: git # 类型填git
   repo: <repository url> # 你的Github仓库地址
-  branch: master  # 分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。
-  message:  # 提交信息可以自定义，不填的则默认为提交时间
+  branch: master # 分支名称。默认填写 master 如果您使用的是 GitHub ，程序会尝试自动检测。
+  message: # 提交信息可以自定义，不填的则默认为提交时间
 ```
 
 ### 发布到 GitHub
@@ -53,36 +52,114 @@ $ hexo clean && hexo d -g
 ```
 
 :::tip 提醒
-如果是第一次使用，会弹出一个登录框，需要登陆你的 GitHub 账号。
+如果是第一次使用，会弹出一个登录框，需要登录你的 GitHub 账号。
 :::
 
 ### 自定义域名
-1. 如果你拥有个人域名，请用 A 记录解析到以下IP中的任意一个。如果使用 CNAME 请解析到你的 GitHub 仓库名称。
+
+1. 如果你拥有个人域名，请用 A 记录解析到以下 IP 中的任意一个。如果使用 CNAME 请解析到你的 GitHub 仓库名称。
+
 ```yaml
 185.199.108.153
 185.199.109.153
 185.199.110.153
 185.199.111.153
 ```
+
 **参考表格**
-| 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒）|
-| :-----: | :-----: | :-----: | :-----:| :-----: | :-----:|
-|    A    | @       |   默认  | 185.199.110.153| - | 600 |
-|  CNAME  | @       |   默认  | GitHub 博客仓库名称| - | 600 |
+| 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒） |
+| :------: | :------: | :------: | :-----------------: | :--------: | :-------: |
+| A | @ | 默认 | 185.199.110.153 | - | 600 |
+| CNAME | @ | 默认 | GitHub 博客仓库名称 | - | 600 |
 
 2. 打开仓库设置,找到 GitHub Pages 项目，修改 Custom domain 选项的值为你的自定义域名（不带 http 等前缀）
 3. 勾选 Custom domain 选项下的 Enforce HTTPS 选项，强制开启 Https 。如果遇到 `Enforce HTTPS` 选项无法打开，可以稍等一会儿再尝试。
 
 :::tip 提醒
-同时需要在本地的 `source` 目录新建一个 CNAME 文件，内容为你的自定义域名（不带 http 等前缀）。否则无法使用自定义域名功能（ hexo d 生成的文件没有 CNAME 文件，导致仓库的自定域名设置失效）
+同时需要在本地的 `source` 目录新建一个 CNAME 文件，内容为你的自定义域名（不带 http 等前缀）。否则无法使用自定义域名功能（`hexo d` 生成的文件没有 CNAME 文件，导致仓库的自定域名设置失效）
 :::
 
-## 部署到 CODING（dev.tencent.com）
+## 部署到 Netlify
+
+Netlify 是一个可以部署静态网站的平台，也可以从 GitHub/GitLab/Bitbucket 的项目中快速构建你的网站。相比 GitHub Pages 更加专业、便捷，即使在国内的访问速度也不错，百度也能收录。
 
 ### 准备工作
 
-1. 如果没有账号，请点此前往 [CODING](dev.tencent.com) 注册 CODING 账号。
-2. 新建一个公开仓库，仓库名格式为 `your_username.coding.me` 例如你的 CODING 用户名(username)是 `easyhexo`，那么你的仓库名称就应该是  `easyhexo.coding.me`
+:::tip 提醒
+准备工作和部署到 GitHub 一样。
+:::
+
+1. 如果没有账号，请点此前往 [GitHub](https://github.com) 注册一个 GitHub 账号。
+2. 新建一个公开仓库，仓库名格式为 `your_username.github.io` 例如你的 GitHub 用户名是 `easyhexo`，那么你的仓库地址名称就应该是 `easyhexo.github.io`
+3. 创建完成后记下该仓库的 HTTPS/SSH 地址，一般格式为 `https://github.com/your_username/your_reponame.git` 在下一步会用到。
+
+### 配置 Git
+
+:::tip 提醒
+配置 Git 也和部署到 GitHub 一样。
+:::
+
+如果你只是安装好了 Git 但没有配置过你的 Git ，那么现在需要做的第一件事情就是设置你的 Git 用户名和邮箱。
+在 Git Bash 中执行以下两条命令配置你的用户名和邮箱，这里建议用户名和邮箱与你的 GitHub 用户名和邮箱保持一致。
+
+```bash
+$ git config --global user.name "Your_user_name"
+$ git config --global user.email Your_email@example.com
+```
+
+:::tip 提醒
+每次 Git 提交时都会附带这两条信息，用于记录是谁提交的更新，并且会随更新内容一起被记录到历史记录中。简单说，是用来标记的你的身份的~
+:::
+
+### 配置本地和远程仓库
+
+在博客根目录打开终端并执行以下命令：
+
+```bash
+git init
+git add .
+git commit -m ":tada: Init repo"
+git remote add origin git@github.com:你的名字/你的项目名字.git
+git push -u origin master
+```
+
+这样就将你的 Hexo 博客 push 上 GitHub 仓库了。以后更新博客只需要 `git push origin master` 即可。
+
+### 配置 Netlify
+
+1. 首先打开 [Netlify 官网](https://www.netlify.com/)，用 GitHub 帐号登录。
+2. 点击 **New site from Git**，进入 **Create a new site** 页面。
+   1. **Connect to Git provider** 页面，选择 GitHub。
+   2. **Pick a repository** 页面，选择你刚刚创建的博客存储库。
+   3. 最后一步 **Build options, and deploy!**，Netlify 会检测到是 Hexo 项目，自动配置好了。点击 **Deploy site** 按钮即可。
+      ![build-options](@img/1/1-4/1.png)
+
+最后出现如下界面：
+
+![deploy-done](@img/1/1-4/2.png)
+
+可以看到 Netlify 自动分配了一个域名，在这个网站中是 `https://nifty-noyce-b98546.netlify.com`。
+
+如果你有自己的域名并想要绑定它，请点击 **Set up a custom domain** 链接。这里不再赘述，详细步骤请见 [Netlify Docs: custom-domains](https://www.netlify.com/docs/custom-domains)。
+
+关于 HTTPS 的设置，Netlify Docs 中也有详细教程。请自行阅读。
+
+## 部署到 CODING
+
+### 准备工作
+
+::: details CODING or dev.tencent.com?
+~~CODING = dev.tencent.com~~
+
+2019 年 12 月 25 日，CODING 个人版与腾讯云开发者平台升级至全新 CODING。也就是说，这两个平台回合并成 CODING 了。
+
+::: right
+[致 CODING 个人版/腾讯云开发者
+平台用户的一封信](https://coding.net/products/upgrade)
+:::
+
+1. 如果没有账号，请点此前往 [CODING](https://coding.net) 注册 CODING 账号。
+2. 新建一个公开仓库，仓库名格式为 `your_username.coding.me` 例如你的 CODING 用户名(username)是 `easyhexo`，那么你的仓库名称就应该是 `easyhexo.coding.me`
 3. 创建完成后记下该仓库的 HTTPS/SSH 地址 一般格式为 `https://coding.net/your_username/your_reponame.git` 在下一步会用到。
 4. 如果您没有配置 `Git` 和 `hexo-deployer-git` 请参阅前文配置方法配置。
 
@@ -90,15 +167,15 @@ $ hexo clean && hexo d -g
 
 ```yaml
 deploy:
-  type: git   # 类型填git
-  repo: 
-    github: <github repository url> # 你的GitHub仓库地址
-    coding: <coding repository url> # 你的coding仓库地址
-  branch: master  # 默认填写 master。
-  message:  # 提交信息可以自定义，不填的则默认为提交时间
+  type: git # 类型填 git
+  repo:
+    github: <github repository url> # 你的 GitHub 仓库地址
+    coding: <coding repository url> # 你的 coding 仓库地址
+  branch: master # 默认填写 master。
+  message: # 提交信息可以自定义，不填的则默认为提交时间
 ```
 
-### 发布到 CODING 
+### 发布到 CODING
 
 在本地 Hexo 站点根目录下，执行如下命令即可部署到 CODING Pages 上。
 
@@ -111,14 +188,15 @@ $ hexo clean && hexo d -g
 :::
 
 ### 自定义域名
+
 1. 如果你拥有个人域名，请添加 CNAME 记录。
-2. 绑定前请在域名 DNS 设置中添加一条 CNAME 记录指向 xxxx.coding.me。将@和www记录都解析到这个即可。 
+2. 绑定前请在域名 DNS 设置中添加一条 CNAME 记录指向 xxxx.coding.me。将 @ 和 www 记录都解析到这个即可。
 
 **参考表格**
-| 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒）|
-| :-----: | :-----: | :-----: | :-----:| :-----: | :-----:|
-|  CNAME  | www     |   默认  | xxxx.coding.me| - | 600 |
-|  CNAME  | @       |   默认  | xxxx.coding.me| - | 600 |
+| 记录类型 | 主机记录 | 解析路线 | 记录值 | MAX 优先级 | TTL（秒） |
+| :------: | :------: | :------: | :------------: | :--------: | :-------: |
+| CNAME | www | 默认 | xxxx.coding.me | - | 600 |
+| CNAME | @ | 默认 | xxxx.coding.me | - | 600 |
 
 2. 打开仓库设置,找到 代码-Pages 服务，在绑定新域名下的文本框内输入你的自定义域名（不带 http 等前缀）。
 3. 勾选 强制 HTTPS 访问。
@@ -127,14 +205,14 @@ $ hexo clean && hexo d -g
 出于 SEO 的考虑，我们建议您绑定一个 www 域名即可，如果您使用的域名 DNS 解析服务不支持添加 CNAME 记录，建议更换 Nameservers 到其他支持该功能的域名提供商（如 腾讯云）。如果遇到自定义域名失效，请参照前文 GitHub 配置方案解决。
 :::
 
-详细内容请参阅 [CODING 官方文档](https://dev.tencent.com/help/) 。
+详细内容请参阅 [CODING 官方文档](https://coding.net/help/) 。
 
 ## 部署到 CentOS Servers
 
 ### 预先准备
 
 - 确保你的 PC 已经安装好 Hexo 主程序的并且生成站点文件夹。安装 Hexo，请参阅[安装 Hexo](/1-Hexo-install-and-config/1-2-install-hexo.html)
-- 一台搭载 CenOS 7.4 64bit 的 ECS 服务器实例，其他 Linux 系统也可以
+- 一台搭载 CentOS 7.4 64bit 的 ECS 服务器实例，其他 Linux 系统也可以
 - 你至少应该掌握一丢丢的 Linux 命令
 
 ### 安装[部署插件](https://github.com/hexojs/hexo-deployer-git)
@@ -151,21 +229,25 @@ $ npm install hexo-server --save
 ```bash
 yum -y update
 ```
+
 #### 安装 Git
 
 ```bash
 yum install git -y
 ```
+
 #### 新建 Git 用户
 
 ```bash
 useradd -m git
 ```
+
 #### 设置 gituser 的密码
 
 ```bash
 passwd git
 ```
+
 #### 配置 SSH 免密登陆
 
 我们在使用 SSH 访问服务器时每一次连接都需要验证相应用户的密码，十分繁琐，所以我们通过一组密匙来进行授权访问。
@@ -199,7 +281,6 @@ $ ssh your_user_name@HostIP   //验证是否添加成功
 RSAAuthentication yes
 PubkeyAuthentication yes
 AuthorizedKeysFile      .ssh/authorized_keys
-
 #GSSAPIAuthentication yes
 #GSSAPICleanupCredentials yes
 ```
@@ -217,6 +298,7 @@ chmod 600 /home/your_user_name/.ssh/authorized_keys
 #### 初始化 Git 仓库
 
 新建 `/var/repo` 目录，并在该目录下，使用 `git init --bare` 创建一个名为 `blog.git` 裸仓库，并改变该目录的所有者为 git 用户。
+
 > 裸仓库可以直接作为服务器仓库供各开发者 push、pull 数据，实现数据共享和同步，不保存文件，只保存历史提交的版本信息。
 
 ```bash
@@ -269,7 +351,7 @@ yum install nginx -y   //安装Nginx
         listen       [::]:80 default_server;
         server_name  _;
 -       root         /data/www;
-+       root         /homr/www/hexo;
++       root         /home/www/hexo;
 
         include /etc/nginx/default.d/*.conf;
 
@@ -337,11 +419,12 @@ server {
 ```yaml
 # Deployment
 deploy:
-- type: git # 类型填git
-  repo: your_user_name@HostIP:/var/repo/blog.git
-  branch: master
-  message:
+  - type: git # 类型填git
+    repo: your_user_name@HostIP:/var/repo/blog.git
+    branch: master
+    message:
 ```
+
 #### 发布站点
 
 在你的 Hexo 站点根目录下，执行如下命令即可发布你的站点到服务器上。
@@ -367,7 +450,7 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 部分情况下，在初次部署之后，部分文章或者页面路径大小如果更改了，会导致新部署上去的页面出现 404 错误。
 这是由于 Git 没有区分大小写导致的文件路径错误。修改 `hexo根目录/.deploy_git/.git/` 下的 `config` 文件
 
-```diff 
+```diff
 [core]
 	repositoryformatversion = 0
 	filemode = false
@@ -383,4 +466,6 @@ chown -R git:git /home/www/hexo   //或者chmod 755 /home/www/hexo 确保hexo文
 
 ## 视频
 
-<dplayer src="https://dl.sm9.top/Video/EasyHexo/部署.mp4" danmaku-id="CDCA91E8E5FD5955BB772A08B0F43DAA" subtitle="https://dl.sm9.top/Video/EasyHexo/部署.vtt" :cross-origin="true" />
+<!-- <dplayer src="https://dl.sm9.top/Video/EasyHexo/部署.mp4" danmaku-api="https://danmu.u2sb.top/api/danmu/dplayer/" danmaku-id="CDCA91E8E5FD5955BB772A08B0F43DAA" danmaku-addition="https://danmu.u2sb.top/api/danmu/dplayer/v3/bilibili?aid=34828870&p=3" subtitle="https://dl.sm9.top/Video/EasyHexo/部署.vtt" /> -->
+
+<bilibili bvid="BV12b411N7xW" :page="3" :highQuality="true" :danmaku="true" />

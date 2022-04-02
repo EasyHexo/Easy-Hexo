@@ -4,7 +4,11 @@ base: /
 head:
   - type: link
     rel: icon
+<<<<<<< HEAD
+    href: /favicon.png
+=======
     href: favicon.png
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
   - type: link
     rel: stylesheet
     href: https://cdn.jsdelivr.net/npm/octicons/build/font/octicons.css
@@ -19,13 +23,21 @@ themeConfig:
     notify: false
     verify: false
     avatar_cdn: https://sdn.geekzu.org/avatar/
+<<<<<<< HEAD
+    placeholder: 👏 欢迎评论~如有疑问，可加群 935778924 讨论
+=======
     placeholder: 🦜 来说话啊~
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
     pageSize: 12
   nav:
     序:
       序: /0-Intro/
       项目成员: /0-Intro/0-1-member.html
       特别致谢: /0-Intro/0-2-thanks.html
+<<<<<<< HEAD
+      参与本项目: /0-Intro/0-3-contributing.html
+=======
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
     Hexo 安装与配置:
       概要: /1-Hexo-install-and-config/
       认识 Hexo: /1-Hexo-install-and-config/1-1-meet-hexo.html
@@ -35,24 +47,55 @@ themeConfig:
       持续集成 CI: /1-Hexo-install-and-config/1-5-continuous-integration.html
     主题安装与配置:
       概要: /2-Theme-use-and-config/
+<<<<<<< HEAD
+      hexo-theme-ils: /2-Theme-use-and-config/2-2-hexo-theme-ils/
+      hexo-theme-yilia: /2-Theme-use-and-config/2-3-hexo-theme-yilia/
+      hexo-theme-apollo: /2-Theme-use-and-config/2-4-hexo-theme-apollo/
+      hexo-theme-material: /2-Theme-use-and-config/2-5-hexo-theme-material/
+      hexo-theme-volantis: /2-Theme-use-and-config/2-6-hexo-theme-volantis/
+=======
       hexo-theme-next 5.x.x: /2-Theme-use-and-config/2-1-hexo-theme-next-5.x.x/
       hexo-theme-next 6.x.x: /2-Theme-use-and-config/2-2-hexo-theme-next-6.x.x/
       hexo-theme-yilia: /2-Theme-use-and-config/2-3-hexo-theme-yilia/
       hexo-theme-apollo: /2-Theme-use-and-config/2-4-hexo-theme-apollo/
       hexo-theme-material: /2-Theme-use-and-config/2-5-hexo-theme-material/
       hexo-theme-material-x: 2-Theme-use-and-config/2-6-hexo-theme-material-x/
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
       hexo-theme-bmw: /2-Theme-use-and-config/2-7-hexo-theme-bmw/
       hexo-theme-aero-dual: /2-Theme-use-and-config/2-8-hexo-theme-aero-dual/
       hexo-theme-amber: /2-Theme-use-and-config/2-9-hexo-theme-amber/
       hexo-theme-indigo: /2-Theme-use-and-config/2-10-hexo-theme-indigo/
+<<<<<<< HEAD
+      hexo-theme-icarus: /2-Theme-use-and-config/2-12-hexo-theme-icarus/
+      hexo-theme-fluid: /2-Theme-use-and-config/2-13-hexo-theme-fluid/
+      hexo-theme-matery: /2-Theme-use-and-config/2-14-hexo-theme-matery/
+      hexo-theme-stun: /2-Theme-use-and-config/2-16-hexo-theme-stun/
+      hexo-theme-phantom: /2-Theme-use-and-config/2-17-hexo-theme-phantom/
+      hexo-theme-archer: /2-Theme-use-and-config/2-18-hexo-theme-archer/
+      hexo-theme-ayer: /2-Theme-use-and-config/2-19-hexo-theme-ayer/
+=======
       hexo-theme-melody: /2-Theme-use-and-config/2-11-hexo-theme-melody/
       hexo-theme-icarus: /2-Theme-use-and-config/2-12-hexo-theme-icarus/
       hexo-theme-material-t: /2-Theme-use-and-config/2-13-hexo-theme-material-t/
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
     插件使用与配置:
       概要: /3-Plugins-use-and-config/
       hexo-tag-aplayer: /3-Plugins-use-and-config/3-1-hexo-tag-aplayer/
       hexo-tag-dplayer: /3-Plugins-use-and-config/3-2-hexo-tag-dplayer/
+<<<<<<< HEAD
+      hexo-helper-live2d: /3-Plugins-use-and-config/3-3-hexo-helper-live2d/
+      hexo-blog-encrypt: /3-Plugins-use-and-config/3-4-hexo-blog-encrypt/
+      hexo-tag-mmedia: /3-Plugins-use-and-config/3-5-hexo-tag-mmedia/
+      hexo-submit-urls-to-search-engine: /3-Plugins-use-and-config/3-6-hexo-submit-urls-to-search-engine/
+      hexo-filter-mathjax: /3-Plugins-use-and-config/3-7-hexo-filter-mathjax/
+      hexo-tag-chart: /3-Plugins-use-and-config/3-8-hexo-tag-chart/
+    高级 Hexo 玩家:
+      概要: /4-High-order-hexo-gamer/
+      让你的 Hexo 博客支持远程编辑: /4-High-order-hexo-gamer/4-1-remote-editing/
+      编写自己的 Hexo 主题: /4-High-order-hexo-gamer/4-2-theme-develop/
+=======
     高级 Hexo 玩家: /4-High-order-hexo-gamer/
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
     补充内容:
       概要: /5-Add/
       参考资料: /5-Add/5-1-quote.html
@@ -62,6 +105,10 @@ themeConfig:
     /0-Intro/:
       - 0-1-member.html
       - 0-2-thanks.html
+<<<<<<< HEAD
+      - 0-3-contributing.html
+=======
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
     /1-Hexo-install-and-config/:
       - 1-1-meet-hexo.html
       - 1-2-install-hexo.html
@@ -69,16 +116,45 @@ themeConfig:
       - 1-4-deploy-hexo.html
       - 1-5-continuous-integration.html
     /2-Theme-use-and-config/:
+<<<<<<< HEAD
+      - 2-2-hexo-theme-ils/
+      - 2-3-hexo-theme-yilia/
+      - 2-4-hexo-theme-apollo/
+      - 2-5-hexo-theme-material/
+      - 2-6-hexo-theme-volantis/
+=======
       - 2-1-hexo-theme-next-5.x.x/
       - 2-2-hexo-theme-next-6.x.x/
       - 2-3-hexo-theme-yilia/
       - 2-4-hexo-theme-apollo/
       - 2-5-hexo-theme-material/
       - 2-6-hexo-theme-material-x/
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
       - 2-7-hexo-theme-bmw/
       - 2-8-hexo-theme-aero-dual/
       - 2-9-hexo-theme-amber/
       - 2-10-hexo-theme-indigo/
+<<<<<<< HEAD
+      - 2-12-hexo-theme-icarus/
+      - 2-13-hexo-theme-fluid/
+      - 2-14-hexo-theme-matery/
+      - 2-16-hexo-theme-stun/
+      - 2-17-hexo-theme-phantom/
+      - 2-18-hexo-theme-archer/
+      - 2-19-hexo-theme-ayer/
+    /3-Plugins-use-and-config/:
+      - 3-1-hexo-tag-aplayer/
+      - 3-2-hexo-tag-dplayer/
+      - 3-3-hexo-helper-live2d/
+      - 3-4-hexo-blog-encrypt/
+      - 3-5-hexo-tag-mmedia/
+      - 3-6-hexo-submit-urls-to-search-engine/
+      - 3-7-hexo-filter-mathjax/
+      - 3-8-hexo-tag-chart/
+    /4-High-order-hexo-gamer/:
+      - 4-1-remote-editing/
+      - 4-2-theme-develop/
+=======
       - 2-11-hexo-theme-melody/
       - 2-12-hexo-theme-icarus/
       - 2-13-hexo-theme-material-t/
@@ -86,6 +162,7 @@ themeConfig:
       - 3-1-hexo-tag-aplayer/
       - 3-2-hexo-tag-dplayer/
     /4-High-order-hexo-gamer/: \# # Put any thing here as a placeholder
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
     /5-Add/:
       - 5-1-quote.html
       - 5-2-yaml.html

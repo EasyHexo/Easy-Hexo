@@ -26,6 +26,8 @@ git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
 
 ## 配置 Apollo 主题
 
+首先把博客根目录的 `_config.yml` 中的 `theme` 项改成 `apollo`。
+
 配置项不多。下面就是 Apollo 的 `_config.yml` 文件内容。
 
 ```yaml

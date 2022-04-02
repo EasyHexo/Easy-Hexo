@@ -1,10 +1,7 @@
 ---
 title: YAML 语法简介
 ---
-# YAML 语法简介
-
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-MonoLogueChi-FE326D.svg?longCache=true&style=flat-square)](mailto:xxwhite@foxmail.com)
+# YAML 语法简介 <Badge text="MonoLogueChi"/> <Badge text="Finish"/>
 
 使用 Hexo 并不需要掌握过多的 YAML 语法知识，只需要简单的了解一下就可以。
 
@@ -23,13 +20,13 @@ comments: true
 ---
 ```
 
-:::tip
+:::tip 提醒
 
 此部分一般叫做 `Front-matter`。
 
 :::
 
-文章内部的 YAML 配置都是以`---`开始和结束的，而且，结束之后通常还要再有一行的空行，用以区分 Markdown 语法。
+文章内部的 YAML 配置都是以 `---` 开始和结束的，而且，结束之后通常还要再有一行的空行，用以区分 Markdown 语法。
 
 ## _config.yml 中使用 YAML
 
@@ -51,10 +48,10 @@ key: value
 2. **使用缩进表示层级关系**
 3. 禁止使用 tab 缩进，只能使用空格键
 4. 缩进长度没有限制，只要元素对齐就表示这些元素属于一个层级
-5. 使用#表示注释
+5. 使用 `#` 表示注释
 6. 字符串可以不用引号标注（但是建议你最好还是加上引号）
 
-例如
+例如：
 
 ```yaml
 hexo-tag-dplayer:
@@ -67,9 +64,9 @@ hexo-tag-dplayer:
     screenshot: yes
 ```
 
-其中`hexo-tag-dplayer`是最高一级的，在模板里一般表示为`config.hexo-tag-dplayer`;  
-观察缩进情况，可以发现`cdn`和`default`是同一级的，模板里一般表示为`config.hexo-tag-dplayer.cdn`和`config.hexo-tag-dplayer.default`；  
-同理，`default`下的三个选项又是一级，以此类推，只要记住缩进表示层级关系就可以了。
+其中 `hexo-tag-dplayer` 是最高一级的，在模板里一般表示为 `config.hexo-tag-dplayer`;  
+观察缩进情况，可以发现 `cdn` 和 `default` 是同一级的，模板里一般表示为 `config.hexo-tag-dplayer.cdn` 和 `config.hexo-tag-dplayer.default`；  
+同理，`default` 下的三个选项又是一级，以此类推，只要记住缩进表示层级关系就可以了。
 
 ### 三种数据结构
 

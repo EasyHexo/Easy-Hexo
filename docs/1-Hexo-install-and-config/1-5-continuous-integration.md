@@ -3,15 +3,14 @@ title: 持续集成
 sidebarDepth: 4
 ---
 
-# 持续集成 Continuous Integration
-
-[![](https://img.shields.io/badge/Maintained--by-EasyHexo-42B983.svg?longCache=true&style=flat-square)](https://github.com/EasyHexo/Easy-Hexo)
-[![](https://img.shields.io/badge/Author-SpencerWoo-E87A90.svg?longCache=true&style=flat-square)](https://github.com/spencerwooo)
+# 持续集成 Continuous Integration <Badge text="@SpencerWoo"/> <Badge text="Finish"/>
 
 :::tip
 利用 Travis CI 将 Hexo 持续集成部署到 GitHub Pages. 👷
 
-（当你觉得有必要提高部署效率时，才使用 CI。萌新可略过。）
+使用 CI 也可以直接在 GitHub 上面**在线编辑**文章！
+
+（如果觉得没必要，可略过。）
 :::
 
 ## 什么是持续集成？
@@ -21,6 +20,8 @@ sidebarDepth: 4
 简单来说，我们通过持续集成，能够简化 Hexo 发布博客的步骤，即：将清除缓存 `hexo clean`，生成静态文件 `hexo generate` 和部署到 GitHub Pages `hexo deploy` 这些步骤通过持续集成工具来帮助我们自动执行。
 
 这样我们在本地对博客文件进行修改、新增博文内容或者新增博客文章，只需要通过 `git` 推送到 GitHub 仓库之后，持续集成工具就可以帮助我们在线构建博客静态文件并直接部署到 GitHub Pages。这之后，我们发布博客内容就不需要本地三步走了。
+
+同时，使用 CI 也可以让我们直接在 GitHub 上面随时随地**在线编辑**文章！
 
 **👷 本章我们所利用的持续集成平台是 Travis CI.**
 
@@ -86,12 +87,12 @@ node_js: stable #Node.js 版本
 
 branches:
   only:
-    - hexo # 只有hexo分支检出更改才触发CI
+    - hexo # 只有 hexo 分支检出更改才触发 CI
 
 before_install: 
-  - export TZ='Asia/Shanghai' #配置时区为东八区UTC+8
+  - export TZ='Asia/Shanghai' #配置时区为东八区 UTC+8
   - npm install hexo-cli # 安装 hexo
-#  - sudo apt-get install libpng16-dev # 安装 libpng16-dev CI编译出现相关报错时请取消注释
+#  - sudo apt-get install libpng16-dev # 安装 libpng16-dev CI 编译出现相关报错时请取消注释
 
 install:
   - npm install # 安装依赖
@@ -103,12 +104,12 @@ script: # 执行脚本，清除缓存，生成静态文件
 deploy:
   provider: pages
   skip_cleanup: true # 跳过清理
-  local_dir: public # 需要推送到Github的静态文件目录 
+  local_dir: public # 需要推送到 GitHub 的静态文件目录 
   name: $GIT_NAME # 用户名变量
   email: $GIT_EMAIL # 用户邮箱变量
-  github_token: $GITHUB_TOKEN # GitHub Token变量
+  github_token: $GITHUB_TOKEN # GitHub Token 变量
   keep-history: true # 保持推送记录，以增量提交的方式
-  target-branch: master # 推送的目标分支 local_dir->>master分支
+  target-branch: master # 推送的目标分支 local_dir->>master 分支
   on:
     branch: hexo # 工作分支
 ```
