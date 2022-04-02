@@ -4,7 +4,7 @@ title: hexo-theme-keep
 
 # hexo-theme-keep <Badge text="@XPoet"/> <Badge text="Writing" type="warn"/> <Badge text="latest"/>
 
-[KEEP 主题地址](https://github.com/XPoet/hexo-theme-keep)
+[keep 主题地址](https://github.com/XPoet/hexo-theme-keep)
 
 ------
 
@@ -14,7 +14,7 @@ title: hexo-theme-keep
 
 ------
 
-如你所见，KEEP 界面设计十分简洁、清爽，但功能齐全、不失优雅，这正是 KEEP 的开发理念。也曾尝试过花里胡哨，发现不仅容易审美疲劳，而且背驰了写博客的初衷，记录生活、展示文字，应该才是搭建博客网站的最终追求，为此 KEEP 应运而生。简约大气、不缺美感、突出内容、化繁为简、配置简单、长期维护，如果你也喜欢或认可这些主题特点，一起来折腾吧~
+如你所见，keep 界面设计十分简洁、清爽，但功能齐全、不失优雅，这正是 keep 的开发理念。也曾尝试过花里胡哨，发现不仅容易审美疲劳，而且背驰了写博客的初衷，记录生活、展示文字，应该才是搭建博客网站的最终追求，为此 keep 应运而生。简约大气、不缺美感、突出内容、化繁为简、配置简单、长期维护，如果你也喜欢或认可这些主题特点，一起来折腾吧~
 
 ## 效果图
 
@@ -54,16 +54,16 @@ title: hexo-theme-keep
 
 - 使用 Git SSH
   ```bash
-  git clone --depath=1 git@github.com:XPoet/hexo-theme-keep.git themes/KEEP
+  git clone --depath=1 git@github.com:XPoet/hexo-theme-keep.git themes/keep
   ```
 - 下载主题 release 版本  
   请优先下载 [最新 release 版本](https://github.com/XPoet/hexo-theme-keep/releases)，master 分支无法保证稳定。  
-  下载后解压到 Hexo 博客目录下 themes 文件夹里面并重命名为 `KEEP`。
+  下载后解压到 Hexo 博客目录下 themes 文件夹里面并重命名为 `keep`。
 
 ### Enable 启用
 
-Modify `theme` setting in `_config.yml` to `KEEP`.  
-找到博客目录下的 `_config.yml` 文件，将 `theme` 设置为 `KEEP` 。
+Modify `theme` setting in `_config.yml` to `keep`.  
+找到博客目录下的 `_config.yml` 文件，将 `theme` 设置为 `keep` 。
 
 ### Update 更新
 
@@ -232,7 +232,7 @@ npm install hexo-generator-index-pin-top
 
 ```markdown
 ---
-title: 千呼万唤始出来，Hexo 主题 KEEP 正式发布
+title: 千呼万唤始出来，Hexo 主题 keep 正式发布
 date: 2020-04-07 21:55:14
 tags: [Hexo]
 categories: [Hexo]

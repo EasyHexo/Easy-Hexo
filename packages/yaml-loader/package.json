@@ -7,8 +7,13 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.19"
+=======
+    "js-yaml": "^3.12.1",
+    "lodash": "^4.17.11"
+>>>>>>> 32b71b26b27d2fd3a122f559e45da25e0e0ed1eb
   },
   "devDependencies": {
     "debug": "^4.1.1",
