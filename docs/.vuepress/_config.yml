@@ -52,6 +52,7 @@ themeConfig:
       hexo-theme-phantom: /2-Theme-use-and-config/2-17-hexo-theme-phantom/
       hexo-theme-archer: /2-Theme-use-and-config/2-18-hexo-theme-archer/
       hexo-theme-ayer: /2-Theme-use-and-config/2-19-hexo-theme-ayer/
+      hexo-theme-redefine: /2-Theme-use-and-config/2-20-hexo-theme-redefine/
     插件使用与配置:
       概要: /3-Plugins-use-and-config/
       hexo-tag-aplayer: /3-Plugins-use-and-config/3-1-hexo-tag-aplayer/
